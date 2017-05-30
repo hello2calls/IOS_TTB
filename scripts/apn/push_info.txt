@@ -1,0 +1,11 @@
+{
+    "aps":{
+        "alert": {
+            "title": "这是测试，主标题，在第一行",
+            "body": "副标题，在第二行；注意长度问题"
+        },
+        "badge":"2"
+    },
+    "id": "DIALER_IOS_TEST_00001111032",
+    "url": "http://dialer.cdn.cootekservice.com/web/internal/activities/invite_rewards_visualization/index.html"
+}

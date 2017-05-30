@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tagdata>
+
+    <mark string="Data组" >
+        <mark_keywords string="号码标记" />
+        <mark_keywords string="标记错误" />
+    </mark>
+
+    <mark string="VOIP" >
+        <mark_keywords string="免费电话" />
+        <mark_keywords string="分钟数" />
+        <mark_keywords string="回拨" />
+        <mark_keywords string="邀请好友" />
+        <mark_keywords string="通话质量" />
+        <mark_keywords string="触宝好友" />
+        <mark_keywords string="非触宝用户" />
+        <mark_keywords string="验证码" />
+        <mark_keywords string="音质差" />
+        <mark_keywords string="打不通" />
+        <mark_keywords string="打不出去" />
+        <mark_keywords string="服务器忙" />
+        <mark_keywords string="杂音" />
+        <mark_keywords string="签到" />
+        <mark_keywords string="免费" />
+        
+    </mark>
+
+    <mark string="黄页" >
+        <mark_keywords string="快递" />
+        <mark_keywords string="打车" />
+        <mark_keywords string="订单" />
+        <mark_keywords string="单号" />
+        <mark_keywords string="违章" />
+        <mark_keywords string="航班" />
+        <mark_keywords string="挂号" />
+        <mark_keywords string="彩票" />
+        <mark_keywords string="城市" />
+        <mark_keywords string="外卖" />
+        <mark_keywords string="车" />
+        <mark_keywords string="维修" />
+        <mark_keywords string="缴费" />
+        <mark_keywords string="机票" />
+        <mark_keywords string="酒店" />
+        <mark_keywords string="医生" />
+        <mark_keywords string="招聘" />
+    </mark>
+
+</tagdata>

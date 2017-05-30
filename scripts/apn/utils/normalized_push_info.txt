@@ -1,0 +1,1 @@
+{"url": "http://dialer.cdn.cootekservice.com/web/internal/activities/invite_rewards_visualization/index.html", "aps": {"badge": "2", "alert": {"body": "\u526f\u6807\u9898\uff0c\u5728\u7b2c\u4e8c\u884c\uff1b\u6ce8\u610f\u957f\u5ea6\u95ee\u9898", "title": "\u8fd9\u662f\u6d4b\u8bd5\uff0c\u4e3b\u6807\u9898\uff0c\u5728\u7b2c\u4e00\u884c"}}, "id": "DIALER_IOS_TEST_00001111032"}

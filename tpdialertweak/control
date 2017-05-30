@@ -1,0 +1,9 @@
+Package: com.cootek.tpdialertweak
+Name: 触宝拨号增强包
+Depends: mobilesubstrate
+Version: 5.1.0
+Architecture: iphoneos-arm
+Description: 触宝拨号增强包
+Maintainer: CooTek
+Author: CooTek
+Section: Tweaks

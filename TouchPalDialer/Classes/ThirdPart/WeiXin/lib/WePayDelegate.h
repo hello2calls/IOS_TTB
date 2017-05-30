@@ -1,0 +1,1 @@
+////  WePayDelegate.h//  TouchPalDialer////  Created by tanglin on 15-1-29.////#import "WXApi.h"@protocol SendPayToWeChatViewDelegate- (void) sendPay:(NSDictionary*) paydata;@end@interface WePayDelegate:NSObject<SendPayToWeChatViewDelegate>{    enum WXScene _scene;    //Token    NSString *Token;    //Token valid time    long      token_time;}@end

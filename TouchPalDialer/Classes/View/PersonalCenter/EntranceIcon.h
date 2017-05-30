@@ -1,0 +1,1 @@
+////  PersonalCenterEntranceView.h//  TouchPalDialer////  Created by 袁超 on 15/2/7.////#import <UIKit/UIKit.h>@protocol EntranceIconDelegate <NSObject>- (void) onEntranceClick;@end@interface EntranceIcon : UIView@property (nonatomic, assign) id<EntranceIconDelegate> delegate;- (void) refresh;@end

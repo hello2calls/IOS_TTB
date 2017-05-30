@@ -1,0 +1,11 @@
+<pushEvent fid='dialerios10100000003'>
+    <guidePointsToast allowClean='true' clickClean='true' clearRule='afterAction|afterClose' ensureNetwork='none'>
+        <display>guide points</display>
+        <guidePoints>
+            <guidePoint id='personal_center' type='dot' dismissRule='never'>
+            </guidePoint>
+        </guidePoints>
+        <action action='dummy'/>
+    </guidePointsToast>
+</pushEvent>
+

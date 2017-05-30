@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="fb-ogo-dialer.png">
+    <link rel="icon" href="fb-logo-dialer.png">
+    <title>吐槽</title>
+
+    <link href="fb-reset.css" rel="stylesheet" type="text/css">
+    <link href="fb-mobile-reset.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        body {
+            color: #212121;
+            margin: 0 8px;
+            text-align: center;
+        }
+        #page-content {
+            margin-top: 72px;
+        }
+        .success-icon {
+            width: 120px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 16px 0;
+        }
+        .thanks {
+            color: #333;
+            font-size: 14px;
+            line-height: 1.3em;
+            margin: 20px 0;
+            width: 100%;
+        }
+        .contact-us {
+            margin-top: 16px;
+        }
+        .ref-link {
+            text-decoration: underline;
+            color: #03a9f4;
+            line-height: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <header id="page-header">
+    </header>
+    <!-- #page-header -->
+    <section id="page-content">
+        <img src="fb-hangup-feedback-success.png" alt="提交成功" class="success-icon" />
+        <h2>提交成功</h2>
+        <p class="thanks">
+        谢谢您的反馈，您的机型和问题<br>我们已经记录，将进行改进
+        </p>
+        <p class="contact-us">仍有问题？<span class="ref-link">联系我们</span>
+        </p>
+    </section>
+    <!-- #page-content -->
+
+    <footer id="page-footer">
+    </footer>
+    <!-- #page-footer -->
+
+    <script type="text/javascript" src="fb-jquery.2.1.4.min.js"></script>
+    <script type="text/javascript">
+        // tp_color_light_blue_500 0x1f92ef
+        // tpc_color_blue_700 0x1975bf
+        touchableBind('.ref-link',
+            { 'touchstart': {'color':'#03a9f4'},
+              'touchend': {'color':'#1975bf'}
+            }
+        );
+        $('.ref-link').click(function(){
+             window.location.href = 'http://dialer-cdn.cootekservice.com/iphone/web/faq/faq.html';
+        });
+
+        function touchableBind(selector, stateSets) {
+            var jelem = $(selector);
+            jelem.bind('touchstart', function(){
+                jelem.css(stateSets.touchstart);
+            }).bind('touchend', function(){
+                jelem.css(stateSets.touchend);
+            });
+        }
+    </script>
+</body>
+</html>

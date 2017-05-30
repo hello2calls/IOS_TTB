@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'TPDialerAdvanced' target in the 'TPDialerAdvanced' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import "log.h"
+#endif

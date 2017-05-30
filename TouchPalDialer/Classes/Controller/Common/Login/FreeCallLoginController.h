@@ -1,0 +1,1 @@
+////  FreeCallLoginController.h//  TouchPalDialer////  Created by Liangxiu on 15/2/11.////#import <Foundation/Foundation.h>#import "DefaultLoginController.h"@interface FreeCallLoginController : DefaultLoginController@end

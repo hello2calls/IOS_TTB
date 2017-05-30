@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  TPDialerAdvanced
+
+  Created by Elfe Xu on 12-10-23.
+
+*/
+
+"vip_shop_tag" = "精品商户";
+"pass_shop_tag" = "通过验证";
+"house agent" = "房产中介";
+"insurance" = "保险推销";
+"financial products" = "金融理财";
+"headhunting" = "人事猎头";
+"promote sales" = "业务推销";
+"repair" = "维修服务";
+"book hotel/airline" = "机票酒店";
+"public services" = "公用事业";
+"express" = "快递外卖";
+"maybe fraud" = "疑似诈骗";
+"maybe crank" = "疑似骚扰";
+"crank" = "骚扰电话";
+"fraud" = "诈骗钓鱼";
+"(%d marks)" = "(%d人标记)";
+"Local" = "本地电话";
+"Local service" = "热线电话";

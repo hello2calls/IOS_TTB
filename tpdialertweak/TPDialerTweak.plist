@@ -1,0 +1,9 @@
+{
+	Filter = {
+		Bundles = (
+			"com.apple.springboard",
+			"com.cootek.Contacts",
+			"com.apple.mobilephone",
+		);
+	};
+}

@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>all</key>
+    <dict>
+	<key>ao</key><dict><key>code</key><string>244</string><key>name</key><string>Angola</string></dict>
+	<key>af</key><dict><key>code</key><string>93</string><key>name</key><string>Afghanistan</string></dict>
+	<key>al</key><dict><key>code</key><string>355</string><key>name</key><string>Albania</string></dict>
+	<key>dz</key><dict><key>code</key><string>213</string><key>name</key><string>Algeria</string></dict>
+	<key>ad</key><dict><key>code</key><string>376</string><key>name</key><string>Andorra</string></dict>
+	<key>ar</key><dict><key>code</key><string>54</string><key>name</key><string>Argentina</string></dict>
+	<key>am</key><dict><key>code</key><string>374</string><key>name</key><string>Armenia</string></dict>
+	<key>au</key><dict><key>code</key><string>61</string><key>name</key><string>Australia</string></dict>
+	<key>at</key><dict><key>code</key><string>43</string><key>name</key><string>Austria</string></dict>
+	<key>az</key><dict><key>code</key><string>994</string><key>name</key><string>Azerbaijan</string></dict>
+	<key>bh</key><dict><key>code</key><string>973</string><key>name</key><string>Bahrain</string></dict>
+	<key>bd</key><dict><key>code</key><string>880</string><key>name</key><string>Bangladesh</string></dict>
+	<key>by</key><dict><key>code</key><string>375</string><key>name</key><string>Belarus</string></dict>
+	<key>be</key><dict><key>code</key><string>32</string><key>name</key><string>Belgium</string></dict>
+	<key>bz</key><dict><key>code</key><string>501</string><key>name</key><string>Belize</string></dict>
+	<key>bj</key><dict><key>code</key><string>229</string><key>name</key><string>Benin</string></dict>
+	<key>bo</key><dict><key>code</key><string>591</string><key>name</key><string>Bolivia</string></dict>
+	<key>bw</key><dict><key>code</key><string>267</string><key>name</key><string>Botswana</string></dict>
+	<key>br</key><dict><key>code</key><string>55</string><key>name</key><string>Brazil</string></dict>
+	<key>bn</key><dict><key>code</key><string>673</string><key>name</key><string>Brunei</string></dict>
+	<key>bg</key><dict><key>code</key><string>359</string><key>name</key><string>Bulgaria</string></dict>
+	<key>bf</key><dict><key>code</key><string>226</string><key>name</key><string>Burkina-faso</string></dict>
+	<key>mm</key><dict><key>code</key><string>95</string><key>name</key><string>Burma</string></dict>
+	<key>bi</key><dict><key>code</key><string>257</string><key>name</key><string>Burundi</string></dict>
+	<key>cm</key><dict><key>code</key><string>237</string><key>name</key><string>Cameroon</string></dict>
+	<key>ca</key><dict><key>code</key><string>1</string><key>name</key><string>Canada</string></dict>
+	<key>cf</key><dict><key>code</key><string>236</string><key>name</key><string>Central African Rep.</string></dict>
+	<key>td</key><dict><key>code</key><string>235</string><key>name</key><string>Chad</string></dict>
+	<key>cl</key><dict><key>code</key><string>56</string><key>name</key><string>Chile</string></dict>
+	<key>cn</key><dict><key>code</key><string>86</string><key>name</key><string>China</string></dict>
+	<key>co</key><dict><key>code</key><string>57</string><key>name</key><string>Colombia</string></dict>
+	<key>cg</key><dict><key>code</key><string>242</string><key>name</key><string>Congo</string></dict>
+	<key>ck</key><dict><key>code</key><string>682</string><key>name</key><string>Cook Is.</string></dict>
+	<key>cr</key><dict><key>code</key><string>506</string><key>name</key><string>Costa Rica</string></dict>
+	<key>cu</key><dict><key>code</key><string>53</string><key>name</key><string>Cuba</string></dict>
+	<key>cy</key><dict><key>code</key><string>357</string><key>name</key><string>Cyprus</string></dict>
+	<key>cz</key><dict><key>code</key><string>420</string><key>name</key><string>Czech Rep.</string></dict>
+	<key>dk</key><dict><key>code</key><string>45</string><key>name</key><string>Denmark</string></dict>
+	<key>dj</key><dict><key>code</key><string>253</string><key>name</key><string>Djibouti</string></dict>
+	<key>ec</key><dict><key>code</key><string>593</string><key>name</key><string>Ecuador</string></dict>
+	<key>eg</key><dict><key>code</key><string>20</string><key>name</key><string>Egypt</string></dict>
+	<key>sv</key><dict><key>code</key><string>503</string><key>name</key><string>EISalvador</string></dict>
+	<key>ee</key><dict><key>code</key><string>372</string><key>name</key><string>Estonia</string></dict>
+	<key>et</key><dict><key>code</key><string>251</string><key>name</key><string>Ethiopia</string></dict>
+	<key>fj</key><dict><key>code</key><string>679</string><key>name</key><string>Fiji</string></dict>
+	<key>fi</key><dict><key>code</key><string>358</string><key>name</key><string>Finland</string></dict>
+	<key>fr</key><dict><key>code</key><string>33</string><key>name</key><string>France</string></dict>
+	<key>gf</key><dict><key>code</key><string>594</string><key>name</key><string>French Guiana</string></dict>
+	<key>ga</key><dict><key>code</key><string>241</string><key>name</key><string>Gabon</string></dict>
+	<key>gm</key><dict><key>code</key><string>220</string><key>name</key><string>Gambia</string></dict>
+	<key>ge</key><dict><key>code</key><string>995</string><key>name</key><string>Georgia</string></dict>
+	<key>de</key><dict><key>code</key><string>49</string><key>name</key><string>Germany</string></dict>
+	<key>gh</key><dict><key>code</key><string>233</string><key>name</key><string>Ghana</string></dict>
+	<key>gi</key><dict><key>code</key><string>350</string><key>name</key><string>Gibraltar</string></dict>
+	<key>gr</key><dict><key>code</key><string>30</string><key>name</key><string>Greece</string></dict>
+	<key>gt</key><dict><key>code</key><string>502</string><key>name</key><string>Guatemala</string></dict>
+	<key>gn</key><dict><key>code</key><string>224</string><key>name</key><string>Guinea</string></dict>
+	<key>gy</key><dict><key>code</key><string>592</string><key>name</key><string>Guyana</string></dict>
+	<key>ht</key><dict><key>code</key><string>509</string><key>name</key><string>Haiti</string></dict>
+	<key>hn</key><dict><key>code</key><string>504</string><key>name</key><string>Honduras</string></dict>
+	<key>hk</key><dict><key>code</key><string>852</string><key>name</key><string>Hongkong</string></dict>
+	<key>hu</key><dict><key>code</key><string>36</string><key>name</key><string>Hungary</string></dict>
+	<key>is</key><dict><key>code</key><string>354</string><key>name</key><string>Iceland</string></dict>
+	<key>in</key><dict><key>code</key><string>91</string><key>name</key><string>India</string></dict>
+	<key>id</key><dict><key>code</key><string>62</string><key>name</key><string>Indonesia</string></dict>
+	<key>ir</key><dict><key>code</key><string>98</string><key>name</key><string>Iran</string></dict>
+	<key>iq</key><dict><key>code</key><string>964</string><key>name</key><string>Iraq</string></dict>
+	<key>ie</key><dict><key>code</key><string>353</string><key>name</key><string>Ireland</string></dict>
+	<key>il</key><dict><key>code</key><string>972</string><key>name</key><string>Israel</string></dict>
+	<key>it</key><dict><key>code</key><string>39</string><key>name</key><string>Italy</string></dict>
+	<key>jp</key><dict><key>code</key><string>81</string><key>name</key><string>Japan</string></dict>
+	<key>jo</key><dict><key>code</key><string>962</string><key>name</key><string>Jordan</string></dict>
+	<key>kh</key><dict><key>code</key><string>855</string><key>name</key><string>Cambodia</string></dict>
+	<key>kz</key><dict><key>code</key><string>327</string><key>name</key><string>Kazakstan</string></dict>
+	<key>ke</key><dict><key>code</key><string>254</string><key>name</key><string>Kenya</string></dict>
+	<key>kr</key><dict><key>code</key><string>82</string><key>name</key><string>Korea</string></dict>
+	<key>kw</key><dict><key>code</key><string>965</string><key>name</key><string>Kuwait</string></dict>
+	<key>kg</key><dict><key>code</key><string>331</string><key>name</key><string>Kyrgyzstan</string></dict>
+	<key>la</key><dict><key>code</key><string>856</string><key>name</key><string>Laos</string></dict>
+	<key>lv</key><dict><key>code</key><string>371</string><key>name</key><string>Latvia</string></dict>
+	<key>lb</key><dict><key>code</key><string>961</string><key>name</key><string>Lebanon</string></dict>
+	<key>ls</key><dict><key>code</key><string>266</string><key>name</key><string>Lesotho</string></dict>
+	<key>lr</key><dict><key>code</key><string>231</string><key>name</key><string>Liberia</string></dict>
+	<key>ly</key><dict><key>code</key><string>218</string><key>name</key><string>Libya</string></dict>
+	<key>li</key><dict><key>code</key><string>423</string><key>name</key><string>Liechtenstein</string></dict>
+	<key>lt</key><dict><key>code</key><string>370</string><key>name</key><string>Lithuania</string></dict>
+	<key>lu</key><dict><key>code</key><string>352</string><key>name</key><string>Luxembourg</string></dict>
+	<key>mo</key><dict><key>code</key><string>853</string><key>name</key><string>Macao</string></dict>
+	<key>mg</key><dict><key>code</key><string>261</string><key>name</key><string>Madagascar</string></dict>
+	<key>mw</key><dict><key>code</key><string>265</string><key>name</key><string>Malawi</string></dict>
+	<key>my</key><dict><key>code</key><string>60</string><key>name</key><string>Malaysia</string></dict>
+	<key>mv</key><dict><key>code</key><string>960</string><key>name</key><string>Maldives</string></dict>
+	<key>ml</key><dict><key>code</key><string>223</string><key>name</key><string>Mali</string></dict>
+	<key>mt</key><dict><key>code</key><string>356</string><key>name</key><string>Malta</string></dict>
+	<key>mu</key><dict><key>code</key><string>230</string><key>name</key><string>Mauritius</string></dict>
+	<key>mx</key><dict><key>code</key><string>52</string><key>name</key><string>Mexico</string></dict>
+	<key>md</key><dict><key>code</key><string>373</string><key>name</key><string>Moldova</string></dict>
+	<key>mc</key><dict><key>code</key><string>377</string><key>name</key><string>Monaco</string></dict>
+	<key>mn</key><dict><key>code</key><string>976</string><key>name</key><string>Mongolia</string></dict>
+	<key>ma</key><dict><key>code</key><string>212</string><key>name</key><string>Morocco</string></dict>
+	<key>mz</key><dict><key>code</key><string>258</string><key>name</key><string>Mozambique</string></dict>
+	<key>na</key><dict><key>code</key><string>264</string><key>name</key><string>Namibia</string></dict>
+	<key>nr</key><dict><key>code</key><string>674</string><key>name</key><string>Nauru</string></dict>
+	<key>np</key><dict><key>code</key><string>977</string><key>name</key><string>Nepal</string></dict>
+	<key>nl</key><dict><key>code</key><string>31</string><key>name</key><string>Netherlands</string></dict>
+	<key>nz</key><dict><key>code</key><string>64</string><key>name</key><string>NewZealand</string></dict>
+	<key>ni</key><dict><key>code</key><string>505</string><key>name</key><string>Nicaragua</string></dict>
+	<key>ne</key><dict><key>code</key><string>227</string><key>name</key><string>Niger</string></dict>
+	<key>ng</key><dict><key>code</key><string>234</string><key>name</key><string>Nigeria</string></dict>
+	<key>kp</key><dict><key>code</key><string>850</string><key>name</key><string>North Korea</string></dict>
+	<key>no</key><dict><key>code</key><string>47</string><key>name</key><string>Norway</string></dict>
+	<key>om</key><dict><key>code</key><string>968</string><key>name</key><string>Oman</string></dict>
+	<key>pk</key><dict><key>code</key><string>92</string><key>name</key><string>Pakistan</string></dict>
+	<key>pa</key><dict><key>code</key><string>507</string><key>name</key><string>Panama</string></dict>
+	<key>pg</key><dict><key>code</key><string>675</string><key>name</key><string>Papua New Cuinea</string></dict>
+	<key>py</key><dict><key>code</key><string>595</string><key>name</key><string>Paraguay</string></dict>
+	<key>pe</key><dict><key>code</key><string>51</string><key>name</key><string>Peru</string></dict>
+	<key>ph</key><dict><key>code</key><string>63</string><key>name</key><string>Philippines</string></dict>
+	<key>pl</key><dict><key>code</key><string>48</string><key>name</key><string>Poland</string></dict>
+	<key>pf</key><dict><key>code</key><string>689</string><key>name</key><string>French Polynesia</string></dict>
+	<key>pt</key><dict><key>code</key><string>351</string><key>name</key><string>Portugal</string></dict>
+	<key>qa</key><dict><key>code</key><string>974</string><key>name</key><string>Qatar</string></dict>
+	<key>ro</key><dict><key>code</key><string>40</string><key>name</key><string>Romania</string></dict>
+	<key>ru</key><dict><key>code</key><string>7</string><key>name</key><string>Russia</string></dict>
+	<key>lc</key><dict><key>code</key><string>1758</string><key>name</key><string>Saint Lueia</string></dict>
+	<key>vc</key><dict><key>code</key><string>1784</string><key>name</key><string>Saint Vincent</string></dict>
+	<key>sm</key><dict><key>code</key><string>378</string><key>name</key><string>San Marino</string></dict>
+	<key>st</key><dict><key>code</key><string>239</string><key>name</key><string>Sao Tome and Principe</string></dict>
+	<key>sa</key><dict><key>code</key><string>966</string><key>name</key><string>Saudi Arabia</string></dict>
+	<key>sn</key><dict><key>code</key><string>221</string><key>name</key><string>Senegal</string></dict>
+	<key>sc</key><dict><key>code</key><string>248</string><key>name</key><string>Seychelles</string></dict>
+	<key>sl</key><dict><key>code</key><string>232</string><key>name</key><string>Sierra Leone</string></dict>
+	<key>sg</key><dict><key>code</key><string>65</string><key>name</key><string>Singapore</string></dict>
+	<key>sk</key><dict><key>code</key><string>421</string><key>name</key><string>Slovakia</string></dict>
+	<key>si</key><dict><key>code</key><string>386</string><key>name</key><string>Slovenia</string></dict>
+	<key>sb</key><dict><key>code</key><string>677</string><key>name</key><string>Solomon Is</string></dict>
+	<key>so</key><dict><key>code</key><string>252</string><key>name</key><string>Somali</string></dict>
+	<key>za</key><dict><key>code</key><string>27</string><key>name</key><string>South Africa</string></dict>
+	<key>es</key><dict><key>code</key><string>34</string><key>name</key><string>Spain</string></dict>
+	<key>lk</key><dict><key>code</key><string>94</string><key>name</key><string>Sri Lanka</string></dict>
+	<key>sd</key><dict><key>code</key><string>249</string><key>name</key><string>Sudan</string></dict>
+	<key>sr</key><dict><key>code</key><string>597</string><key>name</key><string>Suriname</string></dict>
+	<key>sz</key><dict><key>code</key><string>268</string><key>name</key><string>Swaziland</string></dict>
+	<key>se</key><dict><key>code</key><string>46</string><key>name</key><string>Sweden</string></dict>
+	<key>ch</key><dict><key>code</key><string>41</string><key>name</key><string>Switzerland</string></dict>
+	<key>sy</key><dict><key>code</key><string>963</string><key>name</key><string>Syria</string></dict>
+	<key>tw</key><dict><key>code</key><string>886</string><key>name</key><string>Taiwan</string></dict>
+	<key>tj</key><dict><key>code</key><string>992</string><key>name</key><string>Tajikstan</string></dict>
+	<key>tz</key><dict><key>code</key><string>255</string><key>name</key><string>Tanzania</string></dict>
+	<key>th</key><dict><key>code</key><string>66</string><key>name</key><string>Thailand</string></dict>
+	<key>tg</key><dict><key>code</key><string>228</string><key>name</key><string>Togo</string></dict>
+	<key>to</key><dict><key>code</key><string>676</string><key>name</key><string>Tonga</string></dict>
+	<key>tn</key><dict><key>code</key><string>216</string><key>name</key><string>Tunisia</string></dict>
+	<key>tr</key><dict><key>code</key><string>90</string><key>name</key><string>Turkey</string></dict>
+	<key>tm</key><dict><key>code</key><string>993</string><key>name</key><string>Turkmenistan</string></dict>
+	<key>ug</key><dict><key>code</key><string>256</string><key>name</key><string>Uganda</string></dict>
+	<key>ua</key><dict><key>code</key><string>380</string><key>name</key><string>Ukraine</string></dict>
+	<key>ae</key><dict><key>code</key><string>971</string><key>name</key><string>United Arab Emirates</string></dict>
+	<key>gb</key><dict><key>code</key><string>44</string><key>name</key><string>United Kingdom</string></dict>
+	<key>us</key><dict><key>code</key><string>1</string><key>name</key><string>United States of America</string></dict>
+	<key>ca</key><dict><key>code</key><string>1</string><key>name</key><string>Canada</string></dict>
+	<key>uy</key><dict><key>code</key><string>598</string><key>name</key><string>Uruguay</string></dict>
+	<key>uz</key><dict><key>code</key><string>233</string><key>name</key><string>Uzbekistan</string></dict>
+	<key>ve</key><dict><key>code</key><string>58</string><key>name</key><string>Venezuela</string></dict>
+	<key>vn</key><dict><key>code</key><string>84</string><key>name</key><string>Vietnam</string></dict>
+	<key>ye</key><dict><key>code</key><string>967</string><key>name</key><string>Yemen</string></dict>
+	<key>yu</key><dict><key>code</key><string>381</string><key>name</key><string>Yugoslavia</string></dict>
+	<key>zw</key><dict><key>code</key><string>263</string><key>name</key><string>Zimbabwe</string></dict>
+	<key>zr</key><dict><key>code</key><string>243</string><key>name</key><string>Zaire</string></dict>
+	<key>zm</key><dict><key>code</key><string>260</string><key>name</key><string>Zambia</string></dict>
+        </dict>
+    <key>part</key>
+    <dict>
+    <key>cn</key><dict><key>code</key><string>86</string><key>name</key><string>China</string></dict>
+    <key>ca</key><dict><key>code</key><string>1</string><key>name</key><string>Canada</string></dict>
+    <key>us</key><dict><key>code</key><string>1</string><key>name</key><string>United States of America</string></dict>
+    <key>hk</key><dict><key>code</key><string>852</string><key>name</key><string>Hongkong</string></dict>
+    <key>tw</key><dict><key>code</key><string>886</string><key>name</key><string>Taiwan</string></dict>
+    <key>gb</key><dict><key>code</key><string>44</string><key>name</key><string>United Kingdom</string></dict>
+    <key>fr</key><dict><key>code</key><string>33</string><key>name</key><string>France</string></dict>
+    <key>de</key><dict><key>code</key><string>49</string><key>name</key><string>Germany</string></dict>
+    <key>se</key><dict><key>code</key><string>46</string><key>name</key><string>Sweden</string></dict>
+    <key>dk</key><dict><key>code</key><string>45</string><key>name</key><string>Denmark</string></dict>
+    <key>es</key><dict><key>code</key><string>34</string><key>name</key><string>Spain</string></dict>
+    <key>pt</key><dict><key>code</key><string>351</string><key>name</key><string>Portugal</string></dict>
+    <key>gr</key><dict><key>code</key><string>30</string><key>name</key><string>Greece</string></dict>
+    <key>tr</key><dict><key>code</key><string>90</string><key>name</key><string>Turkey</string></dict>
+	</dict>
+    <key>top10</key>
+	<array>
+		<dict>
+			<key>code</key>
+			<string>86</string>
+			<key>name</key>
+			<string>China</string>
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>852</string>
+			<key>name</key>
+			<string>Hongkong</string>
+		</dict>
+        <dict>
+			<key>code</key>
+			<string>1</string>
+			<key>name</key>
+			<string>America</string>
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>61</string>
+			<key>name</key>
+			<string>Australia</string>
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>65</string>
+			<key>name</key>
+			<string>Singapore</string>
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>44</string>
+			<key>name</key>
+			<string>United Kingdom</string>
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>886</string>
+			<key>name</key>
+			<string>Taiwan</string>
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>1</string>
+			<key>name</key>
+			<string>Canada</string>
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>81</string>
+			<key>name</key>
+			<string>Japan</string>
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>853</string>
+			<key>name</key>
+			<string>Macao</string>
+		</dict>
+    </array>
+
+    </dict>
+</plist>

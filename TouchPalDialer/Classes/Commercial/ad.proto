@@ -1,0 +1,79 @@
+package proto;
+
+enum ad_type_t {
+    TXT = 1;
+    IMAGE = 2;
+    FLASH = 4;
+}
+
+enum ad_class_t {
+    EMBEDDED = 1;
+    FLOAT = 2;
+    PASTER = 3;
+}
+
+enum network_type_t {
+    DEFAULT_NETWORK_TYPE = 0;
+    WIFI = 1;
+    TWO_G = 2;
+    THREE_G = 3;
+    FOUR_G = 4;
+    FIVE_G = 5;
+}
+
+enum request_data_type_t {
+    JSON = 1;
+    HTML = 2;
+}
+
+enum call_type_t {
+    INCOMING = 0;
+    OUTGOING = 1;
+}
+
+enum dialer_type_t {
+	// 拨号方式
+	DT_UNKNOWN = 0;
+	DT_FREE_CALL_DIRECT = 1;
+	DT_NORMAL_CALL_DIRECT = 2;
+	DT_ALWAYS_ASK = 3;
+}
+
+message udp_request_t {
+    optional string ip = 1;
+    optional string ch = 2;
+    optional string v = 3;
+    optional uint64 prt = 4;
+    optional ad_type_t at = 5;
+    optional string tu = 6;
+    optional uint32 adn = 7;
+    optional ad_class_t adclass = 8;
+    optional network_type_t nt = 9;
+    optional request_data_type_t rt = 10;
+    optional uint32 w = 11; optional uint32 h = 12;
+    optional string city = 13;
+    optional string addr = 14;
+    optional float longtitude = 15;
+    optional float latitude = 16;
+    optional string other_phone = 17;
+    optional call_type_t call_type = 18;
+    optional string token = 19;
+    optional string tn = 20;
+    optional bool open_free_call = 21 [default = true];
+    optional dialer_type_t dialer_type = 22 [default = DT_UNKNOWN];
+}
+
+message udp_response_t {
+    message Data {
+        optional string sid = 1;            // search id 
+        optional uint32 adid = 2;           // adid
+        optional string brand = 3;          // brand
+        optional string title = 4;          // title
+        optional string desc = 5;           // description
+        optional string curl = 6;           // click url
+        optional string edurl = 7;          // effective display url
+        optional string material = 8;       // material url
+    }
+    repeated Data data = 1;
+    optional uint32 error_code = 2;
+}

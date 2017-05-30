@@ -1,0 +1,6 @@
+framework module Ararat_iOS {
+  umbrella header "Ararat_iOS.h"
+
+  export *
+  module * { export * }
+}

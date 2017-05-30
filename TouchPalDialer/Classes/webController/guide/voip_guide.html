@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+    <title>免费电话新手教程</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
+  
+    <style type="text/css">
+
+
+    body{
+      background-color: #f1f1f1;
+    }
+
+    .div1{
+      margin-top: 30px;
+    }
+
+    .div2{
+      margin-top: 30px;
+    }
+
+
+    p{
+      font-size: 18px;
+      color: #333333;
+    }
+    
+    ul{
+      margin-left: -20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    li{
+      font-size: 14px;
+      color: #666666;
+      line-height: 160%;
+    }
+
+    .image1{
+        width: 100%;
+    }
+
+    .image2{
+        width: 100%;
+    }
+
+   .div3{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    #reward{
+      font-size: 18px;
+      color: #2caf2b;
+      height: 60px;
+      width: 70%;
+      background-color: #ffffff;
+      border-radius: 30px;
+      border: 1px solid #2caf2b;
+      margin: auto;
+      outline: none;
+
+    }
+
+    #reward:active{
+      background-color: #e5e5e5;
+    }
+</style>
+</head>
+<script src="jquery-1.8.3.min.js"></script>
+<script src="bridge_ios.js"></script>
+<script src="voip_guide.js"></script>
+<script src="utility.js"></script>
+<script type="text/javascript">
+     function JumptoActivity(eventID){
+      DialerJavaScriptHandler.JumptoActivity(eventID);
+      //JAVA.JumptoActivity(eventID);
+      //IOS.JumptoActivity(eventID);
+     }
+</script>
+
+<body>
+  <div class="div1">
+    <p>如何免费拨打电话</p>
+     <ul>
+       <li>注册并开启免费电话后，拨号时选择“免费电话”</li>
+       <li>对方不安装，不联网，也能免费打</li>
+     </ul>
+     <image class="image1" src="http://tinyyx.com/wp-content/uploads/1.png" />
+  </div>
+  <div class="div2">
+     <p>使用免费电话耗流量吗?</p>
+     <ul>
+       <li>Wi-Fi下拨打不耗流量</li>
+       <li>3G/4G数据网络下每分钟仅耗300KB</li>
+       <li>网络不好时可以选择回拨模式，仅在发起免费电话时消耗30KB，通话中不耗流量</li>
+     </ul>
+      <image class="image2"src="http://tinyyx.com/wp-content/uploads/2.png" />
+  </div>
+  <div class="div3">
+     <input type="button" id="reward" value="我学会了，领取新人奖励" onclick="JumptoActivity(0)"/>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,1469 @@
+/* 
+   Localizable.strings
+   TouchPalDialer
+
+   Created by Alice on 11-11-1.
+   Copyright 2011 __MyCompanyName__. All rights reserved.
+ */
+ 
+/*common btn*/
+"Post" = "Post";
+"Save" = "Save";
+"Next" = "Next"; 
+"Ok" = "OK"; /*Invite picker view*/ 
+"Reset" = "Reset";
+"Cancel" = "Cancel";
+"Remove" = "Remove";
+"Edit" = "Edit";
+"Done" = "Done";
+"Delete" = "Delete";
+"Start" = "Start";
+/*fav page*/
+"Detail" = "Detail";
+"Copy number" = "Copy number";
+"Send message" = "Send message";
+"Send" = "Send";
+"(No name)" = "(No name)";
+"Stop" = "Stop";
+
+/*contact menu*/
+"New group" = "New group";
+"Rename group" = "Rename group";
+"Failed to add the group!" = "Failed to add the group!";
+"Failed to rename the group!" = "Failed to rename the group!";
+"The group exists already! Do you want to continue?" = "The group exists already! Do you want to continue?";
+"Load from file" = "Load from file";
+"Take photo" = "Take photo";
+"Original size" = "Original size";
+"Input group name" = "Input group name";
+"The group is empty!" = "The group is empty!";
+"Operate" = "Operate";
+"Contact" = "Contact";
+"New contact" = "New contact";
+"Delete contacts" = "Delete";
+"Send SMS" = "Send SMS";
+"Now loading" = "Now loading";
+"No Contacts in this Group" = "No contact in this group";
+"Select_all" = "All";
+"Confirm (%d)" = "OK (%d)";
+"Exchange Warning" = "由于系统限制，绑定Exchange，可能导致新建分组失败。建议您关闭Exchange服务后再进行此操作。";
+"batch_delete_contacts_and_send_sms" = "Contact";
+
+"Manage groups" = "Edit";
+"My group" = "My group";
+"Add members" = "Add members";
+"Remove members" = "Remove members";
+"0 contact" = "0 contact";
+"1 contact" = "1 contact";
+"%d contacts" = "%d contacts";
+"search in %d contacts" = "Search | %d contacts";
+"search in 1 contact" = "Search | 1 contact";
+"search prompt" = "Forget the name? Try searching the company";
+"search" = "Search";
+"Add more" = "Add more";
+"Ungrouped" = "Ungrouped";
+
+// toast
+"There is no contact with phone number!" = "There is no contact with phone number!";
+"There is no email account available!" = "There is no email account available!";
+
+"Email" = "Email";
+"Copy" = "Copy";
+"Move" = "Move";
+"Share" = "Share";
+"Favorite" = "Favorite";
+"My favorites" = "My favorites";
+"Added to favorites" = "Added to favorites";
+"Removed from favorites" = "Removed from favorites";
+
+// detail shortcut buttons
+"detail_shortcut_gesture"="Gesture";
+"detail_shortcut_pay"="Pay";
+"detail_shortcut_share"="Share";
+"detail_shortcut_favor" = "Favor";
+"detail_shortcut_unfavor" = "Unfavor";
+
+// detail switch button text
+"detail_switch_button_text_calllog_format" = "Call\nlogs\n(%d)";
+"detail_switch_button_text_detail" = "Detail";
+
+// market event button
+"market_button_text" = "Top";
+
+/*dialer*/	
+"Filter" = "Filter";
+"All" = "All";
+"Missed" = "Missed";
+"Outgoing" = "Outgoing";
+"Incoming" = "Incoming";
+"Unknown" = "Unknown";
+"Types" = "Types";
+"Unknown calls" = "Unknown calls";
+
+"Invalid phone number!"	="Invalid phone number!";
+"Share contact" = "Share contact";
+"Group" = "Group";
+"Edit contact" = "Edit contact";
+"Delete contact" = "Delete contact";
+"Share by message" = "Share by message";
+//Investigate on interface
+"I like it" = "满意";
+"Just so so" = "一般";
+"I don't like it" = "不满意";
+"Interface do not like reason1" = "界面凌乱，复杂";
+"Interface do not like reason2" = "配色沉重，单调";
+"Interface do not like reason3" = "界面风格太单调";
+"Interface do not like reason4" = "说不清楚";
+"Do you like the current Touchpal's interface" = "您对触宝目前的界面美观是否满意呢？";
+"Investigate on interface" = "界面满意度调查";
+/*detail*/
+"Profile" = "Profile";
+"Note" = "Note";
+"Edit note" = "Edit note";
+"Date" = "Date";
+"Birthday" = "Birthday";
+"IM" = "IM";
+"Nickname" = "Nickname";
+"Address" = "Address";
+"Department" = "Department";
+"Company" = "Company";
+"Job title" = "Job title";
+"Edit groups" = "Edit groups";
+"Groups" = "Group";
+"RenRen" = "RenRen";
+"Sina Weibo" = "Sina Weibo";
+"Facebook" = "Facebook";
+"Twitter" = "Twitter";
+
+/*mark*/
+"Call" = "Call";
+"Mark" = "Mark";
+
+/*facetime*/
+"FaceTime" = "FaceTime";
+
+/* about rating */
+"Would you like to rate me on AppStore if you like me? Thank you!" = "Love using TouchPal Contacts?";
+
+"Yes" = "Yes, rate now" ;
+"No, thanks!" = "No, send feedback";
+"Remind me later" = "Remind me later";
+"Rate TouchPal" = "Rate TouchPal";
+
+/* group selector */
+"Select group" = "Select group";
+
+/* picker*/
+"%d selected" = "%d selected";
+
+/*setting callstatus*/	
+"Availability" = "Availability";
+"Current availability is\'%@\'" = "You are \'%@\' now";
+
+/* Time selector */
+"%.1f hour(s) switch to available" = "%.1f hour(s) switch to available";				//x小时后切换到空闲。
+"%d hour(s) switch to available" = "%d hour(s) switch to available";				//x小时后切换到空闲。
+"%@ revert to Available on timeout" = "%@ revert to Available";
+"Leave a message" = "Leave a message";						//自定义回复
+"Edit message" = "Message";
+"Message: %@" = "Message: %@";
+"Message" = "Message";	
+
+"Mute"="Mute";
+"Normal"="Normal";	
+
+"Set to \'Busy\' status" = "Set to \'Busy\'";
+"Set to \'No disturb\'" = "Set to \'No disturb\'";
+"Set to \'%@\'" = "Set to \'%@\'";
+"Available" = "Available";
+"Busy" = "Busy";
+"No disturb" = "No disturb";
+"Set availability duration" = "Set availability duration";
+"revert to available on timeout" = "revert to available on timeout";
+
+/*自动重连*/
+"Reconnect..." = "Reconnect..."; 
+
+/* register*/
+"Input phone number" = "Input phone number";
+"Register" = "Register";
+"Registration code"  ="Registration code"; 
+
+"Resend code (%ds)"="Resend code (%ds)";
+"Resend code"="Resend code";
+"Select your country or region" = "Select your country or region";
+"TouchPal" = "TouchPal";
+"Contacts" = "Contacts";
+"Invalid registration code!" ="Invalid registration code!";
+"Failed to apply the registration code!"="Failed to apply the registration code!";
+
+"Touchpal cloud service has sent %@ one SMS. Please find out the author code and fill it in the input box to complete the activation."="TouchPal cloud service has sent your phone one SMS. Please find out the author code and fill it in the input box to complete the activation. ";
+
+"Try it out" = "Try it";
+"Touchpal cloud service" = "TouchPal cloud service";
+"Activate Touchpal cloud service" = "Activate TouchPal cloud service";
+"Activation complete" = "Activation is done!";
+"Start activating" = "Start activating";
+"Trying activate now..." = "Trying to activate...";
+"Touchpal cloud service has been activated. Please complete your profile next." = "TouchPal cloud service has been activated. Please complete your profile next.";
+
+"Contact Updates" = "Synchronize profiles";
+"Contact Exchange" = "Exchange contacts";
+"Contact Availability" = "Share availability";
+
+"Are you sure to exit activating?" = "Are you sure to exit activating?";
+
+"Set your availability to “Busy” or “No disturb” so that your Pals will see it before they call you." = "Set your availability to “Busy” or “No disturb” so that your Pals will see it before they call you.";
+"Your latest photo and status will be shown in your Pal’s contact list." = "Your latest photo and status will be shown in your Pal’s contact list.";
+"Exchange contact information with your Pals by just a flip." = "Exchange contact information with your Pals by just a flip.";
+
+"Sorry, TouchPal doesn\'t support your country now!" = "Sorry, TouchPal doesn\'t support your country now!";
+
+"Sorry that you could not make calls from iPad or iPod." = "Sorry that you could not make calls from iPad or iPod.";
+
+/*signature*/
+"Super dial" = "Super dial";
+"Edit status" = "Edit status";
+"Logged in" = "Logged in";
+"No login" = "No login";
+"Share to" = "Share to ";
+"The input text exceeds the maximum length!" = "The input text exceeds the maximum length!";
+/*orlando */
+"Local" = "Local";
+"Local service" = "Toll-free";
+/*  exchange name card*/
+"Click to exchange" = "Click to exchange";
+"Slide up to exchange" ="Slide up to exchange";
+"Contact is saved!"="Contact is saved!";
+"Confirm to exit the exchange?" ="Confirm to exit the exchange?";
+"Your name is empty in profile. Do you want to fill in now?" = "Your name is empty in profile. Do you want to fill in now?";
+"Last 4 digits of peer\'s number" ="Last 4 digits of peer\'s number";
+"Matching up..." ="Matching up...";
+"Saving contact..."="Saving contact...";
+
+"Network error occurred!"="Network error occurred!";
+"Phone number:%@" = "Phone number:%@";
+/* details*/
+"History" = "History";
+"Confirm to delete?"="Confirm to delete this contact?";
+"Confirm to detele %d contacts?" = "Confirm to detele %d contacts?";
+"Confirm to remove all these call logs?" = "Confirm to clear all call logs?";
+"Report error" = "Report error";
+/*设置界面 */
+
+/*profile*/
+"Phone" = "Phone";
+"Phone 2" = "Phone 2";
+"Google+" = "Google+";
+"Weibo" = "Sina Weibo";
+"LinkedIn" = "LinkedIn";
+"Tencent weibo" = "Tencent weibo";
+"KaiXin" = "KaiXin";
+"Status" = "Status";
+"Photo" = "Photo";
+"Name" = "Name";
+    
+"My profile" = "My profile";//alice
+"More..." = "More...";//alice
+"No change made to your profile!" = "No change made to your profile!";
+"%@ -> %@" = "%@ -> %@";
+"%@ added: %@" = "%@ added: %@";
+"%@ deleted\n" = "%@ deleted\n";
+"Photo changed!\n" = "Photo changed!\n";
+"Photo added!\n" ="Photo added!\n";
+"Add SNS entries" = "Add SNS entries";
+"Loading..." = "Loading...";
+
+/*@"您注册的手机号与%@的号码相同，是否自动填入%@的信息？"*/
+"An existing contact is detected (%@), do you want to load %@?" = "An existing contact is detected (%@), do you want to load %@?";
+
+/*news*/
+"Edit profile"  = "Edit profile";
+"Exchange business cards" = "Exchange contacts";
+"Edit status to share..." = "Edit status to share...";
+"Pals are those of your contacts who have also installed TouchPal. Availibility, profile updates and status are only shared among Pals." = "Pals are those of your contacts who have also installed TouchPal. Availibility, profile updates and status are only shared among Pals.";
+
+// tag reminder
+"Reminder" = "Reminder";
+"Not available" = "Not available";
+"Available at " = "Available at ";
+"Marked at " = "Marked at ";
+"Your Pal(s) marked you in TouchPal Contacts." = "Your Pal(s) marked you in TouchPal Contacts.";
+"One of the Pals you marked is available now." = "One of the Pals you marked is available now.";
+"Your Pal(s) updated the profile(s). Launch to synchronize..." = "Your Pal(s) updated the profile(s). Launch to synchronize...";
+"Who I marked (%d)" = "Who I marked (%d)";
+"Who marked me (%d)" = "Who marked me (%d)";
+"Confirm to clear reminders?" = "Confirm to clear reminders?";
+
+"Quick search on dialpad. For example, search for \'Jim\':" = "Quick search on dialpad. For example, search for \'Jim\':";
+
+//文件名本地化
+"countries_english.plist"="countries_english.plist";
+
+// favor page : add favor contact tips.
+"Add favorites to this page" = "Add to favorite";
+
+"Monday" = "Monday";
+"Tuesday" = "Tuesday";
+"Wednesday" = "Wednesday";
+"Thursday" = "Thursday";
+"Friday" = "Friday";
+"Saturday" = "Saturday";
+"Sunday" = "Sunday";
+
+"Uploading changes..." = "Uploading changes...";
+"You can mark Pals who are not Avaliable and get reminder here once they revert to Available." = "You can mark Pals who are not Avaliable and get reminder here once they revert to Available.";
+"Please register TouchPal Service to get reminder when availability changes (Available/Busy/No disturb). Click to register..." = "Please register TouchPal Service to get reminder when availability changes (Available/Busy/No disturb). Click to register...";
+"Your account is locked! You can activate your account by re-registering!" = "Your account is locked! You can activate your account by re-registering!";
+"Warning" = "Warning";
+"Error" = "Error";
+"Registering..." = "Registering...";
+"Reindexing contacts...." = "Reindexing contacts....";
+"Failed to set availability, please retry!" = "Failed to set availability, please retry!";
+
+// new added (校正后请移到本行前面)
+"TouchPal has new version.\n\nUpdate now?" = "TouchPal has new version.\n\nUpdate now?";
+"Pals" = "Pals";
+"touchPaler_faq_content.plist"="touchpaler_faq_content.plist";
+
+"Please wait…" = "Please wait…";
+"Weibo info" = "Weibo info";
+"No network connection!" = "No network connection!";
+
+"Today" = "Today";
+"Yesterday" = "Yesterday";
+
+"Set availibility and share to Pals.\nPals are those of your contacts who have also installed TouchPal. The system automatically adds Pals for you." = "Set availibility and share to Pals.\nPals are those of your contacts who have also installed TouchPal. The system automatically adds Pals for you.";
+"This Pal is not Available. You can Mark to get reminder when available in such case." = "This Pal is not Available. You can Mark to get reminder when available in such case.";
+"Call history" = "Call history";
+"The Pal is available now! You can call directly." = "The Pal is available now! You can call directly.";
+"You didn\'t input registration code. Are you sure the phone number \'%@\' is correct?" = "You didn\'t input registration code. Are you sure the phone number \'%@\' is correct?";
+"You are logged out because someone registered with the same phone number successfully. Please re-register!" = "You are logged out because someone registered with the same phone number successfully. Please re-register!";
+"You are logged out by the system for security reason. Please re-register!" = "You are logged out by the system for security reason. Please re-register!";
+"Synchronizing reminders, please wait." = "Synchronizing reminders, please wait.";
+"No network available! The reminder list is not update to date!" = "No network available! The reminder list is not update to date!";
+"Fail to Synchronize reminder list!" = "Fail to Synchronize reminder list!";
+"Updating Reminders..." = "Updating Reminders...";
+"Retrieving your profile..." = "Retrieving your profile...";
+
+"Already read the" = "Already read the ";
+"Privacy Statement" = "Privacy Statement";
+"Please read and agree to the Privacy Statement" = "Please read and agree to the Privacy Statement";
+
+"http://www.touchpal.com/privacypolicy_contacts.html" = "http://dialer.cootekservice.com/iphone/default/market/privacy/default/en/privacypolicy.html";
+
+//================================ 以上已正式翻译, 请勿添加修改 ================================//
+
+//*****************************************************************************************//
+//***** Application Settings *****
+// main
+"General" = "General";
+"Synchronize & availability" = "Synchronize & availability";
+"About" = "About";
+"FAQ" = "FAQ";
+"Language Setting" = "Language";
+// general
+"Secondary language on dialpad" = "Secondary language on dailpad";
+"Secondary language" = "Secondary language";
+"Dial tone" = "Dial tone";
+"Dial Vibrate" = "Vibrate on connect";
+"Disconnected Vibrate" = "Vibrate on disconnect";
+"Dial Vibrate Subtitle" = "Enable \"Vibrate\"->\"System Settings\"";
+"Dial Vibrate Subtitle In Iphone 4" = "Enable System Settings Vibrate";
+// Synchronize
+"Synchronize profiles" = "Synchronize profiles";
+"Save photo to contact" = "Save photo to contact";
+// phone pad language
+"Default" = "Default";
+"Greek" = "Greek";
+"Hebrew" = "Hebrew";
+"Persian" = "Persian";
+"Russian" = "Russian";
+// About
+"Update date" = "Update date";
+"Version" = "Version";
+
+"http://www.touchpal.com/mtouchpal/faqpages/faqv40iosen.html" = "http://dialer.cootekservice.com/iphone/default/market/faq/v400/en/faq.html";
+"http://www.chubao.cn/mchubao/versionlog/tcv40ch.html" = "http://dialer.cootekservice.com//iphone/default/market/changelog/v433/en/changelog.html";
+//================================ 以上已正式翻译, 请勿添加修改 ================================//
+// main
+"Feedback" = "Feedback";
+"Feedback_email" = "Feedback by email";
+"Logout" = "Logout";
+// general
+"Call confirm" = "Confirm before dial";
+"Turn off this option will lead to unable to return TouchPal after dialing" = "Turn off this option will lead to unable to return TouchPal after dialing";
+"Vibrate when dialing connected" = "Vibrate on connect";
+"Format phone numbers" = "Format phone numbers";
+"Display caller number location in list" = "Caller number location";
+// Synchronize
+"Reminder sound" = "Reminder sound";
+"Reminder vibrate" = "Reminder vibrate";
+// About
+"Privacy statement" = "Privacy statement";
+//*****************************************************************************************//
+
+// new add
+"Updating groups..." = "Updating groups...";
+"Sure to log out?" =  "Confirm to deactivate?";
+"Due to the limit of the system,the number you selected can not be dialed out directly, it is already been copied to the clipboard." = "The number you dial is not allowed due to the system limitation. It has been copied. You can paste it in system dialer to call.";
+"Sorry, the long connect with the server failed!" = "No network connection!";
+//长按
+"Clear" = "Clear";
+"Edit to call" = "Edit to call";
+"Edit to tag" = "Tag";
+"Remove last call" = "Remove last call";
+"Clear all calls" = "Clear all calls";
+"on" = "on";
+"calls" = "calls";
+"since" = "since";
+"Clear call logs" = "Clear call logs";
+"Choose the number" = "Choose the number";
+//智能拨号
+"Smart dial can ..." = "TouchPal Contacts adds IP dialing rules to dial and saves call charges.";
+"Start now" = "Enable";
+"Later" = "Skip";
+"Start smart dialer" = "Enable dialing assistants";
+"Input phone number for smart dial ..." = "Please input your phone number, and TouchPal will configure IP dialing rules for you.";
+"Start setting" = "Apply";
+"The following IP dialing rules may suit for you, please make your choice:" = "TouchPal calculated and generated the following IP dialing rules:";
+"Note:\n the IP rules you choose will pop up automatically every time before you make call" = "Reminder: The applicable rules will pop up automatically. ";
+"Not apply IP rules for this number" = "Not apply IP rules for this number";
+"Manage excluded members" = "Manage excluded members";
+"IP rules will not pop up for the following numbers:" = "IP dialing rules will not apply to the following numbers:";
+"Are you sure not to apply IP rules for this number" = "Are you sure not to apply IP dialing rules for this number?";
+"Excluded contacts" = "Excluded contacts";
+"Can't generate IP dialing rules for this number" = "Can't generate IP dialing rules for this number";
+//setting
+"Settings" = "Settings";
+"Dialing assistant" = "IP Dialing";
+"My phone" = "My phone";
+"Input country and carrier" = "Input country and carrier";
+"Country or region" = "SIM Country/region";
+"Area code" = "Area code";
+"Roaming status" = "Roaming status";
+"System:" = "System:";
+"Follow system" = "Follow system";
+"Roaming" = "Roaming";
+"Roaming status setting" = "Roaming status setting";
+"roaming_status_cell_title" = "Roaming status";
+"Not roaming" = "Not roaming";
+"SIM information" = "SIM information";
+"Network information" = "Network information";
+"Country" = "Country";
+"MNC" = "MNC";
+"Carrier" = "Select SIM Carrier";
+"Smart dial assistant" = "Dialing assistants";
+"Smart dial setting" = "Smart dial assistant";
+"Predefined rules" = "Predefined rules";
+"There is no predefined rules for the carrier" = "There is no predefined rules for the carrier";
+"Predefined smart dial rules" = "Predefined smart dial rules";
+"Autodialing suggestions" = "Turn on autodialing";
+"Show applied IP dialing rules and suggestions to assist dialing when roaming" = "IP dialing rules, roaming assistant";
+"IP dialing rules" = "IP dialing rules";
+"TouchPal detects you changing the SIM card. Please reset the IP dialing information." = "TouchPal detects you changing the SIM card. Please reset the IP dialing information.";
+"Auto apply suggestion" = "Auto apply IP dialing";
+"Only one IP rule, direct call" = "Only one IP rule, direct call";
+
+"China Mobile" = "China Mobile";
+"China Unicom" = "China Unicom";
+"China Telecom" = "China Telecom";
+"Are you sure to remove" = "Are you sure to remove?";
+//content
+"Internal" = "Internal";
+"Generic" = "Generic";
+"Basic telephone set." = "Basic telephone set.";
+"Direct Call" = "Direct Call";
+"Dial original number." = "Dial original number.";
+"Local Call" = "Local Call";
+"Call the local number." = "Call the local number.";
+"Domestic Call" = "Domestic Call";
+"Call the domestic number." = "Call the domestic number.";
+"IDD Call" = "IDD Call";
+"Call the global number using standard format." = "Call the global number using standard format.";
+"Custom" = "Custom";
+"MZone" = "MZone";
+"GoTone" = "GoTone";
+"EasyOwn" = "EasyOwn";
+"CMCC EasyOwn rule set." = "CMCC EasyOwn rule set.";
+"G3" = "G3";
+"CMCC G3 rule set." = "CMCC G3 rule set.";
+"Wo 3G" = "Wo 3G";
+"Some international rules for Unicom Wo users." = "Some international rules for Unicom Wo users.";
+"Ruyitong" = "Ruyitong";
+"Some rules for Unicom Ruyitong users." = "Some rules for Unicom Ruyitong users.";
+"UPower" = "UPower";
+"Some rules for Unicom UPower users." = "Some rules for Unicom UPower users.";
+"eSurfing" = "eSurfing";
+"Some rules for China Telecom eSurfing users." = "Some rules for China Telecom eSurfing users.";
+"init_smart_setting_note" = "Please input SIM card information to let TouchPal Contacts automatically configure IP dialing settings.";
+"International roamingdialing assistant" = "International roaming\ndialing assistant";
+"Domestic roamingdialing assistant" = "Domestic roamingdialing\nassistant";
+"NetWork type" = "NetWork type";
+
+"17951 Domestic" = "17951国内长途";
+"17951 Domestic call" = "国内长途IP直拨";
+"17951 International" = "17951国际长途";
+"17951 International call" = "国际长途IP直拨";
+"12593 Domestic Roaming" = "12593国内漫游";
+"12593 Domestic Roaming call" = "国内漫游IP直拨";
+"12593 Domestic" = "12593国内长途";
+"12593 Domestic call" = "国内长途IP直拨";
+"12593 International" = "12593国际长途";
+"12593 International call" = "国际长途IP直拨";
+"12593 Home" = "12593本地优惠";
+"12593 Home call" = "本地号码IP优惠";
+"**139* Call Back" = "国际漫游回拨";
+"**139* USSD Call Back for International Roaming" = "**139*国际漫游回拨业务";
+
+"17911 Domestic" = "17911国内长途";
+"17911 Domestic call" = "国内长途IP直拨";
+"17911 International" = "17911国际长途";
+"17911 International call" = "国际长途IP直拨";
+"10193 Domestic Roaming" = "10193国内漫游";
+"10193 Domestic Roaming call" = "国内漫游IP直拨";
+"10193 Domestic" = "10193国内长途";
+"10193 Domestic call" = "国内长途IP直拨";
+"10193 International" = "10193国际长途";
+"10193 International call" = "国际长途IP直拨";
+"10193 Home" = "10193本地优惠";
+"10193 Home call" = "本地号码IP优惠";
+"**100* Call Back" = "国际漫游回拨";
+"**100* USSD Call Back for International Roaming" = "**100*国际漫游回拨业务";
+
+"17909 Domestic" = "17909国内长途";
+"17909 Domestic call" = "国内长途IP直拨";
+"17909 International" = "17909国际长途";
+"17909 International call" = "国际长途IP直拨";
+"11808 Domestic Roaming" = "11808国内漫游";
+"11808 Domestic Roaming call" = "国内漫游IP直拨";
+"11808 Domestic" = "11808国内长途";
+"11808 Domestic call" = "国内长途IP直拨";
+"11808 International" = "11808国际长途";
+"11808 International call" = "国际长途IP直拨";
+"11808 Home" = "11808本地优惠";
+"11808 Home call" = "本地号码IP优惠";
+"**133* Call Back" = "国际漫游回拨";
+"**133* USSD Call Back for International Roaming" = "**133*国际漫游回拨业务";
+
+//busy message:
+"I\'m in the middle of something." = "I\'m in the middle of something.";
+"I\'m on vacation." = "I\'m on vacation.";
+"I am sleeping." = "I am sleeping.";
+"My phone is running out of battery." = "My phone is running out of battery.";
+"I\'m in a meeting." = "I\'m in a meeting.";
+//Not disturb message:	
+"I\'m tied up now." = "I\'m tied up now.";
+"I\'m in an important meeting." = "I\'m in an important meeting.";
+"I\'m driving now." = "I\'m driving now.";
+"I\'m on a flight now." = "I\'m on a flight now.";
+
+"TouchPal Contacts Feedback" = "TouchPal Contacts Feedback";
+
+"Register now" = "Register now";
+
+"I am using TouchPal Contacts to share my availability, contact photos and others. And you can perform search on dialpad. Check it out: %@" = "I am using TouchPal Contacts to share my availability, contact photos and others. And you can perform search on dialpad. Check it out: %@";
+"http://url7.me/N6Z5" = "http://url7.me/N6Z5";
+"http://t.cn/zOzb3PS" = "http://t.cn/zjGve3j";
+
+"Copyright © 2009-2012 CooTek. All Rights Reserved." = "Copyright © 2009-2012 CooTek. All Rights Reserved.";
+"Close" = "Close";
+
+"No_log_hint_1" = "暂时没有通话记录";
+"No_log_hint_2" = "由于系统限制，无法获取未接来电、已接来电";
+
+"Recent calls" = "Recent calls";
+"Clear recent %@ call logs?" = "Clear recent %@ call logs?";
+"Are you sure to remove the person from the favorite?" = "Are you sure to remove the person from the favorite?";
+
+"Failed to match up with your peer! Please try again." = "Failed to match up with your peer! Please try again.";
+"Exchange contacts timeout! Please finish input within %d seconds." = "Exchange contacts timeout! Please finish input within %d seconds.";
+
+"Frequent Numbers" = "Frequent Numbers";
+"Activate" = "Activate";
+"Synchronize your signature to Facebook and Twitter" = "Synchronize your signature to Facebook and Twitter";
+"Your name" = "Your name";
+"Your name please" = "Your name please";
+"Job title unfilled" = "Job title unfilled";
+"Click to edit your profile." = "Click to edit your profile.";
+"TouchPal Service can push your photo, signature and profile to your Pals' who have also installed TouchPal Contacts. Would you like to activate now?" = "TouchPal Service can push your photo, signature and profile to your Pals' who have also installed TouchPal Contacts. Would you like to activate now?";
+
+"Make communication more efficient" = "Make communication more efficient";
+"New long-press experience for list items." = "New long-press experience for list items.";
+"Long press item" = "Long-press list item";
+
+//gesture
+"Gesture dialing" = "Gesture dial";
+"Turn on gesture dialing?" = "Turn on gesture dialing?";
+"Add a gesture" = "Add a gesture";
+"Default gesture" = "Default gesture";
+"Custom gesture" = "Custom gesture";
+"SMS" = "SMS";
+"Add a gesture to dial" = " Add a gesture to dial";
+"Optional gestures" = "Optional gestures";
+"Frequent contacts" = "Frequent contacts";
+"All contacts" = "All contacts";
+"Make a call simply by gesture" = "Make a call simply by gesture";
+"Try it now?" = "Try it now?";
+"New gesture" = "New gesture";
+"Gesture function" = "Gesture function";
+"Gesture On/Off" = "Gesture On/Off";
+"Choose a contact" = "Choose a contact";
+"Add in dialpad area" = "Add in dialpad area";
+"Try later" = "Try later";
+"Add" = "Add";
+"The gesture has been used." = "The gesture has been used.";
+"Oops, too short. Please draw more." = "Oops, too short. Please draw more.";
+"Examples" = "Examples";
+"You can call your contact with the new gesture now." = "You can call your contact with the new gesture now.";
+"TouchPal has hit a critical error and is terminated. Please send us the crash report, to help us fix the problem. Thank you!" = "TouchPal has hit a critical error and is terminated. Please send us the crash report, to help us fix the problem. Thank you!";
+"common_gesture_tip_english@2x.png" = "common_gesture_tip_english@2x.png";
+"description_en_us" = "description_en_us";
+
+//Theme
+"Themes" = "Themes";
+"Theme" = "Theme";
+"More Themes" = "More";
+"more_themes_are_coming_soon" = "More themes are coming soon.";
+"Use" = "Use";
+"In use" = "In use";
+"downloading" = "Downloading";
+"delete_skin" = "Delete";
+"Expired" = "Expired";
+"Uninstall" = "Uninstall";
+"Author" = "Author";
+"theme_name_en_us" = "theme_name_en_us";
+"author_name_en_us" = "author_name_en_us";
+"Call %@" = "Call %@";
+"Customize dialer theme" = "Customize dialer theme";
+"Make TouchPal colorful with themes" = "Make TouchPal colorful with themes";
+"Gesture dialling" = "Gesture dialling";
+"Define gestures to call frequent contacts quickly" = "Define gestures to call frequent contacts quickly";
+"Let's start" = "Let's start";
+"Let's start2" = "Let's start";
+"Downloaded" = "Downloaded";
+"Download now" = "Download";
+"Continue" = "Continue";
+"Network connection failed for downloading package" = "Network connection failed for downloading package";
+"Loading more themes..." = "Loading more themes...";
+"remote_skin_list_retry" = "Check network settings and click to retry";
+"Failed to connect the network" = "Failed to connect the network";
+"Trying to connect the server..." = "Trying to connect the network...";
+"Update" = "Update";
+//qwerty key pad
+"Paste the clipboard number" = "Paste the clipboard number";
+"Change key number pad" = "Change to  number pad";
+"Change to qwerty pad" = "Change to qwerty pad";
+"Create new contact" = "Create new contact";
+"Add to existing contact" = "Add to existing contact";
+"Ooops, no number in the clipboard." = "Ooops, no number in the clipboard.";
+"Ooops, the input is too long." = "Ooops, the input is too long.";
+//call log hook
+"Install plug-ins" = "Install plug-ins";
+"Update plug-ins" = "Update plug-ins";
+"Want to see complete call history?" = "Want to see complete call history?";
+"Go to \"Settings\" and install a plug-in" = "Go to \"Settings\" and install a plug-in";
+//links
+"http://www.chubao.cn/skin/contacts_skin/ios/skiniosv430_en.html" = "http://www.chubao.cn/skin/contacts_skin/ios/skiniosv430_en.html";
+"http://www.chubao.cn/mcontacts/plugin/mcontacts_advancedv430_en.html" = "http://dialer.cootekservice.com/iphone/default/market/jailbreak/v430/en/advanced.html";
+//alipay
+"Pay" = "Pay";
+"Download" = "Download";
+"Pay %@" = "Pay %@";
+"Please download or update Alipay app to pay." = "Please download or update Alipay app to pay.";
+"Don't prompt me again" = "Don't prompt me again";
+"You will be guided to Alipay to complete the payment, continue?" = "You will be guided to Alipay to complete the payment, continue?";
+"alipay_slogan@2x.png" = "alipay_slogan@2x.png";
+//Smart group
+"Smart group" = "Group";
+"TouchPaler" = "TouchPal users";
+"Cities" = "Cities";
+"Companies" = "Company";
+"Recently created" = "Recently added";
+"Others" = "Others";
+"Foreigners" = "International";
+"Creation date" = "Creation date";
+"View contacts according to city, company" = "Sort contacts by city, and recently added";
+
+//feature guide
+"Welcome to TouchPal Contacts" = "Welcome to TouchPal Contacts";
+"Select SIM card info and roaming status" = "Select SIM card info and roaming status";
+"Note: you can modify in \"Dialing assistant\" ->\"My phone\"" = "Note: you can modify in \"Dialing assistant\" ->\"My phone\"";
+"Select SIM Carrier" = "Select SIM Carrier";
+"Click to select" = "Click to select";
+"All countries or regions" = "All countries or regions";
+"Free to install plugins" = "Free to install plugins";
+"Breakthrough iOS restriction, obtain complete call logs and classify call logs according to the types. Try it now?" = "Break-through iOS restriction, obtain complete call logs and classify call logs according to the types. Try it now?";
+"Install now" = "Install now";
+
+//text for root tab bar
+"Dialpad_" = "Dialpad";
+"Contact_" = "Contact";
+"Favorite_" = "Favorite";
+"Personal_" = "Tools";
+"Keyboard_" = "Keyboard";
+"YellowPage_" = "Wallet";
+"Fold_" = "Fold";
+"Unfold_" = "Unfold";
+"Fold_Dialpad_" = "Fold";
+"Unfold_Dialpad_" = "Unfold";
+
+//clear all call logs
+"Clear all call logs" = "Clear all call logs";
+"No call log yet" = "No call log yet";
+
+//call status tip
+"No longer show this tip" = "Do not show this again";
+"Get it" = "OK";
+"What is call status?" = "What is call status?";
+"Call status" = "Status";
+"Tip at the bottom" = "Set availability when you are busy and cannot answer the call. Click for details……";
+
+//address book access hint
+"ab_access_hint_message" = "Authorize the access to contacts";
+"ab_access_hint_settings" = "Settings";
+"ab_access_hint_privacy" = "Privacy";
+"ab_access_hint_contacts" = "Contacts";
+"ab_access_hint_on" = "On";
+"ab_access_hint_appName" = "TouchPal";
+
+//yellow page string
+"Recognize" = "Recognize";
+"Contribute" = "Contribute";
+"Find public numbers" = "Find public numbers";
+"No recognizable number" = "No recognizable number";
+"No tagged number" = "No tagged number";
+"%d numbers have been recognized" = "%d numbers have been recognized";
+"%d numbers have been tagged" = "%d numbers have been tagged";
+
+"Find" = "Find";
+"Yellow book" = "Yellow book";
+"City" = "City";
+"My call logs" = "My call logs";
+"Public numbers" = "Public numbers";
+"Download city package" = "Download city package...";
+"Type on keyboard to search" = "Type on keyboard to search";
+"Set" = "Set";
+"YellowPage Login" = "Login";
+
+"Location Service Disabled" = "Location Service Disabled";
+"To re-enable, please go to Settings and turn on Location Service for this app." = "To re-enable, please go to Settings and turn on Location Service for this app.";
+
+//types
+"Public service" = "Public service";
+"Express" = "Express";
+"Airline & railway" = "Airline & railway";
+"Travel" = "Travel";
+"Hotels" = "Hotels";
+"Meal order" = "Meal order";
+"Carriers" = "Carriers";
+"Banks & insurances" = "Banks & insurances";
+"Taxi & car rental" = "Taxi & car rental";
+"Customer service" = "Customer service";
+"Tickets" = "Tickets";
+"Shopping" = "Shopping";
+
+//yellow detail
+"Report" = "Report";
+"Related numbers" = " Related numbers";
+"Distance" = "Distance";
+"DefaultSort" = "Default";
+"Locating...." = "Locating....";
+"Please enable location service" = "Please enable location service";
+"Unknown address" = "Unknown address";
+"Wrong name" = "Wrong name";
+"Wrong number" = "Wrong number";
+"Wrong address" = "Wrong address";
+"Wrong Tag" = "Wrong Tag";
+"Closed" = "Closed";
+"Report received" = "Report received";
+"Weibo server error" = "Weibo server error";
+"Please enable location service！" = "Please enable location service！";
+"Failed to locate" = "Failed to locate. Please check network settings...";
+
+"What are you looking for?" = "What are you looking for?";
+"What are you searching?" = "What are you searching?";
+"Phone number" = "Phone number";
+"Share to Weibo" = "Share to Weibo";
+"Add shop" = "Add shop";
+"Thank you for your contribution to Yellow book!" = "Thank you for your contribution to CallerTell!";
+"Report Shop" = "Report";
+"Sorry, you still havn't dialed any public numbers" = "Sorry, you still havn't dialed any public numbers";
+"Unknown_" = "Unknown";
+"yellowPage_guideInputTip_en@2x.png" = "yellowPage_guideInputTip_en@2x.png";
+"dialerView_yellowPageGuideImage_en@2x.png" = "dialerView_yellowPageGuideImage_en@2x.png";
+//city
+"Citylist" = "Cities";
+"Search scope" = "Search scope";
+"Downloaded cities" = "Downloaded cities";
+"More cities" = "More cities";
+"Failed to download this city package" = "Failed to download this city package";
+"Confirm to delete the city package '%@'?" = "Confirm to delete the city package '%@'?";
+"Confirm to cancel downloading the city package '%@'?" = "Confirm to cancel downloading the city package '%@'?";
+"Download “%@” city package to query public numbers" = " Download “%@” city package to query public numbers";
+"Prompt after location in offline database" = "Your current city is'%@'. Download the city package to query public numbers";
+"Applied city and current city are not consistent. Set to current city?" = "Applied city and current city are not consistent. Set to current city?";
+"Applied city and current city are not consistent. Download city package for current city?" = "Applied city and current city are not consistent. Download city package for current city?";
+"Select city" = "Select city";
+"Succeed to locate" = "Succeed to locate";
+"More cities are coming soon" = "More cities are coming soon";
+"Failed to load" = "Failed to load!";
+"No_network_connection_city" = "No network connection";
+//News center
+"Updates" = "Updates";
+"Choices" = "Choices";
+"Events" = "Events";
+"The updated CallerTell is detected." = "The updated CallerTell is detected.";
+"Data is up-to-date." = "Data is up-to-date.";
+"Updating “%@” data" = "Updating “%@” data";
+"Failed to update." = "Failed to update.";
+//smart eye
+"CallerTell" = "CallerTell";
+"CallerTell can tell you..." = "Search public numbers offline\nIdentify the telemarketers intelligently";
+"Inquiry unknown numbers" = "Inquiry unknown numbers";
+"Connect to cloud for additional information" = "Connect to cloud for more info";
+"Unknown number recognition" = "Unknown number recognition";
+"%d phone numbers have been resolved by CallerTell" = "%d phone numbers have been resolved by CallerTell";
+"Downloaded city package" = "Downloaded city package";
+"Undownloaded city package" = "Undownloaded city package";
+"CallerTell recognizes unknown numbers, displays the Caller ID and tells the telemarketers." = "CallerTell recognizes unknown numbers, displays the Caller ID and tells the telemarketers.";
+"CallerTell has recognized %d unknown numbers from your call logs" = "CallerTell has recognized %d unknown numbers from your call logs";
+"Download city package to find public numbers offline." = "Download city package to find public numbers offline.";
+"TouchPal tips" = "TouchPal tips";
+"Go" = "Go";
+"OK" = "OK";
+"Upgrade" = "Upgrade";
+"Report mistake" = "Report mistake";
+"The number was recognized incorrectly" = "The number was recognized incorrectly";
+"Find public numbers of %@" = "Find public numbers of %@?";
+"Try it" = "Try it";
+"SmartEye is ..." = "CallerTell help you:\n1. Fine public numbers offline\n2. Display Caller ID\n3. Identify telemarketers";
+"TouchPal will vibrate the phone when the call is connected. You can turn off this feature in settings page." = "TouchPal will vibrate the phone when the call is connected. You can turn off this feature in settings page.";
+"Move icon to quick launch tip" = "Drag TouchPal to quick launch";
+// Use chinese here for now, otherwise, the label is too long.
+"identified_tag" = "触宝识别";
+"vip_shop_tag" = "精品商户";
+"pass_shop_tag" = "通过验证";
+"house agent" = "房产中介";
+"insurance" = "保险推销";
+"financial products" = "金融理财";
+"headhunting" = "人事猎头";
+"promote sales" = "业务推销";
+"repair" = "维修服务";
+"book hotel/airline" = "机票酒店";
+"public services" = "公用事业";
+"express" = "快递外卖";
+"maybe fraud" = "疑似诈骗";
+"maybe crank" = "疑似骚扰";
+"crank" = "骚扰电话";
+"fraud" = "诈骗钓鱼";
+"user input" = "手动输入";
+//call block
+"Block" = "Block";
+"Call block" = "Call block";
+"No block" = "No block";
+"Added to white-list" = "Added to white list";
+"Added to black-list" = "Added to black list";
+"Unblock action" = "No block";
+"Add to white-list action" = "Add to white list";
+"Add to black-list action" = "Add to black list";
+"Coming soon..." = "Coming soon...";
+"TouchPal notification" = "TouchPal notification";
+
+//swipe contacts
+"Custom item actions" = "Customize item actions";
+"TouchPal allows you to customize the item click and slide actions" = "TouchPal allows you to customize the item click and slide actions";
+"Dial" = "Dial";
+"Show all numbers" = "Show all numbers";
+"send_message" = "Send message";
+"Send to WeChat" = "Send to WeChat";
+"The contact name is too long to share to WeChat" = "The contact name is too long to share to WeChat";
+"Display more actions" = "Display more actions";
+"Slide right on the item" = "Slide right on the item";
+"Long press on the item" = "Long press on the item";
+"Slide left on the item" = "Slide left on the item";
+"Click the item" = "Click the item";
+"Slide on the item" = "Slide on the item";
+"Switch to slide on the item" = "Switch to slide on the item";
+"Opening" = "Opening";
+"Closing" = "Closing";
+//CallerTellUGC
+"mark_number_as_type" = "Tag \"%@\" as type:";
+"is_number_with_type_as" = "Is '%@' with type: '%@'";
+"%d marks" = "%d people tagged";
+"how_many_people_marked_it" = "%@ this number";
+"Tag the number" = "Tag the number";
+"Cancel tag" = "Cancel tag";
+"Retag" = "Retag";
+"share_to_sina" = "Share to sina";
+"add_to_black_list" = "Add to black list";
+"add_to_contact" = "Add to contact";
+"not_now" = "Not now";
+"share_to_sina_when_mark_with_type" = "我标记号码'%@'为“%@”";
+"share_to_sina_when_mark_with_name" = "'%@'是一个“%@”电话";
+"number_has_not_been_recgonized_please_contribute" = "CallerTell can\'t tell this number. You are welcomed to provide information if it is a public number.";
+"is_number_been_recognized_wrongly" = "If the information is incorrect, please help to correct it.";
+"example_shop_name" = "eg. KFC airport";
+"a_ring" = "a ring";
+"sina_number_type_contribution" = "刚刚接到陌生来电%@，我已经在@触宝电话 标记为“%@”。大家一起用@触宝电话 来标记陌生号码吧，不错过重要电话，也不放过骚扰电话！http://t.cn/zY17I5k";
+"sina_number_name_contribution" = "举手之劳，分享光荣。我刚刚向@触宝电话 贡献了“%@”号码：%@。如果大家在触宝电话中搜到它，可别忘了我的功劳哦！";
+"sina_number_correction" = "刚发现#触宝电话#里“%@”的电话信息错了。@触宝电话 赶紧改一下吧！查号这功能还是挺好用的，不用流量也能查到各种商户电话http://t.cn/zY17I5k。";
+
+"Offline data" = "Offline data";
+"More" = "More";
+"TouchPal helps you to display Caller ID and tell telemarketers without network if you download the offline city package." = "TouchPal helps you to display Caller ID and tell telemarketers without network if you download the offline city package.";
+"This is only for users with China Sim." = "This is only for users with China SIM.";
+
+"Tools management" = "Tools management";
+
+// Plugin Vote
+"plugin_vote_name_busy_status" = "Availability";
+"plugin_vote_name_merge_contact" = "Merge contacts";
+"plugin_vote_name_backup_restore" = "Backup & Restore";
+"plugin_vote_name_scan_card" = "Scan name card";
+"plugin_vote_description_busy_status" = "Set availability and leave a message when you are unable to answer the call. People can read your status and message when calling you with TouchPal.";
+"plugin_vote_description_merge_contact" = "Merge the same contacts and manage contacts efficiently.";
+"plugin_vote_description_backup_restore" = "Recover contacts and call logs conveniently if backup them before.";
+"plugin_vote_descrpition_scan_card" = "Exchange contact via TouchPal conveniently rather than paper card.";
+
+"plugin_vote_intro_title" = "Voting";
+"plugin_vote_intro" = "Every TouchPal user has one vote to elect the most wanted function.";
+"plugin_vote_confirm" = "You have only one vote, do you confirm to vote for '%@'？";
+"plugin_vote_btn_text" = "Vote";
+"plugin_voted_btn_text" = "Voted";
+
+// Plugin installed
+"plugin_installed_description_offline" = "TouchPal helps you to display Caller ID and tell telemarketers without network if you download the offline city package.";
+"plugin_installed_description_ip" = "Add VoIP rules to dial and save call charges easily.";
+"plugin_installed_description_gesture" = "Define gestures to dial frequent contacts quickly.";
+"plugin_installed_description_theme" = "Make TouchPal colorful with themes";
+
+// Gesture
+"Add gesture" = "Add gesture";
+"Edit gesture" = "Edit gesture";
+"Choose a contact" = "Select";
+"Choose a contact first" = "The contact hasn\'t been selected.";
+"Change contact" = "Change";
+"switch text" = "Enable gesture dial";
+"demo prompt1" = "Draw a gesture to stand Ta↴";
+"demo prompt2" = "Try to draw a gesture↴";
+"delete prompt" = "Confirm to delete this gesture?";
+"cannot add gesture" = "The gesture cannot be created due to the special symbol in the number, please change.";
+
+// CallLogType
+"Call Logs" = "Call Logs";
+"All_logs" = "All logs";
+"Missed_logs" = "Missed calls";
+"Outgoing_logs" = "Recent calls";
+"Incoming_logs" = "Incoming calls";
+"Unknown_logs" = "Unknown calls";
+"Public_number_set" = "Public numbers";
+
+//pickerView
+"Unselect_all" = "Cancel";
+"All_contacts_grouped" = "All the contacts have been sorted.";
+"set email account" = "Please set you email account first";
+
+"Touchpal official website" = "website: ";
+"Touchpal BBS" = "Touchpal BBS: ";
+"QQ chat group" = "QQ: 198113524";
+"Touchpal official Weibo" = "Weibo: ";
+"Touchpal official Wechat platform" = "Wechat: touchpal-fan";
+
+"reset_net_prompt" = "Cann't connect. Please check the internet";
+"reload_yellow_page" = "reload";
+
+"save_image_succeed" = "Save picture successfully";
+"save_image_fail" = "Save picture failed";
+
+//以下未进行英文、繁体适配
+"voip" = "Free Call";
+"voip_start" = "跳过";
+"voip_cootek_user_friend" = "TouchPal users";
+"voip_close" = "关闭";
+"voip_now_user_number" = "当前用户数";
+"voip_one_minute_learn_voip" = "一分钟了解触宝电话";
+"voip_you_have_bind_phone_number" = "您已绑定手机号%@";
+"voip_open_free_phone" = "开启免费电话";
+"voip_input_phone_numer" = "输入您的手机号";
+"voip_input_verification_code" = "输入收到的验证码";
+"voip_get_verification_code" = "获取验证码";
+"voip_get_verification_code_again" = "重获验证码";
+"voip_time_cut_down" = "倒计时中";
+"voip_verify_by_SMS" = "短信验证";
+"voip_verify_by_speech" = "语音验证";
+"voip_input_phone_number_length_error" = "请输入正确的手机号码";
+"voip_input_verify_code_length_error" = "请输入正确的验证码";
+"voip_input_invitation_code_length_error" = "请输入正确的兑换码";
+"voip_network_no_error" = "当前网络不可用，请检查网络连接";
+"voip_network_verify_error_and_retry" = "无法连接服务器，建议更换网络后重试";
+"voip_network_verify_code_success" = "申请成功，等待验证码！";
+"voip_network_verify_phone_number_error" = "手机号码有误，请重新输入！";
+"voip_network_verify_fail" = "申请验证码失败，请重新申请！(%d)";
+"voip_network_register_error_and_retry" = "无法连接服务器，建议更换网络后重试";
+"voip_network_register_success" = "注册成功，进入下一步！";
+"voip_network_register_code_error" = "验证码有误，请重新输入";
+"voip_network_verify_code_overdue" = "验证码过期";
+"voip_network_register_fail" = "注册失败，请重新注册";
+"voip_input_invitation_code" = "输入兑换码";
+"voip_queue_wait_number" = "您前面还有%@人在排队";
+"voip_friend_inviite_code" = "好友送码";
+"voip_activity_get_code" = "活动抢码";
+"voip_not_have_quality" = "服务器已爆满，您需排队等待开通。";
+"voip_i_know" = "我知道了";
+"voip_rest_of_time" = "与非触宝用户通话 剩余%@分钟";
+"voip_share_now" = "立即分享";
+"voip_my_rank" = "我的排名";
+"voip_share_in_wechat1" = "分享";
+"voip_share_in_wechat2" = " ＋50分钟";
+"voip_share_in_wechat3" = "分享";
+"voip_invite_friend1" = "邀请";
+"voip_invite_friend2" = " ＋200分钟";
+"voip_invite_friend3" = "+10分钟";
+"voip_free_phone" = "Free call";
+"voip_open_voip" = "开启免费电话";
+"voip_open_voip_hint" = "用触宝打电话，省钱省心";
+"voip_backcall_on" = "允许自动回拨";
+"voip_backcall_on2gor3gMobile" = "2G网络下直接使用回拨模式";
+"voip_cancel" = "取消";
+"voip_close" = "关闭";
+"voip_use_invitation_code" = "奖励兑换";
+"voip_international_call_Join_immediately" = "免费国际长途(未获得邀请码)";
+"voip_international_call_Join_OK" = "免费国际长途(已获得邀请码)";
+"voip_international_call_Join_immediately_normal" = "未获得邀请码";
+"voip_international_call_Join_OK_normal" = "已获得邀请码";
+"voip_earn_more_minutes" = "赚取更多免费时长";
+"voip_earn_more_flow" = "领取更多免费流量";
+"voip_earn_more_minutes_hint" = "在这里，轻松获得免费时长";
+"voip_earn_more_flow_hint" = "在这里，轻松获得免费流量";
+"voip_flow_stream" = "提取流量";
+"voip_flow_stream_hint" = "使用流量前，需先提取到手机";
+"voip_flow_help" = "使用说明";
+"voip_flow_help_hint" = "点击查看获取及提取说明";
+
+"voip_now_invite_friend1" = "成功邀请好友，";
+"voip_now_invite_friend2" = "可获时长奖励";
+
+"voip_now_invite_timelinefriend1" = "现在";
+"voip_now_invite_timelinefriend2" = "分享";
+"voip_now_invite_timelinefriend3" = "，立即获得";
+"voip_now_invite_timelinefriend4" = "50分钟免费时长！";
+"voip_now_invite_timelinefriend5" = "本月分享赠送已达上限，下个月再来咯！";
+
+
+
+"send_verification_to_friend" = "发送以下兑换码给好友：";
+"voip_suggestion_use_wifi" = "WIFI下拨打免费电话音质更佳，效果更好";
+"voip_to_get_more_time" = "兑换码来自于各类活动，可增加分钟数";
+"voip_your_cootek_friend" = "您的触宝好友";
+"voip_friend_with_invitation_code" = "您的这些朋友可以提供兑换码";
+"voip_get_verification_code_again" = "重获验证码";
+"voip_outgoing_connect_status" = "当前网络不稳定，建议在WiFi下使用";
+"voip_pjsip_error_other_network" = "对方线路\n不太稳定";
+"voip_pjsip_error_server_error" = "服务器凌乱了\n请再试一次";
+"voip_outgoing_connect_server" = "正在连接服务器";
+"voip_outgoing_query_is_touchpal" = "正在查询对方身份";
+"voip_outgoing_is_touchpal" = "对方是触宝用户";
+"voip_outgoing_is_not_touchpal" = "对方不是触宝用户";
+"voip_outgoing_waiting_confirm" = "等待对方接听";
+"voip_outgoing_touchpal_call1" = "你们享受";
+"voip_outgoing_touchpal_call2" = "无限畅打";
+"voip_outgoing_remaining_time" = "剩余时长";
+"minutes" = "分钟";
+"voip_outgoing_get_free_call" = "立即领取";
+"voip_outgoing_begin_enjoy_free_call" = "开始享受";
+"voip_outgoing_calling" = "正在呼叫...";
+"voip_outgoing_hard_calling" = "正在努力呼叫TA...";
+"voip_outgoing_hangup" = "通话结束";
+"voip_outgoing_hangup_error" = "抱歉遇到异常哦";
+"voip_outgoing_mute" = "静音";
+"voip_outgoing_speaker" = "免提";
+"voip_welcome_use1" = "欢迎使用";
+"voip_welcome_use2" = "触宝电话";
+"voip_thank_use" = "谢谢使用";
+"voip_ringing" = "等待对方接听";
+
+"voip_is_cootek_user" = "对方是触宝用户，通话不限时长";
+"voip_is_not_cootek_user" = "对方非触宝用户，通话还剩%d分钟";
+"voip_is_not_cootek_user_call_type" = "邀请Ta";
+"voip_freeCallDisable_17" = "17*号段 线路尚未稳定";
+"voip_freeCallDisable_XINJIANGXIZANG" = "免费电话 不支持新疆西藏地区";
+"voip_freeCallDisable_oversea" = "免费电话 不支持海外号码";
+"voip_freeCallDisable_landline" = "免费电话 固定电话需要加区号";
+"voip_freeCallDisable_owner_phone" = "免费电话 不支持本机号码";
+"voip_freeCallDisable_service" = "免费电话 不支持服务类号码";
+"voip_freeCallDisable_error" = "免费电话 不支持该号码";
+
+"voip_normal_call" = "普通电话";
+"voip_invite_immediate" = "立即邀请 %@";
+"voip_send_sms" = "短信";
+"voip_send_wechat" = "微信好友";
+"voip_send_qq" = "QQ发送";
+"voip_welcome_to_use_cootek_phone" = "快来使用触宝电话吧！";
+"voip_no_network_use_wifi" = "当前没有网络,无法使用触宝电话，请先连接WIFI网络";
+"voip_bad_network_use_wifi" = "当前网络状况不佳,无法保证触宝电话音质，建议先连接WIFI网络";
+"voip_call_17_number_alert" = "17*号段线路尚在测试中，可能会无法接通。";
+
+"voip_copy" = "复制";
+"voip_copy_success" = "复制成功";
+"voip_input_your_invitation_code" = "输入您已获得的兑换码";
+"voip_user_number_now" = "当前通话人数";
+
+"voip_now_invite_friend_to_get_more_time" = "现在邀请朋友 获更多免费时长";
+"voip_call_cootek_user_not_stop" = "和触宝用户打电话 享无限畅聊！";
+"voip_you_are_cootek_user" = "与触宝用户通话";
+"voip_free_all_time" = "无限畅打";
+"voip_network_error" = "网络访问错误";
+"voip_invite_friend_wechat_message_with_code" = "我的触宝电话兑换码：%@，大家快来使用！";
+"voip_invite_friend_wechat_message_without_code" = "我在用触宝电话，大家快来使用！";
+
+"voip_not_chinese_phone" = "免费电话仅支持中国大陆号码";
+"voip_weixin_share_title" = "把好用的免费电话软件“触宝电话”推荐给你！";
+"voip_weixin_share_description" = "注册即可获得700分钟免费通话时长，快来体验吧！";
+"voip_weixin_timeline_share" = "我一直用“触宝电话”免费打电话，现在注册还可获得700分钟免费通话时长，快来体验吧！";
+"voip_sms_share_message" = "我一直用“触宝电话”免费打电话，现在注册还可获得700分钟免费通话时长，快来体验吧！";
+"voip_copy_share_message" = "我正在使用“触宝电话”，可以免费拨打国内手机，对方不装不联网也能打，送你700分钟时长体验！兑换码：%@，下载： %@";
+
+"voip_register_pass" = "免费电话申请已经通过，您可以打免费电话了";
+"voip_need_register_again" = "账号出现错误\n您需要重新登录！";
+
+"voip_redial" = "重拨";
+"voip_get_more_minutes" = "获得更多分钟数：";
+"voip_cootek_user_label" = "I";
+"voip_need_login" = "账户出错\n请重新登入";
+
+"voip_share_timeline_success" = "分享朋友圈成功！";
+"voip_share_timeline_fail" = "分享朋友圈失败！";
+
+"voip_share_qqzone_success" = "分享QQ空间成功！";
+"voip_share_qqzone_fail" = "分享QQ空间失败！";
+
+//pjsip error string
+"voip_pjsip_error_network" = "当前网络不稳定";
+"voip_pjsip_error_net_switch" = "刚才断网了\n请再试一次";
+"voip_pjsip_error_incall" = "对方占线";
+"voip_pjsip_error_version_expired" = "当前版本过低\n请更新程序";
+"voip_pjsip_error_reach_limit" = "免费电话\n挤爆了";
+"free_expired" = "免费时长\n已用尽";
+"voip_pjsip_error_need_login" = "voip_pjsip_error_need_login";
+
+//callback
+"voip_invite" = "邀请";
+"voip_share" = "分享";
+"voip_hide" = "隐藏";
+"call_fee_remind" = "打给\n触宝用户\n不限时长";
+"voip_pal_not_decide" = "未查询到对方身份";
+"voip_first_callback1" = "首次使用";
+"voip_first_callback2" = "查看详情";
+"voip_will_get_call" = "您将接到一通被叫号码来电";
+
+"voip_oversea_you_dont_start_voip" = "试试开启免费国际长途";
+"voip_you_dont_start_voip" = "您尚未开启免费电话";
+"voip_not_interest" = "不感兴趣";
+"voip_start_now" = "立即启用";
+
+"voip_allow_use_callback" = "允许使用回拨模式";
+"voip_callback_is_on_use" = "已启用，系统将根据通话环境智能选择";
+"voip_callback_isnot_on_use" = "未启用，始终采用直拨模式";
+"voip_use_callback_alert_word1" = "    启用后，系统将根据当前网络环境自动选择拨打方式。采用回拨模式时，您需先接听来电，再接通对方电话。";
+"voip_know_callback" = "知道了";
+"voip_allow_cellular_data" = "使用3G/4G接听";
+"voip_allow_cellular_data_sub" = "未连接WIFI时，优先使用流量接听";
+"voip_inter_cellular_receiving" = "国际漫游时使用3G/4G接听";
+"voip_inter_cellular_receiving_sub" = "国际漫游时，允许使用流量接听";
+
+
+"voip_remind_view_title" = "第一次体验回拨模式？";
+"voip_remind_view_label1" = "1. 回拨模式可以在网络不佳时获得较好的通话体验。";
+"voip_remind_view_label3" = "2. 回拨模式采用系统拨打，在您接到系统来电前，可能要等待十秒钟。";
+
+"voip_not_use" = "不使用";
+"voip_now_use" = "去启用";
+"voip_invite_use_callback" = "触宝电话新增回拨模式，\n诚邀您体验！";
+
+"stream_sharelabel_title1" = "您通过 ";
+"stream_sharelabel_title2" = "，获得 ";
+"stream_sharelabel_title3" = " 流量";
+"stream_no_things" = "暂时没有记录";
+"voip_stream_detail" = "话费详情";
+"stream_sharelabel_title4" = "您成功提取了 ";
+
+"voip_timeline" = "朋友圈";
+"voip_qqzone" = "QQ空间";
+
+"voip_suggest_title" = "我要吐槽";
+"voip_suggest_button1" = "断线了";
+"voip_suggest_button2" = "没声音";
+"voip_suggest_button3" = "我听见回音了";
+"voip_suggest_button4" = "有杂音";
+"voip_suggest_button5" = "对方听见回音了";
+"voip_suggest_button6" = "串线了";
+"voip_suggest_button8" = "蓝牙不能正常工作";
+
+"voip_callback_wizard_title" = "即将开始免费回拨...";
+"voip_international_call_wizard_title" = "即将接通国际免费专线...";
+"voip_callback_wizard_hint1" = "回拨模式不耗流量，话质清晰";
+"voip_callback_wizard_hint2" = "";
+"voip_callback_wizard_hint3" = "您需接通固化来电，并保持接通";
+"voip_callback_wizard_hint4" = "";
+"voip_callback_wizard_hint5" = "因手机套餐类型不同，运营商可";
+"voip_callback_wizard_hint6" = "能会收取接听和漫游费用";
+"voip_callback_wizard_ok" = "我知道了";
+
+"voip_register_now" = "立即体验";
+
+"voip_international_call_wizard_hint1" = "国际免费专线不会扣除您的话费，";
+"voip_international_call_wizard_hint2" = "只扣除触宝免费分钟数";
+"voip_international_call_wizard_hint3" = "由于资费系统不同，国际免费专线";
+"voip_international_call_wizard_hint4" = "会多倍扣除您的免费分钟数";
+"voip_international_call_wizard_hint5" = "数据网络下，流量消耗与普通免费";
+"voip_international_call_wizard_hint6" = "电话相同，直拨每分钟300KB左右";
+
+
+//flow
+"flow" = "Flow Wallet";
+"my_order" = "我的订单";
+"marketing_label" = "Activity Hall";
+
+
+"show_alert_i_know" = "我知道了";
+"show_alert_see_detail" = "查看详情";
+
+"personal_center_login_hint" = "Phone number binding";
+"personal_center_voip_close" = "Enable";
+"personal_center_flow_login_hint" = "做任务送流量";
+"personal_center_logout_hint" = "Do you want to log out?";
+"personal_center_logout_cancel" = "Cancel";
+"personal_center_logout_confirm" = "OK";
+"personal_center_voip_login_close" = " Enable ";
+"personal_center_mobile" = "Mobile";
+"personal_center_gender" = "Gender";
+"personal_center_gender_male" = "Male";
+"personal_center_gender_female" = "Female";
+"personal_center_gender_chose" = "Choose";
+//taobao
+"taobao_exchange_success_2000" = "到账可能需要5分钟，您可以稍后再来查看。";
+"taobao_exchange_success_4321" = "到账可能需要一个工作日，您可以稍后再来查看。";
+"taobao_exchange_error_4322" = "请通过QQ讨论群（182770766）联系我们。";
+"taobao_exchange_error_4324" = "提取失败，您可能使用了旧版本的触宝电话(4324)。";
+"taobao_exchange_error_4325" = "提取失败，您可能使用了旧版本的触宝电话(4325)。";
+"taobao_exchange_error_4328" = "提取失败，您可能使用了旧版本的触宝电话(4328)。";
+"taobao_exchange_error_4329" = "提取失败，您可能使用了旧版本的触宝电话(4329)。";
+"taobao_exchange_error_4326" = "您上一次提取的流量尚未到账，请勿重复提取。";
+"taobao_exchange_error_4327" = "该淘宝账号已经领取过流量红包了，请换一个淘宝账号吧。";
+"taobao_exchange_error_4330" = "您输入的账号不存在，请重新输入。";
+"taobao_exchange_error_4004" = "当前登录失效，请重新登录(4004)。";
+"taobao_exchange_error_else" = "出现错误，请重新尝试。";
+
+"taobao_exchange_success" = "流量提取成功";
+"taobao_exchange_fail" = "流量提取失败";
+"taobao_sure_button" = "确定";
+
+"umeng_feedback_title" = "Help and feedback";
+"umeng_feedback_sayhello" = "Hi，很高兴为您服务，请您详细描述使用中遇到的问题或者您对触宝电话的建议，我们会尽快帮您处理的。";
+"umeng_feedback_send" = "发送";
+"umeng_feedback_hint" = "想加功能？出问题了？告诉我吧";
+
+"umeng_feedback_title_voip" = "免费电话";
+"umeng_feedback_title_call" = "通话相关";
+"umeng_feedback_title_block" = "拦截与标记";
+"umeng_feedback_title_systemDialer" = "系统拨号相关";
+"umeng_feedback_title_yellow_page" = "生活黄页";
+"umeng_feedback_title_others" = "其他";
+"umeng_feedback_hint1" = "反馈字数太少，可能没法得到有效处理，请您提供更加详细的描述，谢谢！";
+"umeng_feedback_hint2" = "您的反馈已经收到，我们会尽快处理的，感谢您对触宝电话的支持！";
+
+//Personal Center
+"personal_center_title" = "Me";
+"personal_center_setting" = "Settings";
+"personal_center_left_minutes" = "%dMins";
+"personal_center_left_minutes_string" = "%@Mins";
+"personal_center_9999_left_minutes" = "9999+Mins";
+"personal_center_voip" = "Free Calls";
+"personal_center_flow" = "Data Pack";
+"personal_center_login" = "Login";
+"personal_center_newer_hint2" = "Get 500 Mins Free Talktime";
+"personal_center_newer_hint1" = "Register Now";
+
+"personal_center_setting_free_call" = "Free Call";
+"personal_center_setting_data_pack" = "Data Pack";
+"personal_center_setting_coupon" = "My Coupon";
+"personal_center_setting_activity_center" = "Activities Center";
+"personal_center_setting_antiharass" = "Number anti harassment";
+"personal_center_setting_unfamiliar_phone" = "CallerID";
+"personal_center_setting_help" = "Feedback";
+"personal_center_setting_logout" = "Logout";
+"personal_center_setting_change_skin" = "Change skin";
+"personal_center_setting_disturbance_identification" = "Anti harassment";
+"personal_center_setting_free_call" = "Free call";
+"personal_center_setting_gesture_dial" = "Gesture dial";
+"personal_center_setting_general" = "General";
+"personal_center_setting_aboat_us" = "About";
+
+"personal_infomation" = " Personal information ";
+
+
+//Contact info
+"contact_info_email" = "Email";
+"contact_info_url" = "Url";
+"contact_info_address" = "Address";
+"contact_info_copy_success" = "Copy Success";
+"contact_info_no_facetime" = "Facetime is not allowd because the contact has no email and phone numbers";
+"contact_info_call_log" = "Call Log";
+"contact_info_clear" = "Clear";
+"contact_info_morning" = "A.M.";
+"contact_info_afternoon" = "P.M.";
+"contact_info_no_facetime" = "Please check \"Setting－FaceTime\" to open FaceTime";
+
+// skin preview
+// skin preview
+"skin_preview_download_now" = "立即下载";
+"skin_preview_share_to_friends" = "分享给好友";
+"skin_preview_download_ok" = "下载成功";
+
+// notification
+"incoming_single_call_notification" = "%@ 来电...";
+"incoming_multi_calls_notification" = "%@ 来电(%d)...";
+//antiharass
+"Since iOS functional limitations: We will of some high-frequency harassing phone calls to contacts stored in your address book" =  "由于iOS功能限制：我们将把一些高频骚扰电话，以联系人的形式存储在您的通讯录中。";
+"Harassment number of the bank are based on your home ground intelligence generated, it is recommended that you regularly updated to ensure the recognition results"="骚扰号码库是根据您的归属地智能生成的，建议您定期更新以保证识别效果。";
+"In order to answer questions that you may encounter in the course of, touch treasure carefully prepared a  ”Essentials“ , more  “how strange line identification number”  and other cheats Oh, go and see?"="为了解答您在使用过程中可能遇到的各种问题，触宝精心准备了一份「使用必读」，更有“如何在线识别陌生号码”等秘籍哦，去看看吧？";
+"Harassment numbers are automatically updated in the library, temporarily unable to close, please wait" = "骚扰号码库正在自动更新中，暂时无法关闭，请稍候";
+
+"After closing, will no longer automatically update harass number recognition library for new harassment will not be the caller's identification number, determine to close?" = "关闭后，将不再自动更新骚扰号码识别库，对于新增骚扰号码将不能进行来电识别，确定关闭？";
+"Harassment numbers are automatically updated in the library, temporarily unable to replace permanent residence, please wait"="骚扰号码库正在自动更新中，暂时无法更换常住地，请稍候";
+"Congratulations, open success" = "恭喜您，开启成功";
+"Whether to copy or identification number to operate?" = "是否对复制的号码进行操作或者识别？";
+"It may take a little time to update the Update Now" = "更新可能需要花费一点时间是否立即更新";
+
+// voip privilege
+//voip_privilege
+"voip_privilege_alert_title" = "VIP用户享受专线通话不中断";
+"voip_privilege_task_hint_voip" = "完成下面的任务，成为VIP";
+
+"voip_privilege_cancel_task" = "放弃VIP";
+"voip_privilege_do_task" = "领取VIP";
+
+"voip_privilege_task_bonus_voip" = "送%@天VIP";
+
+"voip_privilege_task_action_install" = "安装";
+"voip_privilege_task_action_share" = "分享";
+"voip_privilege_task_action_view" = "查看";
+"voip_privilege_task_action_succeed" = "成功";
+"voip_privilege_task_action_complete" = "完整";
+"voip_privilege_task_action_register" = "注册";
+
+// launch ad
+"launch_ad_skip_text_format" = "Skip %@";
+"launch_ad_skip_text_normalformat" = "Skip";
+
+"subscribe_touchpal_in_wexin" = "Touchpal in Wechat";
+"wexin_not_found" = "未检测到安装微信，若已安装，建议手动打开";
+"wexin_touchpal_fans_copied" = "已复制微信号，搜索时可直接粘贴";
+
+//dialer setting
+"dialer_setting" = "Dialer Setting";
+"dialer_mode" = "拨号方式";
+"dialer_mode_ask" = "总是询问";
+"dialer_mode_normal" = "只用普通电话";
+"dialer_mode_voip" = "只用免费电话";
+"dialer_mode_setting_guide" = "setting>>";
+
+// contact transfer 通讯录迁移
+"contact_transfer_guide_1_main_title" = "通讯录「一键全迁移」";
+"contact_transfer_guide_1_alt_title" = "只需扫描二维码";
+"contact_transfer_guide_2_main_title" = "手机互传「无中转」";
+"contact_transfer_guide_2_alt_title" = "信息安全不泄露";
+"contact_transfer_guide_2_button_title" = "立即体验";
+"contact_transfer_view_loading" = "正在刷新，请稍后";
+
+//skin
+"skin_lang" = "en";
+"skin_author" = "Touchpal";
+
+"touchpal_test_number" = "触宝测试专线";
+// calllog empty
+"calllog_empty_hint_welcome" = "您可以这样开启触宝之旅";
+"calllog_empty_btn_learn_voip" = "学习如何拨打免费电话";
+"calllog_empty_btn_use_skin" = "挑选一套喜欢的主题";
+
+"click_to_show_keypad" = "点击展开拨号盘";
+"invite_friends" = "邀请有奖";
+"Confirm" = "确定";
+
+// ------
+// for debugging last free call and last ad
+// ------
+"send_by_wechat" = "微信发送";
+"send_by_email" = "邮件发送";
+
+"current_version" = "当前版本";
+"version_just_before_upgrade" = "升级前的版本";
+"first_launch_version" = "第一次安装的版本";
+"manufacturer" = "厂商";
+"phone_type" = "机型";
+"system_info" = "系统信息";
+
+"last_free_call" = "最近一次免费电话";
+"last_ad" = "最近一次广告";
+
+"caller_number" = "主叫号码";
+"callee_number" = "被叫号码";
+"network_status" = "网络状况";
+"call_type" = "拨号类型";
+"error_code_info" = "错误码信息";
+"ad_page_info" = "广告展示信息";
+"ad_detail" = "详细信息";
+
+"user_hint_when_sending_crash" = "程序异常退出，请将错误信息发送给我们。谢谢。";
+
+"cn_shi" = "是";
+"cn_fou" = "否";
+"ad_id" = "广告ID";
+
+"vip_info" = "VIP信息";
+"voip_priviledge_info" = "掐断信息";
+"is_vip" = "VIP";
+"not_vip" = "非VIP";
+"free_call_forced_offline" = "被掐断";
+"free_call_not_forced_offline" = "未被掐断";
+
+"call_type_back_call" = "回拨";
+"call_type_c2c" = "直播C2C";
+"call_type_c2p" = "直播C2P";
+"call_type_p2p" = "普通电话";
+
+"ad_page_normal" = "正常展示";
+"ad_page_default" = "展示默认页面";
+"ad_page_error_code" = "展示错误码页面";
+
+// ------
+// end: for debugging last free call and last ad
+// ------
+
+
+"16_card_exchange_main_title" = "输入免费兑换码，领取奖励";
+
+// TPDPersonalCenterController
+"tpd_center_cell_profit_center" = "赚钱中心";
+"tpd_center_cell_game_center" = "游戏中心";
+"tpd_center_cell_settings" = "设置";
+"tpd_center_cell_add_options" = "添加项";
+"tpd_center_cell_cards" = "我的卡券";
+"tpd_center_profile_my_changes" = "我的零钱";
+"tpd_center_profile_free_minutes" = "免费时长";
+"tpd_center_profile_free_data" = "免费流量";
+
+"login_right_now" = "马上登录";
+
+"feeds_video_more_video_comming" = "更多精彩视频正在赶来...";
+"feeds_video_more_video" = "更多视频";
+"feeds_video_more_video_empty" = "一片空白，什么都没有";
+"feeds_video_load_error" = "网络不给力，视频加载失败";
+"feeds_video_reload" = "重新加载";
+"feeds_video_load_not_wifi" = "正在使用非wi-fi网络\n继续播放将产生流量费用";
+
+//bibi
+"bibi_guide_go" = "认领";
+"bibi_guide_desc" = "经常唠嗑";
+"bibi_start_talk" = "发起对讲";

@@ -1,0 +1,951 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C87D62F15B5030500A81B74 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C87D62E15B5030500A81B74 /* CoreTelephony.framework */; };
+		0C87D63215B504C900A81B74 /* TPDialerAdvanced.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C87D63115B504C900A81B74 /* TPDialerAdvanced.mm */; };
+		2A4FEA7415B3A30A00C3751E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4FEA7315B3A30A00C3751E /* libsqlite3.dylib */; };
+		2AB28C6716227E7700A83AD9 /* TPUncaughtExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB28C6516227E7700A83AD9 /* TPUncaughtExceptionHandler.h */; };
+		2AB28C6816227E7700A83AD9 /* TPUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB28C6616227E7700A83AD9 /* TPUncaughtExceptionHandler.m */; };
+		2AB28CD11623E9BA00A83AD9 /* OrlandoEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2AB28CD01623E9BA00A83AD9 /* OrlandoEngine.mm */; };
+		2AB28D581624100900A83AD9 /* DatabaseEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB28D561624100800A83AD9 /* DatabaseEngine.h */; };
+		2AB28D591624100900A83AD9 /* DatabaseEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2AB28D571624100900A83AD9 /* DatabaseEngine.mm */; };
+		2AB28DB9162416C800A83AD9 /* NumberInfoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB28DB7162416C700A83AD9 /* NumberInfoModel.h */; };
+		2AB28DBA162416C800A83AD9 /* NumberInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB28DB8162416C700A83AD9 /* NumberInfoModel.m */; };
+		2AB28EF31625440B00A83AD9 /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB28ED91625440B00A83AD9 /* JSON.h */; };
+		2AB28EF41625440B00A83AD9 /* NSObject+SBJson.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB28EDA1625440B00A83AD9 /* NSObject+SBJson.h */; };
+		2AB28EF51625440B00A83AD9 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB28EDB1625440B00A83AD9 /* NSObject+SBJson.m */; };
+		2AB28EF61625440B00A83AD9 /* SBJson.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB28EDC1625440B00A83AD9 /* SBJson.h */; };
+		2AB28EF71625440B00A83AD9 /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB28EDD1625440B00A83AD9 /* SBJsonParser.h */; };
+		2AB28EF81625440B00A83AD9 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB28EDE1625440B00A83AD9 /* SBJsonParser.m */; };
+		2AB28EF91625440B00A83AD9 /* SBJsonStreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB28EDF1625440B00A83AD9 /* SBJsonStreamParser.h */; };
+		2AB28EFA1625440B00A83AD9 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB28EE01625440B00A83AD9 /* SBJsonStreamParser.m */; };
+		2AB28EFB1625440B00A83AD9 /* SBJsonStreamParserAccumulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB28EE11625440B00A83AD9 /* SBJsonStreamParserAccumulator.h */; };
+		2AB28EFC1625440B00A83AD9 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB28EE21625440B00A83AD9 /* SBJsonStreamParserAccumulator.m */; };
+		2AB28EFD1625440B00A83AD9 /* SBJsonStreamParserAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB28EE31625440B00A83AD9 /* SBJsonStreamParserAdapter.h */; };
+		2AB28EFE1625440B00A83AD9 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB28EE41625440B00A83AD9 /* SBJsonStreamParserAdapter.m */; };
+		2AB28EFF1625440B00A83AD9 /* SBJsonStreamParserState.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB28EE51625440B00A83AD9 /* SBJsonStreamParserState.h */; };
+		2AB28F001625440B00A83AD9 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB28EE61625440B00A83AD9 /* SBJsonStreamParserState.m */; };
+		2AB28F011625440B00A83AD9 /* SBJsonStreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB28EE71625440B00A83AD9 /* SBJsonStreamWriter.h */; };
+		2AB28F021625440B00A83AD9 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB28EE81625440B00A83AD9 /* SBJsonStreamWriter.m */; };
+		2AB28F031625440B00A83AD9 /* SBJsonStreamWriterAccumulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB28EE91625440B00A83AD9 /* SBJsonStreamWriterAccumulator.h */; };
+		2AB28F041625440B00A83AD9 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB28EEA1625440B00A83AD9 /* SBJsonStreamWriterAccumulator.m */; };
+		2AB28F051625440B00A83AD9 /* SBJsonStreamWriterState.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB28EEB1625440B00A83AD9 /* SBJsonStreamWriterState.h */; };
+		2AB28F061625440B00A83AD9 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB28EEC1625440B00A83AD9 /* SBJsonStreamWriterState.m */; };
+		2AB28F071625440B00A83AD9 /* SBJsonTokeniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB28EED1625440B00A83AD9 /* SBJsonTokeniser.h */; };
+		2AB28F081625440B00A83AD9 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB28EEE1625440B00A83AD9 /* SBJsonTokeniser.m */; };
+		2AB28F091625440B00A83AD9 /* SBJsonUTF8Stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB28EEF1625440B00A83AD9 /* SBJsonUTF8Stream.h */; };
+		2AB28F0A1625440B00A83AD9 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB28EF01625440B00A83AD9 /* SBJsonUTF8Stream.m */; };
+		2AB28F0B1625440B00A83AD9 /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB28EF11625440B00A83AD9 /* SBJsonWriter.h */; };
+		2AB28F0C1625440B00A83AD9 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB28EF21625440B00A83AD9 /* SBJsonWriter.m */; };
+		2AC7647A162BACA300F72B5B /* AdvancedSettingUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC76478162BACA300F72B5B /* AdvancedSettingUtility.h */; };
+		2AC7647B162BACA300F72B5B /* AdvancedSettingUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC76479162BACA300F72B5B /* AdvancedSettingUtility.m */; };
+		2AD996FE1609C29E0069AF21 /* LCDUpdator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD996FC1609C29E0069AF21 /* LCDUpdator.h */; };
+		2AD996FF1609C29E0069AF21 /* LCDUpdator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD996FD1609C29E0069AF21 /* LCDUpdator.m */; };
+		2AD997071609DF990069AF21 /* NumberUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2AD997061609DF980069AF21 /* NumberUtil.mm */; };
+		2AD99736160ABF7E0069AF21 /* AdvancedSettingKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD99735160ABF7E0069AF21 /* AdvancedSettingKeys.h */; };
+		2AED7EDC15AFCE440048C9E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AED7EDB15AFCE440048C9E0 /* Foundation.framework */; };
+		2AED7EF115AFD1790048C9E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AED7EF015AFD1790048C9E0 /* UIKit.framework */; };
+		2AF2248C160B0CEA00153FF9 /* InCallLCDView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF2247D160B0CEA00153FF9 /* InCallLCDView.h */; };
+		2AF2248D160B0CEA00153FF9 /* MPIncomingPhoneCallController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF2247E160B0CEA00153FF9 /* MPIncomingPhoneCallController.h */; };
+		2AF2248E160B0CEA00153FF9 /* NSCopying-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF2247F160B0CEA00153FF9 /* NSCopying-Protocol.h */; };
+		2AF2248F160B0CEA00153FF9 /* PhoneCall.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF22480160B0CEA00153FF9 /* PhoneCall.h */; };
+		2AF22490160B0CEA00153FF9 /* SBAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF22481160B0CEA00153FF9 /* SBAlert.h */; };
+		2AF22491160B0CEA00153FF9 /* SBAlertDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF22482160B0CEA00153FF9 /* SBAlertDisplay.h */; };
+		2AF22492160B0CEA00153FF9 /* SBAlertWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF22483160B0CEA00153FF9 /* SBAlertWindow.h */; };
+		2AF22493160B0CEA00153FF9 /* SBCallAlertDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF22484160B0CEA00153FF9 /* SBCallAlertDisplay.h */; };
+		2AF22494160B0CEA00153FF9 /* SBDeviceLockViewOwner.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF22485160B0CEA00153FF9 /* SBDeviceLockViewOwner.h */; };
+		2AF22495160B0CEA00153FF9 /* SBSlidingAlertDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF22486160B0CEA00153FF9 /* SBSlidingAlertDisplay.h */; };
+		2AF22496160B0CEA00153FF9 /* SBUIFullscreenAlertAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF22487160B0CEA00153FF9 /* SBUIFullscreenAlertAdapter.h */; };
+		2AF22497160B0CEA00153FF9 /* SBUIFullscreenAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF22488160B0CEA00153FF9 /* SBUIFullscreenAlertController.h */; };
+		2AF22498160B0CEA00153FF9 /* SBUISlidingFullscreenAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF22489160B0CEA00153FF9 /* SBUISlidingFullscreenAlertController.h */; };
+		2AF22499160B0CEA00153FF9 /* Springboard-Structs.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF2248A160B0CEA00153FF9 /* Springboard-Structs.h */; };
+		2AF2249A160B0CEA00153FF9 /* XXUnknownSuperclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF2248B160B0CEA00153FF9 /* XXUnknownSuperclass.h */; };
+		2AF355E81620A64300CADD1B /* liborlando_armv7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF355E71620A64300CADD1B /* liborlando_armv7.a */; };
+		CF1F3679174F0B88005015D9 /* libseattle_armv7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3BA05B174DF5DC00342CDB /* libseattle_armv7.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		CF1F367C174F0CB0005015D9 /* GZipUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1F367A174F0CB0005015D9 /* GZipUtils.m */; };
+		CF1F367E174F0ED5005015D9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1F367D174F0ED5005015D9 /* libz.dylib */; };
+		CF1F3680174F0F4C005015D9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1F367F174F0F4B005015D9 /* CoreFoundation.framework */; };
+		CF1F3684174F1063005015D9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1F367B174F0CB0005015D9 /* Reachability.m */; };
+		CF1F3685174F1063005015D9 /* NetworkUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3B9ECA174DC63F00342CDB /* NetworkUtility.m */; };
+		CF1F368D174F13D9005015D9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1F3689174F11B0005015D9 /* SystemConfiguration.framework */; };
+		CF3B9EDC174DC63F00342CDB /* CStringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3B9ECB174DC63F00342CDB /* CStringUtils.h */; };
+		CF3B9EDE174DC63F00342CDB /* CStringUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF3B9ECD174DC63F00342CDB /* CStringUtils.mm */; };
+		CF3B9EDF174DC63F00342CDB /* log.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3B9ECE174DC63F00342CDB /* log.h */; };
+		CF3B9EE0174DC63F00342CDB /* BackupAttributeConfigurator.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3B9ECF174DC63F00342CDB /* BackupAttributeConfigurator.h */; };
+		CF3B9EE1174DC63F00342CDB /* BackupAttributeConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3B9ED0174DC63F00342CDB /* BackupAttributeConfigurator.m */; };
+		CF3B9EE2174DC63F00342CDB /* CommonUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3B9ED1174DC63F00342CDB /* CommonUtil.h */; };
+		CF3B9EE3174DC63F00342CDB /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3B9ED2174DC63F00342CDB /* CommonUtil.m */; };
+		CF3B9EE4174DC63F00342CDB /* NSString+UUID.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3B9ED3174DC63F00342CDB /* NSString+UUID.h */; };
+		CF3B9EE5174DC63F00342CDB /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3B9ED4174DC63F00342CDB /* NSString+UUID.m */; };
+		CF3B9EE6174DC63F00342CDB /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3B9ED5174DC63F00342CDB /* Reachability.h */; };
+		CF3B9EE8174DC63F00342CDB /* UIDevice+SystemVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3B9ED7174DC63F00342CDB /* UIDevice+SystemVersion.h */; };
+		CF3B9EE9174DC63F00342CDB /* UIDevice+SystemVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3B9ED8174DC63F00342CDB /* UIDevice+SystemVersion.m */; };
+		CF3B9EEA174DC63F00342CDB /* GZipUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3B9ED9174DC63F00342CDB /* GZipUtils.h */; };
+		CF3B9EEB174DC63F00342CDB /* NetworkUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3B9EDA174DC63F00342CDB /* NetworkUtility.h */; };
+		CF3B9EF1174DDA2200342CDB /* NSString+SqlParam.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3B9EEF174DDA2100342CDB /* NSString+SqlParam.h */; };
+		CF3B9EF2174DDA2200342CDB /* NSString+SqlParam.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3B9EF0174DDA2100342CDB /* NSString+SqlParam.m */; };
+		CF3BA05C174DF5DC00342CDB /* activate_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA031174DF5DC00342CDB /* activate_feature.h */; };
+		CF3BA05D174DF5DC00342CDB /* auth_info_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA032174DF5DC00342CDB /* auth_info_feature.h */; };
+		CF3BA05E174DF5DC00342CDB /* auth_login_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA033174DF5DC00342CDB /* auth_login_feature.h */; };
+		CF3BA05F174DF5DC00342CDB /* auth_logout_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA034174DF5DC00342CDB /* auth_logout_feature.h */; };
+		CF3BA060174DF5DC00342CDB /* black_list_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA035174DF5DC00342CDB /* black_list_feature.h */; };
+		CF3BA061174DF5DC00342CDB /* call_history_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA036174DF5DC00342CDB /* call_history_feature.h */; };
+		CF3BA062174DF5DC00342CDB /* call_log_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA037174DF5DC00342CDB /* call_log_feature.h */; };
+		CF3BA063174DF5DC00342CDB /* cancel_survey_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA038174DF5DC00342CDB /* cancel_survey_feature.h */; };
+		CF3BA064174DF5DC00342CDB /* china_telecom_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA039174DF5DC00342CDB /* china_telecom_feature.h */; };
+		CF3BA065174DF5DC00342CDB /* common_message.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA03A174DF5DC00342CDB /* common_message.h */; };
+		CF3BA066174DF5DC00342CDB /* define.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA03B174DF5DC00342CDB /* define.h */; };
+		CF3BA067174DF5DC00342CDB /* error_code.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA03C174DF5DC00342CDB /* error_code.h */; };
+		CF3BA068174DF5DC00342CDB /* feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA03D174DF5DC00342CDB /* feature.h */; };
+		CF3BA069174DF5DC00342CDB /* feature_runner.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA03E174DF5DC00342CDB /* feature_runner.h */; };
+		CF3BA06A174DF5DC00342CDB /* http_data.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA03F174DF5DC00342CDB /* http_data.h */; };
+		CF3BA06B174DF5DC00342CDB /* ichannel.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA040174DF5DC00342CDB /* ichannel.h */; };
+		CF3BA06C174DF5DC00342CDB /* ievent_handler.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA041174DF5DC00342CDB /* ievent_handler.h */; };
+		CF3BA06D174DF5DC00342CDB /* imarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA042174DF5DC00342CDB /* imarshaller.h */; };
+		CF3BA06E174DF5DC00342CDB /* inet_data.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA043174DF5DC00342CDB /* inet_data.h */; };
+		CF3BA06F174DF5DC00342CDB /* isetting.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA044174DF5DC00342CDB /* isetting.h */; };
+		CF3BA070174DF5DC00342CDB /* location_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA045174DF5DC00342CDB /* location_feature.h */; };
+		CF3BA071174DF5DC00342CDB /* marshaller_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA046174DF5DC00342CDB /* marshaller_manager.h */; };
+		CF3BA072174DF5DC00342CDB /* message_base.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA047174DF5DC00342CDB /* message_base.h */; };
+		CF3BA073174DF5DC00342CDB /* package_info_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA048174DF5DC00342CDB /* package_info_feature.h */; };
+		CF3BA074174DF5DC00342CDB /* seattle_consts.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA049174DF5DC00342CDB /* seattle_consts.h */; };
+		CF3BA075174DF5DC00342CDB /* sms_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA04A174DF5DC00342CDB /* sms_feature.h */; };
+		CF3BA076174DF5DC00342CDB /* statistic_info_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA04B174DF5DC00342CDB /* statistic_info_feature.h */; };
+		CF3BA077174DF5DC00342CDB /* statistic_usage_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA04C174DF5DC00342CDB /* statistic_usage_feature.h */; };
+		CF3BA078174DF5DC00342CDB /* string_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA04D174DF5DC00342CDB /* string_utils.h */; };
+		CF3BA079174DF5DC00342CDB /* survey_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA04E174DF5DC00342CDB /* survey_feature.h */; };
+		CF3BA07A174DF5DC00342CDB /* test_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA04F174DF5DC00342CDB /* test_feature.h */; };
+		CF3BA07B174DF5DC00342CDB /* tp_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA050174DF5DC00342CDB /* tp_feature.h */; };
+		CF3BA07C174DF5DC00342CDB /* tp_http_data.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA051174DF5DC00342CDB /* tp_http_data.h */; };
+		CF3BA07D174DF5DC00342CDB /* tp_message.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA052174DF5DC00342CDB /* tp_message.h */; };
+		CF3BA07E174DF5DC00342CDB /* tp_message_generated.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA053174DF5DC00342CDB /* tp_message_generated.h */; };
+		CF3BA07F174DF5DC00342CDB /* version_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA054174DF5DC00342CDB /* version_feature.h */; };
+		CF3BA080174DF5DC00342CDB /* yellowpage_contribute_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA055174DF5DC00342CDB /* yellowpage_contribute_feature.h */; };
+		CF3BA081174DF5DC00342CDB /* yellowpage_info2_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA056174DF5DC00342CDB /* yellowpage_info2_feature.h */; };
+		CF3BA082174DF5DC00342CDB /* yellowpage_info_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA057174DF5DC00342CDB /* yellowpage_info_feature.h */; };
+		CF3BA083174DF5DC00342CDB /* yellowpage_shop_info_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA058174DF5DC00342CDB /* yellowpage_shop_info_feature.h */; };
+		CF3BA084174DF5DC00342CDB /* yellowpage_sort_feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA059174DF5DC00342CDB /* yellowpage_sort_feature.h */; };
+		CF3BA089174E016800342CDB /* SeattleEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF3BA086174E016800342CDB /* SeattleEngine.mm */; };
+		CF3BA08B174E016800342CDB /* SeattleEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA088174E016800342CDB /* SeattleEngine.h */; };
+		CF3BA092174E04C600342CDB /* SeattleChannel.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF3BA090174E04C500342CDB /* SeattleChannel.mm */; };
+		CF3BA093174E04C600342CDB /* SeattleChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA091174E04C500342CDB /* SeattleChannel.h */; };
+		CF3BA095174E050B00342CDB /* CooTekServerDef.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA094174E050A00342CDB /* CooTekServerDef.h */; };
+		CF3BA097174E081900342CDB /* SeattleEventHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA096174E081800342CDB /* SeattleEventHandler.h */; };
+		CF3BA099174E0AF500342CDB /* SeattleSetting.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3BA098174E0AF500342CDB /* SeattleSetting.h */; };
+		CF96D8471744A322001BF132 /* def.h in Headers */ = {isa = PBXBuildFile; fileRef = CF96D8461744A322001BF132 /* def.h */; };
+		CF96D8571744A330001BF132 /* ICityGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = CF96D8481744A330001BF132 /* ICityGroup.h */; };
+		CF96D8581744A330001BF132 /* Configs.h in Headers */ = {isa = PBXBuildFile; fileRef = CF96D8491744A330001BF132 /* Configs.h */; };
+		CF96D8591744A330001BF132 /* ContactEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = CF96D84A1744A330001BF132 /* ContactEngine.h */; };
+		CF96D85A1744A330001BF132 /* CToEncode.h in Headers */ = {isa = PBXBuildFile; fileRef = CF96D84B1744A330001BF132 /* CToEncode.h */; };
+		CF96D85B1744A330001BF132 /* IContactRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = CF96D84C1744A330001BF132 /* IContactRecord.h */; };
+		CF96D85C1744A330001BF132 /* IDialRule.h in Headers */ = {isa = PBXBuildFile; fileRef = CF96D84D1744A330001BF132 /* IDialRule.h */; };
+		CF96D85D1744A330001BF132 /* IPhoneNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = CF96D84E1744A330001BF132 /* IPhoneNumber.h */; };
+		CF96D85E1744A330001BF132 /* IRules.h in Headers */ = {isa = PBXBuildFile; fileRef = CF96D84F1744A330001BF132 /* IRules.h */; };
+		CF96D85F1744A330001BF132 /* ISearchResult_YellowPage.h in Headers */ = {isa = PBXBuildFile; fileRef = CF96D8501744A330001BF132 /* ISearchResult_YellowPage.h */; };
+		CF96D8601744A330001BF132 /* ISearchResult.h in Headers */ = {isa = PBXBuildFile; fileRef = CF96D8511744A330001BF132 /* ISearchResult.h */; };
+		CF96D8611744A330001BF132 /* IYellowPageResult.h in Headers */ = {isa = PBXBuildFile; fileRef = CF96D8521744A330001BF132 /* IYellowPageResult.h */; };
+		CF96D8621744A330001BF132 /* Option.h in Headers */ = {isa = PBXBuildFile; fileRef = CF96D8531744A330001BF132 /* Option.h */; };
+		CF96D8631744A330001BF132 /* SearchResult_CallerID.h in Headers */ = {isa = PBXBuildFile; fileRef = CF96D8541744A330001BF132 /* SearchResult_CallerID.h */; };
+		CF96D8641744A330001BF132 /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = CF96D8551744A330001BF132 /* Utils.h */; };
+		CF96D8651744A330001BF132 /* YellowPage.h in Headers */ = {isa = PBXBuildFile; fileRef = CF96D8561744A330001BF132 /* YellowPage.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AB28D431623EC3500A83AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AB28D3F1623EC3300A83AD9 /* TPDialerAdvancedTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2AB28D181623EC3300A83AD9;
+			remoteInfo = TPDialerAdvancedTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C87D62E15B5030500A81B74 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0C87D63115B504C900A81B74 /* TPDialerAdvanced.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TPDialerAdvanced.mm; sourceTree = "<group>"; };
+		2A34895C163647E6003A5F4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TPDialerAdvanced.strings; sourceTree = "<group>"; };
+		2A34895E163647F8003A5F4A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TPDialerAdvanced.strings"; sourceTree = "<group>"; };
+		2A34895F163647FE003A5F4A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/TPDialerAdvanced.strings"; sourceTree = "<group>"; };
+		2A4FEA7315B3A30A00C3751E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		2AB28C6516227E7700A83AD9 /* TPUncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPUncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		2AB28C6616227E7700A83AD9 /* TPUncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPUncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		2AB28CCF1623E94200A83AD9 /* OrlandoEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrlandoEngine.h; sourceTree = "<group>"; };
+		2AB28CD01623E9BA00A83AD9 /* OrlandoEngine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OrlandoEngine.mm; sourceTree = "<group>"; };
+		2AB28D3F1623EC3300A83AD9 /* TPDialerAdvancedTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TPDialerAdvancedTest.xcodeproj; path = TPDialerAdvancedTest/TPDialerAdvancedTest.xcodeproj; sourceTree = "<group>"; };
+		2AB28D561624100800A83AD9 /* DatabaseEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseEngine.h; sourceTree = "<group>"; };
+		2AB28D571624100900A83AD9 /* DatabaseEngine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DatabaseEngine.mm; sourceTree = "<group>"; };
+		2AB28DB7162416C700A83AD9 /* NumberInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberInfoModel.h; sourceTree = "<group>"; };
+		2AB28DB8162416C700A83AD9 /* NumberInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberInfoModel.m; sourceTree = "<group>"; };
+		2AB28ED91625440B00A83AD9 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		2AB28EDA1625440B00A83AD9 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		2AB28EDB1625440B00A83AD9 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		2AB28EDC1625440B00A83AD9 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		2AB28EDD1625440B00A83AD9 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		2AB28EDE1625440B00A83AD9 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		2AB28EDF1625440B00A83AD9 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		2AB28EE01625440B00A83AD9 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		2AB28EE11625440B00A83AD9 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		2AB28EE21625440B00A83AD9 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		2AB28EE31625440B00A83AD9 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		2AB28EE41625440B00A83AD9 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		2AB28EE51625440B00A83AD9 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		2AB28EE61625440B00A83AD9 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		2AB28EE71625440B00A83AD9 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		2AB28EE81625440B00A83AD9 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		2AB28EE91625440B00A83AD9 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		2AB28EEA1625440B00A83AD9 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		2AB28EEB1625440B00A83AD9 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		2AB28EEC1625440B00A83AD9 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		2AB28EED1625440B00A83AD9 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		2AB28EEE1625440B00A83AD9 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		2AB28EEF1625440B00A83AD9 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		2AB28EF01625440B00A83AD9 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		2AB28EF11625440B00A83AD9 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		2AB28EF21625440B00A83AD9 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		2AC76478162BACA300F72B5B /* AdvancedSettingUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedSettingUtility.h; sourceTree = "<group>"; };
+		2AC76479162BACA300F72B5B /* AdvancedSettingUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedSettingUtility.m; sourceTree = "<group>"; };
+		2AD996FC1609C29E0069AF21 /* LCDUpdator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDUpdator.h; sourceTree = "<group>"; };
+		2AD996FD1609C29E0069AF21 /* LCDUpdator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDUpdator.m; sourceTree = "<group>"; };
+		2AD997051609DF860069AF21 /* NumberUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberUtil.h; sourceTree = "<group>"; };
+		2AD997061609DF980069AF21 /* NumberUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NumberUtil.mm; sourceTree = "<group>"; };
+		2AD99735160ABF7E0069AF21 /* AdvancedSettingKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvancedSettingKeys.h; path = ../../TouchPalDialer/Classes/Advanced/AdvancedSettingKeys.h; sourceTree = "<group>"; };
+		2AED7ED815AFCE440048C9E0 /* libTPDialerAdvanced.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTPDialerAdvanced.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AED7EDB15AFCE440048C9E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2AED7EDF15AFCE440048C9E0 /* TPDialerAdvanced-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TPDialerAdvanced-Prefix.pch"; sourceTree = "<group>"; };
+		2AED7EE015AFCE440048C9E0 /* TPDialerAdvanced.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPDialerAdvanced.h; sourceTree = "<group>"; };
+		2AED7EF015AFD1790048C9E0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2AF2247D160B0CEA00153FF9 /* InCallLCDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InCallLCDView.h; sourceTree = "<group>"; };
+		2AF2247E160B0CEA00153FF9 /* MPIncomingPhoneCallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPIncomingPhoneCallController.h; sourceTree = "<group>"; };
+		2AF2247F160B0CEA00153FF9 /* NSCopying-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCopying-Protocol.h"; sourceTree = "<group>"; };
+		2AF22480160B0CEA00153FF9 /* PhoneCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneCall.h; sourceTree = "<group>"; };
+		2AF22481160B0CEA00153FF9 /* SBAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAlert.h; sourceTree = "<group>"; };
+		2AF22482160B0CEA00153FF9 /* SBAlertDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAlertDisplay.h; sourceTree = "<group>"; };
+		2AF22483160B0CEA00153FF9 /* SBAlertWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAlertWindow.h; sourceTree = "<group>"; };
+		2AF22484160B0CEA00153FF9 /* SBCallAlertDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCallAlertDisplay.h; sourceTree = "<group>"; };
+		2AF22485160B0CEA00153FF9 /* SBDeviceLockViewOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDeviceLockViewOwner.h; sourceTree = "<group>"; };
+		2AF22486160B0CEA00153FF9 /* SBSlidingAlertDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSlidingAlertDisplay.h; sourceTree = "<group>"; };
+		2AF22487160B0CEA00153FF9 /* SBUIFullscreenAlertAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBUIFullscreenAlertAdapter.h; sourceTree = "<group>"; };
+		2AF22488160B0CEA00153FF9 /* SBUIFullscreenAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBUIFullscreenAlertController.h; sourceTree = "<group>"; };
+		2AF22489160B0CEA00153FF9 /* SBUISlidingFullscreenAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBUISlidingFullscreenAlertController.h; sourceTree = "<group>"; };
+		2AF2248A160B0CEA00153FF9 /* Springboard-Structs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Springboard-Structs.h"; sourceTree = "<group>"; };
+		2AF2248B160B0CEA00153FF9 /* XXUnknownSuperclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXUnknownSuperclass.h; sourceTree = "<group>"; };
+		2AF355E71620A64300CADD1B /* liborlando_armv7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liborlando_armv7.a; path = ../TouchPalDialer/Classes/Engine/bin/liborlando_armv7.a; sourceTree = "<group>"; };
+		CF1F367A174F0CB0005015D9 /* GZipUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GZipUtils.m; path = ../../Shared/Shared/CommonLib/GZipUtils.m; sourceTree = "<group>"; };
+		CF1F367B174F0CB0005015D9 /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = ../../Shared/Shared/CommonLib/Reachability.m; sourceTree = "<group>"; };
+		CF1F367D174F0ED5005015D9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CF1F367F174F0F4B005015D9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		CF1F3689174F11B0005015D9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CF3B9ECA174DC63F00342CDB /* NetworkUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkUtility.m; path = ../../Shared/Shared/CommonLib/NetworkUtility.m; sourceTree = "<group>"; };
+		CF3B9ECB174DC63F00342CDB /* CStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CStringUtils.h; path = ../../Shared/Shared/CommonLib/CStringUtils.h; sourceTree = "<group>"; };
+		CF3B9ECD174DC63F00342CDB /* CStringUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CStringUtils.mm; path = ../../Shared/Shared/CommonLib/CStringUtils.mm; sourceTree = "<group>"; };
+		CF3B9ECE174DC63F00342CDB /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = log.h; path = ../../Shared/Shared/CommonLib/log.h; sourceTree = "<group>"; };
+		CF3B9ECF174DC63F00342CDB /* BackupAttributeConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackupAttributeConfigurator.h; path = ../../Shared/Shared/CommonLib/BackupAttributeConfigurator.h; sourceTree = "<group>"; };
+		CF3B9ED0174DC63F00342CDB /* BackupAttributeConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BackupAttributeConfigurator.m; path = ../../Shared/Shared/CommonLib/BackupAttributeConfigurator.m; sourceTree = "<group>"; };
+		CF3B9ED1174DC63F00342CDB /* CommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonUtil.h; path = ../../Shared/Shared/CommonLib/CommonUtil.h; sourceTree = "<group>"; };
+		CF3B9ED2174DC63F00342CDB /* CommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommonUtil.m; path = ../../Shared/Shared/CommonLib/CommonUtil.m; sourceTree = "<group>"; };
+		CF3B9ED3174DC63F00342CDB /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+UUID.h"; path = "../../Shared/Shared/CommonLib/NSString+UUID.h"; sourceTree = "<group>"; };
+		CF3B9ED4174DC63F00342CDB /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+UUID.m"; path = "../../Shared/Shared/CommonLib/NSString+UUID.m"; sourceTree = "<group>"; };
+		CF3B9ED5174DC63F00342CDB /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ../../Shared/Shared/CommonLib/Reachability.h; sourceTree = "<group>"; };
+		CF3B9ED7174DC63F00342CDB /* UIDevice+SystemVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice+SystemVersion.h"; path = "../../Shared/Shared/CommonLib/UIDevice+SystemVersion.h"; sourceTree = "<group>"; };
+		CF3B9ED8174DC63F00342CDB /* UIDevice+SystemVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+SystemVersion.m"; path = "../../Shared/Shared/CommonLib/UIDevice+SystemVersion.m"; sourceTree = "<group>"; };
+		CF3B9ED9174DC63F00342CDB /* GZipUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GZipUtils.h; path = ../../Shared/Shared/CommonLib/GZipUtils.h; sourceTree = "<group>"; };
+		CF3B9EDA174DC63F00342CDB /* NetworkUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkUtility.h; path = ../../Shared/Shared/CommonLib/NetworkUtility.h; sourceTree = "<group>"; };
+		CF3B9EEF174DDA2100342CDB /* NSString+SqlParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SqlParam.h"; path = "../../Shared/Shared/CommonLib/NSString+SqlParam.h"; sourceTree = "<group>"; };
+		CF3B9EF0174DDA2100342CDB /* NSString+SqlParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SqlParam.m"; path = "../../Shared/Shared/CommonLib/NSString+SqlParam.m"; sourceTree = "<group>"; };
+		CF3BA031174DF5DC00342CDB /* activate_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = activate_feature.h; sourceTree = "<group>"; };
+		CF3BA032174DF5DC00342CDB /* auth_info_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_info_feature.h; sourceTree = "<group>"; };
+		CF3BA033174DF5DC00342CDB /* auth_login_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_login_feature.h; sourceTree = "<group>"; };
+		CF3BA034174DF5DC00342CDB /* auth_logout_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_logout_feature.h; sourceTree = "<group>"; };
+		CF3BA035174DF5DC00342CDB /* black_list_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = black_list_feature.h; sourceTree = "<group>"; };
+		CF3BA036174DF5DC00342CDB /* call_history_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = call_history_feature.h; sourceTree = "<group>"; };
+		CF3BA037174DF5DC00342CDB /* call_log_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = call_log_feature.h; sourceTree = "<group>"; };
+		CF3BA038174DF5DC00342CDB /* cancel_survey_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cancel_survey_feature.h; sourceTree = "<group>"; };
+		CF3BA039174DF5DC00342CDB /* china_telecom_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = china_telecom_feature.h; sourceTree = "<group>"; };
+		CF3BA03A174DF5DC00342CDB /* common_message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common_message.h; sourceTree = "<group>"; };
+		CF3BA03B174DF5DC00342CDB /* define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		CF3BA03C174DF5DC00342CDB /* error_code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = error_code.h; sourceTree = "<group>"; };
+		CF3BA03D174DF5DC00342CDB /* feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = feature.h; sourceTree = "<group>"; };
+		CF3BA03E174DF5DC00342CDB /* feature_runner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = feature_runner.h; sourceTree = "<group>"; };
+		CF3BA03F174DF5DC00342CDB /* http_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http_data.h; sourceTree = "<group>"; };
+		CF3BA040174DF5DC00342CDB /* ichannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ichannel.h; sourceTree = "<group>"; };
+		CF3BA041174DF5DC00342CDB /* ievent_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ievent_handler.h; sourceTree = "<group>"; };
+		CF3BA042174DF5DC00342CDB /* imarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imarshaller.h; sourceTree = "<group>"; };
+		CF3BA043174DF5DC00342CDB /* inet_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inet_data.h; sourceTree = "<group>"; };
+		CF3BA044174DF5DC00342CDB /* isetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = isetting.h; sourceTree = "<group>"; };
+		CF3BA045174DF5DC00342CDB /* location_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = location_feature.h; sourceTree = "<group>"; };
+		CF3BA046174DF5DC00342CDB /* marshaller_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = marshaller_manager.h; sourceTree = "<group>"; };
+		CF3BA047174DF5DC00342CDB /* message_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message_base.h; sourceTree = "<group>"; };
+		CF3BA048174DF5DC00342CDB /* package_info_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = package_info_feature.h; sourceTree = "<group>"; };
+		CF3BA049174DF5DC00342CDB /* seattle_consts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seattle_consts.h; sourceTree = "<group>"; };
+		CF3BA04A174DF5DC00342CDB /* sms_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sms_feature.h; sourceTree = "<group>"; };
+		CF3BA04B174DF5DC00342CDB /* statistic_info_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statistic_info_feature.h; sourceTree = "<group>"; };
+		CF3BA04C174DF5DC00342CDB /* statistic_usage_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statistic_usage_feature.h; sourceTree = "<group>"; };
+		CF3BA04D174DF5DC00342CDB /* string_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string_utils.h; sourceTree = "<group>"; };
+		CF3BA04E174DF5DC00342CDB /* survey_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = survey_feature.h; sourceTree = "<group>"; };
+		CF3BA04F174DF5DC00342CDB /* test_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test_feature.h; sourceTree = "<group>"; };
+		CF3BA050174DF5DC00342CDB /* tp_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tp_feature.h; sourceTree = "<group>"; };
+		CF3BA051174DF5DC00342CDB /* tp_http_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tp_http_data.h; sourceTree = "<group>"; };
+		CF3BA052174DF5DC00342CDB /* tp_message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tp_message.h; sourceTree = "<group>"; };
+		CF3BA053174DF5DC00342CDB /* tp_message_generated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tp_message_generated.h; sourceTree = "<group>"; };
+		CF3BA054174DF5DC00342CDB /* version_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version_feature.h; sourceTree = "<group>"; };
+		CF3BA055174DF5DC00342CDB /* yellowpage_contribute_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yellowpage_contribute_feature.h; sourceTree = "<group>"; };
+		CF3BA056174DF5DC00342CDB /* yellowpage_info2_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yellowpage_info2_feature.h; sourceTree = "<group>"; };
+		CF3BA057174DF5DC00342CDB /* yellowpage_info_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yellowpage_info_feature.h; sourceTree = "<group>"; };
+		CF3BA058174DF5DC00342CDB /* yellowpage_shop_info_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yellowpage_shop_info_feature.h; sourceTree = "<group>"; };
+		CF3BA059174DF5DC00342CDB /* yellowpage_sort_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yellowpage_sort_feature.h; sourceTree = "<group>"; };
+		CF3BA05B174DF5DC00342CDB /* libseattle_armv7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libseattle_armv7.a; sourceTree = "<group>"; };
+		CF3BA086174E016800342CDB /* SeattleEngine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SeattleEngine.mm; sourceTree = "<group>"; };
+		CF3BA088174E016800342CDB /* SeattleEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeattleEngine.h; sourceTree = "<group>"; };
+		CF3BA090174E04C500342CDB /* SeattleChannel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SeattleChannel.mm; sourceTree = "<group>"; };
+		CF3BA091174E04C500342CDB /* SeattleChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeattleChannel.h; sourceTree = "<group>"; };
+		CF3BA094174E050A00342CDB /* CooTekServerDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CooTekServerDef.h; sourceTree = "<group>"; };
+		CF3BA096174E081800342CDB /* SeattleEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeattleEventHandler.h; sourceTree = "<group>"; };
+		CF3BA098174E0AF500342CDB /* SeattleSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeattleSetting.h; sourceTree = "<group>"; };
+		CF96D8461744A322001BF132 /* def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = def.h; sourceTree = "<group>"; };
+		CF96D8481744A330001BF132 /* ICityGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICityGroup.h; sourceTree = "<group>"; };
+		CF96D8491744A330001BF132 /* Configs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configs.h; sourceTree = "<group>"; };
+		CF96D84A1744A330001BF132 /* ContactEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactEngine.h; sourceTree = "<group>"; };
+		CF96D84B1744A330001BF132 /* CToEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CToEncode.h; sourceTree = "<group>"; };
+		CF96D84C1744A330001BF132 /* IContactRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IContactRecord.h; sourceTree = "<group>"; };
+		CF96D84D1744A330001BF132 /* IDialRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDialRule.h; sourceTree = "<group>"; };
+		CF96D84E1744A330001BF132 /* IPhoneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPhoneNumber.h; sourceTree = "<group>"; };
+		CF96D84F1744A330001BF132 /* IRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRules.h; sourceTree = "<group>"; };
+		CF96D8501744A330001BF132 /* ISearchResult_YellowPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISearchResult_YellowPage.h; sourceTree = "<group>"; };
+		CF96D8511744A330001BF132 /* ISearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISearchResult.h; sourceTree = "<group>"; };
+		CF96D8521744A330001BF132 /* IYellowPageResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IYellowPageResult.h; sourceTree = "<group>"; };
+		CF96D8531744A330001BF132 /* Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
+		CF96D8541744A330001BF132 /* SearchResult_CallerID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResult_CallerID.h; sourceTree = "<group>"; };
+		CF96D8551744A330001BF132 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		CF96D8561744A330001BF132 /* YellowPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowPage.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AED7ED515AFCE440048C9E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1F368D174F13D9005015D9 /* SystemConfiguration.framework in Frameworks */,
+				CF1F3680174F0F4C005015D9 /* CoreFoundation.framework in Frameworks */,
+				CF1F367E174F0ED5005015D9 /* libz.dylib in Frameworks */,
+				CF1F3679174F0B88005015D9 /* libseattle_armv7.a in Frameworks */,
+				0C87D62F15B5030500A81B74 /* CoreTelephony.framework in Frameworks */,
+				2A4FEA7415B3A30A00C3751E /* libsqlite3.dylib in Frameworks */,
+				2AED7EF115AFD1790048C9E0 /* UIKit.framework in Frameworks */,
+				2AED7EDC15AFCE440048C9E0 /* Foundation.framework in Frameworks */,
+				2AF355E81620A64300CADD1B /* liborlando_armv7.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AB28D401623EC3300A83AD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AB28D441623EC3500A83AD9 /* TPDialerAdvancedTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AB28ED81625440A00A83AD9 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				2AB28ED91625440B00A83AD9 /* JSON.h */,
+				2AB28EDA1625440B00A83AD9 /* NSObject+SBJson.h */,
+				2AB28EDB1625440B00A83AD9 /* NSObject+SBJson.m */,
+				2AB28EDC1625440B00A83AD9 /* SBJson.h */,
+				2AB28EDD1625440B00A83AD9 /* SBJsonParser.h */,
+				2AB28EDE1625440B00A83AD9 /* SBJsonParser.m */,
+				2AB28EDF1625440B00A83AD9 /* SBJsonStreamParser.h */,
+				2AB28EE01625440B00A83AD9 /* SBJsonStreamParser.m */,
+				2AB28EE11625440B00A83AD9 /* SBJsonStreamParserAccumulator.h */,
+				2AB28EE21625440B00A83AD9 /* SBJsonStreamParserAccumulator.m */,
+				2AB28EE31625440B00A83AD9 /* SBJsonStreamParserAdapter.h */,
+				2AB28EE41625440B00A83AD9 /* SBJsonStreamParserAdapter.m */,
+				2AB28EE51625440B00A83AD9 /* SBJsonStreamParserState.h */,
+				2AB28EE61625440B00A83AD9 /* SBJsonStreamParserState.m */,
+				2AB28EE71625440B00A83AD9 /* SBJsonStreamWriter.h */,
+				2AB28EE81625440B00A83AD9 /* SBJsonStreamWriter.m */,
+				2AB28EE91625440B00A83AD9 /* SBJsonStreamWriterAccumulator.h */,
+				2AB28EEA1625440B00A83AD9 /* SBJsonStreamWriterAccumulator.m */,
+				2AB28EEB1625440B00A83AD9 /* SBJsonStreamWriterState.h */,
+				2AB28EEC1625440B00A83AD9 /* SBJsonStreamWriterState.m */,
+				2AB28EED1625440B00A83AD9 /* SBJsonTokeniser.h */,
+				2AB28EEE1625440B00A83AD9 /* SBJsonTokeniser.m */,
+				2AB28EEF1625440B00A83AD9 /* SBJsonUTF8Stream.h */,
+				2AB28EF01625440B00A83AD9 /* SBJsonUTF8Stream.m */,
+				2AB28EF11625440B00A83AD9 /* SBJsonWriter.h */,
+				2AB28EF21625440B00A83AD9 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		2AD997081609E8C30069AF21 /* orlando */ = {
+			isa = PBXGroup;
+			children = (
+				CF96D8481744A330001BF132 /* ICityGroup.h */,
+				CF96D8491744A330001BF132 /* Configs.h */,
+				CF96D84A1744A330001BF132 /* ContactEngine.h */,
+				CF96D84B1744A330001BF132 /* CToEncode.h */,
+				CF96D84C1744A330001BF132 /* IContactRecord.h */,
+				CF96D84D1744A330001BF132 /* IDialRule.h */,
+				CF96D84E1744A330001BF132 /* IPhoneNumber.h */,
+				CF96D84F1744A330001BF132 /* IRules.h */,
+				CF96D8501744A330001BF132 /* ISearchResult_YellowPage.h */,
+				CF96D8511744A330001BF132 /* ISearchResult.h */,
+				CF96D8521744A330001BF132 /* IYellowPageResult.h */,
+				CF96D8531744A330001BF132 /* Option.h */,
+				CF96D8541744A330001BF132 /* SearchResult_CallerID.h */,
+				CF96D8551744A330001BF132 /* Utils.h */,
+				CF96D8561744A330001BF132 /* YellowPage.h */,
+				CF96D8461744A322001BF132 /* def.h */,
+			);
+			path = orlando;
+			sourceTree = "<group>";
+		};
+		2AED7ECD15AFCE440048C9E0 = {
+			isa = PBXGroup;
+			children = (
+				2AB28D3F1623EC3300A83AD9 /* TPDialerAdvancedTest.xcodeproj */,
+				2AED7EDD15AFCE440048C9E0 /* TPDialerAdvanced */,
+				2AED7EDA15AFCE440048C9E0 /* Frameworks */,
+				2AED7ED915AFCE440048C9E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AED7ED915AFCE440048C9E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AED7ED815AFCE440048C9E0 /* libTPDialerAdvanced.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AED7EDA15AFCE440048C9E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF1F3689174F11B0005015D9 /* SystemConfiguration.framework */,
+				CF1F367F174F0F4B005015D9 /* CoreFoundation.framework */,
+				CF1F367D174F0ED5005015D9 /* libz.dylib */,
+				2AF355E71620A64300CADD1B /* liborlando_armv7.a */,
+				2A4FEA7315B3A30A00C3751E /* libsqlite3.dylib */,
+				0C87D62E15B5030500A81B74 /* CoreTelephony.framework */,
+				2AED7EF015AFD1790048C9E0 /* UIKit.framework */,
+				2AED7EDB15AFCE440048C9E0 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2AED7EDD15AFCE440048C9E0 /* TPDialerAdvanced */ = {
+			isa = PBXGroup;
+			children = (
+				CF3B9EC9174DC62800342CDB /* CommonLib */,
+				2AD99735160ABF7E0069AF21 /* AdvancedSettingKeys.h */,
+				2AC76478162BACA300F72B5B /* AdvancedSettingUtility.h */,
+				2AC76479162BACA300F72B5B /* AdvancedSettingUtility.m */,
+				2AB28ED81625440A00A83AD9 /* JSON */,
+				2AB28C6516227E7700A83AD9 /* TPUncaughtExceptionHandler.h */,
+				2AB28C6616227E7700A83AD9 /* TPUncaughtExceptionHandler.m */,
+				2AF2247C160B0CEA00153FF9 /* hook */,
+				2AD997081609E8C30069AF21 /* orlando */,
+				0C87D63115B504C900A81B74 /* TPDialerAdvanced.mm */,
+				2AED7EE015AFCE440048C9E0 /* TPDialerAdvanced.h */,
+				2AED7EDE15AFCE440048C9E0 /* Supporting Files */,
+				2AD996FC1609C29E0069AF21 /* LCDUpdator.h */,
+				2AD996FD1609C29E0069AF21 /* LCDUpdator.m */,
+				2AD997051609DF860069AF21 /* NumberUtil.h */,
+				2AD997061609DF980069AF21 /* NumberUtil.mm */,
+				2AB28CCF1623E94200A83AD9 /* OrlandoEngine.h */,
+				2AB28CD01623E9BA00A83AD9 /* OrlandoEngine.mm */,
+				2AB28D561624100800A83AD9 /* DatabaseEngine.h */,
+				2AB28D571624100900A83AD9 /* DatabaseEngine.mm */,
+				2AB28DB7162416C700A83AD9 /* NumberInfoModel.h */,
+				2AB28DB8162416C700A83AD9 /* NumberInfoModel.m */,
+				CF3BA02F174DF5A300342CDB /* Seattle */,
+				2A34895D163647E6003A5F4A /* TPDialerAdvanced.strings */,
+			);
+			path = TPDialerAdvanced;
+			sourceTree = "<group>";
+		};
+		2AED7EDE15AFCE440048C9E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AED7EDF15AFCE440048C9E0 /* TPDialerAdvanced-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2AF2247C160B0CEA00153FF9 /* hook */ = {
+			isa = PBXGroup;
+			children = (
+				2AF2247D160B0CEA00153FF9 /* InCallLCDView.h */,
+				2AF2247E160B0CEA00153FF9 /* MPIncomingPhoneCallController.h */,
+				2AF2247F160B0CEA00153FF9 /* NSCopying-Protocol.h */,
+				2AF22480160B0CEA00153FF9 /* PhoneCall.h */,
+				2AF22481160B0CEA00153FF9 /* SBAlert.h */,
+				2AF22482160B0CEA00153FF9 /* SBAlertDisplay.h */,
+				2AF22483160B0CEA00153FF9 /* SBAlertWindow.h */,
+				2AF22484160B0CEA00153FF9 /* SBCallAlertDisplay.h */,
+				2AF22485160B0CEA00153FF9 /* SBDeviceLockViewOwner.h */,
+				2AF22486160B0CEA00153FF9 /* SBSlidingAlertDisplay.h */,
+				2AF22487160B0CEA00153FF9 /* SBUIFullscreenAlertAdapter.h */,
+				2AF22488160B0CEA00153FF9 /* SBUIFullscreenAlertController.h */,
+				2AF22489160B0CEA00153FF9 /* SBUISlidingFullscreenAlertController.h */,
+				2AF2248A160B0CEA00153FF9 /* Springboard-Structs.h */,
+				2AF2248B160B0CEA00153FF9 /* XXUnknownSuperclass.h */,
+			);
+			path = hook;
+			sourceTree = "<group>";
+		};
+		CF3B9EC9174DC62800342CDB /* CommonLib */ = {
+			isa = PBXGroup;
+			children = (
+				CF3B9ECB174DC63F00342CDB /* CStringUtils.h */,
+				CF3B9ECD174DC63F00342CDB /* CStringUtils.mm */,
+				CF3B9ED9174DC63F00342CDB /* GZipUtils.h */,
+				CF1F367A174F0CB0005015D9 /* GZipUtils.m */,
+				CF3B9ECE174DC63F00342CDB /* log.h */,
+				CF3B9ECF174DC63F00342CDB /* BackupAttributeConfigurator.h */,
+				CF3B9ED0174DC63F00342CDB /* BackupAttributeConfigurator.m */,
+				CF3B9ED1174DC63F00342CDB /* CommonUtil.h */,
+				CF3B9ED2174DC63F00342CDB /* CommonUtil.m */,
+				CF3B9ED3174DC63F00342CDB /* NSString+UUID.h */,
+				CF3B9ED4174DC63F00342CDB /* NSString+UUID.m */,
+				CF3B9EEF174DDA2100342CDB /* NSString+SqlParam.h */,
+				CF3B9EF0174DDA2100342CDB /* NSString+SqlParam.m */,
+				CF3B9ED5174DC63F00342CDB /* Reachability.h */,
+				CF1F367B174F0CB0005015D9 /* Reachability.m */,
+				CF3B9ED7174DC63F00342CDB /* UIDevice+SystemVersion.h */,
+				CF3B9ED8174DC63F00342CDB /* UIDevice+SystemVersion.m */,
+				CF3B9EDA174DC63F00342CDB /* NetworkUtility.h */,
+				CF3B9ECA174DC63F00342CDB /* NetworkUtility.m */,
+			);
+			name = CommonLib;
+			sourceTree = "<group>";
+		};
+		CF3BA02F174DF5A300342CDB /* Seattle */ = {
+			isa = PBXGroup;
+			children = (
+				CF3BA098174E0AF500342CDB /* SeattleSetting.h */,
+				CF3BA096174E081800342CDB /* SeattleEventHandler.h */,
+				CF3BA094174E050A00342CDB /* CooTekServerDef.h */,
+				CF3BA091174E04C500342CDB /* SeattleChannel.h */,
+				CF3BA090174E04C500342CDB /* SeattleChannel.mm */,
+				CF3BA088174E016800342CDB /* SeattleEngine.h */,
+				CF3BA086174E016800342CDB /* SeattleEngine.mm */,
+				CF3BA030174DF5DC00342CDB /* inc */,
+				CF3BA05A174DF5DC00342CDB /* lib */,
+			);
+			path = Seattle;
+			sourceTree = "<group>";
+		};
+		CF3BA030174DF5DC00342CDB /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				CF3BA031174DF5DC00342CDB /* activate_feature.h */,
+				CF3BA032174DF5DC00342CDB /* auth_info_feature.h */,
+				CF3BA033174DF5DC00342CDB /* auth_login_feature.h */,
+				CF3BA034174DF5DC00342CDB /* auth_logout_feature.h */,
+				CF3BA035174DF5DC00342CDB /* black_list_feature.h */,
+				CF3BA036174DF5DC00342CDB /* call_history_feature.h */,
+				CF3BA037174DF5DC00342CDB /* call_log_feature.h */,
+				CF3BA038174DF5DC00342CDB /* cancel_survey_feature.h */,
+				CF3BA039174DF5DC00342CDB /* china_telecom_feature.h */,
+				CF3BA03A174DF5DC00342CDB /* common_message.h */,
+				CF3BA03B174DF5DC00342CDB /* define.h */,
+				CF3BA03C174DF5DC00342CDB /* error_code.h */,
+				CF3BA03D174DF5DC00342CDB /* feature.h */,
+				CF3BA03E174DF5DC00342CDB /* feature_runner.h */,
+				CF3BA03F174DF5DC00342CDB /* http_data.h */,
+				CF3BA040174DF5DC00342CDB /* ichannel.h */,
+				CF3BA041174DF5DC00342CDB /* ievent_handler.h */,
+				CF3BA042174DF5DC00342CDB /* imarshaller.h */,
+				CF3BA043174DF5DC00342CDB /* inet_data.h */,
+				CF3BA044174DF5DC00342CDB /* isetting.h */,
+				CF3BA045174DF5DC00342CDB /* location_feature.h */,
+				CF3BA046174DF5DC00342CDB /* marshaller_manager.h */,
+				CF3BA047174DF5DC00342CDB /* message_base.h */,
+				CF3BA048174DF5DC00342CDB /* package_info_feature.h */,
+				CF3BA049174DF5DC00342CDB /* seattle_consts.h */,
+				CF3BA04A174DF5DC00342CDB /* sms_feature.h */,
+				CF3BA04B174DF5DC00342CDB /* statistic_info_feature.h */,
+				CF3BA04C174DF5DC00342CDB /* statistic_usage_feature.h */,
+				CF3BA04D174DF5DC00342CDB /* string_utils.h */,
+				CF3BA04E174DF5DC00342CDB /* survey_feature.h */,
+				CF3BA04F174DF5DC00342CDB /* test_feature.h */,
+				CF3BA050174DF5DC00342CDB /* tp_feature.h */,
+				CF3BA051174DF5DC00342CDB /* tp_http_data.h */,
+				CF3BA052174DF5DC00342CDB /* tp_message.h */,
+				CF3BA053174DF5DC00342CDB /* tp_message_generated.h */,
+				CF3BA054174DF5DC00342CDB /* version_feature.h */,
+				CF3BA055174DF5DC00342CDB /* yellowpage_contribute_feature.h */,
+				CF3BA056174DF5DC00342CDB /* yellowpage_info2_feature.h */,
+				CF3BA057174DF5DC00342CDB /* yellowpage_info_feature.h */,
+				CF3BA058174DF5DC00342CDB /* yellowpage_shop_info_feature.h */,
+				CF3BA059174DF5DC00342CDB /* yellowpage_sort_feature.h */,
+			);
+			name = inc;
+			path = ../../../Shared/Shared/Seattle/inc;
+			sourceTree = "<group>";
+		};
+		CF3BA05A174DF5DC00342CDB /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				CF3BA05B174DF5DC00342CDB /* libseattle_armv7.a */,
+			);
+			name = lib;
+			path = ../../../Shared/Shared/Seattle/lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2AED7ED615AFCE440048C9E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AD996FE1609C29E0069AF21 /* LCDUpdator.h in Headers */,
+				2AD99736160ABF7E0069AF21 /* AdvancedSettingKeys.h in Headers */,
+				2AF2248C160B0CEA00153FF9 /* InCallLCDView.h in Headers */,
+				2AF2248D160B0CEA00153FF9 /* MPIncomingPhoneCallController.h in Headers */,
+				2AF2248E160B0CEA00153FF9 /* NSCopying-Protocol.h in Headers */,
+				2AF2248F160B0CEA00153FF9 /* PhoneCall.h in Headers */,
+				2AF22490160B0CEA00153FF9 /* SBAlert.h in Headers */,
+				2AF22491160B0CEA00153FF9 /* SBAlertDisplay.h in Headers */,
+				2AF22492160B0CEA00153FF9 /* SBAlertWindow.h in Headers */,
+				2AF22493160B0CEA00153FF9 /* SBCallAlertDisplay.h in Headers */,
+				2AF22494160B0CEA00153FF9 /* SBDeviceLockViewOwner.h in Headers */,
+				2AF22495160B0CEA00153FF9 /* SBSlidingAlertDisplay.h in Headers */,
+				2AF22496160B0CEA00153FF9 /* SBUIFullscreenAlertAdapter.h in Headers */,
+				2AF22497160B0CEA00153FF9 /* SBUIFullscreenAlertController.h in Headers */,
+				2AF22498160B0CEA00153FF9 /* SBUISlidingFullscreenAlertController.h in Headers */,
+				2AF22499160B0CEA00153FF9 /* Springboard-Structs.h in Headers */,
+				2AF2249A160B0CEA00153FF9 /* XXUnknownSuperclass.h in Headers */,
+				2AB28C6716227E7700A83AD9 /* TPUncaughtExceptionHandler.h in Headers */,
+				2AB28D581624100900A83AD9 /* DatabaseEngine.h in Headers */,
+				2AB28DB9162416C800A83AD9 /* NumberInfoModel.h in Headers */,
+				2AB28EF31625440B00A83AD9 /* JSON.h in Headers */,
+				2AB28EF41625440B00A83AD9 /* NSObject+SBJson.h in Headers */,
+				2AB28EF61625440B00A83AD9 /* SBJson.h in Headers */,
+				2AB28EF71625440B00A83AD9 /* SBJsonParser.h in Headers */,
+				2AB28EF91625440B00A83AD9 /* SBJsonStreamParser.h in Headers */,
+				2AB28EFB1625440B00A83AD9 /* SBJsonStreamParserAccumulator.h in Headers */,
+				2AB28EFD1625440B00A83AD9 /* SBJsonStreamParserAdapter.h in Headers */,
+				2AB28EFF1625440B00A83AD9 /* SBJsonStreamParserState.h in Headers */,
+				2AB28F011625440B00A83AD9 /* SBJsonStreamWriter.h in Headers */,
+				2AB28F031625440B00A83AD9 /* SBJsonStreamWriterAccumulator.h in Headers */,
+				2AB28F051625440B00A83AD9 /* SBJsonStreamWriterState.h in Headers */,
+				2AB28F071625440B00A83AD9 /* SBJsonTokeniser.h in Headers */,
+				2AB28F091625440B00A83AD9 /* SBJsonUTF8Stream.h in Headers */,
+				2AB28F0B1625440B00A83AD9 /* SBJsonWriter.h in Headers */,
+				2AC7647A162BACA300F72B5B /* AdvancedSettingUtility.h in Headers */,
+				CF96D8471744A322001BF132 /* def.h in Headers */,
+				CF96D8571744A330001BF132 /* ICityGroup.h in Headers */,
+				CF96D8581744A330001BF132 /* Configs.h in Headers */,
+				CF96D8591744A330001BF132 /* ContactEngine.h in Headers */,
+				CF96D85A1744A330001BF132 /* CToEncode.h in Headers */,
+				CF96D85B1744A330001BF132 /* IContactRecord.h in Headers */,
+				CF96D85C1744A330001BF132 /* IDialRule.h in Headers */,
+				CF96D85D1744A330001BF132 /* IPhoneNumber.h in Headers */,
+				CF96D85E1744A330001BF132 /* IRules.h in Headers */,
+				CF96D85F1744A330001BF132 /* ISearchResult_YellowPage.h in Headers */,
+				CF96D8601744A330001BF132 /* ISearchResult.h in Headers */,
+				CF96D8611744A330001BF132 /* IYellowPageResult.h in Headers */,
+				CF96D8621744A330001BF132 /* Option.h in Headers */,
+				CF96D8631744A330001BF132 /* SearchResult_CallerID.h in Headers */,
+				CF96D8641744A330001BF132 /* Utils.h in Headers */,
+				CF96D8651744A330001BF132 /* YellowPage.h in Headers */,
+				CF3B9EDC174DC63F00342CDB /* CStringUtils.h in Headers */,
+				CF3B9EDF174DC63F00342CDB /* log.h in Headers */,
+				CF3B9EE0174DC63F00342CDB /* BackupAttributeConfigurator.h in Headers */,
+				CF3B9EE2174DC63F00342CDB /* CommonUtil.h in Headers */,
+				CF3B9EE4174DC63F00342CDB /* NSString+UUID.h in Headers */,
+				CF3B9EE6174DC63F00342CDB /* Reachability.h in Headers */,
+				CF3B9EE8174DC63F00342CDB /* UIDevice+SystemVersion.h in Headers */,
+				CF3B9EEA174DC63F00342CDB /* GZipUtils.h in Headers */,
+				CF3B9EEB174DC63F00342CDB /* NetworkUtility.h in Headers */,
+				CF3B9EF1174DDA2200342CDB /* NSString+SqlParam.h in Headers */,
+				CF3BA05C174DF5DC00342CDB /* activate_feature.h in Headers */,
+				CF3BA05D174DF5DC00342CDB /* auth_info_feature.h in Headers */,
+				CF3BA05E174DF5DC00342CDB /* auth_login_feature.h in Headers */,
+				CF3BA05F174DF5DC00342CDB /* auth_logout_feature.h in Headers */,
+				CF3BA060174DF5DC00342CDB /* black_list_feature.h in Headers */,
+				CF3BA061174DF5DC00342CDB /* call_history_feature.h in Headers */,
+				CF3BA062174DF5DC00342CDB /* call_log_feature.h in Headers */,
+				CF3BA063174DF5DC00342CDB /* cancel_survey_feature.h in Headers */,
+				CF3BA064174DF5DC00342CDB /* china_telecom_feature.h in Headers */,
+				CF3BA065174DF5DC00342CDB /* common_message.h in Headers */,
+				CF3BA066174DF5DC00342CDB /* define.h in Headers */,
+				CF3BA067174DF5DC00342CDB /* error_code.h in Headers */,
+				CF3BA068174DF5DC00342CDB /* feature.h in Headers */,
+				CF3BA069174DF5DC00342CDB /* feature_runner.h in Headers */,
+				CF3BA06A174DF5DC00342CDB /* http_data.h in Headers */,
+				CF3BA06B174DF5DC00342CDB /* ichannel.h in Headers */,
+				CF3BA06C174DF5DC00342CDB /* ievent_handler.h in Headers */,
+				CF3BA06D174DF5DC00342CDB /* imarshaller.h in Headers */,
+				CF3BA06E174DF5DC00342CDB /* inet_data.h in Headers */,
+				CF3BA06F174DF5DC00342CDB /* isetting.h in Headers */,
+				CF3BA070174DF5DC00342CDB /* location_feature.h in Headers */,
+				CF3BA071174DF5DC00342CDB /* marshaller_manager.h in Headers */,
+				CF3BA072174DF5DC00342CDB /* message_base.h in Headers */,
+				CF3BA073174DF5DC00342CDB /* package_info_feature.h in Headers */,
+				CF3BA074174DF5DC00342CDB /* seattle_consts.h in Headers */,
+				CF3BA075174DF5DC00342CDB /* sms_feature.h in Headers */,
+				CF3BA076174DF5DC00342CDB /* statistic_info_feature.h in Headers */,
+				CF3BA077174DF5DC00342CDB /* statistic_usage_feature.h in Headers */,
+				CF3BA078174DF5DC00342CDB /* string_utils.h in Headers */,
+				CF3BA079174DF5DC00342CDB /* survey_feature.h in Headers */,
+				CF3BA07A174DF5DC00342CDB /* test_feature.h in Headers */,
+				CF3BA07B174DF5DC00342CDB /* tp_feature.h in Headers */,
+				CF3BA07C174DF5DC00342CDB /* tp_http_data.h in Headers */,
+				CF3BA07D174DF5DC00342CDB /* tp_message.h in Headers */,
+				CF3BA07E174DF5DC00342CDB /* tp_message_generated.h in Headers */,
+				CF3BA07F174DF5DC00342CDB /* version_feature.h in Headers */,
+				CF3BA080174DF5DC00342CDB /* yellowpage_contribute_feature.h in Headers */,
+				CF3BA081174DF5DC00342CDB /* yellowpage_info2_feature.h in Headers */,
+				CF3BA082174DF5DC00342CDB /* yellowpage_info_feature.h in Headers */,
+				CF3BA083174DF5DC00342CDB /* yellowpage_shop_info_feature.h in Headers */,
+				CF3BA084174DF5DC00342CDB /* yellowpage_sort_feature.h in Headers */,
+				CF3BA08B174E016800342CDB /* SeattleEngine.h in Headers */,
+				CF3BA093174E04C600342CDB /* SeattleChannel.h in Headers */,
+				CF3BA095174E050B00342CDB /* CooTekServerDef.h in Headers */,
+				CF3BA097174E081900342CDB /* SeattleEventHandler.h in Headers */,
+				CF3BA099174E0AF500342CDB /* SeattleSetting.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2AED7ED715AFCE440048C9E0 /* TPDialerAdvanced */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AED7EE515AFCE440048C9E0 /* Build configuration list for PBXNativeTarget "TPDialerAdvanced" */;
+			buildPhases = (
+				2AED7ED415AFCE440048C9E0 /* Sources */,
+				2AED7ED515AFCE440048C9E0 /* Frameworks */,
+				2AED7ED615AFCE440048C9E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPDialerAdvanced;
+			productName = TPDialerAdvanced;
+			productReference = 2AED7ED815AFCE440048C9E0 /* libTPDialerAdvanced.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AED7ECF15AFCE440048C9E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 2AED7ED215AFCE440048C9E0 /* Build configuration list for PBXProject "TPDialerAdvanced" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = 2AED7ECD15AFCE440048C9E0;
+			productRefGroup = 2AED7ED915AFCE440048C9E0 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2AB28D401623EC3300A83AD9 /* Products */;
+					ProjectRef = 2AB28D3F1623EC3300A83AD9 /* TPDialerAdvancedTest.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				2AED7ED715AFCE440048C9E0 /* TPDialerAdvanced */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2AB28D441623EC3500A83AD9 /* TPDialerAdvancedTest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TPDialerAdvancedTest.app;
+			remoteRef = 2AB28D431623EC3500A83AD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AED7ED415AFCE440048C9E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1F3684174F1063005015D9 /* Reachability.m in Sources */,
+				CF1F3685174F1063005015D9 /* NetworkUtility.m in Sources */,
+				CF1F367C174F0CB0005015D9 /* GZipUtils.m in Sources */,
+				0C87D63215B504C900A81B74 /* TPDialerAdvanced.mm in Sources */,
+				2AD996FF1609C29E0069AF21 /* LCDUpdator.m in Sources */,
+				2AD997071609DF990069AF21 /* NumberUtil.mm in Sources */,
+				2AB28C6816227E7700A83AD9 /* TPUncaughtExceptionHandler.m in Sources */,
+				2AB28CD11623E9BA00A83AD9 /* OrlandoEngine.mm in Sources */,
+				2AB28D591624100900A83AD9 /* DatabaseEngine.mm in Sources */,
+				2AB28DBA162416C800A83AD9 /* NumberInfoModel.m in Sources */,
+				2AB28EF51625440B00A83AD9 /* NSObject+SBJson.m in Sources */,
+				2AB28EF81625440B00A83AD9 /* SBJsonParser.m in Sources */,
+				2AB28EFA1625440B00A83AD9 /* SBJsonStreamParser.m in Sources */,
+				2AB28EFC1625440B00A83AD9 /* SBJsonStreamParserAccumulator.m in Sources */,
+				2AB28EFE1625440B00A83AD9 /* SBJsonStreamParserAdapter.m in Sources */,
+				2AB28F001625440B00A83AD9 /* SBJsonStreamParserState.m in Sources */,
+				2AB28F021625440B00A83AD9 /* SBJsonStreamWriter.m in Sources */,
+				2AB28F041625440B00A83AD9 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				2AB28F061625440B00A83AD9 /* SBJsonStreamWriterState.m in Sources */,
+				2AB28F081625440B00A83AD9 /* SBJsonTokeniser.m in Sources */,
+				2AB28F0A1625440B00A83AD9 /* SBJsonUTF8Stream.m in Sources */,
+				2AB28F0C1625440B00A83AD9 /* SBJsonWriter.m in Sources */,
+				2AC7647B162BACA300F72B5B /* AdvancedSettingUtility.m in Sources */,
+				CF3B9EDE174DC63F00342CDB /* CStringUtils.mm in Sources */,
+				CF3B9EE1174DC63F00342CDB /* BackupAttributeConfigurator.m in Sources */,
+				CF3B9EE3174DC63F00342CDB /* CommonUtil.m in Sources */,
+				CF3B9EE5174DC63F00342CDB /* NSString+UUID.m in Sources */,
+				CF3B9EE9174DC63F00342CDB /* UIDevice+SystemVersion.m in Sources */,
+				CF3B9EF2174DDA2200342CDB /* NSString+SqlParam.m in Sources */,
+				CF3BA089174E016800342CDB /* SeattleEngine.mm in Sources */,
+				CF3BA092174E04C600342CDB /* SeattleChannel.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2A34895D163647E6003A5F4A /* TPDialerAdvanced.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A34895C163647E6003A5F4A /* en */,
+				2A34895E163647F8003A5F4A /* zh-Hans */,
+				2A34895F163647FE003A5F4A /* zh-Hant */,
+			);
+			name = TPDialerAdvanced.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2AED7EE315AFCE440048C9E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CONFIGURATION_BUILD_DIR = /opt/theos/lib;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2AED7EE415AFCE440048C9E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CONFIGURATION_BUILD_DIR = /opt/theos/lib;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AED7EE615AFCE440048C9E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/TPDialerAdvanced.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TPDialerAdvanced/TPDialerAdvanced-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../TouchPalDialer/Classes/Engine/bin\"",
+					"\"$(SRCROOT)/../Shared/Shared/Seattle/lib\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		2AED7EE715AFCE440048C9E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/TPDialerAdvanced.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TPDialerAdvanced/TPDialerAdvanced-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../TouchPalDialer/Classes/Engine/bin\"",
+					"\"$(SRCROOT)/../Shared/Shared/Seattle/lib\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AED7ED215AFCE440048C9E0 /* Build configuration list for PBXProject "TPDialerAdvanced" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AED7EE315AFCE440048C9E0 /* Debug */,
+				2AED7EE415AFCE440048C9E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AED7EE515AFCE440048C9E0 /* Build configuration list for PBXNativeTarget "TPDialerAdvanced" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AED7EE615AFCE440048C9E0 /* Debug */,
+				2AED7EE715AFCE440048C9E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AED7ECF15AFCE440048C9E0 /* Project object */;
+}

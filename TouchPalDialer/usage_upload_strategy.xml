@@ -1,0 +1,16 @@
+<Usage>
+    <UploadStrategy>
+        <Strategy name='default' wifi='15' mobile='1440' /> <!-- You must have a strategy named 'default' in lowercase. -->
+        <Strategy name='real_time' wifi='0' mobile='0' />
+    </UploadStrategy>
+    
+    <UploadControl>
+        <data path='path_network' sampling='100' />
+        <data path='path_adudp' strategy='real_time' />
+        <data path='path_feedback' strategy='real_time' />
+        <data path='path_real_time_activate' strategy='real_time' />
+        <data path='path_noah_ararat_noti' strategy='real_time' />
+        <data path='path_custom_event' strategy='real_time' />
+        <!-- the path which not defined here would use default strategy and 100% sampling -->
+    </UploadControl>
+</Usage>

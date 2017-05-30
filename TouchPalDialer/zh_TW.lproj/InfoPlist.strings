@@ -1,0 +1,12 @@
+/* 
+   infoPlist.strings
+   TouchPalDialer
+
+   Created by zhang Owen on 12/17/11.
+   Copyright 2011 Cootek. All rights reserved.
+ */
+
+
+"CFBundleDisplayName" = "触宝电话";
+"CFBundleName" = "触宝电话";
+

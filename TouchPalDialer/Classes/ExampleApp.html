@@ -1,0 +1,135 @@
+<!doctype html>
+<html><head>
+	<style type='text/css'>
+		html { font-family:Helvetica; color:#222; }
+		h1 { color:steelblue; font-size:24px; margin-top:24px; }
+		button { margin:0 3px 10px; font-size:12px; }
+		.logLine { border-bottom:1px solid #ccc; padding:4px 2px; font-family:courier; font-size:11px; }
+	</style>
+</head><body>
+	<h1>WebViewJavascriptBridge Demo</h1>
+	<script>
+	window.onerror = function(err) {
+		log('window.onerror: ' + err)
+	}
+	
+	function connectWebViewJavascriptBridge(callback) {
+		if (window.WebViewJavascriptBridge) {
+			callback(WebViewJavascriptBridge)
+		} else {
+			document.addEventListener('WebViewJavascriptBridgeReady', function() {
+				callback(WebViewJavascriptBridge)
+			}, false)
+		}
+	}
+	
+	connectWebViewJavascriptBridge(function(bridge) {
+		var uniqueId = 1
+		function log(message, data) {
+			var log = document.getElementById('log')
+			var el = document.createElement('div')
+			el.className = 'logLine'
+			el.innerHTML = uniqueId++ + '. ' + message + (data ? ':<br/>' + JSON.stringify(data) : '')
+			if (log.children.length) { log.insertBefore(el, log.children[0]) }
+			else { log.appendChild(el) }
+		}
+		bridge.init(function(message, responseCallback) {
+			log('JS got a message', message)
+			var data = { 'Javascript Responds':'Wee!' }
+			log('JS responding with', data)
+			responseCallback(data)
+		})
+
+		bridge.registerHandler('testJavascriptHandler', function(data, responseCallback) {
+			log('ObjC called testJavascriptHandler with', data)
+			var responseData = { 'Javascript Says':'Right back atcha!' }
+			log('JS responding with', responseData)
+			responseCallback(responseData)
+		})
+
+		var button = document.getElementById('buttons').appendChild(document.createElement('button'))
+		button.innerHTML = 'Send message to ObjC'
+		button.onclick = function(e) {
+			e.preventDefault()
+			var data = 'Hello from JS button'
+			log('JS sending message', data)
+			bridge.send(data, function(responseData) {
+				log('JS got response', responseData)
+			})
+		}
+
+		document.body.appendChild(document.createElement('br'))
+
+		var callbackButton = document.getElementById('buttons').appendChild(document.createElement('button'))
+		callbackButton.innerHTML = 'getInfo'
+		callbackButton.onclick = function(e) {
+			e.preventDefault()
+			log('JS calling handler "getVersonAndNumber"')
+			
+		}
+                                   
+       document.getElementById('button1').onclick = function(e){
+       bridge.callHandler('pushViewController','RegisterViewController', function(response){
+
+                          })
+       bridge.callHandler('closeWindow',null, function(response){
+                          
+                          })
+       }
+                                   
+       document.getElementById('button2').onclick = function(e){
+                                   bridge.callHandler('shareMessage',{'type':'timeline','title':'哈哈','msg':'呵呵呵呵','url':'http://www.baidu.com'}, function(response){
+
+                          })
+       }
+                                   
+       document.getElementById('button3').onclick = function(e){
+       bridge.callHandler('closeWindow',null, function(response){
+                          
+                          })
+       }
+       document.getElementById('button4').onclick = function(e){
+       bridge.callHandler('getAuthToken',null, function(response){
+       log('auth token',response)
+                          })
+       }
+                                   
+       document.getElementById('button5').onclick = function(e){
+       bridge.callHandler('getOSVersion',null, function(response){
+                          log('os version',response)
+                          })
+       }
+                                   
+       document.getElementById('button6').onclick = function(e){
+                                   bridge.callHandler('getKey',['test4','test5','test3','APPLE_PUSH_TOKEN'], function(response){
+                          log('get key',response)
+                          })
+       }
+                                   
+       document.getElementById('button7').onclick = function(e){
+        bridge.callHandler('setKey',{'test1':1,'test2':null,'test3':232,'APPLE_PUSH_TOKEN':'asdvadvadv'}, function(response){
+                          log('set key',response)
+                          })
+       }
+                                   
+       bridge.callHandler('getInfo', null, function(response) {
+                                                      log('JS got response', response.number)
+                                                      log('JS got response', response.version)
+                                                      log('JS got response', response)
+                          });
+       
+	})
+    
+	</script>
+	<div id='buttons'></div> <div id='log'></div>
+    <div id='button1'>pushViewConroller</div>
+    <div id='button2'>shareMessage</div>
+    <div id='button3'>closeWindow</div>
+    <div id='button4'>getAuthToken</div>
+    <div id='button5'>getOSVersion</div>
+    <div id='button6'>getKey</div>
+    <div id='button7'>setKey</div>
+    <script>
+        
+    </script>
+</body></html>

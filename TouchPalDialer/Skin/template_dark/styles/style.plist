@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>**************皮肤制作修改区域**************</key>
+	<string></string>
+	<key>skinHeaderBarTitleText_color</key>
+	<string>tp_color_white</string>
+	<key>skinHeaderBarOperationText_normal_color</key>
+	<string>tp_color_white</string>
+	<key>skinHeaderBarOperationText_ht_color</key>
+	<string>tp_color_white_transparency_300</string>
+	<key>skinDefaultHighlightText_color</key>
+	<string>0x00e1ae11</string>
+	<key>skinKeyboardInputHintText_color</key>
+	<string>0x80ffffff</string>
+	<key>skinKeyboardInputMainText_color</key>
+	<string>0x00efc237</string>
+	<key>skinKeyboardInputMinorText_color</key>
+	<string>0x00999999</string>
+	<key>skinKeyboardMainText_color</key>
+	<string>0x00ffffff</string>
+	<key>skinKeyboardMinorText_color</key>
+	<string>0x00999999</string>
+	<key>skinKeyboardHighlightText_color</key>
+	<string>tp_color_white</string>
+	<key>skinPushMessageText_color</key>
+	<string>0x00ffd325</string>
+	<key>skinSearchBarTextFieldBackground_color</key>
+	<string>0x1Affffff</string>
+	<key>skinSearchBarHintText_color</key>
+	<string>0x002e2f2f</string>
+	<key>skinSearchBarInputText_color</key>
+	<string>0x008d8c8c</string>
+	<key>skinContactGroupSelectedText_color</key>
+	<string>tp_color_white</string>
+	<key>skinContactGroupUnSelectedText_color</key>
+	<string>tp_color_white_transparency_800</string>
+	<key>skinSectionIndexCharacterText_color</key>
+	<string>0x00e1ae11</string>
+	<key>skinSectionIndexPopupBackground_color</key>
+	<string>0x002e2f2f</string>
+	<key>skinSectionIndexPopupText_color</key>
+	<string>tp_color_white</string>
+	<key>skinGestureDrawBoardBackground_color</key>
+	<string>0x00c5c3c3</string>
+	<key>skinGestureDrawBoardStroke_color</key>
+	<string>0x00efc237</string>
+	<key>skinGestureOperation_text_color</key>
+	<string>0x00ffffff</string>
+	<key>skinGestureOperation_line_color</key>
+	<string>0xCCffffff</string>
+	<key>tabBarIconHasText</key>
+	<string>0</string>
+	<key>statusBar_isDefaultStyle</key>
+	<string>0</string>
+</dict>
+</plist>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<replydata>
+    <key_words string="接听">
+        <sub_keywords string="振动"/>
+        <sub_keywords string="震动"/>
+        <reply_content>你好，是需要接通震动吗？请确保触宝电话功能设置中的“去电接通振动”和系统设置中的“声音”->“振动”已经全部开启。
+        </reply_content>
+        <same_reply_id>1</same_reply_id>
+    </key_words>
+    <key_words string="皮肤">
+        <reply_content>您好，是对皮肤不满意吗？告诉我们您喜欢的皮肤风格，我们会反馈给设计组的。</reply_content>
+        <same_reply_id>2</same_reply_id>
+    </key_words>
+    <key_words string="主题">
+        <reply_content>您好，是对皮肤不满意吗？告诉我们您喜欢的皮肤风格，我们会反馈给设计组的。</reply_content>
+        <same_reply_id>3</same_reply_id>
+    </key_words>
+    <key_words string="通话记录">
+        <sub_keywords string="未接"/>
+        <sub_keywords string="呼入"/>
+        <sub_keywords string="不显示"/>
+        <reply_content>由于iOS系统限制，禁止了第三方程序获取您的未接和呼入电话记录的权限，您可以在触宝电话中看到的全部的拨出记录。
+        </reply_content>
+        <same_reply_id>4</same_reply_id>
+    </key_words>
+    <key_words string="联系人">
+        <sub_keywords string="没有显示"/>
+        <sub_keywords string="不显示"/>
+        <sub_keywords string="无法显示"/>
+        <reply_content>您好，是联系人页面显示空白吗？请确保您的系统设置->隐私->通讯录中，开启了允许“触宝电话”访问您通讯录的权限。
+        </reply_content>
+        <same_reply_id>5</same_reply_id>
+    </key_words>
+    <key_words string="违章结果">
+        <reply_content>由于我们的查违章使用第三方服务，可能会存在极少数错误情况，包括违章结果更新延迟、甚至违章结果错误等，请您以当地交管所网站查到的结果为准。如果您发现这种情况，请在底部的输入框内反馈给我们，我们会及时调查解决。
+        </reply_content>
+        <same_reply_id>6</same_reply_id>
+    </key_words>
+    <key_words string="获得">
+        <sub_keywords string="分钟数"/>
+        <sub_keywords string="通话时长"/>
+        <reply_content>
+            您在首次绑定触宝电话后，会免费获得500分钟通话时长。
+            目前有三种渠道额外获得分钟数：
+            1分享到微信朋友圈和QQ空间，每次分享可得50分钟，每月最多可获得300分钟；
+            2使用好友的邀请码，可获得200分钟，每人仅限一次；分享自己的邀请码给好友，好友使用你的邀请码，前30次每次可获得200分钟，之后每次10分钟，系统自动返还分钟数；
+            3触宝电话会定期举行活动，请随时关注我们，及时参与活动获得免费分钟数。
+        </reply_content>
+        <same_reply_id>7</same_reply_id>
+    </key_words>
+    <key_words string="不免费">
+        <reply_content>触宝电话是完全免费的，不会收取用户任何费用。如在使用后发现扣费，首先请您确认是否已经开通免费电话功能且绑定了手机号；其次，如果您是在3/4G网络下使用，请参照运营商套餐标准查看流量使用是否已经超出套餐上限，如果超出流量上限，您将会被运营商收取费用。
+        </reply_content>
+        <same_reply_id>8</same_reply_id>
+    </key_words>
+    <key_words string="扣费">
+        <reply_content>触宝电话是完全免费的，不会收取用户任何费用。如在使用后发现扣费，首先请您确认是否已经开通免费电话功能且绑定了手机号；其次，如果您是在3/4G网络下使用，请参照运营商套餐标准查看流量使用是否已经超出套餐上限，如果超出流量上限，您将会被运营商收取费用。
+        </reply_content>
+        <same_reply_id>9</same_reply_id>
+    </key_words>
+    <key_words string="回音">
+        <reply_content>触宝电话与部分机型的适配性不佳，我们会尽快完善。通话时要保证您的网络正常，如不稳定会影响到您的通话效果，您可以更换网络环境试试。如问题依旧，请点击页面下方“我要反馈”告诉我们是哪一方（主叫？被叫？）会听到回声，我们将尽快为您解决。
+        </reply_content>
+        <same_reply_id>10</same_reply_id>
+    </key_words>
+    <key_words string="显号">
+        <reply_content>触宝用户拨打电话全部显示本机号码，如您在使用中未显示号码，请将您的号码告诉我们，将尽快为您解决。</reply_content>
+        <same_reply_id>11</same_reply_id>
+    </key_words>
+    <key_words string="数字键盘">
+        <reply_content>触宝电话暂不支持分机号拨打，如有需要，请直接使用系统拨号拨打。</reply_content>
+        <same_reply_id>12</same_reply_id>
+    </key_words>
+    <key_words string="验证码">
+        <sub_keywords string="收不到"/>
+        <sub_keywords string="是什么"/>
+        <reply_content>您可以选择短信验证或语音验证，或者切换网络环境或者清除数据后再重试。如仍不行，请将您的号码告诉我们，将尽快为您解决。
+        </reply_content>
+        <same_reply_id>13</same_reply_id>
+    </key_words>
+    <key_words string="有效期">
+        <reply_content>触宝电话免费分钟数没有使用期限，您可以进入手机客户端在“免费电话”界面中查看剩余免费分钟数。
+        </reply_content>
+        <same_reply_id>14</same_reply_id>
+    </key_words>
+    <key_words string="流量">
+        <sub_keywords string="消耗"/>
+        <sub_keywords string="用不用"/>
+        <reply_content>在WiFi的环境下不会消耗您的手机流量，并可获得最佳通话效果；在3/4G网络下使用直拨模式每分钟消耗约300K流量；选择回拨模式，只在首次向服务器发送请求时，消耗约30KB流量，发送回拨请求后不再消耗任何流量。
+        </reply_content>
+        <same_reply_id>15</same_reply_id>
+    </key_words>
+    <key_words string="无法接通">
+        <reply_content>通话时要保证您的网络正常，如不稳定会影响到您的通话效果。您可以更换网络环境，或尝试拨打其他号码或稍后再试。如问题依旧，请将主叫/被叫号码以及拨打时间发送给我们，将尽快为您解决。
+        </reply_content>
+        <same_reply_id>16</same_reply_id>
+    </key_words>
+    <key_words string="串号">
+        <reply_content>通话出现此问题可能是线路繁忙，建议稍后再试，如问题依旧请请将主叫/被叫号码以及拨打时间发送给我们，将尽快为您解决。
+        </reply_content>
+        <same_reply_id>17</same_reply_id>
+    </key_words>
+    <key_words string="黑屏">
+        <reply_content>这是由于手机的距离感应器所导致的，请检查距离感应器是否受到了遮挡。
+        </reply_content>
+        <same_reply_id>18</same_reply_id>
+    </key_words>
+</replydata>

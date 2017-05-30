@@ -1,0 +1,1477 @@
+/*
+ Localizable.strings
+ TouchPalDialer
+ 
+ Created by Alice on 11-11-1.
+ Copyright 2011 __MyCompanyName__. All rights reserved.
+ */
+
+/*common btn*/
+"Save" = "保存";
+"Post" = "發布";
+"Next" = "下一步";
+"Ok" = "確定"; /*Invite picker view*/
+"Reset" = "重新設置";
+"Cancel" = "取消";
+"Remove" = "移除";
+"Edit" = "編輯";
+"Done" = "完成";
+"Delete" = "刪除";
+"Start" = "開始";
+/*fav page*/
+"Detail" = "詳細";
+"Copy number" = "復制號碼";
+"Send message" = "發簡訊";
+"Send" = "發送";
+"(No name)" = "(無名字)";
+"Stop" = "停止";
+
+/*contact menu*/
+"Rename group" = "重命名組";
+"Failed to add the group!" = "添加分組失敗！";
+"Failed to rename the group!" = "重命名分組失敗!";
+"The group exists already! Do you want to continue?" = "此組已經存在，是否繼續新建重復的組？";
+"Load from file" = "從相冊中加載";
+"Take photo" = "拍照";
+"Original size" = "查看原圖";
+"Input group name" = "輸入組名";
+"The group is empty!" = "此組為空！";
+"Operate" = "管理";
+"Contact" = "聯系人";
+"New contact" = "新建聯系人";
+"Delete contacts" = "批量刪除";
+"Send SMS" = "群發短信";
+"Now loading" = "正在載入";
+"No Contacts in this Group" = "該組還沒有聯系人";
+"Select_all" = "全選";
+"Confirm (%d)" = "確定 (%d)";
+"batch_delete_contacts_and_send_sms" = "聯系人";
+
+"Manage groups" = "编辑";
+"My group" = "我的分組";
+"Add members" = "添加組成員";
+"Remove members" = "移除組成員";
+"0 contact" = "0個聯系人";
+"1 contact" = "1個聯系人";
+"%d contacts" = "%d個聯系人";
+"search in %d contacts" = "搜索 | 共%d個聯系人";
+"search in 1 contact" = "搜索 | 共1個聯系人";
+"search prompt" = "不記得名字？試試通過公司查找";
+"search" = "搜索";
+"Add more" = "添加信息";
+"Ungrouped" = "未分組";
+
+// toast
+"There is no contact with phone number!" = "連絡人缺少手機號！";
+"There is no email account available!" = "連絡人缺少郵件帳號！";
+
+"Email" = "郵件";
+"Copy" = "復制";
+"Move" = "移動";
+"Share" = "分享";
+"Favorite" = "收藏";
+"My favorites" = "我的收藏";
+"Added to favorites" = "已添加到收藏夾";
+"Removed from favorites" = "已從收藏夾中移除";
+
+// detail shortcut buttons
+"detail_shortcut_gesture"="快捷手勢";
+"detail_shortcut_pay"="為他支付";
+"detail_shortcut_share"="分享名片";
+"detail_shortcut_favor" = "添加收藏";
+"detail_shortcut_unfavor" = "取消收藏";
+
+// detail switch button text
+"detail_switch_button_text_calllog_format" = "通話\n記錄\n(%d)";
+"detail_switch_button_text_detail" = "名片\n詳情";
+
+// market event button
+"market_button_text" = "精品\n推薦";
+
+/*dialer*/
+"Filter" = "過濾";
+"All" = "全部";
+"Missed" = "未接";
+"Outgoing" = "撥出";
+"Incoming" = "撥入";
+"Unknown" = "未知號碼";
+"Types" = "分類";
+"Unknown calls" = "未知號碼";
+
+"Invalid phone number!"	="手機號無效！";
+"Share contact" = "分享名片";
+"Group" = "分組";
+"Edit contact" = "編輯聯系人";
+"Delete contact" = "刪除聯系人";
+"Share by message" = "通過短信分享";
+//investigate on interface
+"I like it" = "滿意";
+"Just so so" = "一般";
+"I don't like it" = "不滿意";
+"Interface do not like reason1" = "界面淩亂，復雜";
+"Interface do not like reason2" = "配色沈重，單調";
+"Interface do not like reason3" = "界面風格太單調";
+"Interface do not like reason4" = "說不清楚";
+"Do you like the current Touchpal's interface" = "您對觸寶目前的界面美觀是否滿意呢？";
+"Investigate on interface" = "界面滿意度調查";
+/*detail*/
+"Profile" = "個人名片";
+"Note" = "便簽";
+"Edit note" = "編輯便簽";
+"Date" = "日期";
+"Birthday" = "生日";
+"IM" = "即時通訊";
+"Nickname" = "昵稱";
+"Address" = "地址";
+"Department" = "部門";
+"Company" = "公司";
+"Job title" = "職位";
+"Edit groups" = "編輯群組";
+"New group" = "新建組";
+"Groups" = "群組";
+"RenRen" = "人人網";
+"Sina Weibo" = "新浪微博";
+"Facebook" = "Facebook";
+"Twitter" = "Twitter";
+"Report error" = "報錯";
+"Exchange Warning" = "由于系统限制，绑定Exchange，可能导致新建分组失败。建议您关闭Exchange服务后再进行此操作。";
+/*mark*/
+"Call" = "撥打";
+"Mark" = "標記";
+
+/*facetime*/
+"FaceTime" = "FaceTime";
+
+/* about rating */
+"Would you like to rate me on AppStore if you like me? Thank you!" = "大人，喜歡觸寶電話嗎？";
+
+"Yes" = "喜歡" ;
+"No, thanks!" = "不喜歡";
+"Remind me later" = "以後提醒我";
+"Rate TouchPal" = "為觸寶號碼助手評分";
+
+/* group selector */
+"Select group" = "選擇群組";
+
+/* picker*/
+"%d selected" = "已選%d人";
+
+/*setting callstatus*/
+"Availability" = "忙閑狀態";
+"Current availability is\'%@\'" = "當前狀態為\“%@\”";
+
+
+/* Time selector */
+
+"%.1f hour(s) switch to available" = "%.1f小時以後切換為空閑";				//x小時後切換到空閑。
+"%d hour(s) switch to available" = "%d小時以後切換為空閑";				//x小時後切換到空閑。
+"%@ revert to Available on timeout" = "%@後恢復為空閑";
+"Leave a message" = "編輯留言";	//自定義回復
+"Edit message" = "留言";
+"Message: %@" = "留言：%@";
+"Message" = "短信";
+
+"Mute"="自動靜音";
+"Normal"="正常接通";
+
+"Set to \'Busy\' status" = "切換到\'繁忙\'";
+"Set to \'No disturb\'" = "切換到\'勿打擾\'";
+"Set to \'%@\'" = "切換到\“%@\”";
+"Available" = "閑得慌";
+"Busy" = "有點忙";
+"No disturb" = "別打擾";
+"Set availability duration" = "設置狀態持續時間";
+"revert to available on timeout" = "倒計時結束後切換為\'空閑\'";
+
+/*自動重連*/
+"Reconnect..." = "重新連接...";
+
+/* register*/
+
+"Input phone number" = "請輸入本機號碼";
+"Register" = "註冊";
+"Registration code"  ="註冊碼";
+
+"Resend code (%ds)"="重發註冊碼(%ds)";
+"Resend code"="重發註冊碼";
+"Select your country or region" = "選擇您的國家或地區";
+"TouchPal" = "觸寶號碼助手";
+"Contacts" = "撥號";
+"Invalid registration code!" ="註冊碼無效！";
+"Failed to apply the registration code!"="申請註冊碼失敗！請重試！";
+
+"Touchpal cloud service has sent %@ one SMS. Please find out the author code and fill it in the input box to complete the activation."="已經向您的手機%@發送了壹條短信，請將短信中的註冊碼填入輸入框完成激活。";
+
+"Try it out" = "開始體驗";
+"Touchpal cloud service" = "觸寶雲服務";
+"Activate Touchpal cloud service" = "啟動觸寶雲服務";
+"Activation complete" = "完成啟動";
+"Start activating" = "開始啟動";
+"Trying activate now..." = "正在嘗試啟動...";
+"Touchpal cloud service has been activated. Please complete your profile next." = "觸寶雲服務激活成功！下壹步請完善您的名片.";
+
+
+"Contact Updates" = "同步頭像";
+"Contact Exchange" = "交換名片";
+"Contact Availability" = "忙閑狀態";
+
+"Are you sure to exit activating?" = "確認退出啟動過程？";
+
+"Set your availability to “Busy” or “No disturb” so that your Pals will see it before they call you." = "有時不方便接電話？設置為繁忙或勿打擾狀態，您的好友就能提前預知。";
+"Your latest photo and status will be shown in your Pal’s contact list." = "讓您的聯系人列表頭像不再空空如也，上傳自己的頭像就能更新自己在好友通訊錄中的頭像。";
+"Exchange contact information with your Pals by just a flip." = "不再需要紙質名片，通過觸寶輕松與對方交換電子名片，方便快捷。";
+
+"Sorry, TouchPal doesn\'t support your country now!" = "對不起，觸寶號碼助手雲服務暫時不支持您所在的國家！";
+"Sorry that you could not make calls from iPad or iPod." = "對不起，iPad和iPod不支持打電話！";
+"Retrieving your profile..." = "正在讀取名片資訊...";
+
+/*signature*/
+"Super dial" = "超級撥號";
+"Edit status" = "編輯簽名檔";
+"Logged in" = "已經登錄";
+"No login" = "尚未登錄";
+"Share to" = "分享到";
+"The input text exceeds the maximum length!" = "抱歉，輸入超過最大長度限制！";
+/*orlando */
+"Local" = "本地電話";
+"Local service" = "熱線電話";
+/*  exchange name card*/
+"Click to exchange" = "開始交換";
+"Slide up to exchange" ="向上滑動交換名片";
+"Contact is saved!"="名片已保存！";
+"Confirm to exit the exchange?" ="確認退出名片交換？";
+"Your name is empty in profile. Do you want to fill in now?" = "您名片信息不完整，是否填寫完整？";
+"Last 4 digits of peer\'s number" ="輸入對方手機號後4位";
+"Matching up..." ="正在匹配名片...";
+"Saving contact..."="正在保存名片...";
+
+"Network error occurred!"="網絡錯誤，請稍後重試！";
+"Phone number:%@" = "本機號碼:%@";
+/* details*/
+"History" = "撥號記錄";
+"Confirm to delete?"="確認刪除此連絡人？";
+"Confirm to detele %d contacts?" = "確認刪除%d位連絡人？";
+"Confirm to remove all these call logs?" = "確認刪除此連絡人的所有通話記錄?";
+/*設置界面 */
+
+/*profile*/
+"Phone" = "電話";
+"Phone 2" = "電話2";
+"Google+" = "Google+";
+"Weibo" = "新浪微博";
+"LinkedIn" = "LinkedIn";
+"Tencent weibo" = "騰訊微博";
+"KaiXin" = "開心網";
+"Status" = "簽名檔";
+"Photo" = "頭像";
+"Name" = "姓名";
+
+"My profile" = "我的名片";//alice
+"More..." = "更多...";//alice
+"No change made to your profile!" = "您的名片沒有修改！";
+"%@ -> %@" = "%@ -> %@";
+"%@ added: %@" = "%@增加: %@";
+"%@ deleted\n" = "%@刪除\n";
+"Photo changed!\n" = "頭像更新!\n";
+"Photo added!\n" ="新增頭像!\n";
+"Add SNS entries" = "添加社交網絡";
+"Loading..." = "正在載入...";
+
+/*@"您註冊的手機號與%@的號碼相同，是否自動填入%@的信息？"*/
+"An existing contact is detected (%@), do you want to load %@?" = "檢測到一個已有聯系人(%@)，是否從此聯系人中加載您的信息(%@)?";
+
+/*news*/
+"Edit profile"  = "編輯名片";
+"Exchange contacts" = "交換名片";
+"Edit status to share..." = "編輯分享簽名檔...";
+"Pals are those of your contacts who have also installed TouchPal. Availibility, profile updates and status are only shared among Pals." = "好友是指在那些安裝了觸寶號碼助手，並且和您互相保存了連絡方式的人。實時忙閑狀態、聯系人頭像及簽名檔僅在好友間同步。";
+
+// tag reminder
+"Reminder" = "提醒";
+"Not available" = "仍然繁忙";
+"Available at " = "變為空閑 ";
+"Marked at " = "標記我 ";
+"Your Pal(s) marked you in TouchPal Contacts." = "您有好友在您繁忙的時候標記了妳！";
+"One of the Pals you marked is available now." = "您標記的好友已經切換為空閑狀態！請打開觸寶號碼助手查看。";
+"Your Pal(s) updated the profile(s). Launch to synchronize..." = "您的好友通過觸寶號碼助手更新了信息（簽名檔，頭像等），啟動觸寶號碼助手進行同步？";
+"Who I marked (%d)" = "我標記的好友(%d)";
+"Who marked me (%d)" = "標記我的好友(%d)";
+"Confirm to clear reminders?" = "是否清空提醒？";
+
+"Quick search on dialpad. For example, search for \'Jim\':" = "基於撥號盤的快速搜索。比如，搜索\'Jim\'";
+
+//文件名本地化
+"countries_english.plist"="countries_zh_TW.plist";
+
+"Monday" = "周一";
+"Tuesday" = "周二";
+"Wednesday" = "周三";
+"Thursday" = "周四";
+"Friday" = "周五";
+"Saturday" = "周六";
+"Sunday" = "周日";
+
+"Uploading changes..." = "正在保存到服務器...";
+"Add favorites to this page" = "添加收藏夾聯系人";
+"You can mark Pals who are not Avaliable and get reminder here once they revert to Available." = "您可以標記任何不處於空閑狀態的好友。一旦標記的好友狀態變回空閑，系統會通過此頁面提醒您！";
+"Please register TouchPal Service to get reminder when availability changes (Available/Busy/No distrub). Click to register..." = "請註冊觸寶雲服務,獲得好友實時狀態更新(空閑/繁忙/勿打擾)。點擊進入註冊頁面...";
+"Your account is locked! You can activate your account by re-registering!" = "您的賬號暫時被鎖定！您可以重新註冊來激活您的帳號！";
+"Warning" = "警告";
+"Error" = "錯誤";
+"Registering..." = "正在完成註冊...";
+"Reindexing contacts...." = "正在重建索引...";
+"Failed to set availability, please retry!" = "設置忙閑狀態失敗，請重試！";
+
+// new added
+"TouchPal has new version.\n\nUpdate now?" = "觸寶號碼助手有新版本了！\n\n現在就去升級？" ;
+"Pals" = "好友";
+"touchpaler_faq_content.plist"="cn_touchpaler_faq_content.plist";
+
+
+"Please wait…" = "請稍等…";
+"Weibo info" = "微博信息";
+"No network connection!" = "無網絡連接！";
+
+"Today" = "今天";
+"Yesterday" = "昨天";
+
+"Set availibility and share to Pals.\nPals are those of your contacts who have also installed TouchPal. The system automatically adds Pals for you." = "您可以在這裏設置實時忙閑狀態。好友在撥號時能夠看到您的狀態。\n系統會自動將那些和您互相有聯系方式的人加為好友。";
+"This Pal is not Available. You can Mark to get reminder when available in such case." = "此好友當前處於非空閑狀態，您可以使用標記功能，一旦標記的好友變回空閑，系統會提醒您。";
+"Call history" = "撥出記錄";
+"The Pal is available now! You can call directly." = "該好友已經空閑！請直接撥打。";
+
+"You didn\'t input registration code. Are you sure the phone number \'%@\' is correct?" = "您沒有輸入註冊號。您確信填寫的電話號碼\'%@\'正確嗎？";
+"You are logged out because someone registered with the same phone number successfully. Please re-register!" = "您無法登錄觸寶雲服務，因為有人在另一臺設備上使用了相同的電話號碼註冊成功！請妳重新註冊！";
+"You are logged out by the system for security reason. Please re-register!" = "您無法登錄觸寶雲服務，請重新註冊！";
+"Synchronizing reminders, please wait." = "正在同步提醒列表，請稍等...";
+"No network available! The reminder list is not update to date!" = "網絡不可用，提醒列表可能尚未更新！";
+"Fail to Synchronize reminder list!" = "同步提醒列表失敗！";
+"Updating Reminders..." = "正在更新提醒信息...";
+
+"Already read the" = "我已閱讀";
+"Privacy Statement" = "私權聲明";
+"Please read and agree to the Privacy Statement" = "請閱讀並同意隱私聲明";
+"http://www.touchpal.com/privacypolicy_contacts.html" = "http://dialer.cootekservice.com/iphone/default/market/privacy/default/zh-tw/privacypolicy.html";
+
+//================================ 以上已正式翻譯, 請勿添加修改 ================================//
+
+//*****************************************************************************************//
+//***** Application Settings *****
+// main
+"General" = "通用";
+"Synchronize & availability" = "忙閑狀態及連絡人同步";
+"About" = "關於";
+"FAQ" = "常見問題";
+"Language Setting" = "多語言設置";
+// general
+"Secondary language on dialpad" = "撥號盤輔助語言";
+"Secondary language" = "撥號盤輔助語言";
+"Dial tone" = "撥號盤按鍵聲";
+"Dial Vibrate" = "去電接通振動";
+"Disconnected Vibrate" = "挂断震动";
+"Dial Vibrate Subtitle" = "請確認打開系統設置->聲音->振動";
+"Dial Vibrate Subtitle In Iphone 4" = "请确认打开系统振动设置";
+// Synchronize
+"Synchronize profiles" = "好友資訊同步";
+"Save photo to contact" = "更新系統連絡人頭像";
+// phone pad language
+"Default" = "默認";
+"Greek" = "希臘語";
+"Hebrew" = "希伯來語";
+"Persian" = "波斯語";
+"Russian" = "俄羅斯語";
+// About
+"Update date" = "更新日期";
+"Version" = "版本";
+
+"http://www.touchpal.com/mtouchpal/faqpages/faqv40iosen.html" = "http://dialer.cootekservice.com/iphone/default/market/faq/v400/zh-tw/faq.html";
+"http://www.chubao.cn/mchubao/versionlog/tcv40ch.html" = "http://dialer.cootekservice.com//iphone/default/market/changelog/v433/zh-tw/changelog.html";
+//================================ 以上已正式翻譯, 請勿添加修改 ================================//
+// main
+"Feedback" = "用戶回饋";
+"Feedback_email" = "郵件回饋";
+"Logout" = "退出登錄";
+// general
+"Call confirm" = "撥號前確認";
+"Turn off this option will lead to unable to return TouchPal after dialing" = "關閉撥號前確認將導致撥號後無法返回觸寶界面";
+"Vibrate when dialing connected" = "接通時震動";
+"Format phone numbers" = "格式化號碼";
+"Display caller number location in list" = "顯示號碼歸屬地";
+// Synchronize
+"Reminder sound" = "提醒鈴聲";
+"Reminder vibrate" = "提醒震動";
+// About
+"Privacy statement" = "隱私權聲明";
+//*****************************************************************************************//
+
+"Upgrade" = "升級";
+
+// new add
+"Updating groups..." = "Updating groups...";
+"Sure to log out?" =  "確定要退出登錄？";
+"Due to the limit of the system,the number you selected can not be dialed out directly, it is already been copied to the clipboard." = "由於系統限制，觸寶號碼助手無法撥打此號碼。我們已將號碼復制，您可以打開系統撥號盤，粘貼此號碼完成撥號。";
+"Sorry, the long connect with the server failed!" = "沒有可用的移動網絡！";
+//長按
+"More" = "更多";
+"Clear" = "清除";
+"Edit to call" = "編輯呼叫";
+"Edit to tag" = "标记";
+"Remove last call" = "清除最後一條記錄";
+"Clear all calls" = "清除所有記錄";
+"on" = "於";
+"calls" = "個記錄";
+"since" = "始自";
+"Clear call logs" = "清除通話記錄";
+"Choose the number" = "請選擇號碼";
+//busy message:
+"I\'m in the middle of something." = "我現在比較忙！";
+"I\'m on vacation." = "我正在度假。";
+"I am sleeping." = "我正在休息。";
+"My phone is running out of battery." = "手機快沒電了，隨時可能關機。";
+"I\'m in a meeting." = "我正在開會。";
+//Not disturb message:
+"I\'m tied up now." = "我現在非常忙！";
+"I\'m in an important meeting." = "我正在重要會議中！";
+"I\'m driving now." = "我正在開車。";
+"I\'m on a flight now." = "我在飛機上，無法接聽電話。";
+
+//智能撥號
+"Smart dial can ..."  = "觸寶號碼助手能夠自動加撥IP前綴，幫助您輕松實現IP撥號，節省通話費用。";
+"Start now" = "現在啟用";
+"Later" = "暫不啟用";
+"Start smart dialer" = "啟用IP撥號助手";
+"Input phone number for smart dial ..." = "請輸入您的本機號碼，觸寶號碼助手會自動計算最適合您的IP撥號方案";
+"Start setting" = "開始配置";
+"Note:\n the IP rules you choose will pop up automatically every time before you make call" = "溫馨提示：您勾選的方案在符合條件的情況下會自動彈出，無需任何手動操作";
+"The following IP dialing rules may suit for you, please make your choice:" = "IP撥號助手計算出以下適合您的IP撥號規則，請勾選您需要啟用的規則：";
+"Not apply IP rules for this number" = "對此號碼不彈出IP規則";
+"Manage excluded members" = "管理IP規則作用名單";
+"IP rules will not pop up for the following numbers:" = "IP規則不作用下列號碼：";
+"Are you sure not to apply IP rules for this number" = "確定對此號碼不彈出IP規則？";
+"Excluded contacts" = "不作用IP規則名單";
+"Can't generate IP dialing rules for this number" = "抱歉，觸寶號碼助手不能根據您輸入的號碼推算出合適的IP規則，您可以到“個性中心->IP撥號助手”中再進行配置";
+"Settings" = "設置";
+"Dialing assistant" = "IP智能撥號";
+"My phone" = "本機信息";
+"Input country and carrier" = "國家區號及運營商";
+"Country or region" = "SIM卡國家或地區";
+"Roaming status" = "漫遊狀態";
+"Roaming status setting" = "漫遊狀態設置";
+"roaming_status_cell_title" = "開啟漫遊狀態";
+"System:" = "系統：";
+"Follow system" = "讀取系統狀態";
+"Roaming" = "漫遊";
+"Not roaming" = "非漫遊";
+"SIM information" = "SIM卡信息";
+"Network information" = "移動網絡信息";
+"Country" = "國家碼";
+"Area code" = "區號";
+"MNC" = "MNC";
+"Carrier" = "選擇SIM卡運營商";
+"Smart dial assistant" = "IP撥號助手";
+"Predefined rules" = "選擇資費套餐";
+"There is no predefined rules for the carrier" = "沒有適合您的資費套餐";
+"Predefined smart dial rules" = "運營商資費套餐";
+"Smart dial setting" = "IP撥號設置";
+"Autodialing suggestions" = "開啟IP智能撥號";
+"Show applied IP dialing rules and suggestions to assist dialing when roaming" = "提供IP規則和漫遊撥號輔助";
+"IP dialing rules" = "IP規則列表";
+"init_smart_setting_note" = "請設置SIM卡資訊，觸寶可以為您提供豐富的IP撥號規則推薦。";
+"TouchPal detects you changing the SIM card. Please reset the IP dialing information." = "觸寶號碼助手檢測到您SIM卡運營商變更,是否重新設置IP撥號信息?";
+"Auto apply suggestion" = "自動加撥";
+"Only one IP rule, direct call" = "只有一個IP規則時直接撥打";
+"International roamingdialing assistant" = "國際漫遊撥號輔助";
+"Domestic roamingdialing assistant" = "國內漫遊撥號輔助";
+"NetWork type" = "網絡類型";
+
+"China Mobile" = "中國移動";
+"China Unicom" = "中國聯通";
+"China Telecom" = "中國電信";
+
+"Internal" = "預置";
+"Generic" = "通用";
+"Basic telephone set." = "用於提供基本撥號功能";
+"Direct Call" = "原始號碼";
+"Dial original number." = "用輸入的號碼撥打電話";
+"Local Call" = "本地電話格式";
+"Call the local number." = "用本地號碼撥打電話";
+"Domestic Call" = "國內長途格式";
+"Call the domestic number." = "用國內長途的格式撥打號碼，在國內不會撥錯。";
+"IDD Call" = "國際標準格式";
+"Call the global number using standard format." = "用國際標準格式撥打電話，一般直播國際長途用，全球統一撥號方式。";
+"Custom" = "自定義";
+"MZone" = "動感地帶";
+"GoTone" = "全球通";
+"EasyOwn" = "神州行";
+"CMCC EasyOwn rule set." = "用於中國移動神州行用戶的通用規則";
+"G3" = "G3";
+"CMCC G3 rule set." = "用於中國移動G3 3G業務通用規則";
+"eSurfing" = "天翼";
+"Some rules for China Telecom eSurfing users." = "用於中國電信的通用規則";
+"Wo 3G" = "聯通3G";
+"Some international rules for Unicom Wo users." = "用於中國聯通3G的通用規則";
+"Ruyitong" = "如意通";
+"Some rules for Unicom Ruyitong users." = "用於中國聯通2G如意通用戶的通用規則";
+"UPower" = "UP新勢力";
+"Some rules for Unicom UPower users." = "用於中國聯通2G UP新勢力用戶的通用規則";
+
+"17951 Domestic" = "17951國內長途";
+"17951 Domestic call" = "國內長途IP直撥";
+"17951 International" = "17951國際長途";
+"17951 International call" = "國際長途IP直撥";
+"12593 Domestic Roaming" = "12593國內漫遊";
+"12593 Domestic Roaming call" = "國內漫遊IP直撥";
+"12593 Domestic" = "12593國內長途";
+"12593 Domestic call" = "國內長途IP直撥";
+"12593 International" = "12593國際長途";
+"12593 International call" = "國際長途IP直撥";
+"12593 Home" = "12593本地優惠";
+"12593 Home call" = "本地號碼IP優惠";
+"**139* Call Back" = "國際漫遊回撥";
+"**139* USSD Call Back for International Roaming" = "**139*國際漫遊回撥業務";
+
+"17911 Domestic" = "17911國內長途";
+"17911 Domestic call" = "國內長途IP直撥";
+"17911 International" = "17911國際長途";
+"17911 International call" = "國際長途IP直撥";
+"10193 Domestic Roaming" = "10193國內漫遊";
+"10193 Domestic Roaming call" = "國內漫遊IP直撥";
+"10193 Domestic" = "10193國內長途";
+"10193 Domestic call" = "國內長途IP直撥";
+"10193 International" = "10193國際長途";
+"10193 International call" = "國際長途IP直撥";
+"10193 Home" = "10193本地優惠";
+"10193 Home call" = "本地號碼IP優惠";
+"**100* Call Back" = "國際漫遊回撥";
+"**100* USSD Call Back for International Roaming" = "**100*國際漫遊回撥業務";
+
+"17909 Domestic" = "17909國內長途";
+"17909 Domestic call" = "國內長途IP直撥";
+"17909 International" = "17909國際長途";
+"17909 International call" = "國際長途IP直撥";
+"11808 Domestic Roaming" = "11808國內漫遊";
+"11808 Domestic Roaming call" = "國內漫遊IP直撥";
+"11808 Domestic" = "11808國內長途";
+"11808 Domestic call" = "國內長途IP直撥";
+"11808 International" = "11808國際長途";
+"11808 International call" = "國際長途IP直撥";
+"11808 Home" = "11808本地優惠";
+"11808 Home call" = "本地號碼IP優惠";
+"**133* Call Back" = "國際漫遊回撥";
+"**133* USSD Call Back for International Roaming" = "**133*國際漫遊回撥業務";
+
+"TouchPal Contacts Feedback" = "觸寶號碼助手意見反饋";
+
+"Register now" = "立即註冊";
+
+"I am using TouchPal Contacts to share my availability, contact photos and others. And you can perform search on dialpad. Check it out: %@" = "我正在用觸寶號碼助手，在好友之間隨時更新和同步頭像和簽名擋，分享忙閑狀態，快速搜索聯系人完成撥號。趕快試試：%@";
+"http://url7.me/N6Z5" = "http://url7.me/P6Z5";
+"http://t.cn/zOzb3PS" = "http://t.cn/zjGvg8p";
+
+"Copyright © 2009-2012 CooTek. All Rights Reserved." = "CooTek 版權所有© 2009-2012，保留所有權利。";
+"Close" = "關閉";
+
+"No_log_hint_1" = "暫時沒有通話記錄";
+"No_log_hint_2" = "由于系統限制，無法獲取未接來電、已接來電";
+
+
+"Recent calls" = "最近撥出";
+"Clear recent %@ call logs?" = "是否清空%@的通話記錄列表？";
+"Are you sure to remove the person from the favorite?" = "按“移除”連絡人將被移出收藏。";
+
+"Failed to match up with your peer! Please try again." = "匹配失敗，請重試。";
+"Exchange contacts timeout! Please finish input within %d seconds." = "交換超時，請在%d秒內輸入對方號碼後4位完成交換。";
+
+"Frequent Numbers" = "常用號碼查詢";
+
+"Activate" = "立即激活";
+"Synchronize your signature to Facebook and Twitter" = "同步簽名到新浪微博，人人網";
+"Your name" = "您的姓名";
+"Your name please" = "姓名不能為空！";
+"Job title unfilled" = "職位未填寫";
+"Click to edit your profile." = "點擊此處編輯個人名片";
+"TouchPal Service can push your photo, signature and profile to your Pals' who have also installed TouchPal Contacts. Would you like to activate now?" = "觸寶雲服務可以將您的頭像、簽名檔及名片的更新推送給同樣安裝了觸寶號碼助手的好友的通訊錄中。您是否願意現在啟動？";
+
+"Make communication more efficient" = "讓溝通更高效";
+"New long-press experience for list items." = "全新的列表長按體驗，支持更多操作！";
+"Long press item" = "長按條目";
+"Are you sure to remove" = "確認移除？";
+//gesture
+"Gesture dialing" = "手勢撥號";
+"Turn on gesture dialing?" = "是否開啟手勢功能？";
+"Add a gesture" = "添加新手勢";
+"Default gesture" = "默認手勢";
+"Custom gesture" = "自定義手勢";
+"SMS" = "發短信至";
+"Add a gesture to dial" = "添加新手勢給";
+"Optional gestures" = "可選手勢";
+"Frequent contacts" = "常用連絡人";
+"All contacts" = "全部連絡系人";
+"Make a call simply by gesture" = "劃一個手勢可以撥號";
+"Try it now?" = "開始設置手勢";
+"New gesture" = "增加新手勢";
+"Gesture function" = "手勢功能";
+"Gesture On/Off" = "手勢開關";
+"Choose a contact" = "選擇連絡人";
+"Add in dialpad area" = "請在此區域繪制手勢";
+"Try later" = "稍後再試";
+"Add" = "添加";
+"The gesture has been used." = "該手勢已被使用";
+"Oops, too short. Please draw more." = "您添加的手勢太短了";
+"Examples" = "推薦手勢";
+"You can call your contact with the new gesture now." = "馬上用新手勢撥號吧！";
+"TouchPal has hit a critical error and is terminated. Please send us the crash report, to help us fix the problem. Thank you!" = "觸寶號碼助手意外退出。請將錯誤報告發送給我們，以助我們解決此問題。謝謝！";
+"common_gesture_tip_english@2x.png" = "common_gesture_tip_chinese@2x.png";
+"description_en_us" = "description_zh_tw";
+
+//Theme
+"Themes" = "個性換膚";
+"Theme" = "本地";
+"More Themes" = "在線";
+"more_themes_are_coming_soon" = "更多主題敬請期待~";
+"Use" = "啟用";
+"In use" = "已啟用";
+"downloading" = "下載中";
+"delete_skin" = "删除";
+"Expired" = "已過期";
+"Uninstall" = "卸載";
+"Author" = "作者";
+"theme_name_en_us" = "theme_name_zh_tw";
+"author_name_en_us" = "author_name_zh_tw";
+"Call %@" = "撥打 %@";
+"Customize dialer theme" = "個性換膚";
+"Make TouchPal colorful with themes" = "繽紛主題任妳選";
+"Gesture dialling" = "手勢撥號";
+"Define gestures to call frequent contacts quickly" = "給常連絡的人設置手勢快速撥號";
+"Let's start" = "開始體驗吧";
+"Let's start2" = "開始體驗";
+"Downloaded" = "已下載";
+"Download now" = "下載";
+"Continue" = "繼續";
+"Network connection failed for downloading package" = "因為網絡問題下載這個主題失敗了";
+"Loading more themes..." = "正在加載更多主題...";
+"remote_skin_list_retry" = "請檢查網絡設置後，點擊屏幕刷新";
+"Failed to connect the network" = "網絡連接失敗";
+"Update" = "更新";
+
+//qwerty key pad
+"Paste the clipboard number" = "粘貼剪切板中的號碼";
+"Change key number pad" = "切換到9鍵(數字鍵盤)";
+"Change to qwerty pad" = "切換到全鍵盤";
+"Create new contact" = "新建連絡人";
+"Add to existing contact" = "添加到現有連絡人";
+"Ooops, no number in the clipboard." = "剪貼板中沒有號碼";
+"Ooops, the input is too long." = "內容過長";
+//call log hook
+"Install plug-ins" = "安裝插件獲取更多功能";
+"Update plug-ins" = "升級插件獲取更多功能";
+"Want to see complete call history?" = "想看到所有通話記錄?";
+"Go to \"Settings\" and install a plug-in" = "在設置裏安裝個小插件就可以了";
+//links
+"http://www.chubao.cn/skin/contacts_skin/ios/skiniosv430_en.html" = "http://www.chubao.cn/skin/contacts_skin/ios/skiniosv430_tw.html";
+"http://www.chubao.cn/mcontacts/plugin/mcontacts_advancedv430_en.html" = "http://dialer.cootekservice.com/iphone/default/market/jailbreak/v430/zh-tw/advanced.html";
+//alipay
+"Pay" = "轉賬";
+"Download" = "立即安裝";
+"Pay %@" = "給 %@ 轉賬";
+"Please download or update Alipay app to pay." = "請安裝最新版本的支付寶客戶端為TA付款。";
+"Don't prompt me again" = "不再提示";
+"You will be guided to Alipay to complete the payment, continue?" = "觸寶號碼助手幫助您轉到支付寶給TA安全付款，是否繼續？";
+"alipay_slogan@2x.png" = "alipay_slogan_zh@2x.png";
+//Smart group
+"Smart group" = "智能分組";
+"TouchPaler" = "觸寶好友";
+"Cities" = "城市";
+"Cities group" = "城市分組";
+"Companies" = "公司";
+"Companies group" = "公司分組";
+"Recently created" = "最近新增";
+"Recently added" = "最近新增";
+"Note group" = "備註分組";
+"Others" = "其它";
+"Foreigners" = "國際";
+"Creation date" = "創建時間";
+"View contacts according to city, company" = "輕松查看連絡人城市分布";
+//feature guide
+"Welcome to TouchPal Contacts" = "歡迎使用觸寶號碼助手";
+"Select SIM card info and roaming status" = "請選擇您的SIM卡註冊國家及漫遊狀態";
+"Note: you can modify in \"Dialing assistant\" ->\"My phone\"" = "提示：您可以在“IP撥號助手”->“本機信息”中修改SIM卡信息及漫遊狀態";
+"Select SIM Carrier" = "請選擇SIM卡運營商";
+"Click to select" = "點擊選擇";
+"All countries or regions" = "查看所有國家或地區";
+"Free to install plugins" = "免費安裝觸寶增強包";
+"Breakthrough iOS restriction, obtain complete call logs and classify call logs according to the types. Try it now?" = "破除系統權限，獲取完整通話記錄，支持通話記錄分類過濾，趕快試試吧!";
+"Install now" = "立即安裝";
+
+//text for root tab bar
+"Dialpad_" = "撥號盤";
+"Contact_" = "連絡人";
+"Favorite_" = "收藏夾";
+"Personal_" = "號碼助手";
+"Keyboard_" = "鍵盤";
+"YellowPage_" = "錢包";
+"Fold_" = "收起";
+"Unfold_" = "展開";
+"Fold_Dialpad_" = "收起撥號盤";
+"Unfold_Dialpad_" = "展開撥號盤";
+
+//clear all call logs
+"Clear all call logs" = "清空通話記錄";
+"No call log yet" = "暫無通話記錄";
+
+//call status tip
+"No longer show this tip" = "不再顯示此貼士";
+"Get it" = "知道了";
+"What is call status?" = "忙閑狀態是？";
+"Tip at the bottom" = "不方便接聽電話時，可以在這裏設置狀態通知觸寶好友。點擊查看詳細……";
+"Call status" = "狀態";
+"Trying to connect the server..." = "正在嘗試建立網絡連接……";
+//address book access hint
+"ab_access_hint_message" = "請iOS6以上用戶按照以下操作完成設置";
+"ab_access_hint_settings" = "設置";
+"ab_access_hint_privacy" = "隱私";
+"ab_access_hint_contacts" = "聯絡資訊";
+"ab_access_hint_on" = "開啟";
+"ab_access_hint_appName" = "觸寶撥號";
+
+//yellow page string
+"Recognize" = "慧眼識別";
+"Contribute" = "我的貢獻";
+"Find public numbers" = "搜索公共號碼";
+"No recognizable number" = "暫無識別的號碼";
+"No tagged number" = "暫無標記的號碼";
+"%d numbers have been recognized" = "已成功識別%d個號碼";
+"%d numbers have been tagged" = "已標記貢獻%d個號碼";
+"Location Service Disabled" = "定位服務被禁用";
+"To re-enable, please go to Settings and turn on Location Service for this app." = "要開啟定位服務，請去[設置][隱私]中開啟定位服務權限";
+
+
+"Set" = "切換";
+"Find" = "查號";
+"Yellow book" = "號碼寶典";
+"City" = "城市";
+"My call logs" = "我的撥出記錄";
+"Public numbers" = "常用公共號碼";
+"Download city package" = "下載離線城市包，無需上網輕松查詢";
+"Type on keyboard to search" = "輸入拼音或號碼搜索";
+"YellowPage Login" = "登錄";
+//types
+"Public service" = "日常生活";
+"Express" = "快遞服務";
+"Airline & railway" = "航空鐵路";
+"Travel" = "旅行預訂";
+"Hotels" = "快捷酒店";
+"Meal order" = "訂餐外賣";
+"Carriers" = "電信運營商";
+"Banks & insurances" = "銀行保險";
+"Taxi & car rental" = "交通租車";
+"Customer service" = "客服售後";
+"Tickets" = "演唱會/電影票";
+"Shopping" = "網購賣場";
+
+//yellow detail
+"Report" = "報錯";
+"Related numbers" = "相關號碼";
+"Distance" = "距離排序";
+"DefaultSort" = "默認排序";
+"Locating...." = "正在定位...";
+"Please enable location service" = "請開啟定位服務";
+"Unknown address" = "地址未知";
+"Wrong name" = "名稱錯誤";
+"Wrong number" = "號碼錯誤";
+"Wrong address" = "地址錯誤";
+"Wrong Tag" = "標簽錯誤";
+"Closed" = "已關閉";
+"Report received" = "報錯成功！";
+"What are you looking for?" = "告訴觸寶您想找的電話？";
+"What are you searching?" = "希望查找的號碼名稱";
+"Phone number" = "電話號碼";
+"Share to Weibo" = "分享到新浪微博";
+"Weibo server error" = "微博服務器錯誤！";
+"Please enable location service！" = "請開啟定位服務！";
+"Failed to locate" = "定位失敗，請檢查網絡狀況...";
+
+"Add shop" = "添加商戶";
+"Thank you for your contribution to Yellow book!" = "感謝您為完善號碼慧眼做出的貢獻!";
+"Report Shop" = "商戶報錯";
+"Sorry, you still havn't dialed any public numbers" = "對不起，您還沒有撥打過任何商戶電話";
+"Unknown_" = "未知";
+"yellowPage_guideInputTip_en@2x.png" = "yellowPage_guideInputTip_ch@2x.png";
+"dialerView_yellowPageGuideImage_en@2x.png" = "dialerView_yellowPageGuideImage_ch@2x.png";
+//city
+"Citylist" = "城市列表";
+"Select city" = "選擇城市";
+"Search scope" = "當前搜索範圍";
+"Downloaded cities" = "已下載城市";
+"More cities" = "更多城市";
+"Confirm to delete the city package '%@'?" = "確認刪除\"%@\"城市包?";
+"Confirm to cancel downloading the city package '%@'?" = "確認取消下載\"%@\"城市包?";
+"Failed to download this city package" = "離線城市包下載失敗";
+"Download “%@” city package to query public numbers" = "下載“%@”離線城市包，海量電話，無需流量，輕松查詢。";
+"Prompt after location in offline database" = "您當前所在城市“%@”，下載城市數據包，海量信息，一網打盡";
+"Applied city and current city are not consistent. Download city package for current city?" = "當前選擇的城市和您所在城市不一致，下載當前所在城市離線城市包？";
+"Applied city and current city are not consistent. Set to current city?" = "當前選擇的城市和您所在城市不一致，切換到當前所在城市?";
+"More cities are coming soon" = "更多城市敬請期待";
+"Succeed to locate" = "定位成功";
+"Failed to load" = "加載失敗！";
+"No_network_connection_city" = "無網絡，查看網絡連接";
+//News center
+"Updates" = "數據更新";
+"Choices" = "精品推薦";
+"Events" = "市場活動";
+"The updated CallerTell is detected." = "檢測到號碼慧眼數據更新";
+"Data is up-to-date." = "當前已為最新數據";
+"Updating “%@” data" = "正在更新“%@”數據";
+"Failed to update." = "更新失敗.";
+//smart eye
+"CallerTell" = "號碼慧眼";
+"CallerTell can tell you..." = "離線查找全國公用電話號碼\n智能辨識疑似騷擾、詐騙電話";
+"Inquiry unknown numbers" = "來去電輔助查詢";
+"Connect to cloud for additional information" = "自動連接觸寶雲服務查詢";
+"Unknown number recognition" = "未知電話慧眼識別";
+"%d phone numbers have been resolved by CallerTell" = "號碼慧眼成功識別了%d個電話";
+"Downloaded city package" = "已下載城市包";
+"Undownloaded city package" = "未下載城市包";
+"CallerTell has recognized %d unknown numbers from your call logs" = "號碼慧眼從您的通話記錄中成功識別了%d個未知號碼。";
+"Download city package to find public numbers offline." = "下載離線城市包，海量電話，無需流量，輕松查詢";
+"TouchPal tips" = "觸寶小貼士";
+"Go" = "帶我去看看";
+"OK" = "我知道了";
+"CallerTell recognizes unknown numbers, displays the Caller ID and tells the telemarketers." = "號碼慧眼能夠識別未知號碼並顯示名稱，辨識騷擾及詐騙電話。";
+"SmartEye is ..." = "號碼慧眼可以幫助您：\n1. 海量電話，無需流量，輕松查詢\n2. 顯示未知號碼名稱\n3. 辨識騷擾及詐騙電話";
+
+"identified_tag" = "觸寶識別";
+"vip_shop_tag" = "精品商戶";
+"pass_shop_tag" = "通過驗證";
+"house agent" = "房產中介";
+"insurance" = "保險推銷";
+"financial products" = "金融理財";
+"headhunting" = "人事獵頭";
+"promote sales" = "業務推銷";
+"repair" = "維修服務";
+"book hotel/airline" = "機票酒店";
+"public services" = "公用事業";
+"express" = "快遞外賣";
+"maybe fraud" = "疑似詐騙";
+"maybe crank" = "疑似騷擾";
+"crank" = "騷擾電話";
+"fraud" = "詐騙釣魚";
+"Report mistake" = "反饋錯誤";
+"The number was recognized incorrectly" = "號碼慧眼錯誤識別此號碼";
+"Find public numbers of %@" = "試試搜索%@公共電話？";
+"Try it" = "馬上試試";
+"TouchPal will vibrate the phone when the call is connected. You can turn off this feature in settings page." = "觸寶號碼助手會在電話接通時震動手機，減少輻射對您健康的影響。您可以在設置中關閉此功能。";
+"Move icon to quick launch tip" = "將觸寶撥號放到快捷欄中，使用更方便！";
+
+//call block
+"Block" = "攔截";
+"Call block" = "攔截設置";
+"No block" = "默認不攔截";
+"Added to white-list" = "已加入白名單";
+"Added to black-list" = "已加入黑名單";
+"Unblock action" = "不攔截";
+"Add to white-list action" = "加入白名單";
+"Add to black-list action" = "加入黑名單";
+"Coming soon..." = "更多功能敬請期待";
+"TouchPal notification" = "觸寶提示";
+
+//swipe contacts
+"Custom item actions" = "自定義列表操作";
+"TouchPal allows you to customize the item click and slide actions" = "觸寶號碼助手允許您自定義列表條目的點擊、左右滑動操作";
+"Dial" = "撥打電話";
+"Show all numbers" = "顯示全部號碼";
+"send_message" = "發送短信";
+"Send to WeChat" = "發給微信好友";
+"The contact name is too long to share to WeChat" = "聯系人姓名過長，無法分享到微信";
+"Display more actions" = "顯示更多操作（不支持自定義）";
+"Slide right on the item" = "右滑列表條目";
+"Long press on the item" = "長按列表條目";
+"Slide left on the item" = "左滑列表條目";
+"Click the item" = "點擊列表條目";
+"Slide on the item" = "左右滑列表條目";
+"Switch to slide on the item" = "開啟條目左右滑功能";
+"Opening" = "開啟";
+"Closing" = "關閉";
+//CallerTellUGC
+"mark_number_as_type" = "將\"%@\"標記為:";
+"is_number_with_type_as" = "'%@'是'%@'的電話？";
+"%d marks" = "%d人標記";
+"how_many_people_marked_it" = "已有%@過此號碼";
+"Tag the number" = "標記號碼";
+"Cancel tag" = "取消標記";
+"Retag" = "重新標記";
+"user input" = "手動輸入";
+"share_to_sina" = "分享到新浪微博";
+"add_to_black_list" = "加入黑名單";
+"add_to_contact" = "存為聯絡人";
+"not_now" = "暫時不";
+"share_to_sina_when_mark_with_type" = "我標記號碼'%@'為“%@”";
+"share_to_sina_when_mark_with_name" = "'%@'是一個“%@”電話";
+"number_has_not_been_recgonized_please_contribute" = "此號碼未被號碼慧眼收錄,歡迎貢獻信息,幫助其他人辨識此號碼。";
+"is_number_been_recognized_wrongly" = "如果您發現號碼慧眼識別的信息有誤,請您幫助我們糾正。";
+"example_shop_name" = "例如：肯德基機場店";
+"sina_number_type_contribution" = "剛剛接到陌生來電%@，我已經在@觸寶號碼助手 標記為“%@”。大家一起用@觸寶號碼助手 來標記陌生號碼吧，不錯過重要電話，也不放過騷擾電話！http://t.cn/zY17I5k";
+"sina_number_name_contribution" = "舉手之勞，分享光榮。我剛剛向@觸寶號碼助手 貢獻了“%@”號碼：%@。如果大家在觸寶號碼助手中搜到它，可別忘了我的功勞喔！";
+"sina_number_correction" = "剛發現#觸寶號碼助手#裏“%@”的電話信息錯了。@觸寶號碼助手 趕緊改一下吧！查號這功能還是挺好用的，不用流量也能查到各種商戶電話http://t.cn/zY17I5k。";
+"a_ring" = "響一聲";
+
+"Offline data" = "離線識別庫";
+"More" = "更多";
+"TouchPal helps you to display Caller ID and tell telemarketers without network if you download the offline city package." = "安裝離線識別號碼庫，可以在無網絡情況下，智能顯示陌生號碼名稱，辨識騷擾及詐騙電話。";
+"This is only for users with China Sim." = "僅支持中國Sim卡用戶";
+
+"Tools management" = "插件管理";
+
+// Plugin Vote
+"plugin_vote_name_busy_status" = "忙閑狀態";
+"plugin_vote_name_merge_contact" = "聯系人去重";
+"plugin_vote_name_backup_restore" = "備份還原";
+"plugin_vote_name_scan_card" = "名片掃描";
+"plugin_vote_description_busy_status" = "當您不方便接電話的時候，可以設置忙閑狀態並留言。安裝了觸寶號碼助手的好友在撥打您的電話的時候能夠看到您設置的狀態。";
+"plugin_vote_description_merge_contact" = "一鍵合並重復聯系人，高效管理聯系人信息。";
+"plugin_vote_description_backup_restore" = "備份聯系人，通話記錄等信息，隨時找回，安全無憂。";
+"plugin_vote_descrpition_scan_card" = "不再需要紙質名片，通過觸寶輕松與對方交換電子名片，方便快捷。";
+
+"plugin_vote_intro_title" = "用戶投票";
+"plugin_vote_intro" = "投票給您希望觸寶增加的功能，每位用戶有一次投票機會。";
+"plugin_vote_confirm" = "您只有一次投票機會，確認投票給 '%@'？";
+"plugin_vote_btn_text" = "投票";
+"plugin_voted_btn_text" = "已投票";
+
+// Plugin installed
+"plugin_installed_description_offline" = "安裝離線識別號碼庫，確保在無聯網情況下，可以智能識別陌生號碼名稱，辨識騷擾及詐騙電話。";
+"plugin_installed_description_ip" = "自動加撥IP前綴，幫助您輕松實現IP撥號，節省通話費用。";
+"plugin_installed_description_gesture" = "為常聯絡的人設置手勢，實現快速撥號。";
+"plugin_installed_description_theme" = "繽紛主題任妳選。";
+
+// Gesture
+"Add gesture" = "添加新手勢";
+"Edit gesture" = "編輯手勢";
+"Choose a contact" = "選聯絡人";
+"Choose a contact first" = "請選擇聯絡人";
+"Change contact" = "換個人";
+"switch text" = "開啟手勢撥號";
+"demo prompt1" = "畫個圖形代表Ta↴";//"畫個圖形代表Ta↘";
+"demo prompt2" = "試著畫一個圖形↴";
+"delete prompt" = "確定刪除此手勢？";
+"cannot add gesture" = "號碼中帶有特殊符號，不支持創建手勢，換一個試試。";
+
+// CallLogType
+"Call Logs" = "通話記錄";
+"All_logs" = "全部記錄";
+"Missed_logs" = "未接來電";
+"Outgoing_logs" = "撥出號碼";
+"Incoming_logs" = "呼入號碼";
+"Unknown_logs" = "陌生號碼";
+"Public_number_set" = "公共號碼簿";
+
+"Unselect_all" = "取消";
+"All_contacts_grouped" = "不錯哦，所有的聯系人都整理得井井有條";
+"set email account" = "請先配置郵箱";
+
+"Touchpal official website" = "觸寶官網: ";
+"Touchpal BBS" = "觸寶論壇: ";
+"QQ chat group" = "QQ討論群: 198113524";
+"Touchpal official Weibo" = "官方微博: ";
+"Touchpal official Wechat platform" = "官方微信: touchpal-fan";
+
+"reset_net_prompt" = "未連接到互聯網，請檢查網絡配置";
+"reload_yellow_page" = "重新載入";
+
+"save_image_succeed" = "保存圖片成功";
+"save_image_fail" = "保存圖片失敗";
+
+//以下未进行英文、繁体适配
+"voip" = "免费电话";
+"voip_start" = "跳过";
+"voip_cootek_user_friend" = "触宝好友";
+"voip_close" = "关闭";
+"voip_now_user_number" = "当前用户数";
+"voip_one_minute_learn_voip" = "一分钟了解触宝电话";
+"voip_you_have_bind_phone_number" = "您已绑定手机号%@";
+"voip_open_free_phone" = "开启免费电话";
+"voip_input_phone_numer" = "输入您的手机号";
+"voip_input_verification_code" = "输入收到的验证码";
+"voip_get_verification_code" = "获取验证码";
+"voip_get_verification_code_again" = "重获验证码";
+"voip_time_cut_down" = "倒计时中";
+"voip_verify_by_SMS" = "短信验证";
+"voip_verify_by_speech" = "语音验证";
+"voip_input_phone_number_length_error" = "请输入正确的手机号码";
+"voip_input_verify_code_length_error" = "请输入正确的验证码";
+"voip_input_invitation_code_length_error" = "请输入正确的兑换码";
+"voip_network_no_error" = "当前网络不可用，请检查网络连接";
+"voip_network_verify_error_and_retry" = "无法连接服务器，建议更换网络后重试";
+"voip_network_verify_code_success" = "申请成功，等待验证码！";
+"voip_network_verify_phone_number_error" = "手机号码有误，请重新输入！";
+"voip_network_verify_fail" = "申请验证码失败，请重新申请！(%d)";
+"voip_network_register_error_and_retry" = "无法连接服务器，建议更换网络后重试";
+"voip_network_register_success" = "注册成功，进入下一步！";
+"voip_network_register_code_error" = "验证码有误，请重新输入";
+"voip_network_verify_code_overdue" = "验证码过期";
+"voip_network_register_fail" = "注册失败，请重新注册";
+"voip_input_invitation_code" = "输入兑换码";
+"voip_queue_wait_number" = "您前面还有%@人在排队";
+"voip_friend_inviite_code" = "好友送码";
+"voip_activity_get_code" = "活动抢码";
+"voip_not_have_quality" = "服务器已爆满，您需排队等待开通。";
+"voip_i_know" = "我知道了";
+"voip_rest_of_time" = "与非触宝用户通话 剩余%@分钟";
+"voip_share_now" = "立即分享";
+"voip_my_rank" = "我的排名";
+"voip_share_in_wechat1" = "分享";
+"voip_share_in_wechat2" = " ＋50分钟";
+"voip_share_in_wechat3" = "分享";
+"voip_invite_friend1" = "邀请";
+"voip_invite_friend2" = " ＋200分钟";
+"voip_invite_friend3" = "+10分钟";
+"voip_free_phone" = "免费电话";
+"voip_open_voip" = "开启免费电话";
+"voip_open_voip_hint" = "用触宝打电话，省钱省心";
+"voip_backcall_on" = "允许自动回拨";
+"voip_backcall_on2gor3gMobile" = "2G网络下直接使用回拨模式";
+"voip_cancel" = "取消";
+"voip_close" = "关闭";
+"voip_use_invitation_code" = "奖励兑换";
+"voip_international_call_Join_immediately" = "免费国际长途(未获得邀请码)";
+"voip_international_call_Join_OK" = "免费国际长途(已获得邀请码)";
+"voip_international_call_Join_immediately_normal" = "未获得邀请码";
+"voip_international_call_Join_OK_normal" = "已获得邀请码";
+"voip_earn_more_minutes" = "赚取更多免费时长";
+"voip_earn_more_flow" = "领取更多免费流量";
+"voip_earn_more_minutes_hint" = "在这里，轻松获得免费时长";
+"voip_earn_more_flow_hint" = "在这里，轻松获得免费流量";
+"voip_flow_stream" = "提取流量";
+"voip_flow_stream_hint" = "使用流量前，需先提取到手机";
+"voip_flow_help" = "使用说明";
+"voip_flow_help_hint" = "点击查看获取及提取说明";
+
+"voip_now_invite_friend1" = "成功邀请好友，";
+"voip_now_invite_friend2" = "可获时长奖励";
+
+"voip_now_invite_timelinefriend1" = "现在";
+"voip_now_invite_timelinefriend2" = "分享";
+"voip_now_invite_timelinefriend3" = "，立即获得";
+"voip_now_invite_timelinefriend4" = "50分钟免费时长！";
+"voip_now_invite_timelinefriend5" = "本月分享赠送已达上限，下个月再来咯！";
+
+"send_verification_to_friend" = "发送以下兑换码给好友：";
+"voip_suggestion_use_wifi" = "WIFI下拨打免费电话音质更佳，效果更好";
+"voip_to_get_more_time" = "兑换码来自于各类活动，可增加分钟数";
+"voip_your_cootek_friend" = "您的触宝好友";
+"voip_friend_with_invitation_code" = "您的这些朋友可以提供兑换码";
+"voip_get_verification_code_again" = "重获验证码";
+"voip_outgoing_connect_status" = "当前网络不稳定，建议在WiFi下使用";
+"voip_pjsip_error_other_network" = "对方线路\n不太稳定";
+"voip_pjsip_error_server_error" = "服务器凌乱了\n请再试一次";
+"voip_outgoing_connect_server" = "正在连接服务器";
+"voip_outgoing_query_is_touchpal" = "正在查询对方身份";
+"voip_outgoing_is_touchpal" = "对方是触宝用户";
+"voip_outgoing_is_not_touchpal" = "对方不是触宝用户";
+"voip_outgoing_waiting_confirm" = "等待对方接听";
+"voip_outgoing_touchpal_call1" = "你们享受";
+"voip_outgoing_touchpal_call2" = "无限畅打";
+"voip_outgoing_remaining_time" = "剩余时长";
+"minutes" = "分钟";
+"voip_outgoing_get_free_call" = "立即领取";
+"voip_outgoing_begin_enjoy_free_call" = "开始享受";
+"voip_outgoing_calling" = "正在呼叫...";
+"voip_outgoing_hard_calling" = "正在努力呼叫TA...";
+"voip_outgoing_hangup" = "通话结束";
+"voip_outgoing_hangup_error" = "抱歉遇到异常哦";
+"voip_outgoing_mute" = "静音";
+"voip_outgoing_speaker" = "免提";
+"voip_welcome_use1" = "欢迎使用";
+"voip_welcome_use2" = "触宝电话";
+"voip_thank_use" = "谢谢使用";
+"voip_ringing" = "等待对方接听";
+
+"voip_is_cootek_user" = "对方是触宝用户，通话不限时长";
+"voip_is_not_cootek_user" = "对方非触宝用户，通话还剩%d分钟";
+"voip_is_not_cootek_user_call_type" = "邀请Ta";
+"voip_freeCallDisable_17" = "17*号段 线路尚未稳定";
+"voip_freeCallDisable_XINJIANGXIZANG" = "免费电话 不支持新疆西藏地区";
+"voip_freeCallDisable_oversea" = "免费电话 不支持海外号码";
+"voip_freeCallDisable_landline" = "免费电话 固定电话需要加区号";
+"voip_freeCallDisable_owner_phone" = "免费电话 不支持本机号码";
+"voip_freeCallDisable_service" = "免费电话 不支持服务类号码";
+"voip_freeCallDisable_error" = "免费电话 不支持该号码";
+
+"voip_normal_call" = "普通电话";
+"voip_invite_immediate" = "立即邀请 %@";
+"voip_send_sms" = "短信";
+"voip_send_wechat" = "微信好友";
+"voip_send_qq" = "QQ发送";
+"voip_welcome_to_use_cootek_phone" = "快来使用触宝电话吧！";
+"voip_no_network_use_wifi" = "当前没有网络,无法使用触宝电话，请先连接WIFI网络";
+"voip_bad_network_use_wifi" = "当前网络状况不佳,无法保证触宝电话音质，建议先连接WIFI网络";
+"voip_call_17_number_alert" = "17*号段线路尚在测试中，可能会无法接通。";
+
+"voip_copy" = "复制";
+"voip_copy_success" = "复制成功";
+"voip_input_your_invitation_code" = "输入您已获得的兑换码";
+"voip_user_number_now" = "当前通话人数";
+
+"voip_now_invite_friend_to_get_more_time" = "现在邀请朋友 获更多免费时长";
+"voip_call_cootek_user_not_stop" = "和触宝用户打电话 享无限畅聊！";
+"voip_you_are_cootek_user" = "与触宝用户通话";
+"voip_free_all_time" = "无限畅打";
+"voip_network_error" = "网络访问错误";
+"voip_invite_friend_wechat_message_with_code" = "我的触宝电话兑换码：%@，大家快来使用！";
+"voip_invite_friend_wechat_message_without_code" = "我在用触宝电话，大家快来使用！";
+
+"voip_not_chinese_phone" = "免费电话仅支持中国大陆号码";
+"voip_weixin_share_title" = "把好用的免费电话软件“触宝电话”推荐给你！";
+"voip_weixin_share_description" = "注册即可获得700分钟免费通话时长，快来体验吧！";
+"voip_weixin_timeline_share" = "我一直用“触宝电话”免费打电话，现在注册还可获得700分钟免费通话时长，快来体验吧！";
+
+"voip_sms_share_message" = "我一直用“触宝电话”免费打电话，现在注册还可获得700分钟免费通话时长，快来体验吧！";
+"voip_copy_share_message" = "我正在使用“触宝电话”，可以免费拨打国内手机，对方不装不联网也能打，送你700分钟时长体验！兑换码：%@，下载： %@";
+
+"voip_register_pass" = "免费电话申请已经通过，您可以打免费电话了";
+"voip_need_register_again" = "账号出现错误\n您需要重新登录！";
+
+"voip_redial" = "重拨";
+"voip_get_more_minutes" = "获得更多分钟数：";
+"voip_cootek_user_label" = "I";
+"voip_need_login" = "账户出错\n请重新登入";
+
+"voip_share_timeline_success" = "分享朋友圈成功！";
+"voip_share_timeline_fail" = "分享朋友圈失败！";
+
+"voip_share_qqzone_success" = "分享QQ空间成功！";
+"voip_share_qqzone_fail" = "分享QQ空间失败！";
+
+//pjsip error string
+"voip_pjsip_error_network" = "当前网络不稳定";
+"voip_pjsip_error_net_switch" = "刚才断网了\n请再试一次";
+"voip_pjsip_error_incall" = "对方占线";
+"voip_pjsip_error_version_expired" = "当前版本过低\n请更新程序";
+"voip_pjsip_error_reach_limit" = "免费电话\n挤爆了";
+"free_expired" = "免费时长\n已用尽";
+"voip_pjsip_error_need_login" = "voip_pjsip_error_need_login";
+
+//callback
+"voip_invite" = "邀请";
+"voip_share" = "分享";
+"voip_hide" = "隐藏";
+"call_fee_remind" = "打给\n触宝用户\n不限时长";
+"voip_pal_not_decide" = "未查询到对方身份";
+"voip_first_callback1" = "首次使用";
+"voip_first_callback2" = "查看详情";
+"voip_will_get_call" = "您将接到一通被叫号码来电";
+
+"voip_oversea_you_dont_start_voip" = "试试开启免费国际长途";
+"voip_you_dont_start_voip" = "您尚未开启免费电话";
+"voip_not_interest" = "不感兴趣";
+"voip_start_now" = "立即启用";
+
+"voip_allow_use_callback" = "允许使用回拨模式";
+"voip_callback_is_on_use" = "已启用，系统将根据通话环境智能选择";
+"voip_callback_isnot_on_use" = "未启用，始终采用直拨模式";
+"voip_use_callback_alert_word1" = "    启用后，系统将根据当前网络环境自动选择拨打方式。采用回拨模式时，您需先接听来电，再接通对方电话。";
+"voip_know_callback" = "知道了";
+"voip_allow_cellular_data" = "使用3G/4G接听";
+"voip_allow_cellular_data_sub" = "未连接WIFI时，优先使用流量接听";
+"voip_inter_cellular_receiving" = "国际漫游时使用3G/4G接听";
+"voip_inter_cellular_receiving_sub" = "国际漫游时，允许使用流量接听";
+
+
+
+
+"voip_remind_view_title" = "第一次体验回拨模式？";
+"voip_remind_view_label1" = "1. 回拨模式可以在网络不佳时获得较好的通话体验。";
+"voip_remind_view_label3" = "2. 回拨模式采用系统拨打，在您接到系统来电前，可能要等待十秒钟。";
+
+"voip_not_use" = "不使用";
+"voip_now_use" = "去启用";
+"voip_invite_use_callback" = "触宝电话新增回拨模式，\n诚邀您体验！";
+
+"stream_sharelabel_title1" = "您通过 ";
+"stream_sharelabel_title2" = "，获得 ";
+"stream_sharelabel_title3" = " 流量";
+"stream_no_things" = "暂时没有记录";
+"voip_stream_detail" = "话费详情";
+"stream_sharelabel_title4" = "您成功提取了 ";
+
+"voip_timeline" = "朋友圈";
+"voip_qqzone" = "QQ空间";
+
+"voip_suggest_title" = "我要吐槽";
+"voip_suggest_button1" = "断线了";
+"voip_suggest_button2" = "没声音";
+"voip_suggest_button3" = "我听见回音了";
+"voip_suggest_button4" = "有杂音";
+"voip_suggest_button5" = "对方听见回音了";
+"voip_suggest_button6" = "串线了";
+"voip_suggest_button8" = "蓝牙不能正常工作";
+
+"voip_callback_wizard_title" = "即将开始免费回拨...";
+"voip_international_call_wizard_title" = "即将接通国际免费专线...";
+"voip_callback_wizard_hint1" = "回拨模式不耗流量，话质清晰";
+"voip_callback_wizard_hint2" = "";
+"voip_callback_wizard_hint3" = "您需接通固话来电，并保持接通";
+"voip_callback_wizard_hint4" = "";
+"voip_callback_wizard_hint5" = "因手机套餐类型不同，运营商可";
+"voip_callback_wizard_hint6" = "能会收取接听和漫游费用";
+"voip_callback_wizard_ok" = "我知道了";
+
+"voip_register_now" = "立即体验";
+
+"voip_international_call_wizard_hint1" = "国际免费专线不会扣除您的话费，";
+"voip_international_call_wizard_hint2" = "只扣除触宝免费分钟数";
+"voip_international_call_wizard_hint3" = "由于资费系统不同，国际免费专线";
+"voip_international_call_wizard_hint4" = "会多倍扣除您的免费分钟数";
+"voip_international_call_wizard_hint5" = "数据网络下，流量消耗与普通免费";
+"voip_international_call_wizard_hint6" = "电话相同，直拨每分钟300KB左右";
+
+//flow
+"flow" = "免费流量";
+"my_order" = "我的订单";
+"marketing_label" = "活动大厅";
+
+"show_alert_i_know" = "我知道了";
+"show_alert_see_detail" = "查看详情";
+
+"personal_center_login_hint" = "绑定手机号";
+"personal_center_voip_close" = "立即开启";
+"personal_center_voip_login_hint" = "立即开启";
+"personal_center_flow_login_hint" = "做任务送流量";
+"personal_center_logout_hint" = "免费电话功能需要在登录情况使用，确定现在退出？";
+"personal_center_logout_cancel" = "取消";
+"personal_center_logout_confirm" = "确定";
+"personal_center_voip_login_close" = "立即开启";
+"personal_center_mobile" = "手機號";
+"personal_center_gender" = "性別";
+"personal_center_gender_male" = "男";
+"personal_center_gender_female" = "女";
+"personal_center_gender_chose" = "選擇";
+
+//taobao
+"taobao_exchange_success_2000" = "到账可能需要5分钟，您可以稍后再来查看。";
+"taobao_exchange_success_4321" = "到账可能需要一个工作日，您可以稍后再来查看。";
+"taobao_exchange_error_4322" = "请通过QQ讨论群（182770766）联系我们。";
+"taobao_exchange_error_4324" = "提取失败，您可能使用了旧版本的触宝电话(4324)。";
+"taobao_exchange_error_4325" = "提取失败，您可能使用了旧版本的触宝电话(4325)。";
+"taobao_exchange_error_4328" = "提取失败，您可能使用了旧版本的触宝电话(4328)。";
+"taobao_exchange_error_4329" = "提取失败，您可能使用了旧版本的触宝电话(4329)。";
+"taobao_exchange_error_4326" = "您上一次提取的流量尚未到账，请勿重复提取。";
+"taobao_exchange_error_4327" = "该淘宝账号已经领取过流量红包了，请换一个淘宝账号吧。";
+"taobao_exchange_error_4330" = "您输入的账号不存在，请重新输入。";
+"taobao_exchange_error_4004" = "当前登录失效，请重新登录(4004)。";
+"taobao_exchange_error_else" = "出现错误，请重新尝试。";
+
+"taobao_exchange_success" = "流量提取成功";
+"taobao_exchange_fail" = "流量提取失败";
+"taobao_sure_button" = "确定";
+
+"umeng_feedback_title" = "幫助與反饋";
+"umeng_feedback_sayhello" = "Hi，很高興為您服務，請您詳細描述使用中遇到的問題或者您對觸寶電話的建議，我們會盡快幫您處理的。";
+"umeng_feedback_send" = "发送";
+"umeng_feedback_hint" = "想加功能？出问题了？告诉我吧";
+
+"umeng_feedback_title_voip" = "免费电话";
+"umeng_feedback_title_call" = "通话相关";
+"umeng_feedback_title_block" = "拦截与标记";
+"umeng_feedback_title_systemDialer" = "系统拨号相关";
+"umeng_feedback_title_yellow_page" = "生活黄页";
+"umeng_feedback_title_others" = "其他";
+"umeng_feedback_hint1" = "反馈字数太少，可能没法得到有效处理，请您提供更加详细的描述，谢谢！";
+"umeng_feedback_hint2" = "您的反馈已经收到，我们会尽快处理的，感谢您对触宝电话的支持！";
+
+//Personal Center
+"personal_center_title" = "個人中心";
+"personal_center_setting" = "功能設置";
+"personal_center_left_minutes" = "%d分鐘";
+"personal_center_left_minutes_string" = "%@分鐘";
+"personal_center_9999_left_minutes" = "9999+分鐘";
+"personal_center_voip" = "免費時長";
+"personal_center_flow" = "免費流量";
+"personal_center_login" = "立即綁定";
+"personal_center_newer_hint2" = "贈送500分鐘免費時長";
+"personal_center_newer_hint1" = "首次綁定手機號";
+
+"personal_center_setting_free_call" = "免費電話";
+"personal_center_setting_data_pack" = "免費流量";
+"personal_center_setting_coupon" = "優惠券";
+"personal_center_setting_activity_center" = "活動大廳";
+"personal_center_setting_antiharass" = "號碼識別防騷擾";
+"personal_center_setting_unfamiliar_phone" = "陌生號碼識別";
+"personal_center_setting_help" = "幫助與反饋";
+"personal_center_setting_logout" = "解除綁定";
+"personal_center_setting_change_skin" = "個性換膚";
+"personal_center_setting_disturbance_identification" = "騷擾識別";
+"personal_center_setting_free_call" = "免費電話";
+"personal_center_setting_gesture_dial" = "手勢拨號";
+"personal_center_setting_general" = "通用";
+"personal_center_setting_aboat_us" = "關於觸寶";
+
+"personal_infomation" = "個人信息";
+
+
+//Contact info
+"contact_info_email" = "电子邮件";
+"contact_info_url" = "链接";
+"contact_info_address" = "地址";
+"contact_info_copy_success" = "复制成功";
+"contact_info_no_facetime" = "此联系人没有绑定手机号与邮箱，无法使用FaceTime";
+"contact_info_call_log" = "通话记录";
+"contact_info_clear" = "清空";
+"contact_info_morning" = "上午";
+"contact_info_afternoon" = "下午";
+"contact_info_no_facetime" = "请到\"系统设置－FaceTime\"中开启FaceTime功能";
+
+// skin preview
+// skin preview
+"skin_preview_download_now" = "立即下載";
+"skin_preview_share_to_friends" = "分享給好友";
+"skin_preview_download_ok" = "下載成功";
+
+// notification
+"incoming_single_call_notification" = "%@ 来电...";
+"incoming_multi_calls_notification" = "%@ 来电(%d)...";
+//antiharass
+"Since iOS functional limitations: We will of some high-frequency harassing phone calls to contacts stored in your address book" =  "由于iOS功能限制：我们将把一些高频骚扰电话，以联系人的形式存储在您的通讯录中。";
+"Harassment number of the bank are based on your home ground intelligence generated, it is recommended that you regularly updated to ensure the recognition results"="骚扰号码库是根据您的归属地智能生成的，建议您定期更新以保证识别效果。";
+"In order to answer questions that you may encounter in the course of, touch treasure carefully prepared a  ”Essentials“ , more  “how strange line identification number”  and other cheats Oh, go and see?"="为了解答您在使用过程中可能遇到的各种问题，触宝精心准备了一份「使用必读」，更有“如何在线识别陌生号码”等秘籍哦，去看看吧？";
+"Harassment numbers are automatically updated in the library, temporarily unable to close, please wait" = "骚扰号码库正在自动更新中，暂时无法关闭，请稍候";
+
+"After closing, will no longer automatically update harass number recognition library for new harassment will not be the caller's identification number, determine to close?" = "关闭后，将不再自动更新骚扰号码识别库，对于新增骚扰号码将不能进行来电识别，确定关闭？";
+"Harassment numbers are automatically updated in the library, temporarily unable to replace permanent residence, please wait"="骚扰号码库正在自动更新中，暂时无法更换常住地，请稍候";
+"Congratulations, open success" = "恭喜您，开启成功";
+"Whether to copy or identification number to operate?" = "是否对复制的号码进行操作或者识别？";
+"It may take a little time to update the Update Now" = "更新可能需要花费一点时间是否立即更新";
+
+// voip privilege
+//voip_privilege
+"voip_privilege_alert_title" = "VIP用戶享受專線通話不中斷";
+"voip_privilege_task_hint_voip" = "完成下面的任務，成為VIP";
+
+"voip_privilege_cancel_task" = "放棄VIP";
+"voip_privilege_do_task" = "領取VIP";
+
+"voip_privilege_task_bonus_voip" = "送%@天VIP";
+
+"voip_privilege_task_action_install" = "安裝";
+"voip_privilege_task_action_share" = "分享";
+"voip_privilege_task_action_view" = "查看";
+"voip_privilege_task_action_succeed" = "成功";
+"voip_privilege_task_action_complete" = "完整";
+"voip_privilege_task_action_register" = "註冊";
+
+//launch ad  
+"launch_ad_skip_text_format" = "跳过%@";
+"launch_ad_skip_text_normalformat" = "跳过";
+
+"subscribe_touchpal_in_wexin" = "關註微信";
+
+"wexin_not_found" = "未檢測到安裝微信，若已安裝，建議手動打開";
+"wexin_touchpal_fans_copied" = "已復制微信號，搜索時可直接粘貼";
+
+//dialer setting
+"dialer_setting" = "拨号设置";
+"dialer_mode" = "拨号方式";
+"dialer_mode_ask" = "总是询问";
+"dialer_mode_normal" = "只用普通电话";
+"dialer_mode_voip" = "只用免费电话";
+"dialer_mode_setting_guide" = "设置>>";
+
+// contact transfer 通讯录迁移
+"contact_transfer_guide_1_main_title" = "通訊錄「壹鍵全遷移」";
+"contact_transfer_guide_1_alt_title" = "只需掃描二維碼";
+"contact_transfer_guide_2_main_title" = "手機互傳「無中轉」";
+"contact_transfer_guide_2_alt_title" = "信息安全不泄露";
+"contact_transfer_guide_2_button_title" = "立即體驗";
+"contact_transfer_view_loading" = "正在刷新，請稍後";
+
+
+//skin
+"skin_lang" = "tw";
+"skin_author" = "触宝";
+
+"touchpal_test_number" = "觸寶測試專線";
+// calllog empty
+"calllog_empty_hint_welcome" = "您可以這樣開啟觸寶之旅";
+"calllog_empty_btn_learn_voip" = "學習如何撥打免費電話";
+"calllog_empty_btn_use_skin" = "挑選壹套喜歡的主題";
+
+"click_to_show_keypad" = "點擊展开撥號盤";
+"invite_friends" = "邀請有奖";
+"Confirm" = "確定";
+
+// ------
+// for debugging last free call and last ad
+// ------
+"send_by_wechat" = "微信發送";
+"send_by_email" = "郵件發送";
+
+"current_version" = "當前版本";
+"version_just_before_upgrade" = "升級前的版本";
+"first_launch_version" = "第一次安裝的版本";
+"manufacturer" = "廠商";
+"phone_type" = "機型";
+"system_info" = "系統信息";
+
+"last_free_call" = "最近一次免費電話";
+"last_ad" = "最近一次廣告";
+
+"caller_number" = "主叫號碼";
+"callee_number" = "被叫號碼";
+"network_status" = "網絡狀況";
+"call_type" = "撥號類型";
+"error_code_info" = "錯誤碼信息";
+"ad_page_info" = "廣告展示信息";
+"ad_detail" = "詳細信息";
+
+"user_hint_when_sending_crash" = "程序異常退出，請將錯誤信息發送給我們。謝謝。";
+
+"cn_shi" = "是";
+"cn_fou" = "否";
+
+"ad_id" = "廣告ID";
+
+"vip_info" = "VIP信息";
+"voip_priviledge_info" = "掐斷信息";
+"is_vip" = "VIP";
+"not_vip" = "非VIP";
+"free_call_forced_offline" = "被掐斷";
+"free_call_not_forced_offline" = "未被掐斷";
+
+"call_type_back_call" = "回撥";
+"call_type_c2c" = "直播C2C";
+"call_type_c2p" = "直播C2P";
+"call_type_p2p" = "普通電話";
+
+"ad_page_normal" = "正常展示";
+"ad_page_default" = "展示默認頁面";
+"ad_page_error_code" = "展示錯誤碼頁面";
+
+// ------
+// end: for debugging last free call and last ad
+// ------
+"16_card_exchange_main_title" = "輸入免費兌換碼，領取獎勵";
+
+// TPDPersonalCenterController
+"tpd_center_cell_profit_center" = "賺錢中心";
+"tpd_center_cell_game_center" = "遊戲中心";
+"tpd_center_cell_settings" = "設置";
+"tpd_center_cell_add_options" = "添加項";
+"tpd_center_cell_cards" = "我的卡券";
+"tpd_center_profile_my_changes" = "我的零錢";
+"tpd_center_profile_free_minutes" = "免費時長";
+"tpd_center_profile_free_data" = "免費流量";
+
+"login_right_now" = "馬上登錄";
+
+"feeds_video_more_video_comming" = "更多精彩視頻正在趕來...";
+"feeds_video_more_video" = "更多視頻";
+"feeds_video_more_video_empty" = "一片空白，什麼都沒有";
+"feeds_video_load_error" = "網絡不給力，視頻加載失敗";
+"feeds_video_reload" = "重新加載";
+"feeds_video_load_not_wifi" = "正在使用非wi-fi網絡\n繼續播放將産生流量費用";
+
+
+//bibi
+"bibi_guide_go" = "认领";
+"bibi_guide_desc" = "经常唠嗑";
+"bibi_start_talk" = "发起对讲";

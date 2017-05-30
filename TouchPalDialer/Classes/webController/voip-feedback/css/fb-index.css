@@ -1,0 +1,222 @@
+.flex-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    
+    border-bottom: 1px solid #ededed;
+    
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 16px 0;
+}
+.flex-container:hover {
+    cursor: pointer;
+}
+
+.flex-item.desc {
+    -webkit-box-flex: 1.0;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.flex-item.icon, .flex-item.arrow {
+    -webkit-box-flex: 0.0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+/*arrow */
+.arrow {
+    height: 20px;
+    width: 20px;
+    margin:0 12px;
+    background-image: url('fb-arrow-to-down.png');
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 18px 18px;
+}
+
+.content-container{
+    /*border-bottom: 1px solid #ededed;*/
+    display:none;
+}
+
+.content-container .content {
+    color: #212121;
+    text-align: justify;
+}
+
+.content-container .flex-item.desc {
+    padding-left: 43px;
+}
+.text-highlight-blue {
+    color: #039be6;
+}
+
+.arrow-down {
+    background-image: url('fb-arrow-to-down.png');
+}
+.arrow-up{
+    background-image: url('fb-arrow-to-up.png');
+}
+.arrow-right {
+    background-image: url('fb-arrow-to-right.png');
+}
+
+/*
+reset for android chrome
+*/
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/*
+common use
+*/
+.clear-fix {}
+.hidden {display: none;}
+.shown {display: auto;}
+.list-no-style {list-style: none;}
+
+
+/*
+this project specific
+*/
+.item-container {
+    list-style: none;
+}
+
+body {
+    font-family: Roboto, Droid Sans Fallback, "微软雅黑";
+    line-height: 1.2em;
+    color: #212121;
+    background: #f2f2f2;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    font-size: 16px;
+    margin:0 8px;
+}
+#qa-container {
+    -weblit-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px #dddddd;
+    background: #fff;
+}
+
+h2 {
+    font-weight: normal;
+    line-height: 28px;
+    font-size: 95%;
+    color: #212121;
+    padding-left: 12px;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.flex-container a {
+    text-decoration: none;
+}
+a:hover, a:visited, a:link {
+    color: #212121;
+}
+
+.secondary-catagory {
+    display: none;
+}
+
+.content .img-link, .content .img-link:hover{
+   color: #039be6;
+   text-decoration:none;
+}
+
+.intro-after-feedback {
+    display: none;
+}
+
+.fix-width-image {
+    width: 100%;
+}
+
+.button-disabled {
+    background: rgba(0, 0, 0, 0.098);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.button-normal {
+    background: #03a9f4;
+    color: #fff;
+}
+
+.button-highlighted {
+    background: #1975eb;
+    color: #fff;
+}
+
+
+
+.content-container {
+    border-bottom: 1px solid #ededed;
+    padding: 12px 30px 12px 43px;
+    text-align: justify;
+}
+.content-container p.content {
+    color: #616161;
+}
+
+#page-content {
+    margin-top: 8px;
+}
+
+.feedback-faq {
+    width: 100%;
+}
+
+.other-questions {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 46px;
+    border-radius: 4px;
+    display: block;
+    line-height: 46px;
+    margin: 0 8px;
+    text-align: center;
+    margin-bottom: 10px;
+    box-shadow: 
+        10px 0 10px 0 #f2f2f2
+        , -10px 0 10px 0 #f2f2f2
+        ,0 -15px 15px 0 #f2f2f2 ;
+}
+
+.other-questions-container {
+    -webkit-user-select: none;
+    background: #f2f2f2;
+    position: fixed;
+    bottom: 0; left: 0;
+    /*height: 56px;*/
+    width: 100%;
+}
+
+.button-agent {
+    height: 40px;
+    margin-bottom: 20px;
+    visibility: hidden;
+}
+body {
+    counter-reset: entry;
+}
+div.desc::before {
+    content: ' ' counter(entry) '. ';
+    counter-increment: entry;
+    margin-left: 10px;
+}
+
+.question-box-shadow {
+    height: 10px;
+    width: 100%;
+    background-color: transparent;
+    background-size: contain;
+}
+
+
+
+

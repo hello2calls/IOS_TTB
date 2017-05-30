@@ -1,0 +1,730 @@
+//
+//  IndexConstant.h
+//  TouchPalDialer
+//
+//  Created by tanglin on 15-4-7.
+//
+//
+
+//设置各种debug开关
+//禁止index.v2的拉取
+#define NO_INDEX_UPDATE NO
+//禁止zip包的更新
+#define NO_ZIP_UPDATE NO
+//禁止indexFont更新
+#define NO_INDEX_FONT_UPDATE NO
+
+#define OS_NAME @"iOS"
+
+//升级到10，适配开放平台评价体系
+//升级到11，支持分享到QQ,更多代码遗留问题,增加js直接调用native controller的接口;
+//升级到12， ios服务号解析数据类型改成json，防止crash
+//升级到13，新增 canOpenUrl,webShare,downloadOtherApp 接口
+//升级到17，修复浮标会不见的问题
+//升级到18，浮标支持发送到桌面快捷方式
+//升级到19，用来区分有和没有挂机后跳转触宝新闻native界面
+#define WEBVIEW_JAVASCRIPT_API_LEVEL @"19"
+
+#define WIDTH_ADAPT (TPScreenWidth()/360 > 1 ? TPScreenWidth()/360 : 1)
+
+//Common
+#define RECOMMNED_TITLE_SIZE 10
+#define COMMON_BG_COLOR @"#ffeeeeee"
+#define CLICK_CANCELED_OFFSET 20.0f * WIDTH_ADAPT
+#define COMMON_TITLE_TEXT_COLOR @"#ff000000"
+#define COMMON_MARGIN_LINE_SIZE 6.0f
+
+
+#define NEWS_SHORTCUT_TEXT_COLOR @"#3ea9f4"
+#define NEWS_SHORTCUT_TEXT_HIGHLIGHT_COLOR @"#999999"
+
+#define DOCUMENTS_DIR [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+#define WORKING_SPACE @"webpages"
+#define INDEX_FILE @"index.v2.json"
+#define INDEX_REQUEST_FILE @"index.request.json"
+
+#define SEARCH_SITE @"http://search.cootekservice.com"
+#define TOUCHLIFE_SITE @"http://touchlife.cootekservice.com"
+#define OPEN_SITE @"http://open.cootekservice.com"
+
+//set docker server here ！！！！！
+#define YP_DEBUG_SERVER @"http://121.52.235.231:40013"
+
+//
+#define YP_NEWS_FEEDS @"http://ws2.cootekservice.com/news/feeds"
+#define YP_DEBUG_NEWS_FEEDS_PATH @"/news/feeds"
+
+
+#define PREFIX_URL_AD @"http://ws2.cootekservice.com/ad/transform"
+#define PREFIX_URL_NEWS @"http://ws2.cootekservice.com/news/transform"
+
+//
+#define YP_SSP_URL @"http://ws2.cootekservice.com/ad/sspstat"
+#define YP_DEBUG_SSP_URL_PATH @"/ad/sspstat"
+
+#define YP_AD_REQUEST_URL @"http://ws2.cootekservice.com/ad/voip"
+#define YP_DEBUG_AD_REQUEST_URL_PATH @"/ad/voip"
+
+//
+#define YP_FEEDs_RED_PACKET_QUERY_URL @"http://touchlife.cootekservice.com/yellowpage_v3/reward_query"
+#define YP_DEBUG_FEEDs_RED_PACKET_QUERY_URL_PATH @"/yellowpage_v3/reward_query"
+
+#define YP_FEEDs_RED_PACKET_ACQUIRE_URL @"http://touchlife.cootekservice.com/yellowpage_v3/reward_send"
+#define YP_DEBUG_FEEDs_RED_PACKET_ACQUIRE_URL_PATH @"/yellowpage_v3/reward_send"
+
+//
+#define YP_FEEDS_SIGN_QUERY_URL_PATH @"/yellowpage_v3/query_sign_in_reward"
+#define YP_FEEDS_SIGN_URL_PATH @"/yellowpage_v3/sign_in_reward"
+
+//
+#define YP_SSP_URL @"http://ws2.cootekservice.com/ad/sspstat"
+#define YP_DEBUG_SSP_URL @"http://183.136.223.35:8888/ad/sspstat"
+//request url and path
+#define YP_ZIP_UPDATE_URL @"%@/static/yellowpage/zh-cn/update?ver=%d"
+#define ACTIVITY_REQUEST_PATH @"/native_index/index_activity"
+#define INDEX_JSON_PATH @"/res/index.v2.json"
+#define YP_ACTIVITI_FILEPATH @"/activity"
+#define YP_CITY_SELECT_PATH @"%@/page/indexCity.html"
+#define COUPON_REQUEST_PATH @"/native_index/index_coupon"
+#define GEOCODING_REQUEST_PATH @"/native_index/geocoding"
+#define MINI_BANNER_REQUEST_PATH @"/native_index/index_mini_banner"
+#define SERVICE_BOTTOM_PATH @"/comment/service_menus"
+#define WEATHER_REQUEST_PATH @"/yellowpage_v3/weather"
+#define WEATHER_PAGE_PATH @"/page_v3/index_weather.html"
+#define SHORTCUT_PAGE_PATH @"/page_v3/shortcut_jump.html?"
+
+#define CHARGE_URL  @"http://search.oem.cootekservice.com/page/timerecharge.html"
+#define CHARGE_HISTORY_URL @"http://search.oem.cootekservice.com/page_v3/timecharge_history.html"
+
+
+//index-font
+#define INDEX_FONT_FILE @"yp_index.ttf"
+#define INDEX_FONT_PATH @"/res/yp_index.ttf"
+#define INDEX_FONT_LOCAL_PATH @"/webpages/yp_index.ttf"
+#define INDEX_FONT_REQUEST_TIME_OUT_INTERVAL 10
+#define INDEX_FONT_LAST_MODIFIED_TIME @"Font-Last-Modified-Time"
+
+//edurl
+#define EDURL_SEND_DIC @"edurlSendDic"
+#define FLOATING_MENUS_COLOR @"#eae9e9"
+//version txt
+#define ZIP_VERSION_FILE @"version.txt"
+
+//city data file
+#define CITY_DATA_EN_FILE @"city_en_zh"
+#define CITY_DATA_FILE @"city_data"
+
+#define KEY_PARAM_URL @"url"
+#define KEY_PARAM_PARAMS @"params"
+#define KEY_PARAM_NATIVE_PARAMS @"nativeParams"
+#define KEY_PARAM_NEED_LOGIN @"needLogin"
+#define KEY_PARAM_NEED_SIGN @"needSign"
+#define KEY_PARAM_IS_COOTEK @"isCooTek"
+
+//row height
+#define INDEX_ROW_HEIGHT_SEARCH 38
+#define INDEX_ROW_HEIGHT_NETWORK_ERROR 38
+#define INDEX_ROW_HEIGHT_MY_PHONE 38
+#define INDEX_ROW_HEIGHT_HOT_CHANNEL 38
+#define INDEX_ROW_HEIGHT_BANNER 100 * TPScreenWidth()/360
+#define INDEX_ROW_HEIGHT_ANNOUNCEMENT 35
+#define INDEX_ROW_HEIGHT_RECOMMEND (int)(92.0f * WIDTH_ADAPT)
+#define INDEX_ROW_HEIGHT_CATEGORY 42.0f * WIDTH_ADAPT
+#define INDEX_ROW_HEIGHT_FIND 105.0f * WIDTH_ADAPT
+#define INDEX_ROW_HEIGHT_TRACK 40
+#define INDEX_ROW_HEIGHT_SEPARATOR 10
+#define INDEX_ROW_HEIGHT_FOOTER 42
+#define INDEX_ROW_HEIGHT_NEW_CATEGORY 100.0f * WIDTH_ADAPT
+#define INDEX_ROW_HEIGHT_MY_PROPERTY 93.0f * WIDTH_ADAPT
+#define INDEX_ROW_HEIGHT_MY_TASK_BTN 53.0f * WIDTH_ADAPT
+#define INDEX_ROW_HEIGHT_MY_TASK 80.0f
+#define INDEX_ROW_HEIGHT_MY_TASK_DUMMY 26.0f
+#define INDEX_ROW_HEIGHT_SERVICE_TITLE 50.0f * WIDTH_ADAPT
+#define INDEX_ROW_HEIGHT_SERVICE_CONTENT 90.0f * WIDTH_ADAPT
+#define INDEX_ROW_HEIGHT_SERVICE_HEADER 65.0f * WIDTH_ADAPT
+#define INDEX_ROW_HEIGHT_SUB_BANNER 77.0f
+#define INDEX_ROW_HEIGHT_MINI_BANNER 56.0f
+#define INDEX_ROW_HEIGHT_FIND_NEWS_BIG_IMAGE 168.0f * WIDTH_ADAPT
+#define INDEX_ROW_HEIGHT_FIND_NEWS_ONE_IMAGE 68.0f * WIDTH_ADAPT
+#define INDEX_ROW_HEIGHT_FIND_NEWS_THREE_IMAGE 70.0f * WIDTH_ADAPT
+#define INDEX_ROW_HEIGHT_FIND_NEWS_NO_IMAGE 20.0f * WIDTH_ADAPT
+#define INDEX_ROW_HEIGHT_FIND_NEWS_UPDATE_REC 36.0f * WIDTH_ADAPT
+
+#define INDEX_ROW_HEIGHT_FIND_NEWS_VIDEO (140.0f * WIDTH_ADAPT)
+
+//#define INDEX_ROW_HEIGHT_FIND_NEWS_BIG_IMAGE 250.0f * WIDTH_ADAPT
+//#define INDEX_ROW_HEIGHT_FIND_NEWS_ONE_IMAGE 120.0f * WIDTH_ADAPT
+//#define INDEX_ROW_HEIGHT_FIND_NEWS_THREE_IMAGE 180.0f * WIDTH_ADAPT
+//#define INDEX_ROW_HEIGHT_FIND_NEWS_NO_IMAGE 90.0f * WIDTH_ADAPT
+#define INDEX_ROW_WIDTH_FIND_NEWS_ONE_IMAGE 114.0f * WIDTH_ADAPT
+#define INDEX_ROW_WIDTH_FIND_NEWS_ONE_IMAGE_MARGIN 22.0f
+#define INDEX_ROW_HEIGHT_FIND_NEWS 100.0f * WIDTH_ADAPT
+#define INDEX_ROW_HEIGHT_FIND_NEWS_HEADER 38 //35.0f * WIDTH_ADAPT
+#define FIND_NEWS_LEFT_MARGIN 12.0f
+#define FIND_NEWS_TOP_MARGIN 14.0f
+#define FIND_NEWS_MARGIN_TO_IMAGE 12.0f
+
+#define INDEX_ROW_HEIGHT_AD_CELL (65)
+#define INDEX_ROW_HEIGHT_TPD_LOCAL_SETTINGS_CELL (65)
+#define INDEX_ROW_HEIGHT_TPD_PROFIT_CENTER_CELL (65)
+#define INDEX_ROW_HEIGHT_TPD_MY_PROPERTY (220)
+#define INDEX_ROW_HEIGHT_TPD_BANNER (95)
+#define INDEX_ROW_HEIGHT_TPD_MINI_BANER (50)
+
+#define INDEX_ROW_AD_CELL_MARGIN (15)
+
+
+//define row width for task btn
+#define INDEX_ROW_WIDTH_MY_TASK_BTN 220.0f * WIDTH_ADAPT
+#define MY_TASK_BTN_HEIGHT 35.0f * WIDTH_ADAPT
+//separator
+#define SEPARATOR_BG_COLOR @"#fff8f8f8"
+
+//category
+#define CATEGORY_BORDER_COLOR @"#eae9e9"
+#define CATEGORY_BORDER_MARGIN 10.0f * WIDTH_ADAPT
+#define CATEGORY_BORDER_WIDTH 2.0f * WIDTH_ADAPT
+#define CATEGORY_COLUMN_COUNT 3
+#define CATEGORY_TITLE_WIDTH 80 * WIDTH_ADAPT
+#define CATEGORY_CELL_TEXT_COLOR @"#333333"
+#define CATEGORY_CELL_TEXT_SIZE 8 * WIDTH_ADAPT
+#define CATEGORY_CELL_TEXT_HIGHLIGHT_COLOR @"#f2f2f2"
+
+
+//service
+#define SERVICE_TITLE_TEXT_COLOR @"#9e9d9d"
+#define SERVICE_CELL_TEXT_COLOR @"#757575"
+#define SERVICE_CELL_BG_COLOR @"#ffffff"
+#define SERVICE_CELL_TEXT_HIGHLIGHT_COLOR @"#03a9f4"
+#define SERVICE_CELL_TEXT_HEIGHT_TITLE 20.0f
+#define SERVICE_CELL_TEXT_SIZE 12.0f
+
+#define SERVICE_BORDER_COLOR @"#9e9d9d"
+#define SERVICE_TITILE_BORDER_COLOR @"#9e9d9d"
+#define SERVICE_BORDER_MARGIN 10
+#define SERVICE_TITLE_WIDTH 80
+
+#define SERVICE_BORDER_WIDTH 0.5f * WIDTH_ADAPT
+#define SERVICE_BORDER_SELECT_WIDTH 3.0f * WIDTH_ADAPT
+#define SERVICE_COLUMN_COUNT 3
+#define SERVICE_MARGIN_BOTTOM 13.0f
+
+
+#define YP_ICON_MARGIN 11
+#define YP_ICON_TOP_MARGIN 6
+
+#define CATEGORY_ITEM_TYPE_NORMAL 0
+#define CATEGORY_ITEM_TYPE_START 1
+#define CATEGORY_ITEM_TYPE_END 2
+#define CATEGORY_ITEM_TYPE_NONE 3
+#define CATEGORY_ITEM_TYPE_TOP_LEFT 4
+#define CATEGORY_ITEM_TYPE_TOP_NORMAL 5
+#define CATEGORY_ITEM_TYPE_MIDDLE_LEFT 6
+#define CATEGORY_ITEM_TYPE_MIDDLE_NORMAL 7
+#define CATEGORY_ITEM_TYPE_BOTTOM_LEFT 8
+#define CATEGORY_ITEM_TYPE_BOTTOM_NORMAL 9
+
+//new category
+#define NEW_CATEGORY_TYPE_ITEMCATEGORY @"itemCategory"
+#define NEW_CATEGORY_TYPE_ITEMRECOMMEND @"itemRecommand"
+// for more item display......
+#define NEW_CATEGORY_TYPE_ITEMMORE @"item_more"
+#define NEW_CATEGORY_ROW_HEIGHT_HEADER 35.0f * WIDTH_ADAPT
+#define NEW_CATEGORY_TITLE_MARGIN_LEFT 15.0f
+#define NEW_CATEGORY_COLUMN_COUNT 3
+#define NEW_CATEGORY_ROW_HEIGHT_TITLE 20.0f
+#define NEW_CATEGORY_ROW_HEIGHT_SUB_TITLE 20.0f
+#define NEW_CATEGORY_MARGIN_BOTTOM 8.0f
+#define NEW_CATEGORY_ITEM_TYPE_NORMAL 0
+#define NEW_CATEGORY_ITEM_TYPE_NONE 1
+#define NEW_CATEGORY_ITEM_TYPE_BOTTOM 2
+#define NEW_CATEGORY_CELL_SUB_TEXT_COLOR @"#ff757575"
+#define NEW_CATEGORY_CELL_TEXT_HIGHLIGHT_COLOR @"#edebeb"
+#define NEW_CATEGORY_CELL_TITLE_TEXT_COLOR @"#333333"
+#define NEW_CATEGORY_BORDER_COLOR @"#ececec"
+#define NEW_CATEGORY_BORDER_WIDTH 2.0f * WIDTH_ADAPT
+#define NEW_CATEGORY_TITLE_SIZE 13.0f
+#define NEW_CATEGORY_SUB_TITLE_SIZE 10.0f
+#define NEW_CATEGORY_MARGIN_TOP 5.0f
+#define NEW_CATEGORY_MORE_ICON_PATH @"/res/image/index/item_icon/gengduo.png"
+#define NEW_CATEGORY_MORE_TITLE @"全部服务"
+
+#define FIND_NEWS_HEADER_BORDER_SIZE 2.0f * WIDTH_ADAPT
+#define FIND_NEWS_HEADER_BORDER_COLOR @"#eae9e9"
+
+//CategorySectionRowView
+#define NEW_CATEGORY_SECTION_HEADER_HEIGHT 40.0f
+#define NEW_CATEGORY_SECTION_TITLE_LOGO_MARGIN_LEFT 20.0f
+#define NEW_CATEGORY_SECTION_CONTENT_HEIGHT 50.0f
+#define NEW_CATEGORY_SECTION_TITLE_TEXT_MARGIN_LEFT 10.0f
+
+#define NEW_CATEGORY_SECTION_CONTENT_MARGIN 10.0f
+#define NEW_CATEGORY_SECTION_TITLE_SIZE 16.0f
+
+//category title
+#define CATEGORY_TITLE_ICON_HEIGHT 5 * WIDTH_ADAPT
+#define CATEGORY_TITLE_ICON_RMARGIN 15 * WIDTH_ADAPT
+#define CATEGORY_TITLE_ICON_COLOR @"#ff2da1f7"
+#define CATEGORY_TITLE_ICON_WIDTH 1
+#define CATEGORY_TITLE_TEXT_MARGIN 16 * WIDTH_ADAPT
+
+//category content
+#define CATEGORY_ITEM_CONTENT_TYPE_NORMAL 2
+#define CATEGORY_ITEM_CONTENT_TYPE_BOTTOM 3
+#define CATEGORY_ITEM_CONTENT_COLUMN_COUNT 3
+#define CATEGORY_ITEM_CONTENT_CELL_TEXT_COLOR @"#333333"
+#define CATEGORY_ITEM_CONTENT_CELL_ALL_TEXT_COLOR @"#ff2da1f7"
+
+//modifyKey
+#define YP_FONT_MODIFY_KEY @"YP-Index_Font_Last-Modified"
+#define SEARCH_TAG 1
+#define BANNER_TAG 2
+#define ANNOUNCEMENT_TAG 3
+#define RECOMMEND_TAG 4
+#define CATEGORY_NORMAL_TAG 5
+#define CATEGORY_TOP_TAG 6
+#define FIND_TAG 7
+#define COUPON_TAG 8
+#define FOOTER_TAG 9
+#define SEPARATOR_TAG 10
+#define CITY_SELECT_TAG 11
+#define ALL_SERVICE_TAG 12
+#define SERVICE_HEADER_TAG 13
+#define SUB_BANNER_TAG 14
+#define FIND_NEWS_TAG 15
+#define FIND_NEWS_BAIDU_TAG 16
+#define FIND_NEWS_HEADER_TAG 17
+#define MINI_BANNER_TAG 18
+#define MY_TASK 19
+#define MT_TASK_BTN_TAG 20
+#define FIND_NEWS_UPDATE_TAG 21
+
+#define TAG_TPD_MY_PROPERTY (100)
+#define TAG_TPD_PROFIT_CENTER (101)
+#define TAG_TPD_LOCAL_SETTINGS (102)
+#define TAG_TPD_AD_CELL (103)
+
+
+//SubBanner
+#define SUBBANNER_COLUMN_COUNT 2
+#define SUBBANNER_TITLE_TEXT_COLOR @"#ff333333"
+#define SUBBANNER_TITLE_SUB_TEXT_COLOR @"#b0b0b0"
+#define SUBBANNER_DESC_TEXT_COLOR @"ff757575"
+#define SUBBANNER_TITLE_SIZE 16.0f
+#define SUBBANNER_SUB_TITLE_SIZE 12.0f
+#define SUBBANNER_DESC_TITLE_SIZE 12.0f
+#define FIRST_SUBBANNER_TITLE_SIZE 16.0f
+#define FIRST_SUBBANNER_SUB_TITLE_SIZE 12.0f
+#define FIRST_SUBBANNER_DESC_TITLE_SIZE 12.0f
+#define SUBBANNER_HIGHLIGHT_COLOR @"#f2f2f2"
+#define SUBBANNER_BG_COLOR @"#ffffff"
+#define SUBBANNER_BORDER_COLOR @"#eae9e9"
+#define SUBBANNER_BORDER_WIDTH 2.0f * WIDTH_ADAPT
+#define SUBBANNER_LEFT_MARGIN 15.0f
+#define SUBBANNER_RIGHT_MARGIN 8.0f
+#define SUBBANNER_LARGE_RIGHT_MARGIN 20.0f
+#define SUBBANNER_ICON_RIGHT_MARGIN 10.0f
+#define LARGE_SUBBANNER_RIGHT_MARGIN 20.0f
+#define LARGE_SUBBANNER_ICON_TOP_MARGIN 5.0f
+#define SUBBANNER_TOP_MARGIN 20.0f
+#define SUBBANNER_LARGE_TOP_MARGIN 12.0f
+#define SMALL_SUBBANNER_ICON_WIDTH 37.0f * WIDTH_ADAPT
+#define LARGE_SUBBANNER_ICON_HEIGHT 63 * WIDTH_ADAPT
+
+//animation interval time
+#define INDEX_ANIMATION_INTERVAL_TIME 5
+
+//Recommend
+#define RECOMMEND_COLUMN_COUNT 5
+#define RECOMMEND_TEXT_COLOR @"#ff333333"
+#define RECOMMEND_TOP_MARGIN 18.0f / WIDTH_ADAPT
+#define RECOMMEND_TEXT_SIZE 12.0f
+#define RECOMMEND_ICON_TO_BOUND 2.0f
+#define RECOMMEND_TEXT_TO_ICON 10.0f
+#define RECOMMEND_PRESSED_BG_COLOR @"#66666666"
+#define RECOMMEND_ALLSERVICE @"all_service"
+#define RECOMMEND_ICON_HEIGHT 35.0f * WIDTH_ADAPT
+#define RECOMMEND_MARGIN_LEFT 10
+
+//My property
+#define MY_PROPERTY_COLUMN_COUNT 5
+#define MY_PROPERTY_TEXT_COLOR @"#8A8A8A"
+#define MY_PROPERTY_TEXT_ERROR_COLOR @"#42424242"
+#define MY_PROPERTY_TEXT_HIGHLIGHT_COLOR @"#f2f2f2"
+#define MY_VIP_INFO_COLOR @"#fab909"
+#define MY_WALLET_INFO_COLOR @"#f46932"
+#define MY_FREE_MINUTES_INFO_COLOR @"#20a147"
+#define MY_TRAFFIC_INFO_COLOR @"#0087dd"
+#define MY_CARD_INFO_COLOR @"#6e4dff"
+#define MY_PROPERTY_BORDER_COLOR @"#eae9e9"
+#define MY_PROPERTY_TOP_MARGIN 20.5f * WIDTH_ADAPT
+#define MY_PROPERTY_BOTTOM_MARGIN 21.0f * WIDTH_ADAPT
+#define MY_PROPERTY_LEFT_MARGIN 6.5f
+#define MY_PROPERTY_TOP_CELL_MARGIN 0.0f
+#define MY_PROPERTY_TEXT_SIZE 12.0f
+#define MY_PROPERTY_TEXT_TOP_SIZE 18.0f * WIDTH_ADAPT
+#define MY_PROPERTY_TEXT_BOTTOM_SIZE 12.0f * WIDTH_ADAPT
+#define MY_PROPERTY_BORDER_WIDTH 2.0f * WIDTH_ADAPT
+#define MY_PROPERTY_ICON_TO_BOUND 5.0f
+#define MY_PROPERTY_TEXT_TO_ICON 10.0f
+#define MY_PROPERTY_PRESSED_BG_COLOR @"#66666666"
+
+
+//My task
+#define MY_TASK_BTN_BORDER_WIDTH 1.0f
+
+#define MY_TASK_BORDER_COLOR @"#eae9e9"
+#define MY_TASK_BG_COLOR @"#fab909"
+#define MY_TASK_PRESS_BG_COLOR @"#dc990c"
+#define MY_TASK_BG_UNLOGGED_COLOR @"#03A9F4"
+#define MY_TASK_BG_PRESS_UNLOGGED_COLOR @"#028DCC"
+#define MY_TASK_BTN_TEXT_COLOR @"#ffffff"
+#define MY_TASK_TOP_MARGIN 12.0f
+#define MY_TASK_BOTTOM_MARGIN 12.0f
+#define MY_TASK_LEFT_MARGIN 6.5f
+#define MY_TASK_ICON_LEFT_MARGIN 13.0f
+#define MY_TASK_ICON_TOP_MARGIN 16.0f
+#define MY_TASK_TITLE_TEXT_SIZE 16.0f
+#define MY_TASK_TITLE_TEXT_COLOR @"#ff333333"
+#define MY_TASK_TITLE_TOP_MARGIN_ONE 16.0f
+#define MY_TASK_TITLE_TOP_MARGIN_TWO 12.0f
+#define MY_TASK_PROPERTY_TEXT_SIZE 12.0f
+#define MY_TASK_PROPERTY_VIP_TEXT_COLOR  @"#ddfab809"
+#define MY_TASK_PROPERTY_WALLET_TEXT_COLOR  @"#f46932"
+#define MY_TASK_PROPERTY_MINUTES_TEXT_COLOR  @"#22a149"
+#define MY_TASK_PROPERTY_TRAFFIC_TEXT_COLOR  @"#0087dd"
+#define MY_TASK_PROPERTY_DIVIDER_COLOR  @"#42424242"
+#define MY_TASK_BTN_CLICK_COLOR  @"#42424242"
+#define MY_TASK_PROPERTY_TEXT_TOP_MARGIN_ONE_LINE 9.0f
+#define MY_TASK_PROPERTY_TEXT_TOP_MARGIN_TWO_LINE 4.0f
+#define MY_TASK_BTN_UNLOGGED_TEXT_COLOR  @"#03a9f4"
+
+#define MY_TASK_ICON_WIDTH 36.0f * WIDTH_ADAPT
+#define MY_TASK_TEXT_SIZE 12.0f
+#define MY_TASK_BORDER_WIDTH 1.0f * WIDTH_ADAPT
+#define MY_TASK_ICON_TO_BOUND 5.0f
+#define MY_TASK_TEXT_TO_ICON 10.0f
+#define MY_TASK_PRESSED_BG_COLOR @"#66666666"
+
+//network error
+#define NETWORK_ERROR_TEXT_SIZE 14.0f
+#define NETWORK_ERROR_ICON_SIZE 20.0f
+#define NETWORK_ERROR_ICON_COLOR @"#f29a99"
+#define NETWORK_ERROR_TEXT_COLOR @"#b3000000"
+#define NETWORK_ERROR_BG_COLOR @"#ffdddc"
+
+//my phone
+#define MY_PHONE_TITLE_SIZE 14.0f
+#define MY_PHONE_RIGHT_TEXT_SIZE 14.0f
+#define MY_PHONE_ICON_TEXT_SIZE 18.0f
+#define MY_PHONE_BG_COLOR @"#f5f5f5"
+#define MY_PHONE_HIGHLIGHT_COLOR @"#edebeb"
+#define MY_PHONE_RIGHT_TEXT_COLOR @"#212121"
+#define MY_PHONE_TITLE_TEXT_COLOR @"#4C4C4C"
+
+//my phone
+#define NETWORK_ERR_TITLE_SIZE 14.0f
+#define NETWORK_ERR_ICON_TEXT_SIZE 15.0f
+#define NETWORK_ERR_ICON_TEXT_COLOR @"#f29a99"
+#define NETWORK_ERR_TITLE_TEXT_COLOR @"#b3000000"
+#define NETWORK_ERR_BG_COLOR @"#ffdddc"
+
+//hot channel
+#define HOT_CHANNEL_TITLE_TEXT_SIZE 14.0f
+#define HOT_CHANNEL_TITLE_TEXT_COLOR @"#757575"
+#define HOT_CHANNEL_ALL_TEXT_COLOR @"#4C4C4C"
+#define HOT_CHANNEL_HIGHLIGHT_COLOR @"#edebeb"
+#define HOT_CHANNEL_BG_COLOR @"#f5f5f5"
+
+//Announcement
+#define ANNOUNCEMENT_TEXT_COLOR @"#ff666666"
+#define ANNOUNCEMENT_TEXT_HIGHLIGHT_COLOR @"#2da1f7"
+#define ANNOUNCEMENT_TEXT_SIZE 12.0f * WIDTH_ADAPT
+#define ANNOUNCEMENT_MARGIN_LEFT 10.0f * WIDTH_ADAPT
+#define ANNOUNCEMENT_BG_COLOR @"#efeeee"
+
+//Weather
+#define WEATHER_TEXT_COLOR @"#ff666666"
+#define WEATHER_TEXT_HIGHLIGHT_COLOR @"#2da1f7"
+#define WEATHER_TEXT_SIZE 12.0f * WIDTH_ADAPT
+#define WEATHER_MARGIN_RIGHT 10.0f * WIDTH_ADAPT
+#define WEATHER_MARGIN_LEFT 2
+
+//FIND
+#define FIND_COLUMN_COUNT 3
+#define FIND_ROW_HEIGHT_HEADER 35.0f * WIDTH_ADAPT
+#define FIND_ROW_HEIGHT_TITLE 20.0f
+#define FIND_ROW_HEIGHT_SUB_TITLE 20.0f
+#define FIND_ITEM_TYPE_NORMAL 0
+#define FIND_ITEM_TYPE_NONE 1
+#define FIND_CELL_TITLE_TEXT_COLOR @"#ff000000"
+#define FIND_CELL_SUB_TEXT_COLOR @"#ff757575"
+#define FIND_CELL_TEXT_HIGHLIGHT_COLOR @"#edebeb"
+#define FIND_TITLE_SIZE 14.0f
+#define FIND_TITLE_COLOR @"#757575"
+#define FIND_SUB_TITLE_SIZE 10.0f
+#define FIND_HEADER_SIZE 15.0f
+#define FIND_HEADER_CONTENT_SIZE 14.0f
+#define FIND_BORDER_COLOR @"#eae9e9"
+#define FIND_BORDER_WIDTH 2.0f * WIDTH_ADAPT
+#define FIND_ICON_TO_TEXT_MARGIN 15.0f
+#define FIND_MARGIN_BOTTOM 10.0f
+#define FIND_MARGIN_TOP 5.0f
+#define FIND_TITLE_MARGIN_LEFT 10.0f
+
+
+
+#define FIND_NEWS_TITLE @"发现资讯"
+
+#define FIND_NEWS_TITLE_HEIGHT 30.0f
+#define FIND_NEWS_BORDER_COLOR @"#9e9d9d"
+#define FIND_NEWS_HIGHLIGHT_COLOR @"#f2f2f2"
+#define FIND_NEWS_TITLE_SIZE       17 * WIDTH_ADAPT
+#define FIND_NEWS_NEW_TITLE_SIZE       17
+#define FIND_NEWS_HOT_SIZE       10 * WIDTH_ADAPT
+#define FIND_NEWS_SUB_TITLE_SIZE       11 * WIDTH_ADAPT
+#define FIND_NEWS_TITLE_COLOR @"#ff333333"
+#define FIND_NEWS_TITLE_CLICKED_COLOR @"#757575"
+#define FIND_NEWS_HOT_COLOR @"#fffc4303"
+#define FIND_NEWS_SUB_TITLE_COLOR @"#757575"
+#define FIND_NEWS_BG_COLOR @"#f5f5f5"
+
+//Footer
+#define FOOTER_TEXT_COLOR @"#ff757575"
+#define FOOTER_TEXT_SIZE 12.0f * WIDTH_ADAPT
+
+//Search
+#define SEARCH_BAR_BORDER_COLOR @"#ffdddddd"
+#define SEARCH_BAR_BG_COLOR @"#ffeeeeee"
+#define SEARCH_BAR_CITY_BG_COLOR @"#ffeeeeee"
+#define SEARCH_BAR_TEXT_FIELD_COLOR @"#ffffffff"
+#define SEARCH_BAR_CITY_TEXT_HIGHLIGHT_COLOR @"#2da1f7"
+#define SEARCH_BAR_BORDER_WIDTH 1
+#define SEARCH_BAR_CITY_WIDTH 70.0f * WIDTH_ADAPT
+#define SEARCH_BAR_CITY_TEXT_SIZE 14.0f
+#define SEARCH_BAR_CITY_TEXT_SMALL_SIZE 12.0f
+#define SEARCH_BAR_CITY_ICON_X_OFFSET 8.0f * WIDTH_ADAPT
+#define SEARCH_BAR_CITY_TEXT_X_OFFSET 15.0f * WIDTH_ADAPT
+
+#define CITY_TITLE_NORMAL_BG_COLOR @"#edebeb"
+#define CITY_HIGHLIGHT_BG_COLOR @"#edebeb"
+#define CITY_NORMAL_BG_COLOR @"#ffffff"
+#define CITY_TITLE_HEIGHT 25
+#define CITY_CONTENT_HEIGHT 40
+#define CITY_HOTKEY_MARGIN 10
+#define CITY_ITEM_TITLE_SIZE 15.0f
+#define CITY_ITEM_TITLE_COLOR @"#ff000000"
+#define CITY_ITEM_CONTENT_SIZE 15.0f
+#define CITY_ITEM_CONTENT_COLOR @"#ff000000"
+#define CITY_ITEM_MARGIN 20.0f
+#define CITY_BORDER_COLOR @"#ffeae9e9"
+#define CITY_LETTER_BG @"#ffffff"
+
+
+#define LETTER_NORMAL_BG_COLOR @"#ff757575"
+#define LETTER_TITLE_SIZE 25.0f
+#define LETTER_TITLE_COLOR @"#ffffffff"
+
+//type title
+#define CITY_ITEM_TYPE_TITLE 1
+//type content
+#define CITY_ITEM_TYPE_CONTENT 2
+//type hot city
+#define CITY_ITEM_TYPE_HOT_CITY 3
+
+//locate
+#define LOCATE_INTERVAL_TIME 24*60*60
+
+//Coupon
+//
+#define COUPON_MARGIN_TOP       4.0f
+#define COUPON_MARGIN_BOTTOM    10.0f
+#define COUPON_MARGIN_LEFT      10.0f
+#define COUPON_MARGIN_RIGHT     10.0f
+#define COUPON_TITLE_MARGIN_LEFT 15.0f
+#define COUPON_TITLE_HEIGHT     35.0f
+#define COUPON_TITLE_SIZE       13.0f
+#define COUPON_TITLE_COLOR @"#ff000000"
+#define COUPON_BORDER_COLOR @"#ffeae9e9"
+
+#define COUPON_ITEM_HEIGHT     100.0f
+#define COUPON_ITEM_TITLE_HEIGHT 36.0f
+#define COUPON_ITEM_TITLE_SIZE 15.0f
+#define COUPON_ITEM_TITLE_COLOR @"#ff000000"
+#define COUPON_ITEM_DIS_WIDTH 60.0f
+#define COUPON_ITEM_DIS_SIZE 11.0f
+#define COUPON_ITEM_DIS_COLOR @"#ff757575"
+
+#define COUPON_ITEM_CONTENT_HEIGHT 30.0f
+#define COUPON_ITEM_CONTENT_SIZE 12.0f
+#define COUPON_ITEM_CONTENT_COLOR @"#ff757575"
+
+#define COUPON_ITEM_PRICE_HEIGHT     22.0f
+#define COUPON_ITEM_PRICE_SIZE       13
+#define COUPON_ITEM_OLD_PRICE_SIZE       10
+#define COUPON_ITEM_PRICE_COLOR @"#ffff5722"
+#define COUPON_ITEM_OLD_PRICE_COLOR @"#ff9c9c9c"
+
+#define COUPON_ITEM_JOIN_SIZE       11.0f
+#define COUPON_ITEM_JOIN_COLOR @"#ff9c9c9c"
+
+#define COUPON_ITEM_LOGO_MARGIN 10.0f
+
+
+#define COUPON_ITEM_HIGHLIGHT_COLOR @"#edebeb"
+
+
+//mini banner
+#define MINI_BANNER_TEXT_SIZE       16.0f
+
+#define MINI_ROW_HEIGHT             35.0f
+#define MINI_BANNER_CONRER_RADIUS   20.0f
+#define MINI_BANNER_REDPOINT_WIDTH   20.0f
+#define MINI_BANNER_BG @"#66000000"
+#define MINI_BANNER_HIGHLIGHT_BG @"#99000000"
+#define MINI_BANNER_TEXT_COLOR @"#ffffffff"
+#define MINI_BANNER_HIGHLIGHT_COLOR @"#edebeb"
+#define MINI_BANNER_BG_COLOR @"#ffffff"
+#define MINI_BANNER_BORDER_COLOR @"#eae9e9"
+#define MINI_BANNER_BORDER_WIDTH 2.0f * WIDTH_ADAPT
+
+#define LOAD_MORE_OFFSET 0
+//Style
+#define STYLE_HIGHLIGHT_TYPE_NORMAL @"normal"
+#define STYLE_HIGHLIGHT_TYPE_REDPOINT @"redpoint"
+#define STYLE_HIGHLIGHT_TYPE_RECTANGLE @"rectangle"
+#define STYLE_HIGHLIGHT_BG_COLOR @"#fffc4303"
+#define STYLE_HIGHLIGHT_ROTATE_BG_COLOR @"#fffc4303"
+
+//Scroll
+#define SCROLL_OFFSET_UNIT 10.0f * WIDTH_ADAPT
+//Hight
+#define RED_POINT_HEIGHT_OFFSET 5
+#define RED_POINT_RADIUS 4
+#define RED_SIZE_OFFSET 3
+
+#define RECTANGLE_SIZE_OFFSET 6
+#define RECTANGLE_MARGIN_LEFT 8
+#define RECTANGLE_MARGIN_TOP 2
+#define RECTANGLE_PADDING_TOP 14.0f * WIDTH_ADAPT
+#define RECTANGLE_TEXT_SIZE 9.0f * WIDTH_ADAPT
+
+#define NORMAL_HEIGHT_OFFSET 5.0f
+#define NORMAL_SIZE_OFFSET 3.0f
+#define NORMAL_TEXT_SIZE 9.0f * WIDTH_ADAPT
+
+//coupon query id
+#define YP_COUPON_QUERY_INIT_ID @""
+
+//share params;
+#define SHARE_PARAM_TYPE_QQ @"qq"
+#define SHARE_PARAM_TYPE_QZONE @"qzone"
+#define SHARE_PARAM_TYPE @"type"
+#define SHARE_PARAM_TITLE @"title"
+#define SHARE_PARAM_MSG @"msg"
+#define SHARE_PARAM_URL @"url"
+#define SHARE_PARAM_IMG_URL @"imgUrl"
+
+#define IPHONE_ICON_3 @"iPhoneIcon3"
+#define IPHONE_ICON_2 @"iPhoneIcon2"
+#define IPHONE_ICON_1 @"iPhoneIcon1"
+
+
+//Right Top
+#define RIGHT_TOP_VIEW_TEXT_COLOR @"#666666"
+#define RIGHT_TOP_VIEW_TEXT_HIGHLIGHT_COLOR @"#ff000000"
+
+#define AD_SOURCE_BAIDU @"百度"
+#define AD_SOURCE_GDT @"腾讯"
+
+//send news show time
+
+
+//my properties
+#define PROPERTY_VIP @"vip"
+#define PROPERTY_WALLET @"coin"
+#define PROPERTY_TRAFFIC @"traffic"
+#define PROPERTY_MINUTES @"minutes"
+#define PROPERTY_CARDS @"cards"
+#define ACCOUNTINFOUPDATEFLAGS @"accountInfoUpdateFlags"
+
+//my properties index
+#define MY_VIP_INFO 0
+#define MY_WALLET_INFO 1
+#define MY_FREE_MINUTES_INFO 2
+#define MY_TRAFFIC_INFO 3
+#define MY_CARD_INFO 4
+
+//my properties keys
+#define FIND_WALLET_PROPERTY_VIP_KEY @"find_wallet_property_vip_key"
+#define FIND_WALLET_PROPERTY_WALLET_KEY @"find_wallet_property_wallet_key"
+#define FIND_WALLET_PROPERTY_TRAFFIC_KEY @"find_wallet_property_traffic_key"
+#define FIND_WALLET_PROPERTY_MINUTES_KEY @"find_wallet_property_minutes_key"
+#define FIND_WALLET_PROPERTY_CARDS_KEY @"find_wallet_property_cards_key"
+
+#define FEEDS_RED_PACKET_CLOSE_ICON_PATH @"webpages/res/image/feeds_red_packet_close"
+#define FEEDS_RED_PACKET_SHOW_BG_PATH @"webpages/res/image/feeds_red_packet_detail_show"
+#define FEEDS_RED_PACKET_OPEN_BG_PATH @"webpages/res/image/feeds_red_packet_detail_open"
+#define FEEDS_RED_PACKET_FLOAT_ICON @"webpages/res/image/feeds_red_packet"
+#define FEEDS_SIGN_BG_PATH @"webpages/res/image/feeds_sign_bg"
+#define FEEDS_SIGN_BG_PATH_V6 @"webpages/res/image/feeds_sign_v6_bg"
+
+#define FEEDS_LOGIN_GIFT_PATH @"webpages/res/image/news_gift"
+#define FEEDS_LOGIN_ARROW_PATH @"webpages/res/image/news_gift_arrow"
+
+#define FEEDS_RED_PACKET_TEXT_COLOR @"#ffe2b1"
+#define FEEDS_RED_PACKET_TEXT_TEXTSIZE  28.0f
+
+#define FEEDS_RED_PACKET_TITLE_LINE_COLOR @"#ae9266"
+#define FEEDS_RED_PACKET_TITLE_TEXT_COLOR @"#8f6f440c"
+#define FEEDS_RED_PACKET_TITLE_TEXT_SIZE       20
+#define FEEDS_RED_PACKET_TITLE_LINE_WIDTH 36
+#define FEEDS_RED_PACKET_OPEN_TEXT_TEXTSIZE  21.0f
+#define FEEDS_RED_PACKET_OK_BTN_BG_COLOR @"#ffe2b1"
+#define FEEDS_RED_PACKET_OK_BTN_TEXT_COLOR @"#e44747"
+#define FEEDS_RED_PACKET_OK_BTN_BOTTOM_MARGIN 24
+#define FEEDS_RED_PACKET_OK_BTN_WIDTH 194
+#define FEEDS_RED_PACKET_OK_BTN_HEIGHT 47
+
+#define FEEDS_SIGN_OK_BTN_BG_COLOR @"#ffa640"
+#define FEEDS_SIGN_OK_BTN_BG_COLOR_v6 @"#fa6e7f"
+#define FEEDS_SIGN_OK_BTN_HIGHLIGHT_BG_COLOR @"#eece97"
+#define FEEDS_SIGN_OK_BTN_TEXT_COLOR @"#ffffff"
+#define FEEDS_SIGN_TITLE_TEXT_TEXTSIZE  22.0f
+#define FEEDS_SIGN_TITLE2_TEXT_TEXTSIZE 18.0f
+#define FEEDS_SIGN_CONTENT_TEXT_TEXTSIZE 16.0f
+#define FEEDS_SIGN_BTN_TEXT_TEXTSIZE 18.0f
+
+#define FEEDS_RED_PACKET_AMOUNT_TEXT_SIZE       35
+#define FEEDS_RED_PACKET_AMOUNT_TEXT_COLOR       @"#e44747"
+#define FEEDS_RED_PACKET_AMOUNT_CONTENT_TEXT_SIZE       24
+
+#define FEEDS_WELCOME_BG_PATH @"webpages/res/image/feeds_welcome"
+#define FEEDS_WELCOME_TIMER_RIGHT_MARGIN 24
+#define FEEDS_WELCOME_TIMER_TOP_MARGIN 24
+#define FEEDS_WELCOME_TIMER_WIDTH 36
+#define FEEDS_WELCOME_TIMER_HEIGHT 36
+#define FEEDS_WELCOME_TIMER_BORDER_COLOR @"#78000000"
+#define FEEDS_WELCOME_TIMER_TEXT_COLOR @"#78000000"
+
+#define FEEDS_UPDATE_BG_COLOR @"#fff1e6"
+#define FEEDS_UPDATE_TEXT_COLOR @"#ff8a66" 
+//type
+typedef enum {
+    TRANSFORM_TYPE_UNKNOWN = 0,  // 未知类型
+    LANDINGPAGE = 1,        // lp类广告主转化行为
+    ED_SHOW = 2,            // edurl的展现时间
+} TransformType;
+
+//关闭类型
+typedef enum {
+    UNKNOW = 0,             // 未知行为
+    SWITCH_WINDOW = 1,      // 切换到其它应用程序
+    SWITCH_TAB = 2,         // 切换产品内其它tab
+    HOME = 3,              // HOME键返回
+    BACK = 4,               // 回退(仅限android)
+    LOCK = 5,               // 锁屏
+    CLICKCT = 6,            // 点击内容进入详情页
+    PASS_THROUGH = 7,       // 划过
+} CTCloseType;
+

@@ -1,0 +1,1265 @@
+{
+    "sections": [
+        {
+            "index": 0,
+            "type": "search",
+            "filter": {
+                "os": "iOS"
+            },
+            "link": {
+                "needWrap": true,
+                "url": "http://search.cootekservice.com/page/search.html",
+                "nativeParams": [
+                    "_lat",
+                    "_lng",
+                    "_city",
+                    "search_term"
+                ],
+                "needSign": true
+            },
+            "tips": "你可以搜 ATM、肯德基…"
+        },
+        {
+            "index": 3,
+            "type": "recommend",
+             "recommends" : [[
+                {
+                    "identifier": "recharge",
+                    "title": "充话费",
+                    "iconLink": "http://search.cootekservice.com/res/image/index/first_icon/recharge2.png",
+                    "iconPath": "/res/image/index/first_icon/recharge2.png",
+                    "link": {
+                        "url": "http://search.cootekservice.com/page/recharge.html"
+                    },   
+                    "highlightText": "返2元",
+                    "highlightStyle": "rectangle",
+                    "highlightStart": 1438358400,
+                    "highlightDuration": 345600
+                },
+                {
+                    "identifier": "violation",
+                    "title": "违章代缴",
+                    "iconLink": "http://search.cootekservice.com/res/image/index/first_icon/violation2.png",
+                    "iconPath": "/res/image/index/first_icon/violation2.png",
+                    "link": {
+                        "url": "http://search.cootekservice.com/page/violationList.html"
+                    }
+                },
+                {
+                    "identifier": "express",
+                    "title": "查快递",
+                    "iconLink": "http://search.cootekservice.com/res/image/index/first_icon/express2.png",
+                    "iconPath": "/res/image/index/first_icon/express2.png",
+                    "link": {
+                        "url": "http://search.cootekservice.com/page/express.html",
+                        "params": "self_source=index_native"
+                    }
+                },
+                {
+                    "filter": {
+                        "os": "iOS"
+                    },
+                    "identifier": "send_express",
+                    "title": "寄快递",
+                    "iconLink": "http://search.cootekservice.com/res/image/index/first_icon/send_express2.png",
+                    "iconPath": "/res/image/index/first_icon/send_express2.png",
+                    "link": {
+                        "url": "http://search.cootekservice.com/page/send_express.html",
+                        "params": "self_source=index_native"
+                    }
+                },
+                {
+                    "filter": {
+                        "os": "Android"
+                    },
+                    "identifier": "zhaoping",
+                    "title": "招聘",
+                    "iconLink": "http://search.cootekservice.com/res/image/index/first_icon/zhaopin.png",
+                    "iconPath": "/res/image/index/first_icon/zhaopin.png",
+                    "link": {
+                        "url": "http://touchlife.cootekservice.com/native_index/redirect",
+                        "params": "type=ganjizp",
+                        "nativeParams": [
+                            "_city",
+                            "_loc_city",
+                            "_lat",
+                            "_lng"
+                        ]
+                    }
+                },
+                {
+                    "identifier": "movie_price",
+                    "title": "电影比价",
+                    "link": {
+                        "url": "http://search.cootekservice.com/page/movies.html",
+                        "nativeParams": [
+                            "_city"
+                        ]
+                    },
+                    "iconLink": "http://search.cootekservice.com/res/image/index/first_icon/movie2.png",
+                    "iconPath": "/res/image/index/first_icon/movie2.png"
+                },
+                {
+                    "filter": {
+                        "os": "Android",
+                        "openCities": [
+                            "北京",
+                            "上海",
+                            "成都",
+                            "深圳",
+                            "广州",
+                            "重庆",
+                            "西安",
+                            "武汉",
+                            "长沙",
+                            "东莞"
+                        ]
+                    },
+                    "identifier": "dache",
+                    "title": "打车",
+                    "iconLink": "http://search.cootekservice.com/res/image/index/first_icon/texi2.png",
+                    "iconPath": "/res/image/index/first_icon/texi2.png",
+                    "link": {
+                        "url": "http://search.cootekservice.com/page/dache.html",
+                        "params": "_v=1",
+                        "nativeParams": [
+                            "_city",
+                            "_lat",
+                            "_lng"
+                        ]
+                    }
+                },
+                {
+                    "filter": {
+                        "os": "iOS"
+                    },
+                    "identifier": "dache",
+                    "title": "打车",
+                    "iconLink": "http://search.cootekservice.com/res/image/index/first_icon/texi2.png",
+                    "iconPath": "/res/image/index/first_icon/texi2.png",
+                    "link": {
+                        "url": "http://search.cootekservice.com/page/dache.html",
+                        "params": "_v=1",
+                        "nativeParams": [
+                            "_city",
+                            "_lat",
+                            "_lng"
+                        ]
+                    }
+                },
+                {
+                    "filter": {
+                        "os": "Android",
+                        "closeCities": [
+                            "北京",
+                            "上海",
+                            "成都",
+                            "深圳",
+                            "广州",
+                            "重庆",
+                            "西安",
+                            "武汉",
+                            "长沙",
+                            "东莞"
+                        ]
+                    },
+                    "identifier": "juhuasuan",
+                    "title": "聚划算",
+                    "iconLink": "http://search.cootekservice.com/res/image/index/first_icon/juhuasuan.png",
+                    "iconPath": "/res/image/index/first_icon/juhuasuan.png",
+                    "link": {
+                        "external":true,
+                        "titleBar": "聚划算",
+                        "url": "http://s.click.taobao.com/t?e=m%3D2%26s%3D7w%2FUOMcDYDwcQipKwQzePCperVdZeJviEViQ0P1Vf2kguMN8XjClAraf0T3hwNS7%2FRBR2YS%2F5T7BOKdZfC8XrnmMKT8NDymlYAMZ6MtzD1lo7u0ZZmUk6VW00662PG2K8Cm%2FwUl4ESHcHtRpEUy6RG2AC4yOibZzj5QwTervQtmX4MlPX5K5LMYl7w3%2FA2kb"
+                    }
+                },
+                {
+                    "filter": {
+                        "os": "Android",
+                        "maxApiLevel": 25
+                    },
+                    "identifier": "chongqiubi",
+                    "title": "充Q币",
+                    "iconLink": "http://search.cootekservice.com/res/image/index/first_icon/qbi2.png",
+                    "iconPath": "/res/image/index/first_icon/qbi2.png",
+                    "link": {
+                        "url": "http://chubao.m.7881.com",
+                        "needWrap": false
+                    }
+                },
+                {
+                    "filter": {
+                        "os": "Android",
+                        "minApiLevel": 26
+                    },
+                    "identifier": "bank",
+                    "title": "银行",
+                    "iconLink": "http://search.cootekservice.com/res/image/index/first_icon/bank2.png",
+                    "iconPath": "/res/image/index/first_icon/bank2.png",
+                    "link": {
+                        "url": "http://search.cootekservice.com/page_v3/bank.html",
+                        "params": "self_source=index_native"
+                    }
+                },
+                {
+                    "filter": {
+                        "os": "iOS"
+                    },
+                    "identifier": "jiudian",
+                    "title": "酒店",
+                    "iconLink": "http://search.cootekservice.com/res/image/index/first_icon/hotel2.png",
+                    "iconPath": "/res/image/index/first_icon/hotel2.png",
+                    "link": {
+                        "url": "http://search.cootekservice.com/page/navigate.html",
+                        "localUrl": "/navigate.html",
+                        "params": "classify=酒店",
+                        "isLocal": true,
+                        "nativeParams": [
+                            "_city"
+                        ]
+                    }
+                },
+                {
+                    "identifier": "flight",
+                    "title": "查航班",
+                    "iconLink": "http://search.cootekservice.com/res/image/index/first_icon/flight2.png",
+                    "iconPath": "/res/image/index/first_icon/flight2.png",
+                    "link": {
+                        "url": "http://search.cootekservice.com/page/flight.html"
+                    }
+                }
+            ]]
+        },
+        {
+            "index": 4,
+            "type": "separator",
+            "attrs": {
+            }
+        },
+        {
+            "index": 5,
+            "type": "category",
+            "category" : {
+                "name"  :   "附近",
+                "items" :   [
+                    {
+                        "filter": {
+                            "os": "Android"
+                        },
+                        "identifier": "waimai",
+                        "title": "外卖",
+                        "link": {
+                            "url": "http://touchlife.cootekservice.com/native_index/redirect",
+                            "params": "type=waimai",
+                            "nativeParams": [
+                                "_city",
+                                "_loc_city",
+                                "_lat",
+                                "_lng",
+                                "_address"
+                            ],
+                            "external": true,
+                            "titleBar": "淘点点",
+                            "navigateBar": false,
+                            "quitAlert": "不想继续订外卖了?\n返回上一页请点顶部返回."
+                        }
+                    },
+                    {
+                        "filter": {
+                            "minApiLevelIOS": 1,
+                            "closeCities": [
+                                "全国"
+                            ]
+                        },
+                        "identifier": "ATM",
+                        "title": "ATM",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/nearby_bank.html",
+                            "nativeParams": [
+                                "_city",
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                    },
+                    {
+                        "filter": {
+                            "minApiLevelIOS": 1
+                        },
+                        "identifier": "tingchechang",
+                        "title": "停车场",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/park.html",
+                            "nativeParams": [
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                    },
+                    {
+                        "filter": {
+                            "minApiLevelIOS": 1
+                        },
+                        "identifier": "qupiaodian",
+                        "title": "取票点",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/qupiao.html",
+                            "params": "classify=火车票预订&title=火车票预订",
+                            "nativeParams": [
+                                "_city",
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "index": 6,
+            "type": "separator",
+            "attrs": {
+            }
+        },
+        {
+            "index": 7,
+            "type": "category",
+            "category" : {
+                "name"  :   "同城",
+                "items" :   [
+                    
+                    {
+                        "identifier": "zufang",
+                        "title": "租房",
+                        "highlightText": "热",
+                        "highlightStyle": "normal",
+                        "hiddenOnclick": false,
+                        "highlightStart": 1437559200,
+                        "highlightDuration": 1188000,
+                        "link": {
+                            "url": "http://touchlife.cootekservice.com/native_index/redirect",
+                            "params": "type=ganjizf",
+                            "nativeParams": [
+                                "_city",
+                                "_loc_city",
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                    },
+                    {
+                        "identifier": "jiazheng",
+                        "title": "家政",
+                        "link": {
+                            "url": "http://touchlife.cootekservice.com/native_index/redirect",
+                            "params": "type=ganjijz",
+                            "nativeParams": [
+                                "_city",
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                    },
+                    {
+                        "identifier": "ganji2shoufang",
+                        "title": "二手房",
+                        "link": {
+                            "url": "http://touchlife.cootekservice.com/native_index/redirect",
+                            "params": "type=ganji2shoufang",
+                            "nativeParams": [
+                                "_city",
+                                "_loc_city",
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                    },
+                    {
+                        "identifier": "ershouwupin",
+                        "title": "二手物品",
+                        "link": {
+                            "url": "http://touchlife.cootekservice.com/native_index/redirect",
+                            "params": "type=ganji2swp",
+                            "nativeParams": [
+                                "_city",
+                                "_loc_city",
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                    },
+                    {
+                        "filter": {
+                            "os": "Android",
+                            "openCities": [
+                                "上海"
+                            ]
+                        },
+                        "identifier": "gewala_movie",
+                        "title": "格瓦拉电影",
+                        "link": {
+                            "url": "http://m.gewara.com/touch/partner/chubao/index.xhtml",
+                            "nativeParams": [
+                                "sel_city",
+                                "latitude",
+                                "longitude"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "index": 8,
+            "type": "separator",
+            "attrs": {
+            }
+        },
+        {
+            "index": 9,
+            "type": "category",
+            "category" : {
+                "name"  :   "充值",
+                "items" :   [
+                    {
+                        "identifier": "chongliuliang",
+                        "title": "充流量",
+                        "highlightText": "立减",
+                        "highlightStyle": "rectangle",
+                        "hiddenOnclick": false,
+                        "highlightStart": 1437667200,
+                        "highlightDuration": 432000,
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/mobiledata.html"
+                        }
+                    },
+                    {
+                        "filter": {
+                            "os": "Android",
+                            "openCities": [
+                                "西宁",
+                                "南昌",
+                                "宜春",
+                                "哈尔滨",
+                                "重庆",
+                                "兰州",
+                                "邢台",
+                                "沧州",
+                                "石家庄",
+                                "邯郸",
+                                "长沙",
+                                "湘潭",
+                                "岳阳",
+                                "衡阳",
+                                "永州",
+                                "怀化",
+                                "娄底",
+                                "常德",
+                                "包头",
+                                "温州",
+                                "株洲",
+                                "合肥",
+                                "福州",
+                                "萍乡",
+                                "宁波"
+
+                            ]
+                        },
+                        "identifier": "life_recharge_juhe",
+                        "title": "水电煤",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/life_recharge.html",
+                            "nativeParams": [
+                                "_city"
+                            ]
+                        }
+                    },
+                    {
+                        "filter": {
+                            "os": "Android",
+                            "openCities": [
+                                "上海",
+                                "苏州"
+
+                            ]
+                        },
+                        "identifier": "life_recharge_gd",
+                        "title": "水电煤",
+                        "link": {
+                            "url": "http://touchlife.cootekservice.com/page_v3/life_recharge.html"
+                        }
+                    },
+                    {
+                        "filter": {
+                            "os": "Android"
+                        },
+                        "identifier": "shouyouchongzhi",
+                        "title": "手游充值",
+                        "link": {
+                            "url": "http://chubao.m.7881.com/android.action",
+                            "needWrap": false
+                        }
+                    },
+                    {
+                        "filter": {
+                            "os": "Android"
+                        },
+                        "identifier": "caipiao",
+                        "title": "彩票",
+                        "link": {
+                            "url": "http://m.500.com/coop.htm",
+                            "params": "coop_type=cb",
+                            "needWrap": false
+                        }
+                    },
+                    {
+                        "filter": {
+                            "os": "Android",
+                            "minApiLevel": 26
+                        },
+                        "identifier": "chongqiubi",
+                        "title": "充Q币",
+                        "iconLink": "http://search.cootekservice.com/res/image/index/first_icon/qbi2.png",
+                        "iconPath": "/res/image/index/first_icon/qbi2.png",
+                        "link": {
+                            "url": "http://chubao.m.7881.com",
+                            "needWrap": false
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "index": 10,
+            "type": "separator",
+            "attrs": {
+            }
+        },
+        {
+            "index": 11,
+            "type": "category",
+            "category" : {
+                "name"  :   "汽车",
+                "items" :   [
+                    {
+                        "identifier": "4sdian",
+                        "filter": {
+                            "closeCities": [
+                                "全国"
+                            ]
+                        },
+                        "title": "4S店",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/auto4s.html",
+                            "nativeParams": [
+                                "_city",
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                    },
+                    {
+                        "identifier": "ershouche",
+                        "title": "二手车",
+                        "highlightText": "热",
+                        "highlightStyle": "normal",
+                        "hiddenOnclick": false,
+                        "highlightStart": 1437559200,
+                        "highlightDuration": 1188000,
+                        "link": {
+                            "url": "http://touchlife.cootekservice.com/native_index/redirect",
+                            "params": "type=ganji2sc",
+                            "nativeParams": [
+                                "_city"
+                            ]
+                        }
+                    },
+                    {
+                        "identifier": "weixiubaoyang",
+                        "title": "维修保养",
+                        "filter": {
+                            "closeCities": [
+                                "全国"
+                            ]
+                        },
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/autoRepair.html",
+                            "nativeParams": [
+                                "_city",
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                    },
+                    {
+                        "identifier": "daolujiuyuan",
+                        "title": "道路救援",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/roadRescue.html",
+                            "nativeParams": [
+                                "_city",
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                    },
+                    {
+                        "filter": {
+                            "openCities": [
+                                "上海",
+                                "东莞",
+                                "佛山",
+                                "保定",
+                                "北京",
+                                "南京",
+                                "天津",
+                                "广州",
+                                "廊坊",
+                                "徐州",
+                                "惠州",
+                                "无锡",
+                                "杭州",
+                                "泰州",
+                                "石家庄",
+                                "秦皇岛",
+                                "中山",
+                                "宁波",
+                                "盐城",
+                                "苏州",
+                                "金华",
+                                "台州",
+                                "绍兴",
+                                "扬州",
+                                "温州",
+                                "宿迁",
+                                "连云港",
+                                "深圳",
+                                "嘉兴"
+                            ]
+                        },
+                        "identifier": "huanluntai",
+                        "title": "换轮胎",
+                        "link": {
+                            "url": "http://wx.tuhu.cn/Tires/Index/tires",
+                            "needWrap": false
+                        }
+                    },
+                    {
+                        "filter": {
+                            "openCities": [
+                                "上海"
+                            ]
+                        },
+                        "identifier": "xiche",
+                        "title": "洗车",
+                        "link": {
+                            "url": "http://115.29.15.140:8080/carwash/center_detail/kuaiche2.html",
+                            "nativeParams": [
+                                "city",
+                                "latitude",
+                                "longitude"
+                            ],
+                            "needWrap": false
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "index": 12,
+            "type": "separator",
+            "attrs": {
+            }
+        },
+        {
+            "index": 13,
+            "type": "category",
+            "category" : {
+                "name": "健康",
+                "items": [
+                    {
+                        "filter": {
+                            "os": "Android",
+                            "minVersion": 5203
+                        },
+                        "identifier": "yuyueguahao",
+                        "title": "预约挂号",
+                        "link": {
+                            "url": "http://chubao.wy.guahao.com",
+                            "needWrap": false
+                        }
+                   },
+                   {
+                        "filter": {
+                            "os": "Android",
+                            "minVersion": 5210
+                        },
+                        "identifier": "zixunyisheng",
+                        "title": "咨询医生",
+                        "link": {
+                            "url": "http://chubao.wy.guahao.com/ask",
+                            "needWrap": false
+                        }
+                   },
+                   {
+                        "filter": {
+                            "os": "Android",
+                            "minVersion": 5203
+                        },
+                        "identifier": "mingyizaixain",
+                        "title": "名医在线",
+                        "link": {
+                            "url": "http://chubao.wy.guahao.com/found/donline",
+                            "needWrap": false
+                        }
+                   }
+               ]
+            }
+        },
+        {
+            "filter": {
+                 "os": "Android"
+            },
+            "index": 14,
+            "type": "separator",
+            "attrs": {
+            }
+        },
+        {
+            "index": 15,
+            "type": "category",
+            "category" : {
+                "name": "出行",
+                "items": [
+                    {
+                        "identifier": "jipiao",
+                        "title": "机票",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/navigate.html",
+                            "localUrl": "/navigate.html",
+                            "params": "classify=机票预订",
+                            "nativeParams": [
+                                "_city"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "jiudian",
+                        "title": "酒店",
+                        "filter": {
+                            "closeCities": [
+                                "上海",
+                                "北京"
+                            ]
+                        },
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/navigate.html",
+                            "localUrl": "/navigate.html",
+                            "params": "classify=酒店",
+                            "nativeParams": [
+                                "_city"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "dingjiudian",
+                        "title": "订酒店",
+                        "filter": {
+                            "os": "Android",
+                            "openCities": [
+                                "上海",
+                                "北京"
+                            ]
+                        },
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/hotel.html",
+                            "params": "_v=1",
+                            "nativeParams": [
+                                "_city",
+                                "_lat",
+                                "_lng",
+                                "_loc_city"
+                            ]
+                        }
+                   }
+               ]
+            }
+        },
+        {
+            "index": 16,
+            "type": "separator",
+            "attrs": {
+            }
+        },
+        {
+            "index": 17,
+            "type": "category",
+            "category" : {
+                "name": "快递",
+                "items": [
+                    {
+                        "filter": {
+                            "os": "Android"
+                        },
+                        "identifier": "send_express",
+                        "title": "寄快递",
+                        "iconLink": "http://search.cootekservice.com/res/image/index/first_icon/send_express2.png",
+                        "iconPath": "/res/image/index/first_icon/send_express2.png",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/send_express.html",
+                            "params": "self_source=index_native"
+                        }
+                    },
+                    {
+                        "identifier": "kuaidiyuan",
+                        "title": "快递员",
+                        "link": {
+                            "url": "http://m.kuaidi100.com/courier/chubao/search.jsp",
+                            "nativeParams": [
+                                "latitude",
+                                "longitude"
+                            ],
+                            "needWrap": false
+                        }
+                   },
+                   {
+                        "identifier": "kuaidigongsi",
+                        "title": "快递公司",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/express_phone.html",
+                            "params": "self_source=index_native"
+                        }
+                   }
+               ]
+            }
+        },
+        {
+            "index": 18,
+            "type": "separator",
+            "attrs": {
+            }
+        },
+        {
+            "index": 19,
+            "type": "category",
+            "category" : {
+                "name": "美食",
+                "items": [
+                    {
+                        "identifier": "xiaozimeishi",
+                        "title": "小资美食",
+                        "filter": {
+                            "openCities": [
+                                "上海"
+                            ]
+                        },
+                        "link": {
+                            "url": "http://m1.shanghaiwow.com/third-platform/chubao/article-category",
+                            "needWrap": false
+                        }
+                   },
+                   {
+                        "identifier": "jingpinwaimai",
+                        "title": "精品外卖",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/delivery_new.html",
+                            "nativeParams": [
+                                "_city",
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "chuancai",
+                        "title": "川菜",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/dianping.html",
+                            "params": "classify=川菜&category=川菜",
+                            "nativeParams": [
+                                "_city",
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "huoguo",
+                        "title": "火锅",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/dianping.html",
+                            "params": "classify=火锅&category=火锅",
+                            "nativeParams": [
+                                "_city",
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "shaokao",
+                        "title": "烧烤",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/dianping.html",
+                            "params": "classify=烧烤&category=烧烤",
+                            "nativeParams": [
+                                "_city",
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "meishiquanbu",
+                        "title": "全部",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/dianping.html",
+                            "params": "classify=美食&category=美食",
+                            "nativeParams": [
+                                "_city",
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                   }
+               ]
+            }
+        },
+        {
+            "index": 20,
+            "type": "separator",
+            "attrs": {
+            }
+        },
+        {
+            "index": 21,
+            "type": "category",
+            "category" : {
+                "name": "休闲",
+                "style": "normal",
+                "items": [
+                    {
+                        "identifier": "ktv",
+                        "title": "KTV",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/dianping.html",
+                            "params": "classify=KTV&category=KTV",
+                            "nativeParams": [
+                                "_city",
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "jiuba",
+                        "title": "酒吧",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/dianping.html",
+                            "params": "classify=酒吧&category=酒吧",
+                            "nativeParams": [
+                                "_city",
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "kafeiting",
+                        "title": "咖啡厅",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/dianping.html",
+                            "params": "classify=咖啡厅&category=咖啡厅",
+                            "nativeParams": [
+                                "_city",
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "piaowu",
+                        "title": "票务",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/navigate.html",
+                            "localUrl": "/navigate.html",
+                            "params": "classify=票务",
+                            "nativeParams": [
+                                "_city"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "wenhuachangguan",
+                        "title": "文化场馆",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/dianping.html",
+                            "params": "classify=文化场馆&category=文化艺术",
+                            "nativeParams": [
+                                "_city",
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "xiuxianquanbu",
+                        "title": "全部",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/dianping.html",
+                            "params": "classify=休闲娱乐&category=文化场馆,酒吧,KTV",
+                            "nativeParams": [
+                                "_city",
+                                "_lat",
+                                "_lng"
+                            ]
+                        }
+                   }
+               ]
+            }
+        },
+        {
+            "index": 22,
+            "type": "separator",
+            "attrs": {
+            }
+        },
+        {
+            "index": 23,
+            "type": "category",
+            "category" : {
+                "name": "交通",
+                "items": [
+                    {
+                        "identifier": "jiaochedianhua",
+                        "title": "叫车电话",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/navigate.html",
+                            "localUrl": "/navigate.html",
+                            "params": "classify=打车",
+                            "nativeParams": [
+                                "_city"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "daijia",
+                        "title": "代驾",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/navigate.html",
+                            "localUrl": "/navigate.html",
+                            "params": "classify=代驾",
+                            "nativeParams": [
+                                "_city"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "zuche",
+                        "title": "租车",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/navigate.html",
+                            "localUrl": "/navigate.html",
+                            "params": "classify=租车",
+                            "nativeParams": [
+                                "_city"
+                            ]
+                        }
+                   }
+               ]
+            }
+        },
+        {
+            "index": 24,
+            "type": "separator",
+            "attrs": {
+            }
+        },
+        {
+            "index": 25,
+            "type": "category",
+            "category" : {
+                "name": "金融",
+                "items": [
+                    {
+                        "identifier": "yinhang",
+                        "title": "银行",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/navigate.html",
+                            "localUrl": "/navigate.html",
+                            "params": "classify=银行",
+                            "nativeParams": [
+                                "_city"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "xianshangjiekuan",
+                        "title": "线上借款",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page_v3/lufax_order.html"
+                        }
+                   },
+                   {
+                        "identifier": "zhengquan",
+                        "title": "证券",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/navigate.html",
+                            "localUrl": "/navigate.html",
+                            "params": "classify=证券",
+                            "nativeParams": [
+                                "_city"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "touzilicai",
+                        "title": "投资理财",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/navigate.html",
+                            "localUrl": "/navigate.html",
+                            "params": "classify=投资理财",
+                            "nativeParams": [
+                                "_city"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "baoxian",
+                        "title": "保险",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/navigate.html",
+                            "localUrl": "/navigate.html",
+                            "params": "classify=保险",
+                            "nativeParams": [
+                                "_city"
+                            ]
+                        }
+                   }
+               ]
+            }
+        },
+        {
+            "index": 26,
+            "type": "separator",
+            "attrs": {
+            }
+        },
+        {
+            "index": 27,
+            "type": "category",
+            "category" : {
+                "name": "客服",
+                "items": [
+                    {
+                        "identifier": "dianshangkefu",
+                        "title": "电商客服",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/navigate.html",
+                            "localUrl": "/navigate.html",
+                            "params": "classify=电商客服",
+                            "nativeParams": [
+                                "_city"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "youxikefu",
+                        "title": "游戏客服",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/navigate.html",
+                            "localUrl": "/navigate.html",
+                            "params": "classify=游戏客服",
+                            "nativeParams": [
+                                "_city"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "pinpaishouhou",
+                        "title": "品牌售后",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/navigate.html",
+                            "localUrl": "/navigate.html",
+                            "params": "classify=售后服务",
+                            "nativeParams": [
+                                "_city"
+                            ]
+                        }
+                   }
+               ]
+            }
+        },
+        {
+            "index": 28,
+            "type": "separator",
+            "attrs": {
+            }
+        },
+        {
+            "index": 29,
+            "type": "category",
+            "category" : {
+                "name": "公共",
+                "items": [
+                    {
+                        "identifier": "baojingjiuyuan",
+                        "title": "报警救援",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/navigate.html",
+                            "localUrl": "/navigate.html",
+                            "params": "classify=报警救援",
+                            "nativeParams": [
+                                "_city"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "gonggongfuwu",
+                        "title": "公共服务",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/navigate.html",
+                            "localUrl": "/navigate.html",
+                            "params": "classify=公共服务",
+                            "nativeParams": [
+                                "_city"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "jubaorexian",
+                        "title": "举报热线",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/navigate.html",
+                            "localUrl": "/navigate.html",
+                            "params": "classify=举报热线",
+                            "nativeParams": [
+                                "_city"
+                            ]
+                        }
+                   },
+                   {
+                        "identifier": "gonggongcishan",
+                        "title": "公益慈善",
+                        "link": {
+                            "url": "http://search.cootekservice.com/page/navigate.html",
+                            "localUrl": "/navigate.html",
+                            "params": "classify=公益慈善",
+                            "nativeParams": [
+                                "_city"
+                            ]
+                        }
+                   }
+               ]
+            }
+        },
+        {
+            "index": 30,
+            "type": "footer",
+            "script" : {
+                "normal": "已经到底了",
+                "crazy": "真的没东西啦，再滑屏幕碎了!"
+            }
+        }
+    ]
+}

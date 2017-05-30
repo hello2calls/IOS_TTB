@@ -1,0 +1,12 @@
+//
+// Prefix header for all source files of the 'TouchPalDialer' target in the 'TouchPalDialer' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+    #import "log.h"
+    #import "consts.h"
+    #import "UILayoutUtility.h"
+    #import "UIView+Frame.h"
+#endif

@@ -1,0 +1,1 @@
+////  YellowPageModel.h//  TouchPalDialer////  Created by lingmei xie on 12-9-27.////#import <Foundation/Foundation.h>#import "SearchResultModel.h"#define N_YELLOWPAGE_SEARCH_CHANGE @"N_YELLOWPAGE_SEARCH_CHANGE"@interface YellowPageModel : NSObject@property(nonatomic,copy)NSString *currentCity;@end

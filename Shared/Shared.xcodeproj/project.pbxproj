@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF3B9EC3174DC00100342CDB /* GZipUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3B9EC2174DC00100342CDB /* GZipUtils.m */; };
+		CF3B9EEE174DD9F900342CDB /* NSString+SqlParam.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3B9EED174DD9F900342CDB /* NSString+SqlParam.m */; };
+		CF6F8C66174C9D7C00634E34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6F8C65174C9D7C00634E34 /* Foundation.framework */; };
+		CF6F8CB7174C9E1100634E34 /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6F8C77174C9E1100634E34 /* CommonUtil.m */; };
+		CF6F8CB8174C9E1100634E34 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6F8C79174C9E1100634E34 /* Reachability.m */; };
+		CF6F8CBA174C9E1100634E34 /* libseattle_armv7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6F8CA8174C9E1100634E34 /* libseattle_armv7.a */; };
+		CF6F8CBB174C9E1100634E34 /* FeatureQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6F8CAB174C9E1100634E34 /* FeatureQueue.m */; };
+		CF6F8CBC174C9E1100634E34 /* SeattleChannel.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF6F8CAD174C9E1100634E34 /* SeattleChannel.mm */; };
+		CF6F8CBD174C9E1100634E34 /* SeattleDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6F8CAF174C9E1100634E34 /* SeattleDataModel.m */; };
+		CF6F8CBE174C9E1100634E34 /* SeattleFeatureExecutor.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF6F8CB2174C9E1100634E34 /* SeattleFeatureExecutor.mm */; };
+		CF6F8CD7174CA6A400634E34 /* BackupAttributeConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6F8CD2174CA6A400634E34 /* BackupAttributeConfigurator.m */; };
+		CF6F8CD8174CA6A400634E34 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6F8CD4174CA6A400634E34 /* NSString+UUID.m */; };
+		CF6F8CD9174CA6A400634E34 /* UIDevice+SystemVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6F8CD6174CA6A400634E34 /* UIDevice+SystemVersion.m */; };
+		CF6F8CDE174CB30800634E34 /* CStringUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF6F8CDC174CB30800634E34 /* CStringUtils.mm */; };
+		CF6F8CE1174CB7B200634E34 /* NetworkUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6F8CE0174CB7B200634E34 /* NetworkUtility.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF6F8C60174C9D7C00634E34 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CF3B9EC1174DC00100342CDB /* GZipUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZipUtils.h; sourceTree = "<group>"; };
+		CF3B9EC2174DC00100342CDB /* GZipUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZipUtils.m; sourceTree = "<group>"; };
+		CF3B9EEC174DD9F900342CDB /* NSString+SqlParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SqlParam.h"; sourceTree = "<group>"; };
+		CF3B9EED174DD9F900342CDB /* NSString+SqlParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SqlParam.m"; sourceTree = "<group>"; };
+		CF6F8C62174C9D7C00634E34 /* libShared.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libShared.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6F8C65174C9D7C00634E34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF6F8C69174C9D7C00634E34 /* Shared-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shared-Prefix.pch"; sourceTree = "<group>"; };
+		CF6F8C76174C9E1100634E34 /* CommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtil.h; sourceTree = "<group>"; };
+		CF6F8C77174C9E1100634E34 /* CommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtil.m; sourceTree = "<group>"; };
+		CF6F8C78174C9E1100634E34 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CF6F8C79174C9E1100634E34 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CF6F8C7E174C9E1100634E34 /* activate_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = activate_feature.h; sourceTree = "<group>"; };
+		CF6F8C7F174C9E1100634E34 /* auth_info_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_info_feature.h; sourceTree = "<group>"; };
+		CF6F8C80174C9E1100634E34 /* auth_login_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_login_feature.h; sourceTree = "<group>"; };
+		CF6F8C81174C9E1100634E34 /* auth_logout_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_logout_feature.h; sourceTree = "<group>"; };
+		CF6F8C82174C9E1100634E34 /* black_list_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = black_list_feature.h; sourceTree = "<group>"; };
+		CF6F8C83174C9E1100634E34 /* call_history_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = call_history_feature.h; sourceTree = "<group>"; };
+		CF6F8C84174C9E1100634E34 /* call_log_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = call_log_feature.h; sourceTree = "<group>"; };
+		CF6F8C85174C9E1100634E34 /* cancel_survey_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cancel_survey_feature.h; sourceTree = "<group>"; };
+		CF6F8C86174C9E1100634E34 /* china_telecom_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = china_telecom_feature.h; sourceTree = "<group>"; };
+		CF6F8C87174C9E1100634E34 /* common_message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common_message.h; sourceTree = "<group>"; };
+		CF6F8C88174C9E1100634E34 /* define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		CF6F8C89174C9E1100634E34 /* error_code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = error_code.h; sourceTree = "<group>"; };
+		CF6F8C8A174C9E1100634E34 /* feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = feature.h; sourceTree = "<group>"; };
+		CF6F8C8B174C9E1100634E34 /* feature_runner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = feature_runner.h; sourceTree = "<group>"; };
+		CF6F8C8C174C9E1100634E34 /* http_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http_data.h; sourceTree = "<group>"; };
+		CF6F8C8D174C9E1100634E34 /* ichannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ichannel.h; sourceTree = "<group>"; };
+		CF6F8C8E174C9E1100634E34 /* ievent_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ievent_handler.h; sourceTree = "<group>"; };
+		CF6F8C8F174C9E1100634E34 /* imarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imarshaller.h; sourceTree = "<group>"; };
+		CF6F8C90174C9E1100634E34 /* inet_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inet_data.h; sourceTree = "<group>"; };
+		CF6F8C91174C9E1100634E34 /* isetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = isetting.h; sourceTree = "<group>"; };
+		CF6F8C92174C9E1100634E34 /* location_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = location_feature.h; sourceTree = "<group>"; };
+		CF6F8C93174C9E1100634E34 /* marshaller_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = marshaller_manager.h; sourceTree = "<group>"; };
+		CF6F8C94174C9E1100634E34 /* message_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message_base.h; sourceTree = "<group>"; };
+		CF6F8C95174C9E1100634E34 /* package_info_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = package_info_feature.h; sourceTree = "<group>"; };
+		CF6F8C96174C9E1100634E34 /* seattle_consts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seattle_consts.h; sourceTree = "<group>"; };
+		CF6F8C97174C9E1100634E34 /* sms_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sms_feature.h; sourceTree = "<group>"; };
+		CF6F8C98174C9E1100634E34 /* statistic_info_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statistic_info_feature.h; sourceTree = "<group>"; };
+		CF6F8C99174C9E1100634E34 /* statistic_usage_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statistic_usage_feature.h; sourceTree = "<group>"; };
+		CF6F8C9A174C9E1100634E34 /* string_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string_utils.h; sourceTree = "<group>"; };
+		CF6F8C9B174C9E1100634E34 /* survey_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = survey_feature.h; sourceTree = "<group>"; };
+		CF6F8C9C174C9E1100634E34 /* test_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test_feature.h; sourceTree = "<group>"; };
+		CF6F8C9D174C9E1100634E34 /* tp_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tp_feature.h; sourceTree = "<group>"; };
+		CF6F8C9E174C9E1100634E34 /* tp_http_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tp_http_data.h; sourceTree = "<group>"; };
+		CF6F8C9F174C9E1100634E34 /* tp_message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tp_message.h; sourceTree = "<group>"; };
+		CF6F8CA0174C9E1100634E34 /* tp_message_generated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tp_message_generated.h; sourceTree = "<group>"; };
+		CF6F8CA1174C9E1100634E34 /* version_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version_feature.h; sourceTree = "<group>"; };
+		CF6F8CA2174C9E1100634E34 /* yellowpage_contribute_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yellowpage_contribute_feature.h; sourceTree = "<group>"; };
+		CF6F8CA3174C9E1100634E34 /* yellowpage_info2_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yellowpage_info2_feature.h; sourceTree = "<group>"; };
+		CF6F8CA4174C9E1100634E34 /* yellowpage_info_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yellowpage_info_feature.h; sourceTree = "<group>"; };
+		CF6F8CA5174C9E1100634E34 /* yellowpage_shop_info_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yellowpage_shop_info_feature.h; sourceTree = "<group>"; };
+		CF6F8CA6174C9E1100634E34 /* yellowpage_sort_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yellowpage_sort_feature.h; sourceTree = "<group>"; };
+		CF6F8CA8174C9E1100634E34 /* libseattle_armv7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libseattle_armv7.a; sourceTree = "<group>"; };
+		CF6F8CAA174C9E1100634E34 /* FeatureQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureQueue.h; sourceTree = "<group>"; };
+		CF6F8CAB174C9E1100634E34 /* FeatureQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureQueue.m; sourceTree = "<group>"; };
+		CF6F8CAC174C9E1100634E34 /* SeattleChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeattleChannel.h; sourceTree = "<group>"; };
+		CF6F8CAD174C9E1100634E34 /* SeattleChannel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SeattleChannel.mm; sourceTree = "<group>"; };
+		CF6F8CAE174C9E1100634E34 /* SeattleDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeattleDataModel.h; sourceTree = "<group>"; };
+		CF6F8CAF174C9E1100634E34 /* SeattleDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeattleDataModel.m; sourceTree = "<group>"; };
+		CF6F8CB0174C9E1100634E34 /* SeattleEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeattleEventHandler.h; sourceTree = "<group>"; };
+		CF6F8CB1174C9E1100634E34 /* SeattleFeatureExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeattleFeatureExecutor.h; sourceTree = "<group>"; };
+		CF6F8CB2174C9E1100634E34 /* SeattleFeatureExecutor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SeattleFeatureExecutor.mm; sourceTree = "<group>"; };
+		CF6F8CB3174C9E1100634E34 /* SeattleSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeattleSetting.h; sourceTree = "<group>"; };
+		CF6F8CD1174CA6A400634E34 /* BackupAttributeConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackupAttributeConfigurator.h; sourceTree = "<group>"; };
+		CF6F8CD2174CA6A400634E34 /* BackupAttributeConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackupAttributeConfigurator.m; sourceTree = "<group>"; };
+		CF6F8CD3174CA6A400634E34 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
+		CF6F8CD4174CA6A400634E34 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
+		CF6F8CD5174CA6A400634E34 /* UIDevice+SystemVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+SystemVersion.h"; sourceTree = "<group>"; };
+		CF6F8CD6174CA6A400634E34 /* UIDevice+SystemVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+SystemVersion.m"; sourceTree = "<group>"; };
+		CF6F8CDB174CAE7B00634E34 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		CF6F8CDC174CB30800634E34 /* CStringUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CStringUtils.mm; sourceTree = "<group>"; };
+		CF6F8CDD174CB30800634E34 /* CStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CStringUtils.h; sourceTree = "<group>"; };
+		CF6F8CDF174CB7B200634E34 /* NetworkUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkUtility.h; sourceTree = "<group>"; };
+		CF6F8CE0174CB7B200634E34 /* NetworkUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkUtility.m; sourceTree = "<group>"; };
+		CF6F8CE5174CBCB800634E34 /* CooTekServerDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CooTekServerDef.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF6F8C5F174C9D7C00634E34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6F8C66174C9D7C00634E34 /* Foundation.framework in Frameworks */,
+				CF6F8CBA174C9E1100634E34 /* libseattle_armv7.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF6F8C59174C9D7C00634E34 = {
+			isa = PBXGroup;
+			children = (
+				CF6F8C67174C9D7C00634E34 /* Shared */,
+				CF6F8C64174C9D7C00634E34 /* Frameworks */,
+				CF6F8C63174C9D7C00634E34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF6F8C63174C9D7C00634E34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F8C62174C9D7C00634E34 /* libShared.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF6F8C64174C9D7C00634E34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F8C65174C9D7C00634E34 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF6F8C67174C9D7C00634E34 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F8C75174C9E1100634E34 /* CommonLib */,
+				CF6F8C7C174C9E1100634E34 /* Seattle */,
+				CF6F8C68174C9D7C00634E34 /* Supporting Files */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CF6F8C68174C9D7C00634E34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F8C69174C9D7C00634E34 /* Shared-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF6F8C75174C9E1100634E34 /* CommonLib */ = {
+			isa = PBXGroup;
+			children = (
+				CF3B9EEC174DD9F900342CDB /* NSString+SqlParam.h */,
+				CF3B9EED174DD9F900342CDB /* NSString+SqlParam.m */,
+				CF3B9EC1174DC00100342CDB /* GZipUtils.h */,
+				CF3B9EC2174DC00100342CDB /* GZipUtils.m */,
+				CF6F8CDF174CB7B200634E34 /* NetworkUtility.h */,
+				CF6F8CE0174CB7B200634E34 /* NetworkUtility.m */,
+				CF6F8CDD174CB30800634E34 /* CStringUtils.h */,
+				CF6F8CDC174CB30800634E34 /* CStringUtils.mm */,
+				CF6F8CD1174CA6A400634E34 /* BackupAttributeConfigurator.h */,
+				CF6F8CD2174CA6A400634E34 /* BackupAttributeConfigurator.m */,
+				CF6F8CD3174CA6A400634E34 /* NSString+UUID.h */,
+				CF6F8CD4174CA6A400634E34 /* NSString+UUID.m */,
+				CF6F8CDB174CAE7B00634E34 /* log.h */,
+				CF6F8CD5174CA6A400634E34 /* UIDevice+SystemVersion.h */,
+				CF6F8CD6174CA6A400634E34 /* UIDevice+SystemVersion.m */,
+				CF6F8C76174C9E1100634E34 /* CommonUtil.h */,
+				CF6F8C77174C9E1100634E34 /* CommonUtil.m */,
+				CF6F8C78174C9E1100634E34 /* Reachability.h */,
+				CF6F8C79174C9E1100634E34 /* Reachability.m */,
+			);
+			path = CommonLib;
+			sourceTree = "<group>";
+		};
+		CF6F8C7C174C9E1100634E34 /* Seattle */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F8C7D174C9E1100634E34 /* inc */,
+				CF6F8CA7174C9E1100634E34 /* lib */,
+				CF6F8CA9174C9E1100634E34 /* src */,
+			);
+			path = Seattle;
+			sourceTree = "<group>";
+		};
+		CF6F8C7D174C9E1100634E34 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F8C7E174C9E1100634E34 /* activate_feature.h */,
+				CF6F8C7F174C9E1100634E34 /* auth_info_feature.h */,
+				CF6F8C80174C9E1100634E34 /* auth_login_feature.h */,
+				CF6F8C81174C9E1100634E34 /* auth_logout_feature.h */,
+				CF6F8C82174C9E1100634E34 /* black_list_feature.h */,
+				CF6F8C83174C9E1100634E34 /* call_history_feature.h */,
+				CF6F8C84174C9E1100634E34 /* call_log_feature.h */,
+				CF6F8C85174C9E1100634E34 /* cancel_survey_feature.h */,
+				CF6F8C86174C9E1100634E34 /* china_telecom_feature.h */,
+				CF6F8C87174C9E1100634E34 /* common_message.h */,
+				CF6F8C88174C9E1100634E34 /* define.h */,
+				CF6F8C89174C9E1100634E34 /* error_code.h */,
+				CF6F8C8A174C9E1100634E34 /* feature.h */,
+				CF6F8C8B174C9E1100634E34 /* feature_runner.h */,
+				CF6F8C8C174C9E1100634E34 /* http_data.h */,
+				CF6F8C8D174C9E1100634E34 /* ichannel.h */,
+				CF6F8C8E174C9E1100634E34 /* ievent_handler.h */,
+				CF6F8C8F174C9E1100634E34 /* imarshaller.h */,
+				CF6F8C90174C9E1100634E34 /* inet_data.h */,
+				CF6F8C91174C9E1100634E34 /* isetting.h */,
+				CF6F8C92174C9E1100634E34 /* location_feature.h */,
+				CF6F8C93174C9E1100634E34 /* marshaller_manager.h */,
+				CF6F8C94174C9E1100634E34 /* message_base.h */,
+				CF6F8C95174C9E1100634E34 /* package_info_feature.h */,
+				CF6F8C96174C9E1100634E34 /* seattle_consts.h */,
+				CF6F8C97174C9E1100634E34 /* sms_feature.h */,
+				CF6F8C98174C9E1100634E34 /* statistic_info_feature.h */,
+				CF6F8C99174C9E1100634E34 /* statistic_usage_feature.h */,
+				CF6F8C9A174C9E1100634E34 /* string_utils.h */,
+				CF6F8C9B174C9E1100634E34 /* survey_feature.h */,
+				CF6F8C9C174C9E1100634E34 /* test_feature.h */,
+				CF6F8C9D174C9E1100634E34 /* tp_feature.h */,
+				CF6F8C9E174C9E1100634E34 /* tp_http_data.h */,
+				CF6F8C9F174C9E1100634E34 /* tp_message.h */,
+				CF6F8CA0174C9E1100634E34 /* tp_message_generated.h */,
+				CF6F8CA1174C9E1100634E34 /* version_feature.h */,
+				CF6F8CA2174C9E1100634E34 /* yellowpage_contribute_feature.h */,
+				CF6F8CA3174C9E1100634E34 /* yellowpage_info2_feature.h */,
+				CF6F8CA4174C9E1100634E34 /* yellowpage_info_feature.h */,
+				CF6F8CA5174C9E1100634E34 /* yellowpage_shop_info_feature.h */,
+				CF6F8CA6174C9E1100634E34 /* yellowpage_sort_feature.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		CF6F8CA7174C9E1100634E34 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F8CA8174C9E1100634E34 /* libseattle_armv7.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		CF6F8CA9174C9E1100634E34 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F8CE5174CBCB800634E34 /* CooTekServerDef.h */,
+				CF6F8CAA174C9E1100634E34 /* FeatureQueue.h */,
+				CF6F8CAB174C9E1100634E34 /* FeatureQueue.m */,
+				CF6F8CAC174C9E1100634E34 /* SeattleChannel.h */,
+				CF6F8CAD174C9E1100634E34 /* SeattleChannel.mm */,
+				CF6F8CAE174C9E1100634E34 /* SeattleDataModel.h */,
+				CF6F8CAF174C9E1100634E34 /* SeattleDataModel.m */,
+				CF6F8CB0174C9E1100634E34 /* SeattleEventHandler.h */,
+				CF6F8CB1174C9E1100634E34 /* SeattleFeatureExecutor.h */,
+				CF6F8CB2174C9E1100634E34 /* SeattleFeatureExecutor.mm */,
+				CF6F8CB3174C9E1100634E34 /* SeattleSetting.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF6F8C61174C9D7C00634E34 /* Shared */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF6F8C70174C9D7C00634E34 /* Build configuration list for PBXNativeTarget "Shared" */;
+			buildPhases = (
+				CF6F8C5E174C9D7C00634E34 /* Sources */,
+				CF6F8C5F174C9D7C00634E34 /* Frameworks */,
+				CF6F8C60174C9D7C00634E34 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shared;
+			productName = Shared;
+			productReference = CF6F8C62174C9D7C00634E34 /* libShared.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF6F8C5A174C9D7C00634E34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = CooTek;
+			};
+			buildConfigurationList = CF6F8C5D174C9D7C00634E34 /* Build configuration list for PBXProject "Shared" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF6F8C59174C9D7C00634E34;
+			productRefGroup = CF6F8C63174C9D7C00634E34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF6F8C61174C9D7C00634E34 /* Shared */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF6F8C5E174C9D7C00634E34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6F8CB7174C9E1100634E34 /* CommonUtil.m in Sources */,
+				CF6F8CB8174C9E1100634E34 /* Reachability.m in Sources */,
+				CF6F8CBB174C9E1100634E34 /* FeatureQueue.m in Sources */,
+				CF6F8CBC174C9E1100634E34 /* SeattleChannel.mm in Sources */,
+				CF6F8CBD174C9E1100634E34 /* SeattleDataModel.m in Sources */,
+				CF6F8CBE174C9E1100634E34 /* SeattleFeatureExecutor.mm in Sources */,
+				CF6F8CD7174CA6A400634E34 /* BackupAttributeConfigurator.m in Sources */,
+				CF6F8CD8174CA6A400634E34 /* NSString+UUID.m in Sources */,
+				CF6F8CD9174CA6A400634E34 /* UIDevice+SystemVersion.m in Sources */,
+				CF6F8CDE174CB30800634E34 /* CStringUtils.mm in Sources */,
+				CF6F8CE1174CB7B200634E34 /* NetworkUtility.m in Sources */,
+				CF3B9EC3174DC00100342CDB /* GZipUtils.m in Sources */,
+				CF3B9EEE174DD9F900342CDB /* NSString+SqlParam.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CF6F8C6E174C9D7C00634E34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF6F8C6F174C9D7C00634E34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF6F8C71174C9D7C00634E34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Shared.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shared/Shared-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Shared/Seattle/lib\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CF6F8C72174C9D7C00634E34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Shared.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shared/Shared-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Shared/Seattle/lib\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF6F8C5D174C9D7C00634E34 /* Build configuration list for PBXProject "Shared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF6F8C6E174C9D7C00634E34 /* Debug */,
+				CF6F8C6F174C9D7C00634E34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF6F8C70174C9D7C00634E34 /* Build configuration list for PBXNativeTarget "Shared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF6F8C71174C9D7C00634E34 /* Debug */,
+				CF6F8C72174C9D7C00634E34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF6F8C5A174C9D7C00634E34 /* Project object */;
+}

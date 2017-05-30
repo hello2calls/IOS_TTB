@@ -1,0 +1,1 @@
+////  AliPayTask.h//  TouchPalDialer////  Created by tanglin on 15-1-27.////////测试商品信息封装在Product中,外部商户可以根据自己商品实际情况定义//#import "Order.h"@interface AliPayTask : NSObject-(void) generateOrder:(NSDictionary*) order;@property (nonatomic, copy) void(^callback)(NSDictionary *resultDic);@end

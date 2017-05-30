@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>id</key>
+	<string>cootek.dialer.iphone.public.skin.default</string>
+	<key>default</key>
+	<string>YES</string>
+	<key>builtIn</key>
+	<true/>
+	<key>new</key>
+	<false/>
+	<key>version</key>
+	<real>5649</real>
+	<key>theme_name_en_us</key>
+	<string>Default</string>
+	<key>theme_name_zh_cn</key>
+	<string>默认主题</string>
+	<key>theme_name_zh_tw</key>
+	<string>默認主題</string>
+</dict>
+</plist>

@@ -1,0 +1,1 @@
+////  ControllerView.h//  TouchPalDialer////  Created by 袁超 on 15/2/10.////#import <UIKit/UIKit.h>@interface ControllerView : UIView@property (nonatomic, assign)UIImageView *icon;@property (nonatomic, assign)UIButton *action_but;@property (nonatomic, assign)UIView *bg_view;@property (nonatomic, assign)UILabel *title;- (void) addGuideHint:(int)type;@end

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DialerMode</key>
+	<integer>0</integer>
+	<key>VibrateWhenDialConnected</key>
+	<true/>
+	<key>VibrateWhenDialDisconnected</key>
+	<false/>
+	<key>SecondaryLanguage</key>
+	<integer>0</integer>
+	<key>DialTone</key>
+	<true/>
+	<key>CallConfirm</key>
+	<true/>
+	<key>FormatPhoneNumbers</key>
+	<false/>
+	<key>DisplayLocation</key>
+	<true/>
+	<key>SynchronizeProfiles</key>
+	<true/>
+	<key>PopulatePhotos</key>
+	<true/>
+	<key>Availability</key>
+	<true/>
+	<key>ReminderTone</key>
+	<true/>
+	<key>ReminderVibrate</key>
+	<true/>
+	<key>SmartEye</key>
+	<true/>
+	<key>ListOnClick</key>
+	<integer>0</integer>
+	<key>ListSwipeLeft</key>
+	<integer>1</integer>
+	<key>ListSwipeRight</key>
+	<integer>0</integer>
+	<key>MutiLanguage</key>
+	<integer>0</integer>
+	<key>PrivacyStatement</key>
+	<string>http://www.touchpal.com/privacypolicy_contacts.html</string>
+	<key>ChangeLog</key>
+	<string>http://www.chubao.cn/mchubao/versionlog/tcv40ch.html</string>
+	<key>FAQ</key>
+	<string>http://www.touchpal.com/mtouchpal/faqpages/faqv40iosen.html</string>
+</dict>
+</plist>

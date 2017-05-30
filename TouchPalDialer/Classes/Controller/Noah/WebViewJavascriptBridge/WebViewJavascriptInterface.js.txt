@@ -1,0 +1,38 @@
+;(function() {
+	if (CTK) {
+        CTK.ApiLevel='%@';
+        CTK.Location='%@';
+        CTK.Address='%@';
+        CTK.City='%@';
+        CTK.LocationCacheTime='%@';
+        CTK.AddrCacheTime='%@';
+        CTK.CityCacheTime='%@';
+        CTK.Secret='%@';
+        CTK.AuthToken='%@';
+        CTK.LoginNumber='%@';
+        CTK.WXAppInstalled=%@;
+        CTK.WXPaySupported=%@;
+        CTK.ActivationJsonInfo='%@';
+        CTK.AccessToken='%@';
+        CTK.Ticket='%@';
+    } else {
+    }
+})();
+
+function setItemToStorage(key, value) {
+    if(!CTK.dispatchEvent) {
+        return;
+    }
+    console.log('localStorage.setItem start');
+    if (value === 'null') {
+        localStorage.removeItem(key);
+    } else {
+        localStorage.setItem(key, value);
+    }
+    console.log('localStorage.setItem end');
+};
+
+function removeItemFromStorage(key) {
+    localStorage.removeItem(key);
+};
+
