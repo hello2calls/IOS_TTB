@@ -913,14 +913,16 @@
     shared_phonepadmodel.currentKeyBoard = keyboradType;
 }
 
+//TTB修改
 - (void)exitEditingMode
 {
     if(contactlist_view.editing){
         [contactlist_view setEditing:NO animated:YES];
         [self.doneButton hideBtn];
         [self.clearall_button hideBtn];
-//        _personalCenterButton.hidden = NO;
-        pnCenter.hidden = NO;
+//        pnCenter.hidden = NO;
+        pnCenter.hidden = YES;
+
         [self showToutiao];
         
     }
@@ -1206,14 +1208,15 @@
     [self updateEditButtonVisibility];
 }
 
+//TTB修改
 - (void)doWhenInputEmpty
 {
     cootek_log(@"now input is empty");
     header_title.hidden = NO;
 	self.phone_number_label.hidden = YES;
 	self.doneButton.hidden = YES;
-//    _personalCenterButton.hidden = NO;
-    pnCenter.hidden = NO;
+//    pnCenter.hidden = NO;
+    pnCenter.hidden = YES;
     [self showToutiao];
     isGestureCall_ = NO;
     [self updateEditButtonVisibility];
@@ -1308,6 +1311,7 @@
 }
 
 #pragma mark Button action handler
+//TTB修改
 - (void)editCallLog
 {
    	if ([shared_phonepadmodel.calllog_list.searchResults count]>0) {
@@ -1318,7 +1322,6 @@
             [self.editButton hideBtn];
             [self.clearall_button showBtn];
             [self.doneButton showBtn];
-//            _personalCenterButton.hidden = YES;
             pnCenter.hidden = YES;
             [self hideToutiao];
             
@@ -1327,8 +1330,8 @@
             [self.doneButton hideBtn];
             [self.clearall_button hideBtn];
             [self.editButton showBtn];
-//            _personalCenterButton.hidden = NO;
-            pnCenter.hidden = NO;
+//            pnCenter.hidden = NO;
+            pnCenter.hidden = YES;
             [self showToutiao];
             NSInteger calllogCount = 0;
             if (shared_phonepadmodel.calllog_list != nil) {
