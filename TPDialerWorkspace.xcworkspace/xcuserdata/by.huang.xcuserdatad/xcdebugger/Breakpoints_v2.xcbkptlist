@@ -458,11 +458,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TouchPalDialer/Classes/Action/Contact/ContactSpecialManager.m"
-            timestampString = "518355770.001742"
+            timestampString = "518355866.569325"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "-getSpecialArray"
             landmarkType = "7">
          </BreakpointContent>

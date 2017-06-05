@@ -149,8 +149,10 @@ ContactItemCellProtocol>{
     [shareButton addTarget:self action:@selector(shareToFriend) forControlEvents:UIControlEventTouchUpInside];
     shareView.hidden = YES;
     
-    float globayY = TPHeaderBarHeight() + shareView.frame.size.height;
-    
+    //TTB修改
+//    float globayY = TPHeaderBarHeight() + shareView.frame.size.height;
+    float globayY = TPHeaderBarHeight() ;
+
     
 
     noResisterView = [[FavoriteNopersonHintView alloc] initWithContactNoUnRegFrame:CGRectMake(0, globayY, TPScreenWidth(), 200)];
@@ -233,6 +235,7 @@ ContactItemCellProtocol>{
 }
 
 
+//TTB修改
 - (void)getDefaultValue{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         NSMutableDictionary *temptDic = [NSMutableDictionary dictionary];
@@ -249,7 +252,8 @@ ContactItemCellProtocol>{
             }else{
                 noResisterView.hidden = YES;
                 _tableView.hidden = NO;
-                shareView.hidden = NO;
+//                shareView.hidden = NO;
+                shareView.hidden = YES;
             }
             [self buildSectionIndexView];
             if ([TouchpalMembersManager getTouchpalerArrayCount]>0) {

@@ -74,7 +74,9 @@ static ContactSpecialManager *instance;
                     info.textColorStyle = @"tp_color_white";
                     info.bgColorStyle = @"tp_color_light_blue_500";
                     info.number = [self getTouchpalerNumber];
+//                    [self.specialArray insertObject:info atIndex:1];
                     [self.specialArray insertObject:info atIndex:0];
+
                 }
             }
             break;
