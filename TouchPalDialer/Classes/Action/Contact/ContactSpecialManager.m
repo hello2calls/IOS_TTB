@@ -15,24 +15,26 @@
 static ContactSpecialManager *instance;
 @implementation ContactSpecialManager
 
+//TTB修改
 + (void)initialize{
     instance = [[ContactSpecialManager alloc]init];
     instance.specialArray = [NSMutableArray array];
-    [instance generateSpecial:NODE_MY_FAMILY];
+//    [instance generateSpecial:NODE_MY_FAMILY];
     [instance generateSpecial:NODE_TOUCHPALER];
-    [instance generateSpecial:NODE_CONTACT_INVITE];
+//    [instance generateSpecial:NODE_CONTACT_INVITE];
     [instance generateSpecial:NODE_CONTACT_SMART_GROUP];
-    if ([FunctionUtility systemVersionFloat] >= 7.0) {
+//    if ([FunctionUtility systemVersionFloat] >= 7.0) {
         // qr scaning is not natively available until ios 7.0
         // we need AVFoundation
-        [instance generateSpecial:NODE_CONTACT_TRANSFER];
-    }
+//        [instance generateSpecial:NODE_CONTACT_TRANSFER];
+//    }
 }
 
 + (instancetype) instance{
     return instance;
 }
 
+//TTB修改
 - (void) generateSpecial:(SpecialNodeType)type{
     ContactSpecialInfo *info = [self getContactType:type];
     
@@ -72,7 +74,7 @@ static ContactSpecialManager *instance;
                     info.textColorStyle = @"tp_color_white";
                     info.bgColorStyle = @"tp_color_light_blue_500";
                     info.number = [self getTouchpalerNumber];
-                    [self.specialArray insertObject:info atIndex:1];
+                    [self.specialArray insertObject:info atIndex:0];
                 }
             }
             break;
@@ -155,9 +157,10 @@ static ContactSpecialManager *instance;
     return nil;
 }
 
+//TTB修改
 - (NSArray *)getSpecialArray{
     [self generateSpecial:NODE_TOUCHPALER];
-    [self generateSpecial:NODE_CONTACT_INVITE];
+//    [self generateSpecial:NODE_CONTACT_INVITE];
     return self.specialArray;
 }
 
