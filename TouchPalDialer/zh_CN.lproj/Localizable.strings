@@ -709,7 +709,8 @@
 "Favorite_" = "收藏夹";
 "Personal_" = "号码助手";
 "Keyboard_" = "键盘";
-"YellowPage_" = "钱包";
+//TTB修改
+"YellowPage_" = "个人中心";
 "Fold_" = "收起";
 "Unfold_" = "展开";
 "Fold_Dialpad_" = "收起拨号盘";

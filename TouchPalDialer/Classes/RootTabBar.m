@@ -720,8 +720,12 @@ typedef enum {
                 [dotImageView addSubview:dotLabel];
                 [contactButton addSubview:dotImageView];
                 
+                
+                
             }
-            dotImageView.hidden = NO;
+            //TTB修改
+//            dotImageView.hidden = NO;
+            dotImageView.hidden = YES;
             contactNumberLabel.hidden = YES;
             
         } else {
