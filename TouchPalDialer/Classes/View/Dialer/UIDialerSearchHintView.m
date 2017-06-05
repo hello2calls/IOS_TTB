@@ -216,27 +216,27 @@
         
         // skin button
         gY += buttonSkinTopMargin;
-        UIButton *skinButton = [[UIButton alloc] initWithFrame:CGRectMake(gX, gY, buttonSize.width, buttonSize.height)];
-        [skinButton setBackgroundImage:[TPDialerResourceManager getImageByColorName:@"0x03a9f4" withFrame:colorFrame] forState:UIControlStateNormal];
-        [skinButton setBackgroundImage:[TPDialerResourceManager getImageByColorName:@"0x029ce1" withFrame:colorFrame] forState:UIControlStateHighlighted];
-        skinButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-        skinButton.titleLabel.textColor = textColor;
-        skinButton.titleLabel.font = font;
-        skinButton.clipsToBounds = YES;
-        skinButton.layer.cornerRadius = 4;
-        [skinButton setTitle:NSLocalizedString(@"calllog_empty_btn_use_skin", "") forState:UIControlStateNormal];
-        gY += skinButton.frame.size.height;
+//        UIButton *skinButton = [[UIButton alloc] initWithFrame:CGRectMake(gX, gY, buttonSize.width, buttonSize.height)];
+//        [skinButton setBackgroundImage:[TPDialerResourceManager getImageByColorName:@"0x03a9f4" withFrame:colorFrame] forState:UIControlStateNormal];
+//        [skinButton setBackgroundImage:[TPDialerResourceManager getImageByColorName:@"0x029ce1" withFrame:colorFrame] forState:UIControlStateHighlighted];
+//        skinButton.titleLabel.textAlignment = NSTextAlignmentCenter;
+//        skinButton.titleLabel.textColor = textColor;
+//        skinButton.titleLabel.font = font;
+//        skinButton.clipsToBounds = YES;
+//        skinButton.layer.cornerRadius = 4;
+//        [skinButton setTitle:NSLocalizedString(@"calllog_empty_btn_use_skin", "") forState:UIControlStateNormal];
+//        gY += skinButton.frame.size.height;
         
         // view settings
         [learnButton addTarget:self action:@selector(onClickLearnButton) forControlEvents:UIControlEventTouchUpInside];
-        [skinButton addTarget:self action:@selector(onClickSkinButton) forControlEvents:UIControlEventTouchUpInside];
+//        [skinButton addTarget:self action:@selector(onClickSkinButton) forControlEvents:UIControlEventTouchUpInside];
         self.backgroundColor = [UIColor whiteColor];
         
         // view tree
         [self addSubview:hintImageView];
         [self addSubview:hintLabel];
         [self addSubview:learnButton];
-        [self addSubview:skinButton];
+//        [self addSubview:skinButton];
         
 //        [FunctionUtility setBorderForViewArray:@[hintImageView, hintLabel, learnButton, skinButton]];
     }

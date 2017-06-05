@@ -192,7 +192,7 @@
     if(button == _chargeBtn){
         [TouchPalDialerAppDelegate pushViewController:[[ChargeViewController alloc]init] animated:YES];
     }else if(button == _historyBtn){
-        [TouchPalDialerAppDelegate pushViewController:[[Test2ViewController alloc]init] animated:YES];
+        [TouchPalDialerAppDelegate pushViewController:[[ChargeViewController alloc]init] animated:YES];
     }else if(button == _questionBtn){
         [TouchPalDialerAppDelegate pushViewController:[[IntroduceViewController alloc]init] animated:YES];
         

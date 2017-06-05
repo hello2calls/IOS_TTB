@@ -55,9 +55,13 @@
 
 
 //begin: ----- info never change -----
-#define COOTEK_APP_NAME  @"com.cootek.smartdialer.ttb"
+//#define COOTEK_APP_NAME  @"com.cootek.smartdialer.ttb"
+#define COOTEK_APP_NAME  @"cootek.contactplus.ios.public"
 #define COOTEK_APP_PLATFORM_IOS @"iphone"
 #define IPHONE_CHANNEL_CODE @"OEM 172 B19 100"
+#define TOUCHPAL_APPKEY @"4763853977302293"
+#define TOUCHPAL_APPSECRET @"047821ede36d48bebba5be24371c87ec"
+
 #define TOUCHPAL_DIALER_APP_STORE_URL @"http://itunes.apple.com/app/id503130474"
 #define TOUCHPAL_DIALER_APP_STORE_REVIEW_URL @"http://itunes.apple.com/us/app/chu-bao-zhi-neng-bo-hao/id503130474?ls=1&mt=8"
 //  end: ----- info never change -----

@@ -36,7 +36,7 @@
 #import "PersonalCenterViewController.h"
 
 @interface RootScrollViewController ()<UIGestureRecognizerDelegate>{
-	NSUInteger selectedIndex_;
+    NSUInteger selectedIndex_;
     UIView* blockTabSelectionView_;
 }
 @property (nonatomic, retain) UIViewController *currentViewController;
@@ -51,21 +51,21 @@
 - (void)viewDidLoad
 {
     cootek_log(@"begin RootScrollViewController viewDidLoad***********");
-	[super viewDidLoad];
+    [super viewDidLoad];
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
     selectedIndex_ = 1;
     
     self.view.autoresizingMask = UIViewAutoresizingFlexibleHeight;
     
-	DialerViewController *dialerViewController = [[DialerViewController alloc] init];
+    DialerViewController *dialerViewController = [[DialerViewController alloc] init];
     dialerViewController.parent = self;
-	ContactViewController *contactViewController = [[ContactViewController alloc] init];
+    ContactViewController *contactViewController = [[ContactViewController alloc] init];
     
     contactViewController.view.frame = CGRectMake(0, 0,TPScreenWidth(), TPAppFrameHeight()-TAB_BAR_HEIGHT+TPHeaderBarHeightDiff());
     PersonalCenterViewController *yellowPageViewController = [[PersonalCenterViewController alloc] init];
-
+    
     yellowPageViewController.view.frame = CGRectMake(TPScreenWidth()*2, 0, TPScreenWidth(), TPAppFrameHeight()-TAB_BAR_HEIGHT+TPHeaderBarHeightDiff());
-	NSArray *tmpViewControllers = [[NSArray alloc] initWithObjects:
+    NSArray *tmpViewControllers = [[NSArray alloc] initWithObjects:
                                    [NSDictionary dictionaryWithObjectsAndKeys:
                                     @"contactViewController_tabBar_style",@"style",
                                     NSLocalizedString(@"Contact_", @""),@"text_for_tab",
@@ -92,7 +92,7 @@
                                                                    style: UIBarButtonItemStyleBordered
                                                                   target: nil
                                                                   action: nil];
-	self.navigationItem.backBarButtonItem = tmpBackBar;
+    self.navigationItem.backBarButtonItem = tmpBackBar;
     
     RootTabBar *rootBar = [[RootTabBar alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height-TAB_BAR_HEIGHT,
                                                                        self.view.frame.size.width, TAB_BAR_HEIGHT)];
@@ -123,10 +123,10 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideRootTabBar) name:N_HIDE_ROOT_TAB_BAR object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadOtherPage) name:N_CALL_LOG_LIST_CHANGED object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(backRootAndToast) name:@"interCallBackRoot" object:nil];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enableScroll) name:N_DIALER_INPUT_EMPTY object:nil];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(disableScroll) name:N_DIALER_INPUT_NOT_EMPTY object:nil];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enableScroll) name:N_KEYBOARD_NOT_USED object:nil];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(disableScroll) name:N_KEYBOARD_USED object:nil];
+    //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enableScroll) name:N_DIALER_INPUT_EMPTY object:nil];
+    //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(disableScroll) name:N_DIALER_INPUT_NOT_EMPTY object:nil];
+    //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enableScroll) name:N_KEYBOARD_NOT_USED object:nil];
+    //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(disableScroll) name:N_KEYBOARD_USED object:nil];
     [[TouchPalDialerLaunch getInstance] registerForStatusBarChange:tabBar_];
     [[TouchPalDialerLaunch getInstance] registerForStatusBarChange:blockTabSelectionView_];
     [[TouchPalDialerLaunch getInstance] registerForStatusBarChange:self.dialViewController.callDeleteBar];
@@ -168,7 +168,7 @@
         //[self disableScroll];
         PersonalCenterViewController *tmpYellowPage = [[viewControllers_ objectAtIndex:2] objectForKey:@"viewController"];
         tmpYellowPage.view.frame = CGRectMake(TPScreenWidth()*2, 0, TPScreenWidth(), TPAppFrameHeight()+TPHeaderBarHeightDiff());
-//        tmpYellowPage.web_view.frame = CGRectMake(0, TPHeaderBarHeight(), TPScreenWidth(), TPAppFrameHeight()-TPHeaderBarHeight()+TPHeaderBarHeightDiff());
+        //        tmpYellowPage.web_view.frame = CGRectMake(0, TPHeaderBarHeight(), TPScreenWidth(), TPAppFrameHeight()-TPHeaderBarHeight()+TPHeaderBarHeightDiff());
     }
 }
 
@@ -229,7 +229,7 @@
 
 - (void) viewWillAppear:(BOOL)animated
 {
-	[super viewWillAppear:animated];
+    [super viewWillAppear:animated];
     [[TPDialerResourceManager sharedManager]makeSureStatusBarChanged];
     if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
         self.navigationController.interactivePopGestureRecognizer.delegate = self;
@@ -268,7 +268,7 @@
 
 - (void)dealloc
 {
-	[[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     self.contactViewController = nil;
     self.dialViewController = nil;
     self.filterViewController = nil;
@@ -284,7 +284,7 @@
 
 - (int)getSelectedControllerIndex
 {
-	return selectedIndex_;
+    return selectedIndex_;
 }
 
 - (void)customTabBar:(RootTabBar*)customTabBar clickedButtonAtIndex:(NSUInteger)buttonIndex
@@ -360,7 +360,7 @@
 
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
-
+    
     if ([[UIDevice currentDevice].systemVersion intValue] >= 7) {
         tabBar_.frame = CGRectMake(0, TPAppFrameHeight()-TAB_BAR_HEIGHT + TPHeaderBarHeightDiff(), TPScreenWidth(), TAB_BAR_HEIGHT);
     } else {

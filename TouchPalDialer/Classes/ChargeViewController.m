@@ -68,7 +68,7 @@
 - (void)loadURL
 {
     if (!self.hasLoaded) {
-        NSURL* url = [NSURL URLWithString:CHARGE_URL];
+        NSURL* url = [NSURL URLWithString:[NSString stringWithFormat:@"http://search.oem.cootekservice.com/page_v3/timecharge_history.html?_appkey=4763853977302293&_token=%@&_v=3&sku_type=11",[SeattleFeatureExecutor getToken]]];
         NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30];
         [self.web_view loadRequest:request];
     }

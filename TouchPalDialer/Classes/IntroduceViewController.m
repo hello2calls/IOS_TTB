@@ -50,7 +50,7 @@
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake((TPScreenWidth()-120)/2, TPHeaderBarHeightDiff(), 120, 45)];
     [titleLabel setSkinStyleWithHost:self forStyle:@"defaultUILabel_style"];
     titleLabel.font = [UIFont systemFontOfSize:FONT_SIZE_2_5];
-    titleLabel.text = @"充值";
+    titleLabel.text = @"费率说明";
     titleLabel.textAlignment = NSTextAlignmentCenter;
     [headerBar addSubview:titleLabel];
 }
