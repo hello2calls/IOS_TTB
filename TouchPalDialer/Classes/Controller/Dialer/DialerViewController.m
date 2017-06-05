@@ -552,10 +552,13 @@
     [TouchPalDialerAppDelegate pushViewController:controller animated:YES];
 }
 
+
+//TTB修改
 - (void) animationDone
 {
     if ([FeedsSigninManager shouldShowSignin]) {
-        feedsView.hidden = NO;
+//        feedsView.hidden = NO;
+        feedsView.hidden = YES;
         feedsView.transform = CGAffineTransformMakeScale(0.1, 0.1);
         [UIView animateWithDuration:0.3f animations:^{
             feedsView.transform = CGAffineTransformMakeScale( 1.2, 1.2);
@@ -568,10 +571,13 @@
   
 }
 
+//TTB修改
 - (void) showToutiao
 {
-    toutiaoAnimationview.hidden = NO;
-    feedsView.hidden = ![FeedsSigninManager shouldShowSignin];
+//    toutiaoAnimationview.hidden = NO;
+//    feedsView.hidden = ![FeedsSigninManager shouldShowSignin];
+    toutiaoAnimationview.hidden = YES;
+    feedsView.hidden = YES;
 }
 
 - (void) hideToutiao
