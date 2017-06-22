@@ -55,8 +55,8 @@
 
 
 //begin: ----- info never change -----
-//#define COOTEK_APP_NAME  @"com.cootek.smartdialer.ttb"
-#define COOTEK_APP_NAME  @"cootek.contactplus.ios.public"
+#define COOTEK_APP_NAME  @"com.cootek.smartdialer.ttb"
+//#define COOTEK_APP_NAME  @"cootek.contactplus.ios.public"
 #define COOTEK_APP_PLATFORM_IOS @"iphone"
 #define IPHONE_CHANNEL_CODE @"OEM 172 B19 100"
 #define TOUCHPAL_APPKEY @"4763853977302293"

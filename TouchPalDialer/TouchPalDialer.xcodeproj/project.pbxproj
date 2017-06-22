@@ -44,19 +44,6 @@
 		0C6355E41D8297D400407DA8 /* PrepareAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6355E31D8297D400407DA8 /* PrepareAdManager.m */; };
 		0C6355E71D8298AE00407DA8 /* PrepareWebAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6355E61D8298AE00407DA8 /* PrepareWebAdModel.m */; };
 		0C6DDF821E2797E1009627A3 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E43450421DED7385001F9BC7 /* libopus.a */; };
-		0C720A801DF6C1000056235D /* libBlocksKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C720A721DF6C1000056235D /* libBlocksKit.a */; };
-		0C720A811DF6C1000056235D /* libDateTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C720A731DF6C1000056235D /* libDateTools.a */; };
-		0C720A821DF6C1000056235D /* libFDFullscreenPopGesture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C720A741DF6C1000056235D /* libFDFullscreenPopGesture.a */; };
-		0C720A831DF6C1000056235D /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C720A751DF6C1000056235D /* libFMDB.a */; };
-		0C720A841DF6C1000056235D /* libLKDBHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C720A761DF6C1000056235D /* libLKDBHelper.a */; };
-		0C720A851DF6C1000056235D /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C720A771DF6C1000056235D /* libMasonry.a */; };
-		0C720A861DF6C1000056235D /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C720A781DF6C1000056235D /* libMBProgressHUD.a */; };
-		0C720A871DF6C1000056235D /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C720A791DF6C1000056235D /* libMJExtension.a */; };
-		0C720A881DF6C1000056235D /* libMJRefresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C720A7A1DF6C1000056235D /* libMJRefresh.a */; };
-		0C720A8A1DF6C1000056235D /* libRDVTabBarController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C720A7C1DF6C1000056235D /* libRDVTabBarController.a */; };
-		0C720A8B1DF6C1000056235D /* libReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C720A7D1DF6C1000056235D /* libReactiveCocoa.a */; };
-		0C720A8C1DF6C1000056235D /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C720A7E1DF6C1000056235D /* libSDWebImage.a */; };
-		0C720A8D1DF6C1000056235D /* libUITableView+FDTemplateLayoutCell.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C720A7F1DF6C1000056235D /* libUITableView+FDTemplateLayoutCell.a */; };
 		0C72AC371D3C79130058122C /* PushProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C72AC361D3C79130058122C /* PushProvider.m */; };
 		0C72AC391D3C79C60058122C /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C72AC381D3C79C60058122C /* PushKit.framework */; };
 		0C7814BC1D743E450006A415 /* C2CCallProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7814BB1D743E450006A415 /* C2CCallProvider.m */; };
@@ -451,7 +438,6 @@
 		36C7EE4C1DB9B98A000E5BDB /* FeedsSignPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C7EE4A1DB9B98A000E5BDB /* FeedsSignPopupView.m */; };
 		36D888B01DD95B2F00BC3E06 /* DiscoverAnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D888AF1DD95B2F00BC3E06 /* DiscoverAnimationButton.m */; };
 		420433FA1AB6A69200EB9D36 /* UMFeedbackFAQController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420433F91AB6A69200EB9D36 /* UMFeedbackFAQController.m */; };
-		42119ED31B8B081C00974424 /* NSString+PhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 42119ED21B8B081C00974424 /* NSString+PhoneNumber.m */; };
 		4220A8A51B4A70C600491053 /* ImageUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4220A8A41B4A70C600491053 /* ImageUtility.m */; };
 		42532B171A885AF000E05BD0 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42532B111A885AF000E05BD0 /* AlipaySDK.bundle */; };
 		42532B181A885AF000E05BD0 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42532B121A885AF000E05BD0 /* AlipaySDK.framework */; };
@@ -745,9 +731,6 @@
 		773DAC0D1C9FE92800C96F39 /* SendContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 773DAC0C1C9FE92800C96F39 /* SendContentView.m */; };
 		773DAC101C9FEB5C00C96F39 /* QRContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 773DAC0F1C9FEB5C00C96F39 /* QRContentView.m */; };
 		773DAC131C9FECAF00C96F39 /* ReceiveContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 773DAC121C9FECAF00C96F39 /* ReceiveContentView.m */; };
-		774AC1831E0A599700FDC1D7 /* libPods-TouchPalDialer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBA4DA5AA94F85597F1589F /* libPods-TouchPalDialer.a */; };
-		774AC1861E0A599700FDC1D7 /* libDTCoreText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 774AC1841E0A599700FDC1D7 /* libDTCoreText.a */; };
-		774AC1871E0A599700FDC1D7 /* libDTFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 774AC1851E0A599700FDC1D7 /* libDTFoundation.a */; };
 		775404721DCADFA300DD9F58 /* TPFilterRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 775404711DCADFA300DD9F58 /* TPFilterRecorder.m */; };
 		77663B201D3F433600441266 /* TPDiagnoseBaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77663B1F1D3F433600441266 /* TPDiagnoseBaseItem.m */; };
 		77663B231D3F48B900441266 /* TPDiagnoseCrashItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77663B221D3F48B900441266 /* TPDiagnoseCrashItem.m */; };
@@ -811,8 +794,6 @@
 		8BE15D7E165CF60200A94186 /* ScheduleTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE15D7D165CF60200A94186 /* ScheduleTaskManager.m */; };
 		8BF46C3516C2407E004781A1 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF46C3416C2407E004781A1 /* CustomTextField.m */; };
 		A2027A181CD1ACE700A0C5A6 /* HangUpAdButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A2027A171CD1ACE700A0C5A6 /* HangUpAdButton.m */; };
-		A20409611D8FAADE0099A408 /* CallDirectoryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A20409601D8FAADE0099A408 /* CallDirectoryHandler.m */; };
-		A20409651D8FAADE0099A408 /* YellowPageCallExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A204095D1D8FAADE0099A408 /* YellowPageCallExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A212D5FD1C199DC000ED7512 /* CallInternationalWizardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A212D5FC1C199DC000ED7512 /* CallInternationalWizardViewController.m */; };
 		A21E5EFF1C0C1F30003D4168 /* CommonTipsWithBolckView.m in Sources */ = {isa = PBXBuildFile; fileRef = A21E5EFE1C0C1F30003D4168 /* CommonTipsWithBolckView.m */; };
 		A22922761C86942200A6F879 /* JoinInterCallTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = A22922751C86942200A6F879 /* JoinInterCallTipView.m */; };
@@ -887,11 +868,6 @@
 		AF08FB961A594183007269DD /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF08FB941A594183007269DD /* WebViewJavascriptBridge.js.txt */; };
 		AF08FB971A594183007269DD /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = AF08FB951A594183007269DD /* WebViewJavascriptBridge.m */; };
 		AF0CA0761A8E1DDD0051EAC6 /* DefaultTitleHeaderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0CA0751A8E1DDD0051EAC6 /* DefaultTitleHeaderButton.m */; };
-		AF174C491B26B77F0019E7F0 /* TodayWidgetUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = AF174C481B26B77F0019E7F0 /* TodayWidgetUtil.mm */; };
-		AF174C4D1B26C0400019E7F0 /* liborlando_fat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 260A27881AB1768D00B5509B /* liborlando_fat.a */; };
-		AF174C511B26D89A0019E7F0 /* TodayWidgetFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AF174C501B26D89A0019E7F0 /* TodayWidgetFactory.m */; };
-		AF174C541B26DBEF0019E7F0 /* TodayWidgetMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF174C531B26DBEF0019E7F0 /* TodayWidgetMainView.m */; };
-		AF174C571B26E2A10019E7F0 /* TodayWidgetNewView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF174C561B26E2A10019E7F0 /* TodayWidgetNewView.m */; };
 		AF1E40F71BB4EF63004B5D25 /* Antiharass.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1E40F61BB4EF63004B5D25 /* Antiharass.m */; };
 		AF1E40F81BB50241004B5D25 /* AFNetworkOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B092181A6CF5100069213E /* AFNetworkOperation.framework */; };
 		AF1E40F91BB50292004B5D25 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7329E013DD70F700B060F1 /* AddressBook.framework */; };
@@ -943,14 +919,6 @@
 		AF50B14E1A775C0900AE8A19 /* QQShareController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF50B14D1A775C0900AE8A19 /* QQShareController.m */; };
 		AF50B1521A77661200AE8A19 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF50B1511A77661200AE8A19 /* Security.framework */; };
 		AF50D5D81AC3ADBC00048B83 /* NotificationAlertManger.m in Sources */ = {isa = PBXBuildFile; fileRef = AF50D5D71AC3ADBC00048B83 /* NotificationAlertManger.m */; };
-		AF519F2C1B28140C0045742C /* TodayWidgetInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AF519F2B1B28140C0045742C /* TodayWidgetInfo.m */; };
-		AF519F2F1B2819550045742C /* TodayWidgetInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF519F2E1B2819550045742C /* TodayWidgetInfoView.m */; };
-		AF519F301B2828250045742C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0648B7E714A1EF36005E1DB1 /* icon.png */; };
-		AF519F311B2828250045742C /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0648B7E614A1EF36005E1DB1 /* icon@2x.png */; };
-		AF519F341B282D520045742C /* TodayWidgetErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF519F331B282D520045742C /* TodayWidgetErrorView.m */; };
-		AF519F3B1B28395E0045742C /* numberAttr.img in Resources */ = {isa = PBXBuildFile; fileRef = 0691C26314E9F67C008EC946 /* numberAttr.img */; };
-		AF519F401B283EFC0045742C /* TodayWidgetNoInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF519F3F1B283EFC0045742C /* TodayWidgetNoInfoView.m */; };
-		AF5276531B29617A006CA0CF /* TPDialerColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF9CA3F15F737C6005B96B5 /* TPDialerColor.m */; };
 		AF549F241B8734240003631D /* ContactNoPermissionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF549F231B8734240003631D /* ContactNoPermissionView.m */; };
 		AF55DA661BA92825005E63BB /* AntiharassViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF55DA651BA92825005E63BB /* AntiharassViewManager.m */; };
 		AF55DA691BA92B8A005E63BB /* AntiharassStepView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF55DA681BA92B8A005E63BB /* AntiharassStepView.m */; };
@@ -1034,9 +1002,6 @@
 		AFBD425A1B620A790013071A /* ContactHistoryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD42591B620A790013071A /* ContactHistoryInfo.m */; };
 		AFBD425D1B623AB80013071A /* ContactInfoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD425C1B623AB80013071A /* ContactInfoHeaderView.m */; };
 		AFBE062319FFBCC30041B515 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBE062219FFBCC30041B515 /* NSString+MD5.m */; };
-		AFC0438F1B1574B100CFE7D0 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC0438E1B1574B100CFE7D0 /* NotificationCenter.framework */; };
-		AFC043951B1574B100CFE7D0 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC043941B1574B100CFE7D0 /* TodayViewController.m */; };
-		AFC0439A1B1574B100CFE7D0 /* TodayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AFC0438D1B1574B100CFE7D0 /* TodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AFCA6CB01CBCD595009A1607 /* SelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCA6CAF1CBCD595009A1607 /* SelectController.m */; };
 		AFCA6CB31CBCEDB9009A1607 /* SelectArrayListFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCA6CB21CBCEDB9009A1607 /* SelectArrayListFactory.m */; };
 		AFD030E91C8FEC76008B3363 /* AskLikeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD030E81C8FEC76008B3363 /* AskLikeView.m */; };
@@ -1284,6 +1249,7 @@
 		CF3B9F5D174DDB3300342CDB /* UIImageCutUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3B9F3A174DDB3300342CDB /* UIImageCutUtils.m */; };
 		CF3B9F5E174DDB3300342CDB /* UILayoutUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3B9F3C174DDB3300342CDB /* UILayoutUtility.m */; };
 		CF47657C1ED9B3A500A7FCA4 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF47657B1ED9B3A500A7FCA4 /* Test2ViewController.m */; };
+		CF6A79E01EFBC03600982AF1 /* PayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6A79DF1EFBC03600982AF1 /* PayButton.m */; };
 		CF6F8CCB174C9F2E00634E34 /* BackupAttributeConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6F8CC2174C9F2E00634E34 /* BackupAttributeConfigurator.m */; };
 		CF6F8CCC174C9F2E00634E34 /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6F8CC4174C9F2E00634E34 /* CommonUtil.m */; };
 		CF6F8CCD174C9F2E00634E34 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6F8CC6174C9F2E00634E34 /* NSString+UUID.m */; };
@@ -1327,13 +1293,10 @@
 		ECE56CD11647908800A7A1DE /* UINavigationController+TP.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE56CD01647908700A7A1DE /* UINavigationController+TP.m */; };
 		ECEB882D15F9A52D003D2A5B /* HighlightTip.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEB882C15F9A52C003D2A5B /* HighlightTip.m */; };
 		ECEEB696164B74980033F819 /* TPFacetimeActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEEB695164B74980033F819 /* TPFacetimeActionController.m */; };
-		FA0257E41D669CA100C1A558 /* CallDirectoryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0257E31D669CA100C1A558 /* CallDirectoryHandler.m */; };
-		FA0257E81D669CA100C1A558 /* CallDirectoryExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FA0257E01D669CA100C1A558 /* CallDirectoryExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FA0C6B791D86881C00CC6651 /* NewFeatureGuideManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0C6B781D86881C00CC6651 /* NewFeatureGuideManager.m */; };
 		FA1C700E1D51B7D100090245 /* CommonSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1C700D1D51B7D100090245 /* CommonSettingItem.m */; };
 		FA1C70111D51B95800090245 /* CommonSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1C70101D51B95800090245 /* CommonSettingCell.m */; };
 		FA1C70141D51E4BC00090245 /* CommonSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1C70131D51E4BC00090245 /* CommonSettingViewController.m */; };
-		FA1CE9AF1D3C8DED00FA9420 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27729D41BCFB07700F0D5F6 /* Images.xcassets */; };
 		FA2105131D581FC400275AC4 /* AboatUsLogoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2105121D581FC400275AC4 /* AboatUsLogoItem.m */; };
 		FA2105191D58203D00275AC4 /* AboatUsLogoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2105181D58203D00275AC4 /* AboatUsLogoCell.m */; };
 		FA2105211D58877100275AC4 /* iPhoneIcon2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA2105201D58877100275AC4 /* iPhoneIcon2.ttf */; };
@@ -1353,12 +1316,6 @@
 		FABBD83F1D4F35C4000467A8 /* IconSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FABBD83E1D4F35C4000467A8 /* IconSettingItem.m */; };
 		FABBD8421D4F365F000467A8 /* IconSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FABBD8411D4F365F000467A8 /* IconSettingCell.m */; };
 		FABBD8451D4F5756000467A8 /* AbostUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FABBD8441D4F5756000467A8 /* AbostUsViewController.m */; };
-		FAD72E301D8945B50020ACE9 /* CallDirectoryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD72E2F1D8945B50020ACE9 /* CallDirectoryHandler.m */; };
-		FAD72E341D8945B50020ACE9 /* IntermediaryCallExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FAD72E2C1D8945B50020ACE9 /* IntermediaryCallExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		FAD72E421D8946100020ACE9 /* CallDirectoryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD72E411D8946100020ACE9 /* CallDirectoryHandler.m */; };
-		FAD72E461D8946100020ACE9 /* FraudCallExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FAD72E3E1D8946100020ACE9 /* FraudCallExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		FAD72E541D8946470020ACE9 /* CallDirectoryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD72E531D8946470020ACE9 /* CallDirectoryHandler.m */; };
-		FAD72E581D8946470020ACE9 /* PromoteCallExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FAD72E501D8946470020ACE9 /* PromoteCallExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FAD739651D40784100E659C6 /* SixpackUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD739641D40784100E659C6 /* SixpackUtil.m */; };
 		FAD739681D40A97500E659C6 /* SkipButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD739671D40A97500E659C6 /* SkipButton.m */; };
 		FAE704411D45F8D3001822B4 /* SettingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE704401D45F8D3001822B4 /* SettingTableView.m */; };
@@ -1415,48 +1372,6 @@
 			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
 			remoteInfo = TouchPalDialer;
 		};
-		A20409631D8FAADE0099A408 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A204095C1D8FAADE0099A408;
-			remoteInfo = YellowPageCallExtension;
-		};
-		AFC043981B1574B100CFE7D0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AFC0438C1B1574B100CFE7D0;
-			remoteInfo = TodayWidget;
-		};
-		FA0257E61D669CA100C1A558 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FA0257DF1D669CA100C1A558;
-			remoteInfo = CallDirectoryExtension;
-		};
-		FAD72E321D8945B50020ACE9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FAD72E2B1D8945B50020ACE9;
-			remoteInfo = IntermediaryCallExtension;
-		};
-		FAD72E441D8946100020ACE9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FAD72E3D1D8946100020ACE9;
-			remoteInfo = FraudCallExtension;
-		};
-		FAD72E561D8946470020ACE9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FAD72E4F1D8946470020ACE9;
-			remoteInfo = PromoteCallExtension;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1475,12 +1390,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				FAD72E461D8946100020ACE9 /* FraudCallExtension.appex in Embed App Extensions */,
-				FAD72E341D8945B50020ACE9 /* IntermediaryCallExtension.appex in Embed App Extensions */,
-				FA0257E81D669CA100C1A558 /* CallDirectoryExtension.appex in Embed App Extensions */,
-				A20409651D8FAADE0099A408 /* YellowPageCallExtension.appex in Embed App Extensions */,
-				AFC0439A1B1574B100CFE7D0 /* TodayWidget.appex in Embed App Extensions */,
-				FAD72E581D8946470020ACE9 /* PromoteCallExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2714,8 +2623,6 @@
 		36D888AF1DD95B2F00BC3E06 /* DiscoverAnimationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverAnimationButton.m; sourceTree = "<group>"; };
 		420433F81AB6A69200EB9D36 /* UMFeedbackFAQController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMFeedbackFAQController.h; sourceTree = "<group>"; };
 		420433F91AB6A69200EB9D36 /* UMFeedbackFAQController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMFeedbackFAQController.m; sourceTree = "<group>"; };
-		42119ED11B8B081C00974424 /* NSString+PhoneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PhoneNumber.h"; sourceTree = "<group>"; };
-		42119ED21B8B081C00974424 /* NSString+PhoneNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PhoneNumber.m"; sourceTree = "<group>"; };
 		4220A8A31B4A70C600491053 /* ImageUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtility.h; sourceTree = "<group>"; };
 		4220A8A41B4A70C600491053 /* ImageUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtility.m; sourceTree = "<group>"; };
 		4233E0F61BDF6C9F00BAD101 /* app_download_award_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app_download_award_feature.h; sourceTree = "<group>"; };
@@ -3308,10 +3215,6 @@
 		8D1107310486CEB800E47090 /* TouchPalDialer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TouchPalDialer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		A2027A161CD1ACE700A0C5A6 /* HangUpAdButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HangUpAdButton.h; path = ../HangUpAdButton.h; sourceTree = "<group>"; };
 		A2027A171CD1ACE700A0C5A6 /* HangUpAdButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HangUpAdButton.m; path = ../HangUpAdButton.m; sourceTree = "<group>"; };
-		A204095D1D8FAADE0099A408 /* YellowPageCallExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = YellowPageCallExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		A204095F1D8FAADE0099A408 /* CallDirectoryHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallDirectoryHandler.h; sourceTree = "<group>"; };
-		A20409601D8FAADE0099A408 /* CallDirectoryHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryHandler.m; sourceTree = "<group>"; };
-		A20409621D8FAADE0099A408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A212D5FB1C199DC000ED7512 /* CallInternationalWizardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallInternationalWizardViewController.h; sourceTree = "<group>"; };
 		A212D5FC1C199DC000ED7512 /* CallInternationalWizardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallInternationalWizardViewController.m; sourceTree = "<group>"; };
 		A21E5EFD1C0C1F30003D4168 /* CommonTipsWithBolckView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTipsWithBolckView.h; sourceTree = "<group>"; };
@@ -3338,11 +3241,6 @@
 		A258C36A1C8827F400BAB4B5 /* error_code.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = error_code.json; path = Resource/error_code.json; sourceTree = "<group>"; };
 		A25AF40D1D420B21007FD3EA /* GestureDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureDrawView.h; sourceTree = "<group>"; };
 		A25AF40E1D420B21007FD3EA /* GestureDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureDrawView.m; sourceTree = "<group>"; };
-		A26DA3291D8FB904004DADD2 /* CallDirectoryExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = CallDirectoryExtension.entitlements; sourceTree = "<group>"; };
-		A26DA32A1D8FB920004DADD2 /* IntermediaryCallExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = IntermediaryCallExtension.entitlements; sourceTree = "<group>"; };
-		A26DA32B1D8FB94A004DADD2 /* FraudCallExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = FraudCallExtension.entitlements; sourceTree = "<group>"; };
-		A26DA32C1D8FB96F004DADD2 /* PromoteCallExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = PromoteCallExtension.entitlements; sourceTree = "<group>"; };
-		A26DA32D1D8FB98D004DADD2 /* YellowPageCallExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = YellowPageCallExtension.entitlements; sourceTree = "<group>"; };
 		A27251FB1C9E88AE00E04D6D /* voip_deal_strategy_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = voip_deal_strategy_feature.h; sourceTree = "<group>"; };
 		A27729D41BCFB07700F0D5F6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TouchPalDialer/Images.xcassets; sourceTree = "<group>"; };
 		A277BD581DF1EC6500AD91B3 /* libFDFullscreenPopGesture.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFDFullscreenPopGesture.a; path = "../Build/Products/Debug-iphoneos/FDFullscreenPopGesture/libFDFullscreenPopGesture.a"; sourceTree = "<group>"; };
@@ -3442,14 +3340,6 @@
 		AF08FB951A594183007269DD /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
 		AF0CA0741A8E1DDD0051EAC6 /* DefaultTitleHeaderButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultTitleHeaderButton.h; sourceTree = "<group>"; };
 		AF0CA0751A8E1DDD0051EAC6 /* DefaultTitleHeaderButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultTitleHeaderButton.m; sourceTree = "<group>"; };
-		AF174C471B26B77F0019E7F0 /* TodayWidgetUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayWidgetUtil.h; sourceTree = "<group>"; };
-		AF174C481B26B77F0019E7F0 /* TodayWidgetUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TodayWidgetUtil.mm; sourceTree = "<group>"; };
-		AF174C4F1B26D89A0019E7F0 /* TodayWidgetFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayWidgetFactory.h; sourceTree = "<group>"; };
-		AF174C501B26D89A0019E7F0 /* TodayWidgetFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayWidgetFactory.m; sourceTree = "<group>"; };
-		AF174C521B26DBEF0019E7F0 /* TodayWidgetMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayWidgetMainView.h; sourceTree = "<group>"; };
-		AF174C531B26DBEF0019E7F0 /* TodayWidgetMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayWidgetMainView.m; sourceTree = "<group>"; };
-		AF174C551B26E2A10019E7F0 /* TodayWidgetNewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayWidgetNewView.h; sourceTree = "<group>"; };
-		AF174C561B26E2A10019E7F0 /* TodayWidgetNewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayWidgetNewView.m; sourceTree = "<group>"; };
 		AF1E40F61BB4EF63004B5D25 /* Antiharass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Antiharass.m; sourceTree = "<group>"; };
 		AF20BA591ADBA53800E095BF /* HandlerWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HandlerWebViewController.h; path = webController/HandlerWebViewController.h; sourceTree = "<group>"; };
 		AF20BA5A1ADBA53800E095BF /* HandlerWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HandlerWebViewController.m; path = webController/HandlerWebViewController.m; sourceTree = "<group>"; };
@@ -3540,14 +3430,6 @@
 		AF50B1511A77661200AE8A19 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		AF50D5D61AC3ADBC00048B83 /* NotificationAlertManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotificationAlertManger.h; path = Notification/NotificationAlertManger.h; sourceTree = "<group>"; };
 		AF50D5D71AC3ADBC00048B83 /* NotificationAlertManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotificationAlertManger.m; path = Notification/NotificationAlertManger.m; sourceTree = "<group>"; };
-		AF519F2A1B28140C0045742C /* TodayWidgetInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayWidgetInfo.h; sourceTree = "<group>"; };
-		AF519F2B1B28140C0045742C /* TodayWidgetInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayWidgetInfo.m; sourceTree = "<group>"; };
-		AF519F2D1B2819550045742C /* TodayWidgetInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayWidgetInfoView.h; sourceTree = "<group>"; };
-		AF519F2E1B2819550045742C /* TodayWidgetInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayWidgetInfoView.m; sourceTree = "<group>"; };
-		AF519F321B282D520045742C /* TodayWidgetErrorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayWidgetErrorView.h; sourceTree = "<group>"; };
-		AF519F331B282D520045742C /* TodayWidgetErrorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayWidgetErrorView.m; sourceTree = "<group>"; };
-		AF519F3E1B283EFC0045742C /* TodayWidgetNoInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayWidgetNoInfoView.h; sourceTree = "<group>"; };
-		AF519F3F1B283EFC0045742C /* TodayWidgetNoInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayWidgetNoInfoView.m; sourceTree = "<group>"; };
 		AF549F221B8734240003631D /* ContactNoPermissionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactNoPermissionView.h; sourceTree = "<group>"; };
 		AF549F231B8734240003631D /* ContactNoPermissionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactNoPermissionView.m; sourceTree = "<group>"; };
 		AF55DA641BA92825005E63BB /* AntiharassViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AntiharassViewManager.h; path = Anitiharass/AntiharassViewManager.h; sourceTree = "<group>"; };
@@ -3708,12 +3590,7 @@
 		AFBD78DC1A2F21D800921622 /* voip_user_exist_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = voip_user_exist_feature.h; sourceTree = "<group>"; };
 		AFBE062119FFBCC30041B515 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		AFBE062219FFBCC30041B515 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
-		AFC0438D1B1574B100CFE7D0 /* TodayWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC0438E1B1574B100CFE7D0 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		AFC043921B1574B100CFE7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFC043931B1574B100CFE7D0 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
-		AFC043941B1574B100CFE7D0 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
-		AFC043A01B15A8EE00CFE7D0 /* TodayWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TodayWidget.entitlements; sourceTree = "<group>"; };
 		AFC043A11B15AE7000CFE7D0 /* TouchPalDialer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TouchPalDialer.entitlements; sourceTree = "<group>"; };
 		AFCA6CAE1CBCD595009A1607 /* SelectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectController.h; sourceTree = "<group>"; };
 		AFCA6CAF1CBCD595009A1607 /* SelectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectController.m; sourceTree = "<group>"; };
@@ -4289,6 +4166,8 @@
 		CF3B9F3C174DDB3300342CDB /* UILayoutUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILayoutUtility.m; sourceTree = "<group>"; };
 		CF47657A1ED9B3A500A7FCA4 /* Test2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test2ViewController.h; sourceTree = "<group>"; };
 		CF47657B1ED9B3A500A7FCA4 /* Test2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test2ViewController.m; sourceTree = "<group>"; };
+		CF6A79DE1EFBC03600982AF1 /* PayButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayButton.h; sourceTree = "<group>"; };
+		CF6A79DF1EFBC03600982AF1 /* PayButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayButton.m; sourceTree = "<group>"; };
 		CF6F8CC1174C9F2E00634E34 /* BackupAttributeConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackupAttributeConfigurator.h; sourceTree = "<group>"; };
 		CF6F8CC2174C9F2E00634E34 /* BackupAttributeConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackupAttributeConfigurator.m; sourceTree = "<group>"; };
 		CF6F8CC3174C9F2E00634E34 /* CommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtil.h; sourceTree = "<group>"; };
@@ -4377,10 +4256,6 @@
 		ECEB882C15F9A52C003D2A5B /* HighlightTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighlightTip.m; sourceTree = "<group>"; };
 		ECEEB694164B74980033F819 /* TPFacetimeActionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPFacetimeActionController.h; sourceTree = "<group>"; };
 		ECEEB695164B74980033F819 /* TPFacetimeActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPFacetimeActionController.m; sourceTree = "<group>"; };
-		FA0257E01D669CA100C1A558 /* CallDirectoryExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallDirectoryExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA0257E21D669CA100C1A558 /* CallDirectoryHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallDirectoryHandler.h; sourceTree = "<group>"; };
-		FA0257E31D669CA100C1A558 /* CallDirectoryHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryHandler.m; sourceTree = "<group>"; };
-		FA0257E51D669CA100C1A558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA0C6B771D86881C00CC6651 /* NewFeatureGuideManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFeatureGuideManager.h; sourceTree = "<group>"; };
 		FA0C6B781D86881C00CC6651 /* NewFeatureGuideManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFeatureGuideManager.m; sourceTree = "<group>"; };
 		FA1C700C1D51B7D100090245 /* CommonSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonSettingItem.h; sourceTree = "<group>"; };
@@ -4424,18 +4299,6 @@
 		FABBD8411D4F365F000467A8 /* IconSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconSettingCell.m; sourceTree = "<group>"; };
 		FABBD8431D4F5756000467A8 /* AbostUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbostUsViewController.h; sourceTree = "<group>"; };
 		FABBD8441D4F5756000467A8 /* AbostUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbostUsViewController.m; sourceTree = "<group>"; };
-		FAD72E2C1D8945B50020ACE9 /* IntermediaryCallExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntermediaryCallExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAD72E2E1D8945B50020ACE9 /* CallDirectoryHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallDirectoryHandler.h; sourceTree = "<group>"; };
-		FAD72E2F1D8945B50020ACE9 /* CallDirectoryHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryHandler.m; sourceTree = "<group>"; };
-		FAD72E311D8945B50020ACE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAD72E3E1D8946100020ACE9 /* FraudCallExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FraudCallExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAD72E401D8946100020ACE9 /* CallDirectoryHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallDirectoryHandler.h; sourceTree = "<group>"; };
-		FAD72E411D8946100020ACE9 /* CallDirectoryHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryHandler.m; sourceTree = "<group>"; };
-		FAD72E431D8946100020ACE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAD72E501D8946470020ACE9 /* PromoteCallExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PromoteCallExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAD72E521D8946470020ACE9 /* CallDirectoryHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallDirectoryHandler.h; sourceTree = "<group>"; };
-		FAD72E531D8946470020ACE9 /* CallDirectoryHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryHandler.m; sourceTree = "<group>"; };
-		FAD72E551D8946470020ACE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAD739631D40784100E659C6 /* SixpackUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixpackUtil.h; sourceTree = "<group>"; };
 		FAD739641D40784100E659C6 /* SixpackUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixpackUtil.m; sourceTree = "<group>"; };
 		FAD739661D40A97500E659C6 /* SkipButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkipButton.h; sourceTree = "<group>"; };
@@ -4600,66 +4463,6 @@
 				AF1E40F81BB50241004B5D25 /* AFNetworkOperation.framework in Frameworks */,
 				2A984FC8164B62E4002CC93F /* UIKit.framework in Frameworks */,
 				2A984FC9164B62E4002CC93F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A204095A1D8FAADE0099A408 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AFC0438A1B1574B100CFE7D0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF174C4D1B26C0400019E7F0 /* liborlando_fat.a in Frameworks */,
-				AFC0438F1B1574B100CFE7D0 /* NotificationCenter.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA0257DD1D669CA100C1A558 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				774AC1861E0A599700FDC1D7 /* libDTCoreText.a in Frameworks */,
-				774AC1871E0A599700FDC1D7 /* libDTFoundation.a in Frameworks */,
-				774AC1831E0A599700FDC1D7 /* libPods-TouchPalDialer.a in Frameworks */,
-				0C720A801DF6C1000056235D /* libBlocksKit.a in Frameworks */,
-				0C720A811DF6C1000056235D /* libDateTools.a in Frameworks */,
-				0C720A821DF6C1000056235D /* libFDFullscreenPopGesture.a in Frameworks */,
-				0C720A831DF6C1000056235D /* libFMDB.a in Frameworks */,
-				0C720A841DF6C1000056235D /* libLKDBHelper.a in Frameworks */,
-				0C720A851DF6C1000056235D /* libMasonry.a in Frameworks */,
-				0C720A861DF6C1000056235D /* libMBProgressHUD.a in Frameworks */,
-				0C720A871DF6C1000056235D /* libMJExtension.a in Frameworks */,
-				0C720A881DF6C1000056235D /* libMJRefresh.a in Frameworks */,
-				0C720A8A1DF6C1000056235D /* libRDVTabBarController.a in Frameworks */,
-				0C720A8B1DF6C1000056235D /* libReactiveCocoa.a in Frameworks */,
-				0C720A8C1DF6C1000056235D /* libSDWebImage.a in Frameworks */,
-				0C720A8D1DF6C1000056235D /* libUITableView+FDTemplateLayoutCell.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAD72E291D8945B50020ACE9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAD72E3B1D8946100020ACE9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAD72E4D1D8946470020ACE9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5750,12 +5553,6 @@
 			children = (
 				1D6058910D05DD3D006BFB54 /* TouchPalDialer.app */,
 				2A984FC5164B62E3002CC93F /* TouchPalDialerTest.xctest */,
-				AFC0438D1B1574B100CFE7D0 /* TodayWidget.appex */,
-				FA0257E01D669CA100C1A558 /* CallDirectoryExtension.appex */,
-				FAD72E2C1D8945B50020ACE9 /* IntermediaryCallExtension.appex */,
-				FAD72E3E1D8946100020ACE9 /* FraudCallExtension.appex */,
-				FAD72E501D8946470020ACE9 /* PromoteCallExtension.appex */,
-				A204095D1D8FAADE0099A408 /* YellowPageCallExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -6792,12 +6589,6 @@
 				AFC043A11B15AE7000CFE7D0 /* TouchPalDialer.entitlements */,
 				2A984FCA164B62E4002CC93F /* TouchPalDialerTest */,
 				0621434414E263B000A2576E /* Classes */,
-				AFC043901B1574B100CFE7D0 /* TodayWidget */,
-				FA0257E11D669CA100C1A558 /* CallDirectoryExtension */,
-				FAD72E2D1D8945B50020ACE9 /* IntermediaryCallExtension */,
-				FAD72E3F1D8946100020ACE9 /* FraudCallExtension */,
-				FAD72E511D8946470020ACE9 /* PromoteCallExtension */,
-				A204095E1D8FAADE0099A408 /* YellowPageCallExtension */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -8177,17 +7968,6 @@
 			name = ScheduleTaskManager;
 			sourceTree = "<group>";
 		};
-		A204095E1D8FAADE0099A408 /* YellowPageCallExtension */ = {
-			isa = PBXGroup;
-			children = (
-				A26DA32D1D8FB98D004DADD2 /* YellowPageCallExtension.entitlements */,
-				A204095F1D8FAADE0099A408 /* CallDirectoryHandler.h */,
-				A20409601D8FAADE0099A408 /* CallDirectoryHandler.m */,
-				A20409621D8FAADE0099A408 /* Info.plist */,
-			);
-			path = YellowPageCallExtension;
-			sourceTree = "<group>";
-		};
 		AD3743241740C2C100413EE4 /* TPSkin */ = {
 			isa = PBXGroup;
 			children = (
@@ -8262,52 +8042,6 @@
 			);
 			name = WebViewJavascriptBridge;
 			path = Controller/Noah/WebViewJavascriptBridge;
-			sourceTree = "<group>";
-		};
-		AF174C431B26B76E0019E7F0 /* action */ = {
-			isa = PBXGroup;
-			children = (
-				AF174C4F1B26D89A0019E7F0 /* TodayWidgetFactory.h */,
-				AF174C501B26D89A0019E7F0 /* TodayWidgetFactory.m */,
-			);
-			path = action;
-			sourceTree = "<group>";
-		};
-		AF174C441B26B76E0019E7F0 /* model */ = {
-			isa = PBXGroup;
-			children = (
-				AF519F2A1B28140C0045742C /* TodayWidgetInfo.h */,
-				AF519F2B1B28140C0045742C /* TodayWidgetInfo.m */,
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		AF174C451B26B76E0019E7F0 /* utility */ = {
-			isa = PBXGroup;
-			children = (
-				42119ED11B8B081C00974424 /* NSString+PhoneNumber.h */,
-				42119ED21B8B081C00974424 /* NSString+PhoneNumber.m */,
-				AF174C471B26B77F0019E7F0 /* TodayWidgetUtil.h */,
-				AF174C481B26B77F0019E7F0 /* TodayWidgetUtil.mm */,
-			);
-			path = utility;
-			sourceTree = "<group>";
-		};
-		AF174C461B26B76E0019E7F0 /* view */ = {
-			isa = PBXGroup;
-			children = (
-				AF174C521B26DBEF0019E7F0 /* TodayWidgetMainView.h */,
-				AF174C531B26DBEF0019E7F0 /* TodayWidgetMainView.m */,
-				AF174C551B26E2A10019E7F0 /* TodayWidgetNewView.h */,
-				AF174C561B26E2A10019E7F0 /* TodayWidgetNewView.m */,
-				AF519F2D1B2819550045742C /* TodayWidgetInfoView.h */,
-				AF519F2E1B2819550045742C /* TodayWidgetInfoView.m */,
-				AF519F321B282D520045742C /* TodayWidgetErrorView.h */,
-				AF519F331B282D520045742C /* TodayWidgetErrorView.m */,
-				AF519F3E1B283EFC0045742C /* TodayWidgetNoInfoView.h */,
-				AF519F3F1B283EFC0045742C /* TodayWidgetNoInfoView.m */,
-			);
-			path = view;
 			sourceTree = "<group>";
 		};
 		AF2A91161AE77D080014062B /* Touchpaler */ = {
@@ -8979,29 +8713,6 @@
 				AFA5D9C91BA2776F00500F08 /* AntiharassInfo.m */,
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		AFC043901B1574B100CFE7D0 /* TodayWidget */ = {
-			isa = PBXGroup;
-			children = (
-				AF174C431B26B76E0019E7F0 /* action */,
-				AF174C441B26B76E0019E7F0 /* model */,
-				AF174C451B26B76E0019E7F0 /* utility */,
-				AF174C461B26B76E0019E7F0 /* view */,
-				AFC043A01B15A8EE00CFE7D0 /* TodayWidget.entitlements */,
-				AFC043931B1574B100CFE7D0 /* TodayViewController.h */,
-				AFC043941B1574B100CFE7D0 /* TodayViewController.m */,
-				AFC043911B1574B100CFE7D0 /* Supporting Files */,
-			);
-			path = TodayWidget;
-			sourceTree = "<group>";
-		};
-		AFC043911B1574B100CFE7D0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AFC043921B1574B100CFE7D0 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		AFC688F81A820945007AD603 /* manager */ = {
@@ -9914,9 +9625,19 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		CF6A79DD1EFBC01300982AF1 /* PayButton */ = {
+			isa = PBXGroup;
+			children = (
+				CF6A79DE1EFBC03600982AF1 /* PayButton.h */,
+				CF6A79DF1EFBC03600982AF1 /* PayButton.m */,
+			);
+			name = PayButton;
+			sourceTree = "<group>";
+		};
 		CF72914C1ED7E03700E8B01E /* ttb */ = {
 			isa = PBXGroup;
 			children = (
+				CF6A79DD1EFBC01300982AF1 /* PayButton */,
 				CF7291521ED7F6C300E8B01E /* CHWebView */,
 				CF7291431ED57A2100E8B01E /* PersonalCenterViewController.h */,
 				CF7291441ED57A2100E8B01E /* PersonalCenterViewController.m */,
@@ -9981,50 +9702,6 @@
 			path = ContactDetail;
 			sourceTree = "<group>";
 		};
-		FA0257E11D669CA100C1A558 /* CallDirectoryExtension */ = {
-			isa = PBXGroup;
-			children = (
-				A26DA3291D8FB904004DADD2 /* CallDirectoryExtension.entitlements */,
-				FA0257E21D669CA100C1A558 /* CallDirectoryHandler.h */,
-				FA0257E31D669CA100C1A558 /* CallDirectoryHandler.m */,
-				FA0257E51D669CA100C1A558 /* Info.plist */,
-			);
-			path = CallDirectoryExtension;
-			sourceTree = "<group>";
-		};
-		FAD72E2D1D8945B50020ACE9 /* IntermediaryCallExtension */ = {
-			isa = PBXGroup;
-			children = (
-				A26DA32A1D8FB920004DADD2 /* IntermediaryCallExtension.entitlements */,
-				FAD72E2E1D8945B50020ACE9 /* CallDirectoryHandler.h */,
-				FAD72E2F1D8945B50020ACE9 /* CallDirectoryHandler.m */,
-				FAD72E311D8945B50020ACE9 /* Info.plist */,
-			);
-			path = IntermediaryCallExtension;
-			sourceTree = "<group>";
-		};
-		FAD72E3F1D8946100020ACE9 /* FraudCallExtension */ = {
-			isa = PBXGroup;
-			children = (
-				A26DA32B1D8FB94A004DADD2 /* FraudCallExtension.entitlements */,
-				FAD72E401D8946100020ACE9 /* CallDirectoryHandler.h */,
-				FAD72E411D8946100020ACE9 /* CallDirectoryHandler.m */,
-				FAD72E431D8946100020ACE9 /* Info.plist */,
-			);
-			path = FraudCallExtension;
-			sourceTree = "<group>";
-		};
-		FAD72E511D8946470020ACE9 /* PromoteCallExtension */ = {
-			isa = PBXGroup;
-			children = (
-				A26DA32C1D8FB96F004DADD2 /* PromoteCallExtension.entitlements */,
-				FAD72E521D8946470020ACE9 /* CallDirectoryHandler.h */,
-				FAD72E531D8946470020ACE9 /* CallDirectoryHandler.m */,
-				FAD72E551D8946470020ACE9 /* Info.plist */,
-			);
-			path = PromoteCallExtension;
-			sourceTree = "<group>";
-		};
 		FAD7395F1D40775900E659C6 /* Sixpack */ = {
 			isa = PBXGroup;
 			children = (
@@ -10058,12 +9735,6 @@
 				0C919B2E1553DE7F003D4633 /* PBXBuildRule */,
 			);
 			dependencies = (
-				AFC043991B1574B100CFE7D0 /* PBXTargetDependency */,
-				FA0257E71D669CA100C1A558 /* PBXTargetDependency */,
-				FAD72E331D8945B50020ACE9 /* PBXTargetDependency */,
-				FAD72E451D8946100020ACE9 /* PBXTargetDependency */,
-				FAD72E571D8946470020ACE9 /* PBXTargetDependency */,
-				A20409641D8FAADE0099A408 /* PBXTargetDependency */,
 			);
 			name = TouchPalDialer;
 			productName = TouchPalDialer;
@@ -10089,108 +9760,6 @@
 			productReference = 2A984FC5164B62E3002CC93F /* TouchPalDialerTest.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A204095C1D8FAADE0099A408 /* YellowPageCallExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A20409661D8FAADE0099A408 /* Build configuration list for PBXNativeTarget "YellowPageCallExtension" */;
-			buildPhases = (
-				A20409591D8FAADE0099A408 /* Sources */,
-				A204095A1D8FAADE0099A408 /* Frameworks */,
-				A204095B1D8FAADE0099A408 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = YellowPageCallExtension;
-			productName = YellowPageCallExtension;
-			productReference = A204095D1D8FAADE0099A408 /* YellowPageCallExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		AFC0438C1B1574B100CFE7D0 /* TodayWidget */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AFC0439E1B1574B100CFE7D0 /* Build configuration list for PBXNativeTarget "TodayWidget" */;
-			buildPhases = (
-				AFC043891B1574B100CFE7D0 /* Sources */,
-				AFC0438A1B1574B100CFE7D0 /* Frameworks */,
-				AFC0438B1B1574B100CFE7D0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TodayWidget;
-			productName = TodayWidget;
-			productReference = AFC0438D1B1574B100CFE7D0 /* TodayWidget.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		FA0257DF1D669CA100C1A558 /* CallDirectoryExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FA0257ED1D669CA100C1A558 /* Build configuration list for PBXNativeTarget "CallDirectoryExtension" */;
-			buildPhases = (
-				FA0257DC1D669CA100C1A558 /* Sources */,
-				FA0257DD1D669CA100C1A558 /* Frameworks */,
-				FA0257DE1D669CA100C1A558 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CallDirectoryExtension;
-			productName = CallDirectoryExtension;
-			productReference = FA0257E01D669CA100C1A558 /* CallDirectoryExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		FAD72E2B1D8945B50020ACE9 /* IntermediaryCallExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAD72E351D8945B50020ACE9 /* Build configuration list for PBXNativeTarget "IntermediaryCallExtension" */;
-			buildPhases = (
-				FAD72E281D8945B50020ACE9 /* Sources */,
-				FAD72E291D8945B50020ACE9 /* Frameworks */,
-				FAD72E2A1D8945B50020ACE9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = IntermediaryCallExtension;
-			productName = IntermediaryCallExtension;
-			productReference = FAD72E2C1D8945B50020ACE9 /* IntermediaryCallExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		FAD72E3D1D8946100020ACE9 /* FraudCallExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAD72E471D8946100020ACE9 /* Build configuration list for PBXNativeTarget "FraudCallExtension" */;
-			buildPhases = (
-				FAD72E3A1D8946100020ACE9 /* Sources */,
-				FAD72E3B1D8946100020ACE9 /* Frameworks */,
-				FAD72E3C1D8946100020ACE9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FraudCallExtension;
-			productName = FraudCallExtension;
-			productReference = FAD72E3E1D8946100020ACE9 /* FraudCallExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		FAD72E4F1D8946470020ACE9 /* PromoteCallExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAD72E591D8946470020ACE9 /* Build configuration list for PBXNativeTarget "PromoteCallExtension" */;
-			buildPhases = (
-				FAD72E4C1D8946470020ACE9 /* Sources */,
-				FAD72E4D1D8946470020ACE9 /* Frameworks */,
-				FAD72E4E1D8946470020ACE9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PromoteCallExtension;
-			productName = PromoteCallExtension;
-			productReference = FAD72E501D8946470020ACE9 /* PromoteCallExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -10201,80 +9770,22 @@
 				LastUpgradeCheck = 0700;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = ZAF6DH556T;
+						DevelopmentTeam = 87DH4U78Q6;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
 							};
-							com.apple.Push = {
+							com.apple.InAppPurchase = {
 								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
 							};
 						};
 					};
 					2A984FC4164B62E3002CC93F = {
 						ProvisioningStyle = Manual;
-					};
-					A204095C1D8FAADE0099A408 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = ZAF6DH556T;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					AFC0438C1B1574B100CFE7D0 = {
-						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = ZAF6DH556T;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-							com.apple.SafariKeychain = {
-								enabled = 0;
-							};
-						};
-					};
-					FA0257DF1D669CA100C1A558 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = ZAF6DH556T;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.Push = {
-								enabled = 0;
-							};
-						};
-					};
-					FAD72E2B1D8945B50020ACE9 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = ZAF6DH556T;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-							com.apple.Push = {
-								enabled = 0;
-							};
-						};
-					};
-					FAD72E3D1D8946100020ACE9 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = ZAF6DH556T;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					FAD72E4F1D8946470020ACE9 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = ZAF6DH556T;
-						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -10301,12 +9812,6 @@
 			targets = (
 				1D6058900D05DD3D006BFB54 /* TouchPalDialer */,
 				2A984FC4164B62E3002CC93F /* TouchPalDialerTest */,
-				AFC0438C1B1574B100CFE7D0 /* TodayWidget */,
-				FA0257DF1D669CA100C1A558 /* CallDirectoryExtension */,
-				FAD72E2B1D8945B50020ACE9 /* IntermediaryCallExtension */,
-				FAD72E3D1D8946100020ACE9 /* FraudCallExtension */,
-				FAD72E4F1D8946470020ACE9 /* PromoteCallExtension */,
-				A204095C1D8FAADE0099A408 /* YellowPageCallExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -10526,52 +10031,6 @@
 				54BB64431BA7BD3F00EDAD6D /* docker-private.p12 in Resources */,
 				54BB64441BA7BD3F00EDAD6D /* docker-public.der in Resources */,
 				2A984FCF164B62E4002CC93F /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A204095B1D8FAADE0099A408 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AFC0438B1B1574B100CFE7D0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF519F3B1B28395E0045742C /* numberAttr.img in Resources */,
-				FA1CE9AF1D3C8DED00FA9420 /* Images.xcassets in Resources */,
-				AF519F301B2828250045742C /* icon.png in Resources */,
-				AF519F311B2828250045742C /* icon@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA0257DE1D669CA100C1A558 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAD72E2A1D8945B50020ACE9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAD72E3C1D8946100020ACE9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAD72E4E1D8946470020ACE9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -11439,6 +10898,7 @@
 				5CDD58791DEC061A00CCF46A /* TPDVoipCallPopUpViewController.m in Sources */,
 				738C1E321DBD080800885917 /* TPDContactInfoUtil.m in Sources */,
 				7726689B1D1A9A5C000A7326 /* TPAdControlStrategy.m in Sources */,
+				CF6A79E01EFBC03600982AF1 /* PayButton.m in Sources */,
 				0F4DABA51CB6C484006F8228 /* RingBuffer.m in Sources */,
 				36D888B01DD95B2F00BC3E06 /* DiscoverAnimationButton.m in Sources */,
 				EAAE20911965050900DA4FF0 /* MoreCommand.m in Sources */,
@@ -11714,64 +11174,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A20409591D8FAADE0099A408 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A20409611D8FAADE0099A408 /* CallDirectoryHandler.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AFC043891B1574B100CFE7D0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF5276531B29617A006CA0CF /* TPDialerColor.m in Sources */,
-				AF519F341B282D520045742C /* TodayWidgetErrorView.m in Sources */,
-				AF519F401B283EFC0045742C /* TodayWidgetNoInfoView.m in Sources */,
-				AF174C491B26B77F0019E7F0 /* TodayWidgetUtil.mm in Sources */,
-				AF174C571B26E2A10019E7F0 /* TodayWidgetNewView.m in Sources */,
-				42119ED31B8B081C00974424 /* NSString+PhoneNumber.m in Sources */,
-				AF519F2F1B2819550045742C /* TodayWidgetInfoView.m in Sources */,
-				AF174C511B26D89A0019E7F0 /* TodayWidgetFactory.m in Sources */,
-				AFC043951B1574B100CFE7D0 /* TodayViewController.m in Sources */,
-				AF174C541B26DBEF0019E7F0 /* TodayWidgetMainView.m in Sources */,
-				AF519F2C1B28140C0045742C /* TodayWidgetInfo.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA0257DC1D669CA100C1A558 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA0257E41D669CA100C1A558 /* CallDirectoryHandler.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAD72E281D8945B50020ACE9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAD72E301D8945B50020ACE9 /* CallDirectoryHandler.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAD72E3A1D8946100020ACE9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAD72E421D8946100020ACE9 /* CallDirectoryHandler.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAD72E4C1D8946470020ACE9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAD72E541D8946470020ACE9 /* CallDirectoryHandler.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -11779,36 +11181,6 @@
 			isa = PBXTargetDependency;
 			target = 1D6058900D05DD3D006BFB54 /* TouchPalDialer */;
 			targetProxy = 2A984FD9164B66CC002CC93F /* PBXContainerItemProxy */;
-		};
-		A20409641D8FAADE0099A408 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A204095C1D8FAADE0099A408 /* YellowPageCallExtension */;
-			targetProxy = A20409631D8FAADE0099A408 /* PBXContainerItemProxy */;
-		};
-		AFC043991B1574B100CFE7D0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AFC0438C1B1574B100CFE7D0 /* TodayWidget */;
-			targetProxy = AFC043981B1574B100CFE7D0 /* PBXContainerItemProxy */;
-		};
-		FA0257E71D669CA100C1A558 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FA0257DF1D669CA100C1A558 /* CallDirectoryExtension */;
-			targetProxy = FA0257E61D669CA100C1A558 /* PBXContainerItemProxy */;
-		};
-		FAD72E331D8945B50020ACE9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FAD72E2B1D8945B50020ACE9 /* IntermediaryCallExtension */;
-			targetProxy = FAD72E321D8945B50020ACE9 /* PBXContainerItemProxy */;
-		};
-		FAD72E451D8946100020ACE9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FAD72E3D1D8946100020ACE9 /* FraudCallExtension */;
-			targetProxy = FAD72E441D8946100020ACE9 /* PBXContainerItemProxy */;
-		};
-		FAD72E571D8946470020ACE9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FAD72E4F1D8946470020ACE9 /* PromoteCallExtension */;
-			targetProxy = FAD72E561D8946470020ACE9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -11904,12 +11276,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = TouchPalDialer.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: CooTek (ZAF6DH556T)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: leienshu@icloud.com (3Y869TA7TT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 87DH4U78Q6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11995,7 +11367,7 @@
 					"-Istdc++",
 					"-v",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.smartdialer.ttb;
 				PRODUCT_NAME = TouchPalDialer;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "dcb3fa4a-18b9-4a29-bd9b-3d315d6d1dc6";
@@ -12024,7 +11396,7 @@
 				CONFIGURATION_BUILD_DIR = "./build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 87DH4U78Q6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -12096,7 +11468,7 @@
 					"-Istdc++",
 					"-v",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.smartdialer.ttb;
 				PRODUCT_NAME = TouchPalDialer;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=*]" = "";
@@ -12120,12 +11492,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = TouchPalDialer.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: CooTek (ZAF6DH556T)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: leienshu@icloud.com (3Y869TA7TT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 87DH4U78Q6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -12205,7 +11577,7 @@
 					"-Istdc++",
 					"-v",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.smartdialer.ttb;
 				PRODUCT_NAME = TouchPalDialer;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "dcb3fa4a-18b9-4a29-bd9b-3d315d6d1dc6";
@@ -12273,13 +11645,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai HanXiang (CooTek) Information Technology Co., Ltd.";
+				CODE_SIGN_IDENTITY = "iPhone Developer: leienshu@icloud.com (3Y869TA7TT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				CONFIGURATION_BUILD_DIR = "./build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 87DH4U78Q6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -12352,7 +11724,7 @@
 					"-Istdc++",
 					"-v",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.smartdialer.ttb;
 				PRODUCT_NAME = TouchPalDialer;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -12403,62 +11775,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = DailyBuild;
-		};
-		26E4F60C1BCFD3AE000A5FC3 /* DailyBuild */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Wong (EFGW4V36HP)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "./build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_BITCODE = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = TodayWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/Classes/Engine/bin\"",
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"$(PROJECT_DIR)/Classes/Engine/bin",
-				);
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.widget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
 			};
 			name = DailyBuild;
 		};
@@ -12576,360 +11892,6 @@
 			};
 			name = Release;
 		};
-		A20409671D8FAADE0099A408 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09FF2C8CDA5BF6F65A0A6D8D /* Pods-TouchPalDialer.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = YellowPageCallExtension/YellowPageCallExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Wong (EFGW4V36HP)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "./build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = YellowPageCallExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.YellowPageCallExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		A20409681D8FAADE0099A408 /* DailyBuild */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = YellowPageCallExtension/YellowPageCallExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai HanXiang (CooTek) Information Technology Co., Ltd.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "./build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = YellowPageCallExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.YellowPageCallExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = DailyBuild;
-		};
-		A20409691D8FAADE0099A408 /* Distribution */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E50A91B780CA0B3A24403DD9 /* Pods-TouchPalDialer.distribution.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = YellowPageCallExtension/YellowPageCallExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: CooTek (ZAF6DH556T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = YellowPageCallExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.YellowPageCallExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Distribution;
-		};
-		A204096A1D8FAADE0099A408 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = YellowPageCallExtension/YellowPageCallExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: CooTek (ZAF6DH556T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = YellowPageCallExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.YellowPageCallExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		AFC0439B1B1574B100CFE7D0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = TodayWidget/TodayWidget.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "./build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_BITCODE = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = TodayWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/Classes/Engine/bin\"",
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"$(PROJECT_DIR)/Classes/Engine/bin",
-				);
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.widget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=*]" = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		AFC0439C1B1574B100CFE7D0 /* Distribution */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = TodayWidget/TodayWidget.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: CooTek (ZAF6DH556T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_BITCODE = NO;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = TodayWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/Classes/Engine/bin\"",
-					"$(inherited)",
-					"$(PROJECT_DIR)/Classes/Engine/bin",
-				);
-				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.widget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Distribution;
-		};
-		AFC0439D1B1574B100CFE7D0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = TodayWidget/TodayWidget.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: CooTek (ZAF6DH556T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_BITCODE = NO;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = TodayWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/Classes/Engine/bin\"",
-					"$(inherited)",
-					"$(PROJECT_DIR)/Classes/Engine/bin",
-				);
-				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.widget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7da1c0ad-4c93-44df-86aa-21f8530e2f87";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -13018,774 +11980,6 @@
 			};
 			name = Release;
 		};
-		FA0257E91D669CA100C1A558 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09FF2C8CDA5BF6F65A0A6D8D /* Pods-TouchPalDialer.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = CallDirectoryExtension/CallDirectoryExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Wong (EFGW4V36HP)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "./build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = CallDirectoryExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.CallDirectoryExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		FA0257EA1D669CA100C1A558 /* DailyBuild */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = CallDirectoryExtension/CallDirectoryExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai HanXiang (CooTek) Information Technology Co., Ltd.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "./build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = CallDirectoryExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.CallDirectoryExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = DailyBuild;
-		};
-		FA0257EB1D669CA100C1A558 /* Distribution */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E50A91B780CA0B3A24403DD9 /* Pods-TouchPalDialer.distribution.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = CallDirectoryExtension/CallDirectoryExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: CooTek (ZAF6DH556T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = CallDirectoryExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.CallDirectoryExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Distribution;
-		};
-		FA0257EC1D669CA100C1A558 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = CallDirectoryExtension/CallDirectoryExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: CooTek (ZAF6DH556T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = CallDirectoryExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.CallDirectoryExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		FAD72E361D8945B50020ACE9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09FF2C8CDA5BF6F65A0A6D8D /* Pods-TouchPalDialer.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = IntermediaryCallExtension/IntermediaryCallExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Wong (EFGW4V36HP)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "./build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = IntermediaryCallExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.IntermediaryCallExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		FAD72E371D8945B50020ACE9 /* DailyBuild */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = IntermediaryCallExtension/IntermediaryCallExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai HanXiang (CooTek) Information Technology Co., Ltd.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "./build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = IntermediaryCallExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.IntermediaryCallExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = DailyBuild;
-		};
-		FAD72E381D8945B50020ACE9 /* Distribution */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E50A91B780CA0B3A24403DD9 /* Pods-TouchPalDialer.distribution.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = IntermediaryCallExtension/IntermediaryCallExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: CooTek (ZAF6DH556T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = IntermediaryCallExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.IntermediaryCallExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Distribution;
-		};
-		FAD72E391D8945B50020ACE9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = IntermediaryCallExtension/IntermediaryCallExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: CooTek (ZAF6DH556T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = IntermediaryCallExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.IntermediaryCallExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		FAD72E481D8946100020ACE9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09FF2C8CDA5BF6F65A0A6D8D /* Pods-TouchPalDialer.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = FraudCallExtension/FraudCallExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Wong (EFGW4V36HP)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "./build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = FraudCallExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.FraudCallExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		FAD72E491D8946100020ACE9 /* DailyBuild */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = FraudCallExtension/FraudCallExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai HanXiang (CooTek) Information Technology Co., Ltd.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "./build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = FraudCallExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.FraudCallExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = DailyBuild;
-		};
-		FAD72E4A1D8946100020ACE9 /* Distribution */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E50A91B780CA0B3A24403DD9 /* Pods-TouchPalDialer.distribution.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = FraudCallExtension/FraudCallExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: CooTek (ZAF6DH556T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = FraudCallExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.FraudCallExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Distribution;
-		};
-		FAD72E4B1D8946100020ACE9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = FraudCallExtension/FraudCallExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: CooTek (ZAF6DH556T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = FraudCallExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.FraudCallExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		FAD72E5A1D8946470020ACE9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09FF2C8CDA5BF6F65A0A6D8D /* Pods-TouchPalDialer.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = PromoteCallExtension/PromoteCallExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Wong (EFGW4V36HP)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "./build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = PromoteCallExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.PromoteCallExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		FAD72E5B1D8946470020ACE9 /* DailyBuild */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = PromoteCallExtension/PromoteCallExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai HanXiang (CooTek) Information Technology Co., Ltd.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "./build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = PromoteCallExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.PromoteCallExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = DailyBuild;
-		};
-		FAD72E5C1D8946470020ACE9 /* Distribution */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E50A91B780CA0B3A24403DD9 /* Pods-TouchPalDialer.distribution.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = PromoteCallExtension/PromoteCallExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: CooTek (ZAF6DH556T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = PromoteCallExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.PromoteCallExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Distribution;
-		};
-		FAD72E5D1D8946470020ACE9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = PromoteCallExtension/PromoteCallExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: CooTek (ZAF6DH556T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = PromoteCallExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.Contacts.PromoteCallExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -13811,28 +12005,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A20409661D8FAADE0099A408 /* Build configuration list for PBXNativeTarget "YellowPageCallExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A20409671D8FAADE0099A408 /* Debug */,
-				A20409681D8FAADE0099A408 /* DailyBuild */,
-				A20409691D8FAADE0099A408 /* Distribution */,
-				A204096A1D8FAADE0099A408 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AFC0439E1B1574B100CFE7D0 /* Build configuration list for PBXNativeTarget "TodayWidget" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AFC0439B1B1574B100CFE7D0 /* Debug */,
-				26E4F60C1BCFD3AE000A5FC3 /* DailyBuild */,
-				AFC0439C1B1574B100CFE7D0 /* Distribution */,
-				AFC0439D1B1574B100CFE7D0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TouchPalDialer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -13840,50 +12012,6 @@
 				26E4F6091BCFD3AE000A5FC3 /* DailyBuild */,
 				068F2252140502E400A6C827 /* Distribution */,
 				C01FCF5008A954540054247B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FA0257ED1D669CA100C1A558 /* Build configuration list for PBXNativeTarget "CallDirectoryExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FA0257E91D669CA100C1A558 /* Debug */,
-				FA0257EA1D669CA100C1A558 /* DailyBuild */,
-				FA0257EB1D669CA100C1A558 /* Distribution */,
-				FA0257EC1D669CA100C1A558 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FAD72E351D8945B50020ACE9 /* Build configuration list for PBXNativeTarget "IntermediaryCallExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAD72E361D8945B50020ACE9 /* Debug */,
-				FAD72E371D8945B50020ACE9 /* DailyBuild */,
-				FAD72E381D8945B50020ACE9 /* Distribution */,
-				FAD72E391D8945B50020ACE9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FAD72E471D8946100020ACE9 /* Build configuration list for PBXNativeTarget "FraudCallExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAD72E481D8946100020ACE9 /* Debug */,
-				FAD72E491D8946100020ACE9 /* DailyBuild */,
-				FAD72E4A1D8946100020ACE9 /* Distribution */,
-				FAD72E4B1D8946100020ACE9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FAD72E591D8946470020ACE9 /* Build configuration list for PBXNativeTarget "PromoteCallExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAD72E5A1D8946470020ACE9 /* Debug */,
-				FAD72E5B1D8946470020ACE9 /* DailyBuild */,
-				FAD72E5C1D8946470020ACE9 /* Distribution */,
-				FAD72E5D1D8946470020ACE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

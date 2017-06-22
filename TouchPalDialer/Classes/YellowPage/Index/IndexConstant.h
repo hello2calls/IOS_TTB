@@ -23,7 +23,7 @@
 //升级到17，修复浮标会不见的问题
 //升级到18，浮标支持发送到桌面快捷方式
 //升级到19，用来区分有和没有挂机后跳转触宝新闻native界面
-#define WEBVIEW_JAVASCRIPT_API_LEVEL @"43"
+#define WEBVIEW_JAVASCRIPT_API_LEVEL @"20"
 
 #define WIDTH_ADAPT (TPScreenWidth()/360 > 1 ? TPScreenWidth()/360 : 1)
 

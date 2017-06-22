@@ -13,6 +13,8 @@
 #import "SeattleFeatureExecutor.h"
 #import "UserDefaultsManager.h"
 #import "FunctionUtility.h"
+#import "WXApi.h"
+#import "TouchPalVersionInfo.h"
 
 @interface Test2ViewController ()<WKNavigationDelegate>
 @property(nonatomic,strong) WKWebViewJavascriptBridge* bridge;
@@ -34,95 +36,122 @@
                                                           cootek_log(@"ObjC received message from JS: %@", data);
                                                           responseCallback(@"Response for message from ObjC");
                                                       }];
+
+    [self test];
+    [self performSelector:@selector(openWebView) withObject:nil afterDelay:2.0f];
+}
+
+
+-(void)test
+{
+    [self.bridge registerHandler:@"getApiLevel" handler:^(id data, WVJBResponseCallback responseCallback) {
+        if (responseCallback) {
+            responseCallback(WEBVIEW_JAVASCRIPT_API_LEVEL);
+        }
+    }];
     
- 
     
-//    [self.bridge registerHandler:@"getLoginNumber" handler:^(id data, WVJBResponseCallback responseCallback) {
-//        if (responseCallback) {
-//            NSString *accountName = [UserDefaultsManager stringForKey:VOIP_REGISTER_ACCOUNT_NAME];
-//            if(accountName == nil){
-//                responseCallback(@"");
-//            }else{
-//                responseCallback(accountName);
-//            }
-//        }
-//    }];
-//    
-//    [self.bridge registerHandler:@"getAuthToken" handler:^(id data, WVJBResponseCallback responseCallback) {
-//        if (responseCallback) {
-//            NSString *token = [SeattleFeatureExecutor getToken];
-//            responseCallback(token);
-//        }
-//    }];
-//
-//    [self.bridge registerHandler:@"getApiLevel" handler:^(id data, WVJBResponseCallback responseCallback) {
-//        if (responseCallback) {
-//            responseCallback(@(43));
-//        }
-//    }];
-//
-//    [self.bridge registerHandler:@"getSecret" handler:^(id data, WVJBResponseCallback responseCallback) {
-//        if (responseCallback) {
-//            NSString* secret =  [FunctionUtility simpleDecodeForString:[UserDefaultsManager stringForKey:VOIP_REGISTER_SECRET_CODE]];
-//            responseCallback(secret);
-//        }
-//    }];
-//
-//    [self.bridge registerHandler:@"log" handler:^(id data, WVJBResponseCallback responseCallback) {
-//        if (responseCallback) {
-////            responseCallback(@"log");
-//        }
-//    }];
-//
-//    [self.bridge registerHandler:@"getWXPaySupported" handler:^(id data, WVJBResponseCallback responseCallback) {
-//        if (responseCallback) {
-////            responseCallback(@"log");
-//        }
-//    }];
-//
-//    [self.bridge registerHandler:@"getWeixinAppInstalled" handler:^(id data, WVJBResponseCallback responseCallback) {
-//        if (responseCallback) {
-////            responseCallback(@"log");
-//        }
-//    }];
+    [self.bridge registerHandler:@"getLoginNumber" handler:^(id data, WVJBResponseCallback responseCallback) {
+        if (responseCallback) {
+            NSString *accountName = [UserDefaultsManager stringForKey:VOIP_REGISTER_ACCOUNT_NAME];
+            if(accountName == nil){
+                responseCallback(@"");
+            }else{
+                responseCallback(accountName);
+            }
+        }
+    }];
     
+    [self.bridge registerHandler:@"getAuthToken" handler:^(id data, WVJBResponseCallback responseCallback) {
+        if (responseCallback) {
+            NSString *token = [SeattleFeatureExecutor getToken];
+            responseCallback(token);
+        }
+    }];
+    
+    
+    [self.bridge registerHandler:@"getSecret" handler:^(id data, WVJBResponseCallback responseCallback) {
+        if (responseCallback) {
+            NSString* secret =  [FunctionUtility simpleDecodeForString:[UserDefaultsManager stringForKey:VOIP_REGISTER_SECRET_CODE]];
+            responseCallback(secret);
+        }
+    }];
+    //
+    [self.bridge registerHandler:@"log" handler:^(id data, WVJBResponseCallback responseCallback) {
+        if (responseCallback) {
+            responseCallback(@"log");
+        }
+    }];
+    //
+    [self.bridge registerHandler:@"getWXPaySupported" handler:^(id data, WVJBResponseCallback responseCallback) {
+        if (responseCallback) {
+            responseCallback(@"true");
+        }
+    }];
+    
+    [self.bridge registerHandler:@"getWeixinAppInstalled" handler:^(id data, WVJBResponseCallback responseCallback) {
+        if (responseCallback) {
+            responseCallback(@"true");
+        }
+    }];
+    
+    [self.bridge registerHandler:@"isZh" handler:^(id data, WVJBResponseCallback responseCallback) {
+        if (responseCallback) {
+            responseCallback(@"true");
+        }
+    }];
+}
+
+-(void)openWebView
+{
     [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:CHARGE_URL]]];
 }
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.bridge callHandler:@"getLoginNumber" data:@"+2348080808080" responseCallback:^(id responseData) {
-        NSLog(@"from js1: %@", responseData);
-    }];
-
-    NSString *token = [SeattleFeatureExecutor getToken];
-    [self.bridge callHandler:@"getAuthToken" data:token responseCallback:^(id responseData) {
-        NSLog(@"from js2: %@", responseData);
-    }];
-
-
-    NSString *apiLevel = @"43";
-    [self.bridge callHandler:@"getApiLevel" data:apiLevel responseCallback:^(id responseData) {
-        NSLog(@"from js3: %@", responseData);
-    }];
-
-    NSString* secret =  [FunctionUtility simpleDecodeForString:[UserDefaultsManager stringForKey:VOIP_REGISTER_SECRET_CODE]];
-    [self.bridge callHandler:@"getSecret" data:secret responseCallback:^(id responseData) {
-        NSLog(@"from js4: %@", responseData);
-    }];
-    
-    
-    NSString* appkey =  [FunctionUtility simpleDecodeForString:[UserDefaultsManager stringForKey:appkey]];
-    [self.bridge callHandler:@"getSecret" data:secret responseCallback:^(id responseData) {
-        NSLog(@"from js4: %@", responseData);
-    }];
-    
-    
-    [self.bridge callHandler:@"log" data:@"" responseCallback:^(id responseData) {
-        NSLog(@"from js5: %@", responseData);
-    }];
 }
 
+
+- (void) injectForDispatch
+{
+//    NSString* secret =  [FunctionUtility simpleDecodeForString:[UserDefaultsManager stringForKey:VOIP_REGISTER_SECRET_CODE]];
+//    NSString* accountName = [UserDefaultsManager stringForKey:VOIP_REGISTER_ACCOUNT_NAME];
+//    
+//    BOOL isWXInstalled = [WXApi isWXAppInstalled] ? YES : NO;
+//    BOOL isWXSupported = [WXApi isWXAppSupportApi] ? YES : NO;
+//    
+//    NSString *interfaceFilePath = [[NSBundle mainBundle] pathForResource:@"WebViewJavascriptInterface.js" ofType:@"txt"];
+//    NSString *jsInterface = [NSString stringWithContentsOfFile:interfaceFilePath encoding:NSUTF8StringEncoding error:nil];
+//    
+//    NSMutableDictionary * activationJsonInfo = [[NSMutableDictionary alloc] init];
+//    [activationJsonInfo setValue:COOTEK_APP_NAME forKey:@"app_name"];
+//    [activationJsonInfo setValue:CURRENT_TOUCHPAL_VERSION forKey:@"app_version"];
+//    [activationJsonInfo setValue:IPHONE_CHANNEL_CODE forKey:@"channel_code"];
+//    
+//    NSString* callbackValue = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:activationJsonInfo options:0 error:nil] encoding:NSUTF8StringEncoding];
+//    
+//    NSString* jsStr = [NSString stringWithFormat:jsInterface,
+//                       WEBVIEW_JAVASCRIPT_API_LEVEL,
+//                       [UserDefaultsManager stringForKey:NATIVE_PARAM_LOCATION defaultValue:@""],
+//                       [UserDefaultsManager stringForKey:NATIVE_PARAM_ADDR defaultValue:@""],
+//                       [UserDefaultsManager stringForKey:NATIVE_PARAM_CITY defaultValue:@""],
+//                       [UserDefaultsManager stringForKey:NATIVE_PARAM_LOCATION_CACHE_TIME defaultValue:@""],
+//                       [UserDefaultsManager stringForKey:NATIVE_PARAM_ADDR_CACHE_TIME defaultValue:@""],
+//                       [UserDefaultsManager stringForKey:NATIVE_PARAM_CITY_CACHE_TIME defaultValue:@""],
+//                       secret == nil ? @"" : secret,
+//                       [SeattleFeatureExecutor getToken],
+//                       accountName == nil ? @"" : accountName,
+//                       [NSNumber numberWithInt:isWXInstalled],
+//                       [NSNumber numberWithInt:isWXSupported],
+//                       callbackValue,
+//                       [UserDefaultsManager stringForKey:SEATTLE_AUTH_LOGIN_ACCESS_TOKEN defaultValue:@""],
+//                       [UserDefaultsManager stringForKey:SEATTLE_AUTH_LOGIN_TICKET defaultValue:@""]];
+    
+    
+    [_wkWebView evaluateJavaScript:@"" completionHandler:^(id callback, NSError *error) {
+      
+        
+    }];
+}
 
 - (WKWebView *)wkWebView
 {

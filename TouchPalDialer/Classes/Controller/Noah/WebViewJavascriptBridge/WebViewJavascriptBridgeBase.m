@@ -176,7 +176,7 @@ static bool logging = false;
     
     [self webview:webview evaluateJavaScript:jsStr completionHandler:^(id callback, NSError *error) {
         [LocalStorage nativeItemToStorage:webview];
-        [self webview:webview evaluateJavaScript:@"if(CTK) {CTK.dispatchEvent();}" completionHandler:^(id callback, NSError *error){
+        [self webview:webview evaluateJavaScript:@"if(CTK) {CTK.dispatchEvent}" completionHandler:^(id callback, NSError *error){
             [self dispatchStartUpMessageQueue];
         }];
         

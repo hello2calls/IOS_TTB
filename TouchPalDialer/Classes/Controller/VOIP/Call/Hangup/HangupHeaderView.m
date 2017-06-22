@@ -104,7 +104,10 @@
                 rect.origin.x = width + 5;
                 rect.size.width = rect.size.width - width * 2 -10;
                 mainLabel.frame = rect;
-                weak_familyButton.hidden = NO;
+                //TTB修改
+//                weak_familyButton.hidden = NO;
+                weak_familyButton.hidden = YES;
+
             }else{
                 weak_familyButton.hidden = YES;
             }

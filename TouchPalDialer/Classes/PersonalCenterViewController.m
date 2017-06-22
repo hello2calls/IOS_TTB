@@ -17,8 +17,11 @@
 #import "UserDefaultsManager.h"
 #import "DefaultUIAlertViewHandler.h"
 #import "IntroduceViewController.h"
-
+#import "YellowPageWebViewController.h"
+#import "CTUrl.h"
+#import "SeattleFeatureExecutor.h"
 #import "Test2ViewController.h"
+#import "HandlerWebViewController.h"
 
 @interface PersonalCenterViewController ()
 
@@ -191,8 +194,18 @@
 
     if(button == _chargeBtn){
         [TouchPalDialerAppDelegate pushViewController:[[ChargeViewController alloc]init] animated:YES];
+        
     }else if(button == _historyBtn){
-        [TouchPalDialerAppDelegate pushViewController:[[ChargeViewController alloc]init] animated:YES];
+        
+        [TouchPalDialerAppDelegate pushViewController:[[Test2ViewController alloc]init] animated:YES];
+//        YellowPageWebViewController *controller = [[YellowPageWebViewController alloc] init];
+//        NSString *token = [SeattleFeatureExecutor getToken];
+//        NSString *url = [NSString stringWithFormat:@"http://search.cootekservice.com/page_v3/activity_recharge_price.html?_token=%@", token];
+//        controller.url_string = url;
+//        controller.web_title = NSLocalizedString(@"personal_center_setting_coupon", @"");
+//        controller.view.frame = CGRectMake(0, 0, TPScreenWidth(), TPAppFrameHeight()-TAB_BAR_HEIGHT+TPHeaderBarHeightDiff());
+//        [[TouchPalDialerAppDelegate naviController] pushViewController:controller animated:YES];
+        
     }else if(button == _questionBtn){
         [TouchPalDialerAppDelegate pushViewController:[[IntroduceViewController alloc]init] animated:YES];
         
