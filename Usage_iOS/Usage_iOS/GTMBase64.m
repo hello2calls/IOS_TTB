@@ -18,6 +18,7 @@
 
 #import "GTMBase64.h"
 #import "GTMDefines.h"
+#import <CommonCrypto/CommonDigest.h>
 
 static const char *kBase64EncodeChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 static const char *kWebSafeBase64EncodeChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_";
@@ -239,6 +240,7 @@ GTM_INLINE NSUInteger GuessDecodedLength(NSUInteger srcLen) {
                 charset:(const char *)charset
          requirePadding:(BOOL)requirePadding;
 
+
 @end
 
 
@@ -395,6 +397,49 @@ GTM_INLINE NSUInteger GuessDecodedLength(NSUInteger srcLen) {
     return result;
 }
 
+#pragma mark - base64
++ (NSString *) md5_base64: (NSString *) inPutText
+{
+    const char *cStr = [inPutText UTF8String];
+    unsigned char digest[16];
+    CC_MD5( cStr, strlen(cStr), digest );
+    
+    NSData * base64 = [[NSData alloc]initWithBytes:digest length:16];
+    NSLog(@"md5->%@",[[NSString alloc] initWithData:base64  encoding:NSUTF8StringEncoding]);
+    
+    base64 = [GTMBase64 encodeData:base64];
+    
+    NSString * output = [[NSString alloc] initWithData:base64 encoding:NSUTF8StringEncoding];
+    NSLog(@"base64->%@",output);
+    
+    return output;
+}
++ (NSString*)encodeBase64String:(NSString * )input {
+    NSData *data = [input dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+    data = [GTMBase64 encodeData:data];
+    NSString *base64String = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+    return base64String;
+}
+
++ (NSString*)decodeBase64String:(NSString * )input {
+    NSData *data = [input dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+    data = [GTMBase64 decodeData:data];
+    NSString *base64String = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+    return base64String;
+}
+
++ (NSString*)encodeBase64Data:(NSData *)data {
+    data = [GTMBase64 encodeData:data];
+    NSString *base64String = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+    return base64String;
+}
+
++ (NSString*)decodeBase64Data:(NSData *)data {
+    data = [GTMBase64 decodeData:data];
+    NSString *base64String = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+    return base64String;
+}
+
 @end
 
 @implementation GTMBase64 (PrivateMethods)
@@ -420,9 +465,9 @@ GTM_INLINE NSUInteger GuessDecodedLength(NSUInteger srcLen) {
     NSMutableData *result = [NSMutableData data];
     [result setLength:maxLength];
     // do it
-    NSUInteger finalLength = [self baseEncode:bytes
+    NSUInteger finalLength = [self baseEncode:(char *)bytes
                                        srcLen:length
-                                    destBytes:[result mutableBytes]
+                                    destBytes:(char *)[result mutableBytes]
                                       destLen:[result length]
                                       charset:charset
                                        padded:padded];
@@ -456,9 +501,9 @@ GTM_INLINE NSUInteger GuessDecodedLength(NSUInteger srcLen) {
     NSMutableData *result = [NSMutableData data];
     [result setLength:maxLength];
     // do it
-    NSUInteger finalLength = [self baseDecode:bytes
+    NSUInteger finalLength = [self baseDecode:(char *)bytes
                                        srcLen:length
-                                    destBytes:[result mutableBytes]
+                                    destBytes:(char *)[result mutableBytes]
                                       destLen:[result length]
                                       charset:charset
                                requirePadding:requirePadding];
@@ -691,5 +736,5 @@ GTM_INLINE NSUInteger GuessDecodedLength(NSUInteger srcLen) {
     return destIndex;
 }
 
-@end
 
+@end

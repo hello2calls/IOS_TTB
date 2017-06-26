@@ -130,7 +130,7 @@
         
     }];
     
-    NormalSettingItem *thirdItem = [NormalSettingItem itemWithTitle:@"新浪微博" subTitle:@"@触宝电话" badgeTitle:nil handleBlock:^{
+    NormalSettingItem *thirdItem = [NormalSettingItem itemWithTitle:@"新浪微博" subTitle:@"@通通宝" badgeTitle:nil handleBlock:^{
         CommonWebViewController* webVC = [[CommonWebViewController alloc] init];
         webVC.url_string = @"http://e.weibo.com/touchpalcontacts";
         [self.navigationController pushViewController:webVC animated:YES];

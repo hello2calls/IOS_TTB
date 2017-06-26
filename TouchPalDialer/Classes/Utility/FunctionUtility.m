@@ -1179,9 +1179,9 @@ void addRoundedRectTooPath(CGContextRef context, CGRect rect, float ovalWidth,
     if ( ![UserDefaultsManager boolValueForKey:CONTACT_ACCESSIBILITY] ){
         NSString *showString = nil;
         if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8){
-            showString = @"该功能无法正常使用，请在「设置-触宝电话」中允许触宝电话访问您的通讯录";
+            showString = @"该功能无法正常使用，请在「设置-通通宝」中允许通通宝访问您的通讯录";
         }else{
-            showString = @"该功能无法正常使用，前往「设置-隐私-通讯录」中允许触宝电话访问您的通讯录";
+            showString = @"该功能无法正常使用，前往「设置-隐私-通讯录」中允许通通宝访问您的通讯录";
         }
         
         [DefaultUIAlertViewHandler showAlertViewWithTitle:@"未开启联系人权限" message:showString cancelTitle:@"取消" okTitle:@"立即设置" okButtonActionBlock:^(){

@@ -245,7 +245,7 @@ static AppSettingsModel *instance_ = nil;
     language = tmpLanguage;
     [app_settiings_dict setObject:[NSNumber numberWithInt:language] forKey:APP_SET_KEY_MUTI_LANGUAGE];
     [UserDefaultsManager setIntValue:[UserDefaultsManager intValueForKey:APP_SET_KEY_MUTI_LANGUAGE] forKey:LAST_APP_LANGUAGE];
-            [DefaultUIAlertViewHandler showAlertViewWithTitle:@"切换语言需要重新启动触宝电话，确认切换？" message:nil okButtonActionBlock:^(){
+            [DefaultUIAlertViewHandler showAlertViewWithTitle:@"切换语言需要重新启动通通宝，确认切换？" message:nil okButtonActionBlock:^(){
                 [LanguageUtil setCurrentLanguage:language];
                 [weakSelf notificateChange:APP_SET_KEY_MUTI_LANGUAGE];
                 [UserDefaultsManager setIntValue:language forKey:APP_SET_KEY_MUTI_LANGUAGE];

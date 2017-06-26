@@ -417,7 +417,7 @@
 }
 
 - (void)alertGudieView {
-    self.guideView =[[CommonTipsWithBolckView alloc]initWithtitleString:@"触宝提示" lable1String:@"请手动前往系统设置，开启触宝电话诈骗拦截及号码识别开关" lable1textAlignment:NSTextAlignmentLeft lable2String:nil lable2textAlignment:0 leftString:nil rightString:@"我知道了" rightBlock:^{
+    self.guideView =[[CommonTipsWithBolckView alloc]initWithtitleString:@"触宝提示" lable1String:@"请手动前往系统设置，开启通通宝诈骗拦截及号码识别开关" lable1textAlignment:NSTextAlignmentLeft lable2String:nil lable2textAlignment:0 leftString:nil rightString:@"我知道了" rightBlock:^{
         
         
     } leftBlock:nil];

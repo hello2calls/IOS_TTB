@@ -38,12 +38,12 @@
         NSString *imageName;
 
         if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8){
-            secondLabelText = @"前往「设置-触宝电话」中";
+            secondLabelText = @"前往「设置-通通宝」中";
             thirdLabelText = @"允许访问您的通讯录";
             imageName = @"contacts_authority_guide_ios8@2x.png";
         }else{
             secondLabelText = @"前往「设置-隐私-通讯录」中";
-            thirdLabelText = @"允许「触宝电话」访问您的通讯录";
+            thirdLabelText = @"允许「通通宝」访问您的通讯录";
             imageName = @"contacts_authority_guide_ios7@2x.png";
         }
 

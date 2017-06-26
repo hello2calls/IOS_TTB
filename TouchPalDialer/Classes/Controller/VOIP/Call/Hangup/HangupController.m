@@ -364,7 +364,7 @@
     cootek_log(@"%d",[UserDefaultsManager intValueForKey:EV_SHAREGUIDE_COUNT]);
     [DialerUsageRecord recordpath:EV_SHAREGUIDE_COUNT kvs:Pair(RING_GUIDE, @([UserDefaultsManager intValueForKey:EV_SHAREGUIDE_COUNT])), nil];
     TurnToneTips *shareRingView = [[TurnToneTips alloc] initWithFrame:CGRectMake(0, 0, TPScreenWidth(), TPScreenHeight()) titleString:@"这款拨号音是不是很好玩？快邀请朋友一起来体验吧~" leftString:@"不了，谢谢" rightString:@"分享给朋友" sureBlock:^{
-        VoipShareAllView *shareAllView = [[VoipShareAllView alloc] initWithFrame:CGRectMake(0, 0, TPScreenWidth(), TPScreenHeight()) title:@"超好玩的拨号音，只在触宝电话，你不要来装一个？" msg:@"才不告诉你装了还能免费打电话呢~" url:@"http://dialer.cdn.cootekservice.com/web/external/laststep/index.html?code=ops_sicong_theme_20151015" buttonArray:@[@"wechat", @"qq"]];
+        VoipShareAllView *shareAllView = [[VoipShareAllView alloc] initWithFrame:CGRectMake(0, 0, TPScreenWidth(), TPScreenHeight()) title:@"超好玩的拨号音，只在通通宝，你不要来装一个？" msg:@"才不告诉你装了还能免费打电话呢~" url:@"http://dialer.cdn.cootekservice.com/web/external/laststep/index.html?code=ops_sicong_theme_20151015" buttonArray:@[@"wechat", @"qq"]];
         [shareAllView setHeadTitle:@"分享给"];
         shareAllView.fromWhere = @"shareRing";
         [[TouchPalDialerAppDelegate naviController].topViewController.view addSubview:shareAllView];

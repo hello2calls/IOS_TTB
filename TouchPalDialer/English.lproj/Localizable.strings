@@ -905,9 +905,9 @@
 "is_number_been_recognized_wrongly" = "If the information is incorrect, please help to correct it.";
 "example_shop_name" = "eg. KFC airport";
 "a_ring" = "a ring";
-"sina_number_type_contribution" = "刚刚接到陌生来电%@，我已经在@触宝电话 标记为“%@”。大家一起用@触宝电话 来标记陌生号码吧，不错过重要电话，也不放过骚扰电话！http://t.cn/zY17I5k";
-"sina_number_name_contribution" = "举手之劳，分享光荣。我刚刚向@触宝电话 贡献了“%@”号码：%@。如果大家在触宝电话中搜到它，可别忘了我的功劳哦！";
-"sina_number_correction" = "刚发现#触宝电话#里“%@”的电话信息错了。@触宝电话 赶紧改一下吧！查号这功能还是挺好用的，不用流量也能查到各种商户电话http://t.cn/zY17I5k。";
+"sina_number_type_contribution" = "刚刚接到陌生来电%@，我已经在@通通宝 标记为“%@”。大家一起用@通通宝 来标记陌生号码吧，不错过重要电话，也不放过骚扰电话！http://t.cn/zY17I5k";
+"sina_number_name_contribution" = "举手之劳，分享光荣。我刚刚向@通通宝 贡献了“%@”号码：%@。如果大家在通通宝中搜到它，可别忘了我的功劳哦！";
+"sina_number_correction" = "刚发现#通通宝#里“%@”的电话信息错了。@通通宝 赶紧改一下吧！查号这功能还是挺好用的，不用流量也能查到各种商户电话http://t.cn/zY17I5k。";
 
 "Offline data" = "Offline data";
 "More" = "More";
@@ -982,7 +982,7 @@
 "voip_cootek_user_friend" = "TouchPal users";
 "voip_close" = "关闭";
 "voip_now_user_number" = "当前用户数";
-"voip_one_minute_learn_voip" = "一分钟了解触宝电话";
+"voip_one_minute_learn_voip" = "一分钟了解通通宝";
 "voip_you_have_bind_phone_number" = "您已绑定手机号%@";
 "voip_open_free_phone" = "开启免费电话";
 "voip_input_phone_numer" = "输入您的手机号";
@@ -1079,7 +1079,7 @@
 "voip_outgoing_mute" = "静音";
 "voip_outgoing_speaker" = "免提";
 "voip_welcome_use1" = "欢迎使用";
-"voip_welcome_use2" = "触宝电话";
+"voip_welcome_use2" = "通通宝";
 "voip_thank_use" = "谢谢使用";
 "voip_ringing" = "等待对方接听";
 
@@ -1099,9 +1099,9 @@
 "voip_send_sms" = "短信";
 "voip_send_wechat" = "微信好友";
 "voip_send_qq" = "QQ发送";
-"voip_welcome_to_use_cootek_phone" = "快来使用触宝电话吧！";
-"voip_no_network_use_wifi" = "当前没有网络,无法使用触宝电话，请先连接WIFI网络";
-"voip_bad_network_use_wifi" = "当前网络状况不佳,无法保证触宝电话音质，建议先连接WIFI网络";
+"voip_welcome_to_use_cootek_phone" = "快来使用通通宝吧！";
+"voip_no_network_use_wifi" = "当前没有网络,无法使用通通宝，请先连接WIFI网络";
+"voip_bad_network_use_wifi" = "当前网络状况不佳,无法保证通通宝音质，建议先连接WIFI网络";
 "voip_call_17_number_alert" = "17*号段线路尚在测试中，可能会无法接通。";
 
 "voip_copy" = "复制";
@@ -1114,15 +1114,15 @@
 "voip_you_are_cootek_user" = "与触宝用户通话";
 "voip_free_all_time" = "无限畅打";
 "voip_network_error" = "网络访问错误";
-"voip_invite_friend_wechat_message_with_code" = "我的触宝电话兑换码：%@，大家快来使用！";
-"voip_invite_friend_wechat_message_without_code" = "我在用触宝电话，大家快来使用！";
+"voip_invite_friend_wechat_message_with_code" = "我的通通宝兑换码：%@，大家快来使用！";
+"voip_invite_friend_wechat_message_without_code" = "我在用通通宝，大家快来使用！";
 
 "voip_not_chinese_phone" = "免费电话仅支持中国大陆号码";
-"voip_weixin_share_title" = "把好用的免费电话软件“触宝电话”推荐给你！";
+"voip_weixin_share_title" = "把好用的免费电话软件“通通宝”推荐给你！";
 "voip_weixin_share_description" = "注册即可获得700分钟免费通话时长，快来体验吧！";
-"voip_weixin_timeline_share" = "我一直用“触宝电话”免费打电话，现在注册还可获得700分钟免费通话时长，快来体验吧！";
-"voip_sms_share_message" = "我一直用“触宝电话”免费打电话，现在注册还可获得700分钟免费通话时长，快来体验吧！";
-"voip_copy_share_message" = "我正在使用“触宝电话”，可以免费拨打国内手机，对方不装不联网也能打，送你700分钟时长体验！兑换码：%@，下载： %@";
+"voip_weixin_timeline_share" = "我一直用“通通宝”免费打电话，现在注册还可获得700分钟免费通话时长，快来体验吧！";
+"voip_sms_share_message" = "我一直用“通通宝”免费打电话，现在注册还可获得700分钟免费通话时长，快来体验吧！";
+"voip_copy_share_message" = "我正在使用“通通宝”，可以免费拨打国内手机，对方不装不联网也能打，送你700分钟时长体验！兑换码：%@，下载： %@";
 
 "voip_register_pass" = "免费电话申请已经通过，您可以打免费电话了";
 "voip_need_register_again" = "账号出现错误\n您需要重新登录！";
@@ -1179,7 +1179,7 @@
 
 "voip_not_use" = "不使用";
 "voip_now_use" = "去启用";
-"voip_invite_use_callback" = "触宝电话新增回拨模式，\n诚邀您体验！";
+"voip_invite_use_callback" = "通通宝新增回拨模式，\n诚邀您体验！";
 
 "stream_sharelabel_title1" = "您通过 ";
 "stream_sharelabel_title2" = "，获得 ";
@@ -1245,10 +1245,10 @@
 "taobao_exchange_success_2000" = "到账可能需要5分钟，您可以稍后再来查看。";
 "taobao_exchange_success_4321" = "到账可能需要一个工作日，您可以稍后再来查看。";
 "taobao_exchange_error_4322" = "请通过QQ讨论群（182770766）联系我们。";
-"taobao_exchange_error_4324" = "提取失败，您可能使用了旧版本的触宝电话(4324)。";
-"taobao_exchange_error_4325" = "提取失败，您可能使用了旧版本的触宝电话(4325)。";
-"taobao_exchange_error_4328" = "提取失败，您可能使用了旧版本的触宝电话(4328)。";
-"taobao_exchange_error_4329" = "提取失败，您可能使用了旧版本的触宝电话(4329)。";
+"taobao_exchange_error_4324" = "提取失败，您可能使用了旧版本的通通宝(4324)。";
+"taobao_exchange_error_4325" = "提取失败，您可能使用了旧版本的通通宝(4325)。";
+"taobao_exchange_error_4328" = "提取失败，您可能使用了旧版本的通通宝(4328)。";
+"taobao_exchange_error_4329" = "提取失败，您可能使用了旧版本的通通宝(4329)。";
 "taobao_exchange_error_4326" = "您上一次提取的流量尚未到账，请勿重复提取。";
 "taobao_exchange_error_4327" = "该淘宝账号已经领取过流量红包了，请换一个淘宝账号吧。";
 "taobao_exchange_error_4330" = "您输入的账号不存在，请重新输入。";
@@ -1260,7 +1260,7 @@
 "taobao_sure_button" = "确定";
 
 "umeng_feedback_title" = "Help and feedback";
-"umeng_feedback_sayhello" = "Hi，很高兴为您服务，请您详细描述使用中遇到的问题或者您对触宝电话的建议，我们会尽快帮您处理的。";
+"umeng_feedback_sayhello" = "Hi，很高兴为您服务，请您详细描述使用中遇到的问题或者您对通通宝的建议，我们会尽快帮您处理的。";
 "umeng_feedback_send" = "发送";
 "umeng_feedback_hint" = "想加功能？出问题了？告诉我吧";
 
@@ -1271,7 +1271,7 @@
 "umeng_feedback_title_yellow_page" = "生活黄页";
 "umeng_feedback_title_others" = "其他";
 "umeng_feedback_hint1" = "反馈字数太少，可能没法得到有效处理，请您提供更加详细的描述，谢谢！";
-"umeng_feedback_hint2" = "您的反馈已经收到，我们会尽快处理的，感谢您对触宝电话的支持！";
+"umeng_feedback_hint2" = "您的反馈已经收到，我们会尽快处理的，感谢您对通通宝的支持！";
 
 //Personal Center
 "personal_center_title" = "Me";

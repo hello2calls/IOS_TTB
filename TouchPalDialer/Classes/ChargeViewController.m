@@ -18,8 +18,14 @@
 #import "UserDefaultsManager.h"
 #import "UILabel+ContentSize.h"
 #import "PayButton.h"
+#import <StoreKit/StoreKit.h>
+#import "TPChargeUtil.h"
+#import "SeattleFeatureExecutor.h"
+#import "TPIAPManager.h"
+#import "MBProgressHUD+MJ.h"
 
-@interface ChargeViewController ()
+
+@interface ChargeViewController ()<SKProductsRequestDelegate,SKPaymentTransactionObserver>
 
 @property (strong, nonatomic) UIView *topView;
 
@@ -35,16 +41,20 @@
 
 @property (strong, nonatomic) UIButton *chargeBtn;
 
+@property (nonatomic,copy) NSString *currentProId;
+
 
 @end
 
 @implementation ChargeViewController{
     int select;
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initView];
+    [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
 }
 
 -(void)initView
@@ -172,28 +182,41 @@
 
 -(void)charge
 {
+    NSString *pruchId;
     switch (select) {
         case 0:
-            [self doChage:100];
+            pruchId = @"com.cootek.smartdialer.ttb100";
             break;
         case 1:
-            [self doChage:150];
+            pruchId = @"com.cootek.smartdialer.ttb150";
             break;
         case 2:
-            [self doChage:500];
+            pruchId = @"com.cootek.smartdialer.ttb500";
             break;
         case 3:
-            [self doChage:1100];
+            pruchId = @"com.cootek.smartdialer.ttb1100";
             break;
         default:
             break;
     }
+    if(pruchId == nil){
+        NSLog(@"充值失败，产品ID不存在");
+        return;
+    }
+    [[TPIAPManager shareSIAPManager] startPurchWithID:pruchId completeHandle:^(SIAPPurchType type, NSData *data) {
+        if(type == SIAPPurchSuccess)
+        {
+            NSString *result = [NSString stringWithUTF8String:[data bytes]];
+            NSString *accountName = [UserDefaultsManager stringForKey:VOIP_REGISTER_ACCOUNT_NAME defaultValue:nil];
+            [TPChargeUtil charge:accountName reward:100 callback:^(Boolean statu, NSString *errorMsg) {
+                [MBProgressHUD showText:@"充值成功！"];
+            }];
+        }
+    }];
+    
 }
 
--(void)doChage : (int)minutes
-{
-    NSLog([NSString stringWithFormat:@"%d",minutes]);
-}
+
 
 -(void)gobackBtnPressed
 {

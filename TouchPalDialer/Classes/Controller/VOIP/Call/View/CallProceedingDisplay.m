@@ -237,7 +237,7 @@
             
             if (!isActive) {
                 _userType = OTHER_INACTIVE;
-                infoString = @"对方已经没有再使用触宝电话了，本次通话扣除免费分钟数";
+                infoString = @"对方已经没有再使用通通宝了，本次通话扣除免费分钟数";
                 
             } else if (isVip) {
                 int days = [UserDefaultsManager intValueForKey:VOIP_FIND_PRIVILEGA_DAY defaultValue:-1];
@@ -296,7 +296,7 @@
 }
 
 - (void)setInfoWhenBackcall {
-    [self setInfo:@"请接听触宝电话来电，如果您的手机套餐接听收费，运营商将会收取接听或漫游费用"];
+    [self setInfo:@"请接听通通宝来电，如果您的手机套餐接听收费，运营商将会收取接听或漫游费用"];
     if (_displayHidden) {
         [self showDisplay];
     }

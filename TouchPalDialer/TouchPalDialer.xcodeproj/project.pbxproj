@@ -1250,6 +1250,9 @@
 		CF3B9F5E174DDB3300342CDB /* UILayoutUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3B9F3C174DDB3300342CDB /* UILayoutUtility.m */; };
 		CF47657C1ED9B3A500A7FCA4 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF47657B1ED9B3A500A7FCA4 /* Test2ViewController.m */; };
 		CF6A79E01EFBC03600982AF1 /* PayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6A79DF1EFBC03600982AF1 /* PayButton.m */; };
+		CF6A79E31EFD0FD400982AF1 /* TPChargeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6A79E21EFD0FD400982AF1 /* TPChargeUtil.m */; };
+		CF6A79E41F00B2CC00982AF1 /* TouchPalDialer-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107310486CEB800E47090 /* TouchPalDialer-Info.plist */; };
+		CF6A79E71F00F43300982AF1 /* TPIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6A79E61F00F43300982AF1 /* TPIAPManager.m */; };
 		CF6F8CCB174C9F2E00634E34 /* BackupAttributeConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6F8CC2174C9F2E00634E34 /* BackupAttributeConfigurator.m */; };
 		CF6F8CCC174C9F2E00634E34 /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6F8CC4174C9F2E00634E34 /* CommonUtil.m */; };
 		CF6F8CCD174C9F2E00634E34 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6F8CC6174C9F2E00634E34 /* NSString+UUID.m */; };
@@ -4168,6 +4171,10 @@
 		CF47657B1ED9B3A500A7FCA4 /* Test2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test2ViewController.m; sourceTree = "<group>"; };
 		CF6A79DE1EFBC03600982AF1 /* PayButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayButton.h; sourceTree = "<group>"; };
 		CF6A79DF1EFBC03600982AF1 /* PayButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayButton.m; sourceTree = "<group>"; };
+		CF6A79E11EFD0FD400982AF1 /* TPChargeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChargeUtil.h; sourceTree = "<group>"; };
+		CF6A79E21EFD0FD400982AF1 /* TPChargeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChargeUtil.m; sourceTree = "<group>"; };
+		CF6A79E51F00F43300982AF1 /* TPIAPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPIAPManager.h; sourceTree = "<group>"; };
+		CF6A79E61F00F43300982AF1 /* TPIAPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPIAPManager.m; sourceTree = "<group>"; };
 		CF6F8CC1174C9F2E00634E34 /* BackupAttributeConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackupAttributeConfigurator.h; sourceTree = "<group>"; };
 		CF6F8CC2174C9F2E00634E34 /* BackupAttributeConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackupAttributeConfigurator.m; sourceTree = "<group>"; };
 		CF6F8CC3174C9F2E00634E34 /* CommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtil.h; sourceTree = "<group>"; };
@@ -4357,6 +4364,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B90BED1CFC2DC500852184 /* StoreKit.framework in Frameworks */,
 				C73EB9701C0414F40085A5BE /* WebKit.framework in Frameworks */,
 				CF2A3C9A1ED808FE00199D2F /* JavaScriptCore.framework in Frameworks */,
 				0C6DDF821E2797E1009627A3 /* libopus.a in Frameworks */,
@@ -4381,7 +4389,6 @@
 				AB00E6481414CF7D00134109 /* QuartzCore.framework in Frameworks */,
 				26D0F9561A35DB3F00DE128B /* AdSupport.framework in Frameworks */,
 				C71738721CFE83CE009E52FD /* libGDTMobSDK.a in Frameworks */,
-				C7B90BED1CFC2DC500852184 /* StoreKit.framework in Frameworks */,
 				AB00E6481414CF7D00134109 /* QuartzCore.framework in Frameworks */,
 				26D0F9561A35DB3F00DE128B /* AdSupport.framework in Frameworks */,
 				C7B90BF41CFC3C6700852184 /* libBaiduMobNativeSDK64_bit.a in Frameworks */,
@@ -9637,6 +9644,10 @@
 		CF72914C1ED7E03700E8B01E /* ttb */ = {
 			isa = PBXGroup;
 			children = (
+				CF6A79E11EFD0FD400982AF1 /* TPChargeUtil.h */,
+				CF6A79E21EFD0FD400982AF1 /* TPChargeUtil.m */,
+				CF6A79E51F00F43300982AF1 /* TPIAPManager.h */,
+				CF6A79E61F00F43300982AF1 /* TPIAPManager.m */,
 				CF6A79DD1EFBC01300982AF1 /* PayButton */,
 				CF7291521ED7F6C300E8B01E /* CHWebView */,
 				CF7291431ED57A2100E8B01E /* PersonalCenterViewController.h */,
@@ -9953,6 +9964,7 @@
 				770048A11E0A81C90037058A /* VKVideoPlayerViewController~iphone.xib in Resources */,
 				770048A21E0A81C90037058A /* LICENSE in Resources */,
 				733852F81E2F78EE00A429E3 /* 快捷拨号-普通-正常@3x.png in Resources */,
+				CF6A79E41F00B2CC00982AF1 /* TouchPalDialer-Info.plist in Resources */,
 				770048871E0A81C90037058A /* VKVideoPlayer_pause.png in Resources */,
 				42A7D3881AB2DE6200C1F839 /* replydata.xml in Resources */,
 				5CD471511E1B93FA0092222C /* 3_3.png in Resources */,
@@ -10282,6 +10294,7 @@
 				E2559DD71BEDA0B700E6041D /* AdMessageModel.m in Sources */,
 				77AB61A91C916F71003DB4E3 /* ContactTransferSendController.m in Sources */,
 				264493961B6A552D0069ABF9 /* CallFunctionButtons.m in Sources */,
+				CF6A79E31EFD0FD400982AF1 /* TPChargeUtil.m in Sources */,
 				264846311B9B191B00245999 /* PersonInfoDescViewController.m in Sources */,
 				770048A31E0A81C90037058A /* README.md in Sources */,
 				AF55DA6F1BA9347F005E63BB /* AntiharassModelManager.m in Sources */,
@@ -10925,6 +10938,7 @@
 				AF55DA721BA93A7A005E63BB /* AntiharassLoadingView.m in Sources */,
 				733852FB1E31D64300A429E3 /* TPDFamilyInfo.m in Sources */,
 				0CED963A1717A9BC005FEC45 /* OrlandoEngine+Contact.m in Sources */,
+				CF6A79E71F00F43300982AF1 /* TPIAPManager.m in Sources */,
 				0CED963B1717A9BC005FEC45 /* OrlandoEngine+Letter.m in Sources */,
 				0CED963C1717A9BC005FEC45 /* OrlandoEngine.mm in Sources */,
 				770F392A1C9B9B4F00A91E16 /* ContactTransferMainController.m in Sources */,

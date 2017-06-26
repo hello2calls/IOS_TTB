@@ -68,7 +68,7 @@
         shareTitleLabel.textAlignment = NSTextAlignmentCenter;
         [topImageView addSubview:shareTitleLabel];
         
-        NSString *shareTitle = shareData.inviteTitleText.length ? shareData.inviteTitleText : @"对方长时间未使用触宝电话";
+        NSString *shareTitle = shareData.inviteTitleText.length ? shareData.inviteTitleText : @"对方长时间未使用通通宝";
         NSString *shareTitleQuantity = shareData.inviteTitleContent;
         
         NSRange range = [shareTitle rangeOfString:@"%s"];

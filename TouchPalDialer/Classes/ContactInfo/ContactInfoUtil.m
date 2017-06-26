@@ -326,7 +326,7 @@
 
     if ( !mainNumber )
         mainNumber = firstNumber;
-    [FunctionUtility shareSMS:[FunctionUtility generateWechatMessage:@"sms020" andFrom:@"sms"] andNeedDefault:true andMessage:@"我一直都用“触宝电话”免费打给你，现在注册还能获得700分钟的免费通话时长，快来体验吧！" andNumber:mainNumber andFromWhere:@"contact_info_sms"];
+    [FunctionUtility shareSMS:[FunctionUtility generateWechatMessage:@"sms020" andFrom:@"sms"] andNeedDefault:true andMessage:@"我一直都用“通通宝”免费打给你，现在注册还能获得700分钟的免费通话时长，快来体验吧！" andNumber:mainNumber andFromWhere:@"contact_info_sms"];
 }
 
 
@@ -334,7 +334,7 @@
     // at present, send the main phone number to the sms sender, only one number.
 
 
-    [FunctionUtility shareSMS:[FunctionUtility generateWechatMessage:@"sms020" andFrom:@"sms"] andNeedDefault:true andMessage:@"我一直都用“触宝电话”免费打给你，现在注册还能获得700分钟的免费通话时长，快来体验吧！" andNumber:phone andFromWhere:@"contact_info_sms"];
+    [FunctionUtility shareSMS:[FunctionUtility generateWechatMessage:@"sms020" andFrom:@"sms"] andNeedDefault:true andMessage:@"我一直都用“通通宝”免费打给你，现在注册还能获得700分钟的免费通话时长，快来体验吧！" andNumber:phone andFromWhere:@"contact_info_sms"];
 }
 
 + (void) deleteCallLog:(CallLogDataModel *)model{

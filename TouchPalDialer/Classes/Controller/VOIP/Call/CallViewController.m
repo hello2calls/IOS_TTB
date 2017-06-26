@@ -510,7 +510,7 @@ static BOOL sIsFunctionButtonPressed;
     [_snowGenerator stopSnow];
     [self hangupPrepareOnData];
     if (![UserDefaultsManager boolValueForKey:VOIP_CELL_DATA_ACCEPTING_REMIND] && [Reachability network] < network_wifi && _callMode == CallModeIncomingCall) {
-        [DefaultUIAlertViewHandler showAlertViewWithTitle:@"是否允许触宝电话使用手机流量接听电话，以获得高清免费体验？（可在免费电话设置中更改选项）" message:nil cancelTitle:@"不允许" okTitle:@"允许" okButtonActionBlock:^{
+        [DefaultUIAlertViewHandler showAlertViewWithTitle:@"是否允许通通宝使用手机流量接听电话，以获得高清免费体验？（可在免费电话设置中更改选项）" message:nil cancelTitle:@"不允许" okTitle:@"允许" okButtonActionBlock:^{
         
         } cancelActionBlock:^{
             [[AppSettingsModel appSettings] setSettingValue:[NSNumber numberWithBool:NO] forKey:VOIP_ENABLE_CELL_DATA];

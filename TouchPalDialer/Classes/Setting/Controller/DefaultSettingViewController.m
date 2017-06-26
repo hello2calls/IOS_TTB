@@ -135,7 +135,7 @@
 - (void)gotoBack {
     if (model_.pageType == SETTING_PAGE_MUTI_LANGUAGE && [UserDefaultsManager intValueForKey:LAST_APP_LANGUAGE defaultValue:LanguageStandard] != [UserDefaultsManager intValueForKey:APP_SET_KEY_MUTI_LANGUAGE defaultValue:LanguageStandard]) {
         [UserDefaultsManager setIntValue:[UserDefaultsManager intValueForKey:APP_SET_KEY_MUTI_LANGUAGE] forKey:LAST_APP_LANGUAGE];
-        [DefaultUIAlertViewHandler showAlertViewWithTitle:@"切换语言需要重新启动触宝电话，确认切换？" message:nil okButtonActionBlock:^(){
+        [DefaultUIAlertViewHandler showAlertViewWithTitle:@"切换语言需要重新启动通通宝，确认切换？" message:nil okButtonActionBlock:^(){
             exit(0);
         }cancelActionBlock:^{
         }];

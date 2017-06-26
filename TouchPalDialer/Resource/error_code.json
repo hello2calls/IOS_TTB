@@ -168,12 +168,12 @@
                    {
                    "4006": {
                    "title": "当前应用版本过低",
-                   "content": "您使用的触宝电话版本过低，\n无法使用免费电话服务。",
+                   "content": "您使用的通通宝版本过低，\n无法使用免费电话服务。",
                    "solution": "升级应用",
                    "solution_action": "upgrade",
                    "dialog_solution_btn": "升级应用",
                    "dialog_solution_action": "upgrade",
-                   "dialog_solution_main": "您使用的触宝电话版本过低，无法使用免费电话服务。",
+                   "dialog_solution_main": "您使用的通通宝版本过低，无法使用免费电话服务。",
                    "dialog_solution_btn_alt": "我知道了",
                    "dialog_solution_action_alt":"close"
                    }
