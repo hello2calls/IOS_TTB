@@ -238,42 +238,42 @@ static float scaleRatio;
         return freeCallButton;
     }
     
-    if (type == VOIP_OVERSEA){
-
-       
-        if (![UserDefaultsManager boolValueForKey:have_participated_voip_oversea defaultValue:NO]) {
-            if(![UserDefaultsManager boolValueForKey:had_popview_add_vip]){
-                if ([UserDefaultsManager boolValueForKey:VOIP_IF_PRIVILEGA defaultValue:NO]){
-                    [freeCallButton setTitle:NSLocalizedString(@"加入内测，国际长途免费打","") forState:UIControlStateNormal];
-                    [freeCallButton setTitleColor:[TPDialerResourceManager  getColorForStyle:@"tp_color_yellow_200"] forState:UIControlStateNormal];
-                    [self getVIPLabelLeft:freeCallButton];
-                }else{
-                    [freeCallButton setTitle:NSLocalizedString(@"加入内测，国际长途免费打","") forState:UIControlStateNormal];
-                    [freeCallButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-                }
-                
-                
-                [freeCallButton addTarget:self action:@selector(jumpToInternationalCallVC) forControlEvents:(UIControlEventTouchUpInside)];
-                [UserDefaultsManager setBoolValue:YES forKey:had_popview_add_vip];
-            }else{
-                [freeCallButton setTitle:NSLocalizedString(@"未开通触宝电话长途功能", "") forState:UIControlStateNormal];
-                [freeCallButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-                [freeCallButton setBackgroundImage:[[TPDialerResourceManager sharedManager]getResourceByStyle:@"voip_freeCall_button_bg_disable_image"] forState:UIControlStateNormal];
-            }
-        }else{
-            [freeCallButton setBackgroundImage:[[TPDialerResourceManager sharedManager]getResourceByStyle:@"voip_freeCall_button_bg_image"] forState:UIControlStateNormal];
-            if ([UserDefaultsManager boolValueForKey:VOIP_IF_PRIVILEGA defaultValue:NO]){
-                [freeCallButton setTitle:NSLocalizedString(@"免费国际电话(VIP高清专线)", "") forState:UIControlStateNormal];
-                [self getVIPLabelLeft:freeCallButton];
-            }else{
-                [freeCallButton setTitle:NSLocalizedString(@"免费国际电话", "") forState:UIControlStateNormal];
-                [freeCallButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-            }
-            
-            [freeCallButton addTarget:self action:@selector(judgeOnClickFreeCallButton) forControlEvents:UIControlEventTouchUpInside];
-        }
-        return freeCallButton;
-    }
+//    if (type == VOIP_OVERSEA){
+//
+//       
+//        if (![UserDefaultsManager boolValueForKey:have_participated_voip_oversea defaultValue:NO]) {
+//            if(![UserDefaultsManager boolValueForKey:had_popview_add_vip]){
+//                if ([UserDefaultsManager boolValueForKey:VOIP_IF_PRIVILEGA defaultValue:NO]){
+//                    [freeCallButton setTitle:NSLocalizedString(@"加入内测，国际长途免费打","") forState:UIControlStateNormal];
+//                    [freeCallButton setTitleColor:[TPDialerResourceManager  getColorForStyle:@"tp_color_yellow_200"] forState:UIControlStateNormal];
+//                    [self getVIPLabelLeft:freeCallButton];
+//                }else{
+//                    [freeCallButton setTitle:NSLocalizedString(@"加入内测，国际长途免费打","") forState:UIControlStateNormal];
+//                    [freeCallButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//                }
+//                
+//                
+//                [freeCallButton addTarget:self action:@selector(jumpToInternationalCallVC) forControlEvents:(UIControlEventTouchUpInside)];
+//                [UserDefaultsManager setBoolValue:YES forKey:had_popview_add_vip];
+//            }else{
+//                [freeCallButton setTitle:NSLocalizedString(@"未开通触宝电话长途功能", "") forState:UIControlStateNormal];
+//                [freeCallButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//                [freeCallButton setBackgroundImage:[[TPDialerResourceManager sharedManager]getResourceByStyle:@"voip_freeCall_button_bg_disable_image"] forState:UIControlStateNormal];
+//            }
+//        }else{
+//            [freeCallButton setBackgroundImage:[[TPDialerResourceManager sharedManager]getResourceByStyle:@"voip_freeCall_button_bg_image"] forState:UIControlStateNormal];
+//            if ([UserDefaultsManager boolValueForKey:VOIP_IF_PRIVILEGA defaultValue:NO]){
+//                [freeCallButton setTitle:NSLocalizedString(@"免费国际电话(VIP高清专线)", "") forState:UIControlStateNormal];
+//                [self getVIPLabelLeft:freeCallButton];
+//            }else{
+//                [freeCallButton setTitle:NSLocalizedString(@"免费国际电话", "") forState:UIControlStateNormal];
+//                [freeCallButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//            }
+//            
+//            [freeCallButton addTarget:self action:@selector(judgeOnClickFreeCallButton) forControlEvents:UIControlEventTouchUpInside];
+//        }
+//        return freeCallButton;
+//    }
     
     if (type == VOIP_ENABLE ||type == VOIP_PRE_17) {
         

@@ -21,8 +21,8 @@
 }
 
 + (NSString *)userSipAgent:(const char *)sipVersion {
-    NSString *userAgent = [NSString stringWithFormat:@"%@/%@/%@", @"com.cootek.smartdialer",
-                           CURRENT_TOUCHPAL_VERSION, @"iOS"];
+    NSString *userAgent = [NSString stringWithFormat:@"%@/%@/%@/%@", @"com.cootek.smartdialer",
+                           CURRENT_TOUCHPAL_VERSION, @"iOS",IPHONE_CHANNEL_CODE];
 
     return [NSString stringWithFormat:@"%@;pjsip%s", userAgent, sipVersion];
 }

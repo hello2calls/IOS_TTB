@@ -243,17 +243,44 @@ static NSString *sSource;
 - (void)checkVoipCall:(CallLogDataModel *)phone {
     BOOL isVoipOn = [UserDefaultsManager boolValueForKey:TOUCHPAL_USER_HAS_LOGIN]
     && [UserDefaultsManager boolValueForKey:IS_VOIP_ON];
-    NSString *correspondingServiceNum = [self isServiceNumber:callLog_.number];
+//    NSString *correspondingServiceNum = [self isServiceNumber:callLog_.number];
     voipPass = NO;
     NSInteger type = VOIP_PASS;
     if (isVoipOn) {
-        if (correspondingServiceNum == nil) {
-            type = [self getCallNumberTypeCustion:callLog_.number];
-            } else {
-            phone.number = correspondingServiceNum;
+//        if (correspondingServiceNum == nil) {
+//            type = [self getCallNumberTypeCustion:callLog_.number];
+//            if(type == VOIP_OVERSEA){
+//                type = VOIP_ENABLE;
+//            }
+//            }
+//        else {
+//            phone.number = correspondingServiceNum;
+//            type = VOIP_ENABLE;
+//        }
+    
+        
+        NSString *number  = callLog_.number;
+        number = [number stringByReplacingOccurrencesOfString:@"+" withString:@""];
+        NSRange range = NSMakeRange(0, 6);
+        NSString *temp = [number substringWithRange:range];
+        if([temp isEqualToString:@"002347"] || [temp isEqualToString:@"002348"] || [temp isEqualToString:@"002349"])
+        {
+            if(number.length == 15)
+            {
+               type = VOIP_ENABLE;
+            }
+        }
+        else if([temp isEqualToString:@"002341"] && number.length == 13)
+        {
             type = VOIP_ENABLE;
         }
-    
+        else{
+            type = [self getCallNumberTypeCustion:callLog_.number];
+            if(type == VOIP_OVERSEA){
+                type = VOIP_PASS;
+            }
+        }
+        
     }
     
     AppSettingsModel* appSettingsModel = [AppSettingsModel appSettings];

@@ -234,8 +234,10 @@ withFilterContext:(id)filterContext {
     if (self.loaction != nil) {
         env = [NSString stringWithFormat:@"%@%@",env,self.loaction];
     }
-    NSString *userAgent = [NSString stringWithFormat:@"%@/%@/%@", @"com.cootek.smartdialer",
-                           CURRENT_TOUCHPAL_VERSION, @"iOS"];
+    NSString *userAgent = [NSString stringWithFormat:@"%@/%@/%@/%@", @"com.cootek.smartdialer",
+                           CURRENT_TOUCHPAL_VERSION, @"iOS",IPHONE_CHANNEL_CODE];
+    
+
     NSString *msg = [NSString stringWithFormat:@"INVITE;from=%@;to=%@;auth=\"auth=%@;expired=\"%@\"\";call-id=%@;ua=%@;env=%@", from, to, authMd5, expired, call_id, userAgent, env];
     data = [msg dataUsingEncoding:NSUTF8StringEncoding];
     cootek_log(@"callback invite 2G = %@",msg);

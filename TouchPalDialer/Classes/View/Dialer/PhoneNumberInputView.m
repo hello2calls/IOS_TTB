@@ -129,7 +129,7 @@
             numberAttrString = attrString;
         }
         if(![numberAttrString isEqualToString:attrView_.text]){
-           attrView_.text = numberAttrString;
+           attrView_.text = @"00+国际区号+电话号码";
         }
     }
 }
