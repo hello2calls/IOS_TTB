@@ -31,7 +31,7 @@
 #import "RootScrollViewController.h"
 #import "DialerViewController.h"
 #import "TPAddressBookWrapper.h"
-#import "FeatureGuideTipsController.h"
+//#import "FeatureGuideTipsController.h"
 
 #import "AdvancedCalllog.h"
 #import "AddressBookAccessUtility.h"
@@ -232,8 +232,8 @@
                CURRENT_TOUCHPAL_VERSION);
     if (!launchVersion){
         [DialerUsageRecord recordpath:PATH_LOGOUT kvs:Pair(SHOW_STARTUP_GUIDE, @(1)), nil];
-        FeatureGuideTipsController *featureGuideController = [[FeatureGuideTipsController alloc] init];
-        [navigationController_ pushViewController:featureGuideController animated:NO];
+//        FeatureGuideTipsController *featureGuideController = [[FeatureGuideTipsController alloc] init];
+//        [navigationController_ pushViewController:featureGuideController animated:NO];
     } else if (shouldShowAntiharassGuide) {
         [DialerUsageRecord recordpath:PATH_ANTIHARASS kvs:Pair(ANTIHARASS_GUIDE_SHOWN, @(1)), nil];
         AntiharassGuideController *antiharassController = [[AntiharassGuideController alloc] init];

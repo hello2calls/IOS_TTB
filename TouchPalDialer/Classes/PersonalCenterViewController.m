@@ -22,6 +22,7 @@
 #import "SeattleFeatureExecutor.h"
 #import "Test2ViewController.h"
 #import "HandlerWebViewController.h"
+#import "MBProgressHUD+MJ.h"
 
 @interface PersonalCenterViewController ()
 
@@ -197,14 +198,8 @@
         
     }else if(button == _historyBtn){
         
-        [TouchPalDialerAppDelegate pushViewController:[[Test2ViewController alloc]init] animated:YES];
-//        YellowPageWebViewController *controller = [[YellowPageWebViewController alloc] init];
-//        NSString *token = [SeattleFeatureExecutor getToken];
-//        NSString *url = [NSString stringWithFormat:@"http://search.cootekservice.com/page_v3/activity_recharge_price.html?_token=%@", token];
-//        controller.url_string = url;
-//        controller.web_title = NSLocalizedString(@"personal_center_setting_coupon", @"");
-//        controller.view.frame = CGRectMake(0, 0, TPScreenWidth(), TPAppFrameHeight()-TAB_BAR_HEIGHT+TPHeaderBarHeightDiff());
-//        [[TouchPalDialerAppDelegate naviController] pushViewController:controller animated:YES];
+        [MBProgressHUD showText:@"开发中..."];
+
         
     }else if(button == _questionBtn){
         [TouchPalDialerAppDelegate pushViewController:[[IntroduceViewController alloc]init] animated:YES];

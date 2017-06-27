@@ -25,6 +25,11 @@
 #import "MBProgressHUD+MJ.h"
 
 
+#define Minite100 100
+#define Minite150 150
+#define Minite500 500
+#define Minite1100 1100
+
 @interface ChargeViewController ()<SKProductsRequestDelegate,SKPaymentTransactionObserver>
 
 @property (strong, nonatomic) UIView *topView;
@@ -124,7 +129,7 @@
     [_button100 setTitle:@"100 min/ ¥ 8" forState:UIControlStateNormal];
     [_button100 addTarget:self action:@selector(OnClick:) forControlEvents:UIControlEventTouchUpInside];
     [_button100 setButtonSelect:YES];
-    select = 0;
+    select = Minite100;
     [self.view addSubview:_button100];
     
     _button150 = [[PayButton alloc]initWithFrame:CGRectMake(40 + payButtonWidth, 45 + TPHeaderBarHeightDiff()+120 + 20, payButtonWidth, 50)];
@@ -165,16 +170,16 @@
     [_button1100 setButtonSelect:NO];
     PayButton *button  = sender;
     if(button == _button100){
-        select = 0;
+        select = Minite100;
     }
     else if(button == _button150){
-        select = 1;
+        select = Minite150;
     }
     else if(button == _button500){
-        select = 2;
+        select = Minite500;
     }
     else if(button == _button1100){
-        select = 3;
+        select = Minite1100;
     }
     [button setButtonSelect:YES];
     
@@ -182,18 +187,18 @@
 
 -(void)charge
 {
-    NSString *pruchId;
+    NSString *pruchId = nil;
     switch (select) {
-        case 0:
+        case Minite100:
             pruchId = @"com.cootek.smartdialer.ttb100";
             break;
-        case 1:
+        case Minite150:
             pruchId = @"com.cootek.smartdialer.ttb150";
             break;
-        case 2:
+        case Minite500:
             pruchId = @"com.cootek.smartdialer.ttb500";
             break;
-        case 3:
+        case Minite1100:
             pruchId = @"com.cootek.smartdialer.ttb1100";
             break;
         default:
@@ -204,18 +209,46 @@
         return;
     }
     [[TPIAPManager shareSIAPManager] startPurchWithID:pruchId completeHandle:^(SIAPPurchType type, NSData *data) {
-        if(type == SIAPPurchSuccess)
-        {
-            NSString *result = [NSString stringWithUTF8String:[data bytes]];
-            NSString *accountName = [UserDefaultsManager stringForKey:VOIP_REGISTER_ACCOUNT_NAME defaultValue:nil];
-            [TPChargeUtil charge:accountName reward:100 callback:^(Boolean statu, NSString *errorMsg) {
-                [MBProgressHUD showText:@"充值成功！"];
-            }];
+        
+        switch (type) {
+            case SIAPPurchSuccess:
+                [self doCharge];
+                [MBProgressHUD showText:@"支付成功"];
+                break;
+            case SIAPPurchCancle:
+                [MBProgressHUD showText:@"支付取消"];
+                break;
+            case SIAPPurchFailed:
+                [MBProgressHUD showText:@"支付失败"];
+                break;
+            case SIAPPurchNotArrow:
+                [MBProgressHUD showText:@"不允许内购"];
+                break;
+            case SIAPPurchVerFailed:
+                [MBProgressHUD showText:@"订单校验失败"];
+                break;
+            case SIAPPurchVerSuccess:
+                [MBProgressHUD showText:@"订单校验成功"];
+                break;
+            default:
+                break;
         }
+
+        
     }];
     
 }
 
+
+-(void)doCharge
+{
+    NSString *accountName = [UserDefaultsManager stringForKey:VOIP_REGISTER_ACCOUNT_NAME defaultValue:nil];
+    [TPChargeUtil charge:accountName reward:select*60 callback:^(Boolean statu, NSString *errorMsg) {
+        NSLog([NSString stringWithFormat:@"充值%d分钟成功！",select]);
+        [SeattleFeatureExecutor queryVOIPAccountInfo];
+        [MBProgressHUD showText:[NSString stringWithFormat:@"充值%d分钟成功！",select]];
+    }];
+}
 
 
 -(void)gobackBtnPressed

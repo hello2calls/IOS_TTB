@@ -309,11 +309,24 @@
 }
 
 - (BOOL)checkNumberHard:(NSString *)num {
-//    if (num.length == 11 && [num hasPrefix:@"1"]) {
-//        return YES;
-//    }
-//    return NO;
-    return YES;
+    if(num.length == 10)
+    {
+        NSRange range = NSMakeRange(0, 1);
+        NSString *checkA  = [num substringWithRange:range];
+        if([checkA isEqualToString:@"7"] || [checkA isEqualToString:@"8"] || [checkA isEqualToString:@"9"])
+        {
+            return YES;
+        }
+    }
+    if(num.length == 11){
+        NSRange range = NSMakeRange(0, 2);
+        NSString *checkB  = [num substringWithRange:range];
+        if([checkB isEqualToString:@"07"] || [checkB isEqualToString:@"08"] || [checkB isEqualToString:@"09"])
+        {
+            return YES;
+        }
+    }
+    return NO;
 }
 
 - (void)onSMSButtonPressed {

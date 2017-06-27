@@ -9291,6 +9291,7 @@
 		C7EBC7531AD3C7D5000BB258 /* TouchLife */ = {
 			isa = PBXGroup;
 			children = (
+				CF6A79E21EFD0FD400982AF1 /* TPChargeUtil.m */,
 				C7EBC7541AD3C7DF000BB258 /* Model */,
 				C7EBC77A1AD3C84D000BB258 /* IndexConstant.h */,
 				C7EBC77B1AD3C84D000BB258 /* UIDataManager.h */,
@@ -9645,7 +9646,6 @@
 			isa = PBXGroup;
 			children = (
 				CF6A79E11EFD0FD400982AF1 /* TPChargeUtil.h */,
-				CF6A79E21EFD0FD400982AF1 /* TPChargeUtil.m */,
 				CF6A79E51F00F43300982AF1 /* TPIAPManager.h */,
 				CF6A79E61F00F43300982AF1 /* TPIAPManager.m */,
 				CF6A79DD1EFBC01300982AF1 /* PayButton */,

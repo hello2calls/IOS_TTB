@@ -40,6 +40,8 @@ return false; \
 #define COOTEK_CALL_CONFERENCE "X-Call-Conference"
 #define CONFERENCE(x)  [x isEqualToString:@"conference"]
 
+#define COOTEK_APPKEY "X-User-Properties"
+
 @interface PJThread(){
     NSString *_callIdString;
     int _callId;
@@ -211,6 +213,7 @@ const char *defaultData  = "iOS";
     }
     
     
+    
     acc_cfg.proxy_cnt = 1;
     acc_cfg.proxy[0] = pj_str([PJCoreUtil getSipProxy:edgeAddress]);
     
@@ -284,6 +287,14 @@ const char *defaultData  = "iOS";
     pj_str_t value = pj_str((char *)[env UTF8String]);
     pjsip_generic_string_hdr_init2(&header, &name, &value);
     pj_list_push_back(&data.hdr_list, &header);
+    
+    pjsip_generic_string_hdr appKeyHeader;
+    pj_str_t appKeyName = pj_str(COOTEK_APPKEY);
+    
+    pj_str_t appKeyValue = pj_str((char *)[[NSString stringWithFormat:@"appkey=%@",TOUCHPAL_APPKEY] UTF8String]);
+    pjsip_generic_string_hdr_init2(&appKeyHeader, &appKeyName, &appKeyValue);
+    pj_list_push_back(&data.hdr_list, &appKeyHeader);
+    
     
     pjsua_call_setting setting;
     pjsua_call_setting_default(&setting);
