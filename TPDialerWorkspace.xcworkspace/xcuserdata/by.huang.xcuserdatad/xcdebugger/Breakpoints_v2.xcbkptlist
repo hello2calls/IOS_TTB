@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TouchPalDialer/Classes/Controller/Noah/CootekWebHandler.m"
-            timestampString = "519643682.446071"
+            filePath = "TouchPalDialer/Classes/Controller/VOIP/VoipCallPopUpView.m"
+            timestampString = "520241873.384953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1386"
-            endingLineNumber = "1386"
-            landmarkName = "-registerYellowPageHandler"
+            startingLineNumber = "331"
+            endingLineNumber = "331"
+            landmarkName = "+isFreeCall:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,61 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TouchPalDialer/Classes/TPChargeUtil.m"
-            timestampString = "519901778.094517"
+            filePath = "TPDialerUIPages/phoneCall/TPDVoipCallPopUpViewController.m"
+            timestampString = "520242059.161193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "+get:callback:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__29+[TPChargeUtil get:callback:]_block_invoke"
-                  moduleName = "TouchPalDialer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/by.huang/Desktop/IOS_TTB/TouchPalDialer/Classes/TPChargeUtil.m"
-                  timestampString = "520174027.924218"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89"
-                  offsetFromSymbolStart = "124">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__29+[TPChargeUtil get:callback:]_block_invoke_2"
-                  moduleName = "TouchPalDialer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/by.huang/Desktop/IOS_TTB/TouchPalDialer/Classes/TPChargeUtil.m"
-                  timestampString = "520174027.927393"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89"
-                  offsetFromSymbolStart = "8">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TouchPalDialer/Classes/TPChargeUtil.m"
-            timestampString = "519901825.699298"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "+queryTime:callback:"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -89,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TouchPalDialer/Classes/TPIAPManager.m"
-            timestampString = "520167823.202898"
+            filePath = "TouchPalDialer/Classes/Controller/Common/TPCallActionController.m"
+            timestampString = "520242426.020366"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
-            landmarkName = "-verifyPurchaseWithPaymentTransaction:isTestServer:"
+            startingLineNumber = "314"
+            endingLineNumber = "314"
+            landmarkName = "-showPopupView:type:directVoipCall:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -105,13 +57,109 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TouchPalDialer/Classes/TPIAPManager.m"
-            timestampString = "520167832.851094"
+            filePath = "TouchPalDialer/Classes/Controller/Common/TPCallActionController.m"
+            timestampString = "520242426.020366"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
-            landmarkName = "-verifyPurchaseWithPaymentTransaction:isTestServer:"
+            startingLineNumber = "288"
+            endingLineNumber = "288"
+            landmarkName = "-showPopupView:type:directVoipCall:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TouchPalDialer/Classes/Controller/Common/TPCallActionController.m"
+            timestampString = "520242426.020366"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "269"
+            endingLineNumber = "269"
+            landmarkName = "-checkVoipCall:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TouchPalDialer/Classes/Controller/Common/TPCallActionController.m"
+            timestampString = "520242426.020366"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
+            landmarkName = "-checkVoipCall:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shared/Shared/PJSIP/src/PJThread.m"
+            timestampString = "520242579.844634"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "318"
+            endingLineNumber = "318"
+            landmarkName = "-inviteCall:mode:location:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shared/Shared/PJSIP/src/PJThread.m"
+            timestampString = "520242593.561447"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "253"
+            endingLineNumber = "253"
+            landmarkName = "-inviteCall:mode:rtp:location:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shared/Shared/PJSIP/src/PJThread.m"
+            timestampString = "520242603.822005"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "278"
+            endingLineNumber = "278"
+            landmarkName = "-inviteCall:mode:rtp:location:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shared/Shared/PJSIP/src/PJCoreUtil.m"
+            timestampString = "520242615.267798"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "+getSipUri:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -1,1 +1,5 @@
 *Build/
+
+TPDialerUIPages/phoneCall/TPDPhoneCallViewController.m
+
+TPDialerUIPages/phoneCall/TPDVoipCallPopUpViewController.m

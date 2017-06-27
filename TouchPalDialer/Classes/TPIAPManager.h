@@ -18,6 +18,16 @@
  21007 订单信息是测试用（sandbox），但却被发送到产品环境中验证
  21008 订单信息是产品环境中使用，但却被发送到测试环境中验证
  */
+
+#define TPD_IAP_USE_DEBUG NO
+
+
+#define TPD_IAP_REQUEST_URL_PRO @"http://open.cootekservice.com/pay/callback/iap"
+#define TPD_IAP_REQUEST_URL_DEBUG @"http://121.52.235.231:40027/pay/callback/iap"
+
+#define TPD_IAP_REQUEST_URL (TPD_IAP_USE_DEBUG ? TPD_IAP_REQUEST_URL_DEBUG : TPD_IAP_REQUEST_URL_PRO)
+
+
 typedef enum {
     SIAPPurchSuccess = 0,       // 购买成功
     SIAPPurchFailed = 1,        // 购买失败
@@ -26,6 +36,8 @@ typedef enum {
     SIAPPurchVerSuccess = 4,    // 订单校验成功
     SIAPPurchNotArrow = 5,      // 不允许内购
 }SIAPPurchType;
+
+
 
 typedef void (^IAPCompletionHandle)(SIAPPurchType type,NSData *data);
 

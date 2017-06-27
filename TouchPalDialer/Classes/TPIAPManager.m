@@ -1,5 +1,23 @@
 #import "TPIAPManager.h"
 #import <StoreKit/StoreKit.h>
+#import "TPHttpRequest.h"
+
+@interface TPDIAPData : NSObject
+@property (nonatomic, copy) NSString *accountID;
+@property (nonatomic, copy) NSString *transactionID;
+@property (nonatomic, copy) NSString *receipt;
+@end
+@implementation TPDIAPData
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"<TPDIAPData %p> accountId : %@ transactionID : %@",self,self.accountID,self.transactionID];
+}
+@end
+
+
+typedef void (^TPDBooleanResultBlock)(BOOL succeeded, NSError *error);
+
+
 @interface TPIAPManager()<SKPaymentTransactionObserver,SKProductsRequestDelegate>{
     NSString           *_purchID;
     IAPCompletionHandle _handle;
@@ -17,6 +35,7 @@
     });
     return IAPManager;
 }
+
 - (instancetype)init{
     self = [super init];
     if (self) {
@@ -85,6 +104,8 @@
 //    NSString * receipt = [transaction.transactionReceipt base64EncodedString];
     if ([productIdentifier length] > 0) {
         // 向自己的服务器验证购买凭证
+        
+
     }
     
     [self verifyPurchaseWithPaymentTransaction:transaction isTestServer:NO];
@@ -127,48 +148,86 @@
         return;
     }
     
-    //In the test environment, use https://sandbox.itunes.apple.com/verifyReceipt
-    //In the real environment, use https://buy.itunes.apple.com/verifyReceipt
+    NSString *receiptStr = [receipt base64EncodedStringWithOptions:0];
+    TPDIAPData *data = [TPDIAPData new];
+    data.accountID = transaction.payment.applicationUsername;
+    data.receipt = receiptStr;
+    data.transactionID = transaction.transactionIdentifier;
+    NSLog(@"IAP -- %@",data);
     
-    NSString *serverString = @"https://buy.itunes.apple.com/verifyReceipt";
-    if (flag) {
-        serverString = @"https://sandbox.itunes.apple.com/verifyReceipt";
-    }
-    NSURL *storeURL = [NSURL URLWithString:serverString];
-    NSMutableURLRequest *storeRequest = [NSMutableURLRequest requestWithURL:storeURL];
-    [storeRequest setHTTPMethod:@"POST"];
-    [storeRequest setHTTPBody:requestData];
+    [self validateReceiptWithData:data complete:^(BOOL finished, NSError *error) {
+        if (finished) {
+            [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+            NSLog(@"验证成功");
+        }else {
+            NSLog(@"验证失败");
+        }
+    }];
+
+
+
     
-    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-    [NSURLConnection sendAsynchronousRequest:storeRequest queue:queue
-                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-                               if (connectionError) {
-                                   // 无法连接服务器,购买校验失败
-                                   [self handleActionWithType:SIAPPurchVerFailed data:nil];
-                               } else {
-                                   NSError *error;
-                                   NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-                                   if (!jsonResponse) {
-                                       // 苹果服务器校验数据返回为空校验失败
-                                       [self handleActionWithType:SIAPPurchVerFailed data:nil];
-                                   }
-                                   
-                                   // 先验证正式服务器,如果正式服务器返回21007再去苹果测试服务器验证,沙盒测试环境苹果用的是测试服务器
-                                   NSString *status = [NSString stringWithFormat:@"%@",jsonResponse[@"status"]];
-                                   if (status && [status isEqualToString:@"21007"]) {
-                                       [self verifyPurchaseWithPaymentTransaction:transaction isTestServer:YES];
-                                   }else if(status && [status isEqualToString:@"0"]){
-                                       [self handleActionWithType:SIAPPurchVerSuccess data:nil];
-                                   }
-#if DEBUG
-                                   NSLog(@"----验证结果 %@",jsonResponse);
-#endif
-                               }
-                           }];
-    
+#pragma mark 苹果服务器验证方式
+//    NSString *serverString = @"https://buy.itunes.apple.com/verifyReceipt";
+//    if (flag) {
+//        serverString = @"https://sandbox.itunes.apple.com/verifyReceipt";
+//    }
+//    NSURL *storeURL = [NSURL URLWithString:serverString];
+//    NSMutableURLRequest *storeRequest = [NSMutableURLRequest requestWithURL:storeURL];
+//    [storeRequest setHTTPMethod:@"POST"];
+//    [storeRequest setHTTPBody:requestData];
+//    
+//    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+//    [NSURLConnection sendAsynchronousRequest:storeRequest queue:queue
+//                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+//                               if (connectionError) {
+//                                   // 无法连接服务器,购买校验失败
+//                                   [self handleActionWithType:SIAPPurchVerFailed data:nil];
+//                               } else {
+//                                   NSError *error;
+//                                   NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+//                                   if (!jsonResponse) {
+//                                       // 苹果服务器校验数据返回为空校验失败
+//                                       [self handleActionWithType:SIAPPurchVerFailed data:nil];
+//                                   }
+//                                   
+//                                   // 先验证正式服务器,如果正式服务器返回21007再去苹果测试服务器验证,沙盒测试环境苹果用的是测试服务器
+//                                   NSString *status = [NSString stringWithFormat:@"%@",jsonResponse[@"status"]];
+//                                   if (status && [status isEqualToString:@"21007"]) {
+//                                       [self verifyPurchaseWithPaymentTransaction:transaction isTestServer:YES];
+//                                   }else if(status && [status isEqualToString:@"0"]){
+//                                       [self handleActionWithType:SIAPPurchVerSuccess data:nil];
+//                                   }
+//#if DEBUG
+//                                   NSLog(@"----验证结果 %@",jsonResponse);
+//#endif
+//                               }
+//                           }];
+//    
     
     // 验证成功与否都注销交易,否则会出现虚假凭证信息一直验证不通过,每次进程序都得输入苹果账号
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+}
+
+
+#define TPD_IAP_ERRORC_CODE_VALIDATE_FAILED 4010
+#define TPD_IAP_ERRORC_CODE_TIMEOUT 4020
+- (void)validateReceiptWithData:(TPDIAPData *)data complete:(TPDBooleanResultBlock)completeBlock
+{
+    NSDictionary *params = @{
+                             @"order_id":data.accountID?:@"",
+                             @"iap_transaction_id":data.transactionID?:@"",
+                             @"receipt":data.receipt?:@"",
+                             };
+    
+    NSData *paramsData=[NSJSONSerialization dataWithJSONObject:params options:NSJSONWritingPrettyPrinted error:nil];
+    NSString *content=[[NSString alloc]initWithData:paramsData encoding:NSUTF8StringEncoding];
+    
+    [[TPHttpRequest sharedTPHttpRequest] post:TPD_IAP_REQUEST_URL content:content success:^(id respondObj) {
+        completeBlock(YES, nil);
+    } fail:^(id respondObj, NSError *error) {
+        completeBlock(NO, error);
+    }];
 }
 
 #pragma mark - SKProductsRequestDelegate

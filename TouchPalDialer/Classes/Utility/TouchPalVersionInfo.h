@@ -59,7 +59,8 @@
 //#define COOTEK_APP_NAME  @"cootek.contactplus.ios.public"
 #define COOTEK_APP_PLATFORM_IOS @"iphone"
 #define IPHONE_CHANNEL_CODE @"OEM 172 B19 100"
-#define TOUCHPAL_APPKEY @"4763853977302293"
+//#define TOUCHPAL_APPKEY @"4763853977302293"
+#define TOUCHPAL_APPKEY @"924881448494"
 #define TOUCHPAL_APPSECRET @"047821ede36d48bebba5be24371c87ec"
 
 #define TOUCHPAL_DIALER_APP_STORE_URL @"http://itunes.apple.com/app/id503130474"

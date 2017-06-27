@@ -9,4 +9,5 @@
     #import "consts.h"
     #import "UILayoutUtility.h"
     #import "UIView+Frame.h"
+    #import "TPSingleton.h"
 #endif
