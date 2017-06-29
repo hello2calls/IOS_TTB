@@ -39,6 +39,7 @@
     UIImage *image = [TPDialerResourceManager getImage:@"feature_guide_title@2x.png"];
     UIImageView *titleImageView = [[UIImageView alloc]initWithFrame:CGRectMake(TPScreenWidth() / 2 - image.size.width / 2, TPScreenHeight() * (IPHONE4 ? 0.16 : 0.22), image.size.width, image.size.height)];
     titleImageView.image = image;
+    titleImageView.hidden = YES;
     [view addSubview:titleImageView];
 //
 //    // image

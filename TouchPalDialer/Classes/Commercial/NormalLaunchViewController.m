@@ -31,8 +31,7 @@
     UIImageView *logoImageView = [[UIImageView alloc] initWithImage:logoImage];
     logoImageView.frame = CGRectMake(0, TPScreenHeight() - logoViewHeight, logoViewWidth, logoViewHeight);
     logoImageView.contentMode = UIViewContentModeScaleAspectFill;
-    
-
+    logoImageView.hidden = YES;
     
     
     UIImageView *normalLaunchImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, TPScreenWidth(), TPScreenHeight() - logoViewHeight)];

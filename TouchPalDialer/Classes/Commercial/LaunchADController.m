@@ -93,7 +93,7 @@
     UIImageView *logoImageView = [[UIImageView alloc] initWithImage:logoImage];
     logoImageView.frame = CGRectMake(0, TPScreenHeight() - logoViewHeight, logoViewWidth, logoViewHeight);
     logoImageView.contentMode = UIViewContentModeScaleAspectFill;
-    
+    logoImageView.hidden = YES;
     // splash white view
     _splashWhiteView = [[UIImageView alloc] initWithFrame:CGRectMake(0, -20, TPScreenWidth(), TPScreenHeight() + 20)];
     _splashWhiteView.backgroundColor = [UIColor whiteColor];
