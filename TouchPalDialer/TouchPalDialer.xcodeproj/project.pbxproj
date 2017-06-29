@@ -9797,7 +9797,7 @@
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = 87DH4U78Q6;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -11306,8 +11306,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = TouchPalDialer.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: leienshu@icloud.com (3Y869TA7TT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_RESOURCE_RULES_PATH = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -11344,7 +11344,7 @@
 					"\"$(SRCROOT)/Classes/ThirdPart/SDWebImage",
 				);
 				INFOPLIST_FILE = "TouchPalDialer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11399,9 +11399,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.smartdialer.ttb;
 				PRODUCT_NAME = TouchPalDialer;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "dcb3fa4a-18b9-4a29-bd9b-3d315d6d1dc6";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "b42db130-7b3e-477d-8c70-d4439119a18f";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE_SPECIFIER = TTB_Dis;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
@@ -11420,7 +11420,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = TouchPalDialer.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				CONFIGURATION_BUILD_DIR = "./build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
@@ -11460,7 +11460,7 @@
 					"\"$(SRCROOT)/Classes/ThirdPart/SDWebImage",
 				);
 				INFOPLIST_FILE = "TouchPalDialer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11500,9 +11500,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.smartdialer.ttb;
 				PRODUCT_NAME = TouchPalDialer;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "7509ec43-f4fe-40d2-bd66-b132f9a05cb6";
 				"PROVISIONING_PROFILE[sdk=*]" = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = TTB_Dev;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -11522,8 +11522,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = TouchPalDialer.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: leienshu@icloud.com (3Y869TA7TT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_RESOURCE_RULES_PATH = "";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -11557,7 +11557,7 @@
 					"\"$(SRCROOT)/Classes/ThirdPart/SDWebImage",
 				);
 				INFOPLIST_FILE = "TouchPalDialer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11609,9 +11609,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.smartdialer.ttb;
 				PRODUCT_NAME = TouchPalDialer;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "dcb3fa4a-18b9-4a29-bd9b-3d315d6d1dc6";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "b42db130-7b3e-477d-8c70-d4439119a18f";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE_SPECIFIER = TTB_Dis;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "arm64 armv7";
@@ -11675,7 +11675,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer: leienshu@icloud.com (3Y869TA7TT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				CONFIGURATION_BUILD_DIR = "./build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
@@ -11715,7 +11715,7 @@
 					"\"$(SRCROOT)/Classes/ThirdPart/SDWebImage",
 				);
 				INFOPLIST_FILE = "TouchPalDialer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11756,8 +11756,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.smartdialer.ttb;
 				PRODUCT_NAME = TouchPalDialer;
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "7509ec43-f4fe-40d2-bd66-b132f9a05cb6";
+				PROVISIONING_PROFILE_SPECIFIER = TTB_Dev;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
