@@ -181,6 +181,7 @@
         CGRect imageFrame = CGRectMake(gX, gY, TPScreenWidth(), imgHeight);
         UIImageView *hintImageView = [[UIImageView alloc] initWithFrame:imageFrame];
         hintImageView.image = img;
+        hintImageView.hidden = YES;
         hintImageView.contentMode = UIViewContentModeScaleAspectFit;
         gY += hintImageView.frame.size.height;
         
@@ -193,6 +194,7 @@
         CGRect oldHintFrame = hintLabel.frame;
         hintLabel.frame = CGRectMake(gX, gY, TPScreenWidth(), oldHintFrame.size.height);
         gY += hintLabel.frame.size.height;
+        hintLabel.hidden = YES;
         
         // buttons
         CGSize buttonSize = CGSizeMake(230, 46);
@@ -210,6 +212,7 @@
         learnButton.titleLabel.textColor = textColor;
         learnButton.titleLabel.font = font;
         learnButton.clipsToBounds = YES;
+        learnButton.hidden = YES;
         learnButton.layer.cornerRadius = 4;
         [learnButton setTitle:NSLocalizedString(@"calllog_empty_btn_learn_voip", "") forState:UIControlStateNormal];
         gY += learnButton.frame.size.height;

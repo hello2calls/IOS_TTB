@@ -62,13 +62,15 @@
         imageView.center = bgView.center;
         imageView.image = image;
         imageView.userInteractionEnabled = YES;
-        [bgView addSubview:imageView];
+//        [bgView addSubview:imageView];
 
         
         UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 100, imageView.tp_width, imageView.tp_height - 100)];
         [imageView addSubview:button];
         
         [button addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
+        
+        [self.bgView removeFromSuperview];
         
         
     } else {
