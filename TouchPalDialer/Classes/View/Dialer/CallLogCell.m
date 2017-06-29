@@ -234,9 +234,9 @@ static CGFloat sMaxDateHeight = 0.0;
             voipLabel.text = @"r";
             voipLabel.textColor = [[TPDialerResourceManager sharedManager] getUIColorFromNumberString:@"0xfc5c8d"];
         }else {
-            voipLabel.font = [UIFont fontWithName:@"iPhoneIcon3" size:FONT_SIZE_3_5];
-            voipLabel.text = @"o";
-            voipLabel.textColor = [TPDialerResourceManager getColorForStyle:@"tp_color_green_500"];
+//            voipLabel.font = [UIFont fontWithName:@"iPhoneIcon3" size:FONT_SIZE_3_5];
+//            voipLabel.text = @"o";
+//            voipLabel.textColor = [TPDialerResourceManager getColorForStyle:@"tp_color_green_500"];
         }
     }
 }

@@ -1746,8 +1746,6 @@ typedef enum{
         cell.tpd_label1.lineBreakMode = NSLineBreakByTruncatingTail;
 
         
-        
-        
         [cell addGestureRecognizer:[UILongPressGestureRecognizer bk_recognizerWithHandler:^(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location) {
             if (state == UIGestureRecognizerStateBegan) {
                 [self showSheet:item];
