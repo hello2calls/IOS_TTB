@@ -65,11 +65,11 @@
         info.buttonTag = knownCalllog;
         [buttonArray addObject:info];
         
-        info = [[ContactInfoButtonModel alloc]init];
-        info.iconStr = @"d";
-        info.titleStr = NSLocalizedString(@"detail_shortcut_gesture", "");
-        info.buttonTag = knownGesture;
-        [buttonArray addObject:info];
+//        info = [[ContactInfoButtonModel alloc]init];
+//        info.iconStr = @"d";
+//        info.titleStr = NSLocalizedString(@"detail_shortcut_gesture", "");
+//        info.buttonTag = knownGesture;
+//        [buttonArray addObject:info];
         
         info = [[ContactInfoButtonModel alloc]init];
         info.iconStr = @"b";

@@ -20,7 +20,7 @@ static ContactSpecialManager *instance;
     instance = [[ContactSpecialManager alloc]init];
     instance.specialArray = [NSMutableArray array];
 //    [instance generateSpecial:NODE_MY_FAMILY];
-    [instance generateSpecial:NODE_TOUCHPALER];
+//    [instance generateSpecial:NODE_TOUCHPALER];
 //    [instance generateSpecial:NODE_CONTACT_INVITE];
     [instance generateSpecial:NODE_CONTACT_SMART_GROUP];
 //    if ([FunctionUtility systemVersionFloat] >= 7.0) {
@@ -161,7 +161,7 @@ static ContactSpecialManager *instance;
 
 //TTB修改
 - (NSArray *)getSpecialArray{
-    [self generateSpecial:NODE_TOUCHPALER];
+//    [self generateSpecial:NODE_TOUCHPALER];
 //    [self generateSpecial:NODE_CONTACT_INVITE];
     return self.specialArray;
 }

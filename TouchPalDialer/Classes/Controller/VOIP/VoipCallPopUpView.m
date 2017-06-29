@@ -450,11 +450,13 @@ static float scaleRatio;
         settingLabel.userInteractionEnabled = YES;
         UITapGestureRecognizer *labelTapGestureRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(labelTouchUpInside:)];
         [settingLabel addGestureRecognizer:labelTapGestureRecognizer];
+        settingLabel.hidden = YES;
         [_callBoard addSubview:settingLabel];
         
         
         UIView *settingLine = [[UIView alloc]initWithFrame:CGRectMake(settingLabel.frame.origin.x, CGRectGetMaxY(settingLabel.frame) + 0.5, labelSize.width, 1)];
         settingLine.backgroundColor = settingColor;
+        settingLine.hidden = YES;
         [_callBoard addSubview:settingLine];
         globalY += settingLabel.frame.size.height;
         

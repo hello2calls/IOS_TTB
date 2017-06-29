@@ -346,11 +346,11 @@
             if (phoneDate.number.length>0 && [phoneDate.number hasPrefix:@"0"]) {
                 return  nil;
             }
-            ContactInfoCellModel *invitingInfo = [[ContactInfoCellModel alloc]init];
-            invitingInfo.mainStr = NSLocalizedString(@"invite_friends", @"邀请有奖");
-            invitingInfo.subStr = @"好友通话不扣时长，邀请还送200分钟";
-            invitingInfo.cellType = CellInviting;
-            [array addObject:invitingInfo];
+//            ContactInfoCellModel *invitingInfo = [[ContactInfoCellModel alloc]init];
+//            invitingInfo.mainStr = NSLocalizedString(@"invite_friends", @"邀请有奖");
+//            invitingInfo.subStr = @"好友通话不扣时长，邀请还送200分钟";
+//            invitingInfo.cellType = CellInviting;
+//            [array addObject:invitingInfo];
         }
         cootek_log(@"isInContact: %b", isRegistered);
     }
@@ -362,11 +362,11 @@
             return  nil;
     }
     NSMutableArray *array = [NSMutableArray array];
-    ContactInfoCellModel *invitingInfo = [[ContactInfoCellModel alloc]init];
-    invitingInfo.mainStr = NSLocalizedString(@"invite_friends", @"邀请有奖");
-    invitingInfo.subStr = @"好友通话不扣时长，邀请还送200分钟";
-    invitingInfo.cellType = CellInviting;
-    [array addObject:invitingInfo];
+//    ContactInfoCellModel *invitingInfo = [[ContactInfoCellModel alloc]init];
+//    invitingInfo.mainStr = NSLocalizedString(@"invite_friends", @"邀请有奖");
+//    invitingInfo.subStr = @"好友通话不扣时长，邀请还送200分钟";
+//    invitingInfo.cellType = CellInviting;
+//    [array addObject:invitingInfo];
     return array;
 }
 
