@@ -74,6 +74,9 @@
     UIView *scroll_view_page;
 }
 @property(nonatomic,strong)AVPlayer *player;
+
+@property (nonatomic , strong)    UIImageView *introduceImageView;
+
 @end
 
 @implementation FeatureGuideTipsController
@@ -175,13 +178,21 @@
     scroll_view_page =[[UIView alloc] initWithFrame:CGRectMake(0,0,TPScreenWidth(),TPScreenHeight())] ;
     CGFloat globalY = 0;
     
-    [self addAndPlayMovieInView:scroll_view_page];
+//    [self addAndPlayMovieInView:scroll_view_page];
     
     UIImage *imageSlogan = [TPDialerResourceManager getImage:@"starting_up_animation_slogan@2x.png"];
     _sloganImageView = [[UIImageView alloc]initWithFrame:CGRectMake(20, 35, imageSlogan.size.width, imageSlogan.size.height)];
     _sloganImageView.image = imageSlogan;
     _sloganImageView.alpha = 0;
+    _sloganImageView.hidden = YES;
     [scroll_view_page addSubview:_sloganImageView];
+    
+    
+    UIImage *introduceImage = [UIImage imageNamed:@"landing_banner"];
+    _introduceImageView= [[UIImageView alloc]initWithFrame:CGRectMake((TPScreenWidth() - introduceImage.size.width)/2, 140, introduceImage.size.width, introduceImage.size.height)];
+    _introduceImageView.image = introduceImage;
+    [scroll_view_page addSubview:_introduceImageView];
+
     
     CGFloat registerHeight = IPHONE4 ? 46 : 56;
     globalY = TPScreenHeight() *0.52;
@@ -218,6 +229,7 @@
     [startButton setTitleColor:[TPDialerResourceManager getColorForStyle:@"tp_color_white_transparency_300"] forState:UIControlStateHighlighted];
     [_actionBgLayout addSubview:startButton];
     [startButton addTarget:self action:@selector(startExperience) forControlEvents:UIControlEventTouchUpInside];
+    startButton.hidden = YES;
 
     
     NSString *hintStr = @"      已阅读并同意用户协议及隐私政策";
@@ -225,7 +237,7 @@
     CGSize allTextSize = [hintStr sizeWithFont:[ UIFont systemFontOfSize:FONT_SIZE_5] constrainedToSize:CGSizeMake(TPScreenWidth(), FONT_SIZE_2)];
     CGSize firstTextSize = [firstHintStr sizeWithFont:[ UIFont systemFontOfSize:FONT_SIZE_5] constrainedToSize:CGSizeMake(TPScreenWidth(), FONT_SIZE_2)];
     UILabel *hintLabel = [[UILabel alloc] initWithFrame:CGRectMake(TPScreenWidth() / 2 - allTextSize.width / 2,_actionLayout.bounds.size.height-76, firstTextSize.width, FONT_SIZE_2)];
-    hintLabel.textColor = [TPDialerResourceManager getColorForStyle:@"tp_color_white"];
+    hintLabel.textColor = [TPDialerResourceManager getColorForStyle:@"tp_color_black"];
     hintLabel.text = @"      已阅读并同意";
     hintLabel.textAlignment = NSTextAlignmentCenter;
 
@@ -262,13 +274,15 @@
     [checkBtn addTarget:self action:@selector(checkBtnClick) forControlEvents:UIControlEventTouchUpInside];
     
     registerButton = [[UIButton alloc]initWithFrame:CGRectMake(0.17 * TPScreenWidth(), CGRectGetMinY(checkBox.frame)-20-registerHeight, 0.66 * TPScreenWidth(), registerHeight)];
-    [registerButton setTitle:@"立即开启" forState:UIControlStateNormal];
+    [registerButton setTitle:@"开启通通宝电话" forState:UIControlStateNormal];
     registerButton.titleLabel.font = [UIFont systemFontOfSize:16];
     [registerButton setTitleColor:[TPDialerResourceManager getColorForStyle:@"tp_color_light_blue_500"] forState:UIControlStateNormal];
-    [registerButton setBackgroundImage:[FunctionUtility imageWithColor:[TPDialerResourceManager getColorForStyle:@"tp_color_white_transparency_900"]] forState:UIControlStateNormal];
-    [registerButton setBackgroundImage:[FunctionUtility imageWithColor:[TPDialerResourceManager getColorForStyle:@"tp_color_white_transparency_700"]] forState:UIControlStateHighlighted];
+//    [registerButton setBackgroundImage:[FunctionUtility imageWithColor:[TPDialerResourceManager getColorForStyle:@"tp_color_white_transparency_900"]] forState:UIControlStateNormal];
+//    [registerButton setBackgroundImage:[FunctionUtility imageWithColor:[TPDialerResourceManager getColorForStyle:@"tp_color_white_transparency_700"]] forState:UIControlStateHighlighted];
     registerButton.layer.masksToBounds = YES;
     registerButton.layer.cornerRadius = 4.0f;
+    registerButton.layer.borderWidth = 1.0f;
+    registerButton.layer.borderColor = [[TPDialerResourceManager getColorForStyle:@"tp_color_light_blue_500"] CGColor];
     [_actionBgLayout addSubview:registerButton];
     [registerButton addTarget:self action:@selector(startRegisterNow) forControlEvents:UIControlEventTouchUpInside];
     [self showAnimaTion];
