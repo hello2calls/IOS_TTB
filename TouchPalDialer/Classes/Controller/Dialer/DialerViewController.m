@@ -2043,9 +2043,9 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
         [UserDefaultsManager setBoolValue: YES forKey:DIALER_GUIDE_ANIMATION_HAS_SHOWN];
         if([FunctionUtility arc4randomIfmMorePersent:70]){
         [DialerUsageRecord recordpath:PATH_DIALER_GUIDE_ANIMATION kvs:Pair(KEY_DIALER_GUIDE_INAPP, APPEAR), nil];
-        [self showLocalMessageDic:@{@"display":@"快速找人的秘密？点此查看",
-                                    @"toastId":@"showDialerGuideAnimation",
-                                    @"priority":@"2"}];
+//        [self showLocalMessageDic:@{@"display":@"快速找人的秘密？点此查看",
+//                                    @"toastId":@"showDialerGuideAnimation",
+//                                    @"priority":@"2"}];
         }else{
         [DialerUsageRecord recordpath:PATH_DIALER_GUIDE_ANIMATION kvs:Pair(KEY_DIALER_GUIDE_INAPP, NOTAPPEAR), nil];
         }
