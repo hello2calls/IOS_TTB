@@ -26,6 +26,7 @@
 #import "TPFilterRecorder.h"
 #import "AllViewController.h"
 @interface CommnonLoginViewController () <TimerTickerDelegate, UITextFieldDelegate> {
+    CustomInputTextFiled *_areaFiled;
     CustomInputTextFiled *_numberFiled;
     CustomInputTextFiled *_verifiFiled;
     UILabel *_indicatorLabel;
@@ -102,7 +103,15 @@
     [self.view addSubview:_indicatorLabel];
     y+=46;
     
-    _numberFiled = [[CustomInputTextFiled alloc] initWithFrame:CGRectMake(x, y, w, h) andPlaceHolder:@"请填写手机号" andID:nil];
+    
+    _areaFiled = [[CustomInputTextFiled alloc] initWithFrame:CGRectMake(x, y, 70, h) andPlaceHolder:@"+234" andID:nil];
+    _areaFiled.layer.cornerRadius = 4;
+    _areaFiled.layer.masksToBounds = YES;
+    _areaFiled.keyboardType = UIKeyboardTypeNumberPad;
+    _areaFiled.enabled = NO;
+    [self.view addSubview:_areaFiled];
+    
+    _numberFiled = [[CustomInputTextFiled alloc] initWithFrame:CGRectMake(x+80, y, w-80, h) andPlaceHolder:@"请填写手机号" andID:nil];
     _numberFiled.layer.cornerRadius = 4;
     _numberFiled.layer.masksToBounds = YES;
     _numberFiled.keyboardType = UIKeyboardTypeNumberPad;
@@ -428,14 +437,22 @@
     [self recordForKey:CENTER_CLICK_LOGIN_CONFIRM ForValue:@"1"];
     [self checkInputNumber];
     [self checkInputCode];
+    NSString *number =[_numberFiled text];
+    NSRange range = NSMakeRange(0, 2);
+    NSString *temp = [number substringWithRange:range];
+    if(([temp isEqualToString:@"07"] || [temp isEqualToString:@"08"] || [temp isEqualToString:@"09"]) && number.length == 11)
+    {
+        range = NSMakeRange(1, number.length - 1);
+        number = [number substringWithRange:range];
+    }
     dispatch_async([SeattleFeatureExecutor getQueue], ^{
         NSInteger resultCode = 0;
         if ([[Reachability shareReachability] currentReachabilityStatus] != NotReachable) {
-            resultCode =  [SeattleFeatureExecutor registerWithNumber:[_numberFiled text] andVerifyCode:[_verifiFiled text]];
+            resultCode =  [SeattleFeatureExecutor registerWithNumber:number andVerifyCode:[_verifiFiled text]];
         }
         [TPFilterRecorder recordpath:PATH_LOGIN
                                   kvs:Pair(LOGIN_RESULT_OF_VERIFY_CODE, @(resultCode)), nil];
-        BOOL ifParticipate = [SeattleFeatureExecutor ifParticipateVoipOverseaWithPhone:[_numberFiled text]];        
+        BOOL ifParticipate = [SeattleFeatureExecutor ifParticipateVoipOverseaWithPhone:number];
         [UserDefaultsManager setBoolValue:ifParticipate forKey:have_participated_voip_oversea];
         if (resultCode == 2000 && _netBlock) {
                 [UserDefaultsManager setBoolValue:YES forKey:DIALER_GUIDE_ANIMATION_WAIT];
