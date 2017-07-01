@@ -261,10 +261,6 @@ static NSString *sSource;
         
         NSString *number  = callLog_.number;
         number = [number stringByReplacingOccurrencesOfString:@"+" withString:@""];
-//        2347+9
-//        2341+7
-//        002347+9
-//        002341+7
         NSRange range = NSMakeRange(0, 2);
         NSString *temp = [number substringWithRange:range];
         if([temp isEqualToString:@"00"])
