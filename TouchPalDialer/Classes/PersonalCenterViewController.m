@@ -61,6 +61,14 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateUserInfo:) name:@"getAccount" object:nil];
 }
 
+
+-(void)viewWillAppear:(BOOL)animated{
+
+    [SeattleFeatureExecutor queryVOIPAccountInfo];
+}
+
+
+
 //用户信息更新通知
 -(void)updateUserInfo : (NSNotification *)notification
 {
@@ -189,6 +197,8 @@
     outCircleView.layer.cornerRadius = width/2;
     outCircleView.layer.masksToBounds = YES;
     outCircleView.backgroundColor = color;
+    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(OnClick:)];
+    [outCircleView addGestureRecognizer:recognizer];
     [topView addSubview:outCircleView];
 }
 
@@ -236,16 +246,20 @@
         [TouchPalDialerAppDelegate pushViewController:[[IntroduceViewController alloc]init] animated:YES];
         
     }else if(button == _loginBtn){
-        [DefaultUIAlertViewHandler showAlertViewWithTitle:NSLocalizedString(@"personal_center_logout_hint", @"") message:nil cancelTitle:NSLocalizedString(@"personal_center_logout_cancel", @"") okTitle:NSLocalizedString(@"personal_center_logout_confirm", @"") okButtonActionBlock:^ {
-            [LoginController removeLoginDefaultKeys];
-            [_loginBtn setTitle:@"绑定账号" forState:UIControlStateNormal];
-            _noLoginLabel.hidden = NO;
-            _minutesLabel.hidden = YES;
-            _minutesTitleLabel.hidden = YES;
-        } cancelActionBlock:^{
-            
-        }];
+        [self doLogin];
     }
+}
+
+-(void)doLogin{
+    [DefaultUIAlertViewHandler showAlertViewWithTitle:NSLocalizedString(@"personal_center_logout_hint", @"") message:nil cancelTitle:NSLocalizedString(@"personal_center_logout_cancel", @"") okTitle:NSLocalizedString(@"personal_center_logout_confirm", @"") okButtonActionBlock:^ {
+        [LoginController removeLoginDefaultKeys];
+        [_loginBtn setTitle:@"绑定账号" forState:UIControlStateNormal];
+        _noLoginLabel.hidden = NO;
+        _minutesLabel.hidden = YES;
+        _minutesTitleLabel.hidden = YES;
+    } cancelActionBlock:^{
+        
+    }];
 }
 
 
