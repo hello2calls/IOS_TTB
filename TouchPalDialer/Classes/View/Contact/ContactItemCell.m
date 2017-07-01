@@ -169,6 +169,7 @@
             self.nameLabel.frame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y, TPScreenWidth() - 90 - oldFrame.origin.x, oldFrame.size.height);
             oldFrame = self.numberLabel.frame;
             self.numberLabel.frame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y, TPScreenWidth() - 90 - oldFrame.origin.x, oldFrame.size.height);
+            self.ifCootekUserView.hidden = YES;
             
         } else {
             self.ifCootekUserView.hidden = YES;
