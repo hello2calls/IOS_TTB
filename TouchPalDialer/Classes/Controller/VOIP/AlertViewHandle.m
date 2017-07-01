@@ -83,12 +83,12 @@ static  AlertViewHandle  *shareSingleton = nil;
             }
         }
                 
-        if (dic[@"dialog_solution_main"] != nil && ![dic[@"dialog_solution_main"] isEqualToString:@""]) {
-                    UIAlertView *alert = [[UIAlertView alloc ]initWithTitle:dic[@"dialog_solution_main"] message:nil delegate:self cancelButtonTitle:cancelStr otherButtonTitles:confirmStr,nil];
-                    alert.tag = hangUpModel.errorCode;
-
-                    [alert show];
-        }
+//        if (dic[@"dialog_solution_main"] != nil && ![dic[@"dialog_solution_main"] isEqualToString:@""]) {
+//                    UIAlertView *alert = [[UIAlertView alloc ]initWithTitle:dic[@"dialog_solution_main"] message:nil delegate:self cancelButtonTitle:cancelStr otherButtonTitles:confirmStr,nil];
+//                    alert.tag = hangUpModel.errorCode;
+//
+//                    [alert show];
+//        }
     
 }
 

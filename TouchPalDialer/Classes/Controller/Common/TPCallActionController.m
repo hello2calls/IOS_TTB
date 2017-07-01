@@ -261,16 +261,27 @@ static NSString *sSource;
         
         NSString *number  = callLog_.number;
         number = [number stringByReplacingOccurrencesOfString:@"+" withString:@""];
-        NSRange range = NSMakeRange(0, 6);
+//        2347+9
+//        2341+7
+//        002347+9
+//        002341+7
+        NSRange range = NSMakeRange(0, 2);
         NSString *temp = [number substringWithRange:range];
-        if([temp isEqualToString:@"002347"] || [temp isEqualToString:@"002348"] || [temp isEqualToString:@"002349"])
+        if([temp isEqualToString:@"00"])
         {
-            if(number.length == 15)
+            range = NSMakeRange(2, number.length - 2);
+            number = [number substringWithRange:range];
+        }
+        range = NSMakeRange(0, 4);
+        temp = [number substringWithRange:range];
+        if([temp isEqualToString:@"2347"] || [temp isEqualToString:@"2348"] || [temp isEqualToString:@"2349"])
+        {
+            if(number.length == 13)
             {
                type = VOIP_ENABLE;
             }
         }
-        else if([temp isEqualToString:@"002341"] && number.length == 13)
+        else if([temp isEqualToString:@"2341"] && number.length == 11)
         {
             type = VOIP_ENABLE;
         }
