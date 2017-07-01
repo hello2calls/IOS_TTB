@@ -38,8 +38,11 @@
 
 @property(strong, nonatomic) UIButton *loginBtn;
 
+@property(strong, nonatomic) UILabel *minutesTitleLabel;
+
 @property(strong, nonatomic) UILabel *minutesLabel;
 
+@property(strong, nonatomic) UILabel *noLoginLabel;
 
 @end
 
@@ -54,15 +57,25 @@
 {
     [self initHeader];
     [self initBody];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateLoginInfo) name:@"loginAction" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateUserInfo:) name:@"getAccount" object:nil];
 }
 
+//用户信息更新通知
 -(void)updateUserInfo : (NSNotification *)notification
 {
     NSString *balance = notification.object;
     _minutesLabel.text = balance;
 }
 
+//登录更新通知
+-(void)updateLoginInfo
+{
+    [_loginBtn setTitle:@"退出登录" forState:UIControlStateNormal];
+    _minutesTitleLabel.hidden = NO;
+    _minutesLabel.hidden = NO;
+    _noLoginLabel.hidden = YES;
+}
 
 -(void)initHeader
 {
@@ -108,8 +121,14 @@
     
     if([UserDefaultsManager boolValueForKey:TOUCHPAL_USER_HAS_LOGIN]){
         [_loginBtn setTitle:@"退出登录" forState:UIControlStateNormal];
+        _minutesTitleLabel.hidden = NO;
+        _minutesLabel.hidden = NO;
+        _noLoginLabel.hidden = YES;
     }else{
         [_loginBtn setTitle:@"绑定账号" forState:UIControlStateNormal];
+        _minutesTitleLabel.hidden = YES;
+        _minutesLabel.hidden = YES;
+        _noLoginLabel.hidden = NO;
     }
     [_loginBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:_loginBtn];
@@ -132,22 +151,34 @@
     [self createCircleView:140 backgroudColor: [ColorUtil colorWithHexString:@"#58aeff" alpha:103.0f/255.0f] view:_topView];
     [self createCircleView:120 backgroudColor: [ColorUtil colorWithHexString:@"#88c6ff" alpha:1.0f] view:_topView];
     
-    UILabel *label = [[UILabel alloc]init];
-    label.text = @"剩余分钟数";
-    label.font = [UIFont systemFontOfSize:13.0f];
-    label.textColor = [UIColor whiteColor];
-    label.frame = CGRectMake((TPScreenWidth() - label.contentSize.width ) /2, 80 - label.contentSize.height  - 10, label.contentSize.width, label.contentSize.height);
-    [_topView addSubview:label];
+    _minutesTitleLabel = [[UILabel alloc]init];
+    _minutesTitleLabel.text = @"剩余分钟数";
+    _minutesTitleLabel.font = [UIFont systemFontOfSize:13.0f];
+    _minutesTitleLabel.textColor = [UIColor whiteColor];
+    _minutesTitleLabel.frame = CGRectMake((TPScreenWidth() - _minutesTitleLabel.contentSize.width ) /2, 80 - _minutesTitleLabel.contentSize.height  - 10, _minutesTitleLabel.contentSize.width, _minutesTitleLabel.contentSize.height);
+    [_topView addSubview:_minutesTitleLabel];
     
     
     _minutesLabel = [[UILabel alloc]init];
     _minutesLabel.font = [UIFont systemFontOfSize:20.0f];
     _minutesLabel.textColor = [UIColor whiteColor];
     _minutesLabel.textAlignment = NSTextAlignmentCenter;
-    
     _minutesLabel.text = [NSString stringWithFormat:@"%d",[UserDefaultsManager intValueForKey:@"voip_account_balance"]];
     _minutesLabel.frame = CGRectMake(0, 80 , TPScreenWidth(), 30);
     [_topView addSubview:_minutesLabel];
+    
+    
+    _noLoginLabel = [[UILabel alloc]init];
+    _noLoginLabel.font = [UIFont systemFontOfSize:20.0f];
+    _noLoginLabel.textColor = [UIColor whiteColor];
+    _noLoginLabel.textAlignment = NSTextAlignmentCenter;
+    _noLoginLabel.text = @"未登录";
+    _noLoginLabel.hidden = YES;
+    _noLoginLabel.frame = CGRectMake(0, (160 - _noLoginLabel.contentSize.height)/2 , TPScreenWidth(), _noLoginLabel.contentSize.height);
+    [_topView addSubview:_noLoginLabel];
+
+
+
 }
 
 
@@ -208,6 +239,9 @@
         [DefaultUIAlertViewHandler showAlertViewWithTitle:NSLocalizedString(@"personal_center_logout_hint", @"") message:nil cancelTitle:NSLocalizedString(@"personal_center_logout_cancel", @"") okTitle:NSLocalizedString(@"personal_center_logout_confirm", @"") okButtonActionBlock:^ {
             [LoginController removeLoginDefaultKeys];
             [_loginBtn setTitle:@"绑定账号" forState:UIControlStateNormal];
+            _noLoginLabel.hidden = NO;
+            _minutesLabel.hidden = YES;
+            _minutesTitleLabel.hidden = YES;
         } cancelActionBlock:^{
             
         }];

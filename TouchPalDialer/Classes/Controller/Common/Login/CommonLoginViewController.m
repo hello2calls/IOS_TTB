@@ -104,14 +104,14 @@
     y+=46;
     
     
-    _areaFiled = [[CustomInputTextFiled alloc] initWithFrame:CGRectMake(x, y, 70, h) andPlaceHolder:@"+234" andID:nil];
+    _areaFiled = [[CustomInputTextFiled alloc] initWithFrame:CGRectMake(x, y, 80, h) andPlaceHolder:@"+234" andID:nil];
     _areaFiled.layer.cornerRadius = 4;
     _areaFiled.layer.masksToBounds = YES;
     _areaFiled.keyboardType = UIKeyboardTypeNumberPad;
     _areaFiled.enabled = NO;
     [self.view addSubview:_areaFiled];
     
-    _numberFiled = [[CustomInputTextFiled alloc] initWithFrame:CGRectMake(x+80, y, w-80, h) andPlaceHolder:@"请填写手机号" andID:nil];
+    _numberFiled = [[CustomInputTextFiled alloc] initWithFrame:CGRectMake(x+90, y, w-90, h) andPlaceHolder:@"请填写手机号" andID:nil];
     _numberFiled.layer.cornerRadius = 4;
     _numberFiled.layer.masksToBounds = YES;
     _numberFiled.keyboardType = UIKeyboardTypeNumberPad;
@@ -481,6 +481,7 @@
         [self changeIndicatorText:NSLocalizedString(@"voip_network_register_error_and_retry", "") isError:YES];
     } else if (result == 2000) {
         [UserDefaultsManager setBoolValue:YES forKey:TOUCHPAL_USER_HAS_LOGIN];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"loginAction" object:nil];
         if (_uiBlock) {
             _uiBlock();
         }
