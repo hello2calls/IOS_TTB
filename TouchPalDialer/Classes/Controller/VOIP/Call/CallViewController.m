@@ -540,28 +540,28 @@ static BOOL sIsFunctionButtonPressed;
         _ad = nil;
     }
     // when no voip error, try to show the ad directly (without user click)
-    if (![self hasVoipError:model]) {
-        // check whether the last hangup-ad is direct
-        if ([[HangupCommercialManager instance] isDirectAD]) {
-            [[HangupCommercialManager instance] showDirectAD];
-            [FunctionUtility removeFromStackViewController:self];
-            return;
-        }
-    }
-    
-    HangupController *newController = [[HangupController alloc] initWithHanupModel:model];
-    cootek_log(@"CallViewController, errCode: %d", _errorCode);
-    if (_errorCode == 6001) {
-        [DialerUsageRecord recordpath:PATH_VIP kvs:Pair(VIP_DIRECTLY_CALL, @(_errorCode)), nil];
-        [UserDefaultsManager setBoolValue:YES forKey:LAST_FREE_CALL_IS_FORCED_OFFLINE];
-        [self getVoipPrivilegeADDataForController:newController];
-    }
-    
-    [TouchPalDialerAppDelegate naviController].delegate = newController;
+//    if (![self hasVoipError:model]) {
+//        // check whether the last hangup-ad is direct
+//        if ([[HangupCommercialManager instance] isDirectAD]) {
+//            [[HangupCommercialManager instance] showDirectAD];
+//            [FunctionUtility removeFromStackViewController:self];
+//            return;
+//        }
+//    }
+//    
+//    HangupController *newController = [[HangupController alloc] initWithHanupModel:model];
+//    cootek_log(@"CallViewController, errCode: %d", _errorCode);
+//    if (_errorCode == 6001) {
+//        [DialerUsageRecord recordpath:PATH_VIP kvs:Pair(VIP_DIRECTLY_CALL, @(_errorCode)), nil];
+//        [UserDefaultsManager setBoolValue:YES forKey:LAST_FREE_CALL_IS_FORCED_OFFLINE];
+//        [self getVoipPrivilegeADDataForController:newController];
+//    }
+//    
+//    [TouchPalDialerAppDelegate naviController].delegate = newController;
 
     [FunctionUtility removeFromStackViewController:self];
     
-    [[TouchPalDialerAppDelegate naviController] pushViewController:newController animated:NO];
+//    [[TouchPalDialerAppDelegate naviController] pushViewController:newController animated:NO];
 }
 
 - (void) getVoipPrivilegeADDataForController:(UIViewController *) controller {

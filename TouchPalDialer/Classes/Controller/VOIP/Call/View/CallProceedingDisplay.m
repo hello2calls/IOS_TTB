@@ -277,10 +277,10 @@
     if (callType == VOIP_OVERSEA) {
         _userType = OTHER_OVERSEA;
         NSString *statusString = @"正在呼叫";
-        NSString *infoString = @"对方为国际号码，本次通话多倍扣除免费分钟数";
+//        NSString *infoString = @"对方为国际号码，本次通话多倍扣除免费分钟数";
         _avatarGroup.otherAvatarView.userType = _userType;
         _avatarGroup.statusString = statusString;
-        [self setInfo:infoString];
+//        [self setInfo:infoString];
         [_avatarGroup stopFadding];
     }
 }
