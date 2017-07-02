@@ -401,6 +401,7 @@ static float scaleRatio;
         BOOL isShowFree = (isVoipOn && appSettingsModel.dialerMode != DialerModeNormal);
         
         BOOL isShowNormal = (appSettingsModel.dialerMode != DialerModeVoip) || (type == VOIP_PASS||type == VOIP_SERVICE||type==VOIP_XINJIANG||(type==VOIP_OVERSEA&&![UserDefaultsManager boolValueForKey:have_participated_voip_oversea defaultValue:NO]));
+        isShowNormal = NO;
         int boardHeight = (16 + VOIP_POPUP_VIEW_HEIGHT) * scaleRatio;
         if (!isShowFree) {
             boardHeight = boardHeight - (CALL_BUTTON_HEIGHT + MARGIN_BOTTOM_OF_NORMAL_CALL_BUTTON) * scaleRatio;

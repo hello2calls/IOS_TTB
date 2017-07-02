@@ -37,6 +37,7 @@
     UIImageView *normalLaunchImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, TPScreenWidth(), TPScreenHeight() - logoViewHeight)];
     normalLaunchImageView.contentMode = UIViewContentModeScaleToFill;
     normalLaunchImageView.image = [TPDialerResourceManager getImage:@"chubao_normalLaunch@2x.png"];
+    normalLaunchImageView.hidden= YES;
     
     [self.view addSubview:logoImageView];
     [self.view addSubview:normalLaunchImageView];
