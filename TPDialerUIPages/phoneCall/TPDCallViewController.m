@@ -1070,35 +1070,35 @@
     }];
     
     [[RACSignal combineLatest:@[self.isFamilySignal,self.isPalSignal,self.callModeSignal, [GlobalVariables getInstance].onCallStateInfoSignal]] subscribeNext:^(id x) {
-        RACTupleUnpack(TPDFamilyInfo* f, NSNumber* ispal, NSNumber* callmode, TPDCallStateInfo* callState) = x;
-        if ([callmode integerValue] == CallModeIncomingCall) {
-            weakself.infoLabel.text = @"您的触宝好友来电\n请注意接听";
-            return;
-        }
+//        RACTupleUnpack(TPDFamilyInfo* f, NSNumber* ispal, NSNumber* callmode, TPDCallStateInfo* callState) = x;
+//        if ([callmode integerValue] == CallModeIncomingCall) {
+//            weakself.infoLabel.text = @"您的触宝好友来电\n请注意接听";
+//            return;
+//        }
         
-        if (f!=nil && [f isFamilyNumber:weakself.numbers[0]]) {
-            weakself.infoLabel.text = @"对方是你的亲情号\n打满1分钟，就得1分钟";
-        }else{
-            if ([ispal boolValue]) {
-                if (!callState.isActive) {
-                    weakself.infoLabel.text = @"对方已经没有再使用触宝电话了，本次通话扣除免费分钟数";
-                }else if([UserDefaultsManager boolValueForKey:VOIP_IF_PRIVILEGA defaultValue:NO]){
-                    int days = [UserDefaultsManager intValueForKey:VOIP_FIND_PRIVILEGA_DAY defaultValue:-1];
-                    if (days > 0) {
-                        weakself.infoLabel.text = [NSString stringWithFormat:@"VIP享高清通话不中断保护\nVIP特权剩余%d天", days];
-                    }
-                    
-                }else{
-                    if ([callmode integerValue] == CallModeTestType) {
-                        weakself.infoLabel.text = @"本次通话不消耗分钟数和流量";
-                    } else {
-                        weakself.infoLabel.text = @"对方是触宝好友，本次通话不消耗免费时长";
-                    }
-                }
-            }else{
+//        if (f!=nil && [f isFamilyNumber:weakself.numbers[0]]) {
+//            weakself.infoLabel.text = @"对方是你的亲情号\n打满1分钟，就得1分钟";
+//        }else{
+//            if ([ispal boolValue]) {
+//                if (!callState.isActive) {
+//                    weakself.infoLabel.text = @"对方已经没有再使用触宝电话了，本次通话扣除免费分钟数";
+//                }else if([UserDefaultsManager boolValueForKey:VOIP_IF_PRIVILEGA defaultValue:NO]){
+//                    int days = [UserDefaultsManager intValueForKey:VOIP_FIND_PRIVILEGA_DAY defaultValue:-1];
+//                    if (days > 0) {
+//                        weakself.infoLabel.text = [NSString stringWithFormat:@"VIP享高清通话不中断保护\nVIP特权剩余%d天", days];
+//                    }
+//                    
+//                }else{
+//                    if ([callmode integerValue] == CallModeTestType) {
+//                        weakself.infoLabel.text = @"本次通话不消耗分钟数和流量";
+//                    } else {
+//                        weakself.infoLabel.text = @"对方是触宝好友，本次通话不消耗免费时长";
+//                    }
+//                }
+//            }else{
                 weakself.infoLabel.text = [NSString stringWithFormat:@"剩余时长%d分钟", 3];
-            }
-        }
+//            }
+//        }
     }];
 }
 

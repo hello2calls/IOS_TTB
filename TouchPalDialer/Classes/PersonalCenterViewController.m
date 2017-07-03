@@ -44,6 +44,8 @@
 
 @property(strong, nonatomic) UILabel *noLoginLabel;
 
+@property(strong, nonatomic) UILabel *numberLabel;
+
 @end
 
 @implementation PersonalCenterViewController
@@ -83,6 +85,8 @@
     _minutesTitleLabel.hidden = NO;
     _minutesLabel.hidden = NO;
     _noLoginLabel.hidden = YES;
+    NSString *accountName = [UserDefaultsManager stringForKey:VOIP_REGISTER_ACCOUNT_NAME defaultValue:nil];
+    _numberLabel.text = accountName;
 }
 
 -(void)initHeader
@@ -152,7 +156,7 @@
 -(void)initTopView
 {
     _topView = [[UIView alloc]init];
-    _topView.frame = CGRectMake(0, 45 + TPHeaderBarHeightDiff(), TPScreenWidth(), 160);
+    _topView.frame = CGRectMake(0, 45 + TPHeaderBarHeightDiff(), TPScreenWidth(), 200);
     _topView.backgroundColor = [ColorUtil colorWithHexString:@"#3695ED"];
     [self.view addSubview:_topView];
     
@@ -184,6 +188,20 @@
     _noLoginLabel.hidden = YES;
     _noLoginLabel.frame = CGRectMake(0, (160 - _noLoginLabel.contentSize.height)/2 , TPScreenWidth(), _noLoginLabel.contentSize.height);
     [_topView addSubview:_noLoginLabel];
+    
+    
+    _numberLabel = [[UILabel alloc]init];
+    _numberLabel.font = [UIFont systemFontOfSize:18.0f];
+    _numberLabel.textColor = [UIColor whiteColor];
+    _numberLabel.textAlignment = NSTextAlignmentCenter;
+    if([UserDefaultsManager boolValueForKey:TOUCHPAL_USER_HAS_LOGIN]){
+        NSString *accountName = [UserDefaultsManager stringForKey:VOIP_REGISTER_ACCOUNT_NAME defaultValue:nil];
+        _numberLabel.text = accountName;
+    }else{
+        _numberLabel.text = @"";
+    }
+    _numberLabel.frame = CGRectMake(0, 160, TPScreenWidth(), _numberLabel.contentSize.height);
+    [_topView addSubview:_numberLabel];
 
 
 
@@ -254,6 +272,7 @@
     [DefaultUIAlertViewHandler showAlertViewWithTitle:NSLocalizedString(@"personal_center_logout_hint", @"") message:nil cancelTitle:NSLocalizedString(@"personal_center_logout_cancel", @"") okTitle:NSLocalizedString(@"personal_center_logout_confirm", @"") okButtonActionBlock:^ {
         [LoginController removeLoginDefaultKeys];
         [_loginBtn setTitle:@"绑定账号" forState:UIControlStateNormal];
+        _numberLabel.text = @"";
         _noLoginLabel.hidden = NO;
         _minutesLabel.hidden = YES;
         _minutesTitleLabel.hidden = YES;

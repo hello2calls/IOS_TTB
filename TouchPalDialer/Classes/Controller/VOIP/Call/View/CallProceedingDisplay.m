@@ -188,7 +188,7 @@
     } else if (callMode == CallModeIncomingCall) {
         _userType = OTHTER_CALLING_ACTIVE;
         _avatarGroup.otherAvatarView.userType = OTHTER_CALLING_ACTIVE;
-        [self setInfo:@"您的触宝好友来电\n请注意接听"];
+        [self setInfo:@""];
     }
     if (!_arrowAnimationStarted) {
         [_avatarGroup startMovingArrow];

@@ -181,7 +181,19 @@ static BOOL sIsFunctionButtonPressed;
     controller.callMode = callMode;
     NSMutableArray* tmp = [NSMutableArray array];
     for (NSString* num in number) {
-        [tmp addObject:[num mutableCopy]];
+        NSString *result = num;
+        if(num.length > 0)
+        {
+            NSRange range = NSMakeRange(0, 2);
+            NSString *temp = [num substringWithRange:range];
+            Boolean isNigeriaTelPhone = ([temp isEqualToString:@"47"] || [temp isEqualToString:@"48"] || [temp isEqualToString:@"49"]) && (num.length == 11);
+            Boolean isNigeriaPhone = [temp isEqualToString:@"41"] && (num.length == 9);
+            if(isNigeriaTelPhone || isNigeriaPhone)
+            {
+                result = [NSString stringWithFormat:@"+23%@",num];
+            }
+        }
+        [tmp addObject:[result mutableCopy]];
     }
     controller.numberArr = tmp;
     controller.requestUuid = uuid;

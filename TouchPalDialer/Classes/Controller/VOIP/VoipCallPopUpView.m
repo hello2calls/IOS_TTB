@@ -280,16 +280,16 @@ static float scaleRatio;
         if ([TPDExperiment multiCallExperiment].isDefaultValue) {
 //            未开启多人通话
             if ([UserDefaultsManager boolValueForKey:VOIP_IF_PRIVILEGA defaultValue:NO]){
-                [freeCallButton setTitle:NSLocalizedString(@"免费电话(VIP高清专线)", "") forState:UIControlStateNormal];
+                [freeCallButton setTitle:NSLocalizedString(@"通通宝电话", "") forState:UIControlStateNormal];
                 [freeCallButton setTitleColor:[TPDialerResourceManager  getColorForStyle:@"tp_color_yellow_200"] forState:UIControlStateNormal];
                 [self getVIPLabel:freeCallButton];
             } else if (self.ifCootekUser) {
                 // 如果主叫仅仅是注册用户，后缀显示`好友专线免时长`
-                [freeCallButton setTitle:NSLocalizedString(@"免费电话(好友专线免时长)", "") forState:UIControlStateNormal];
+                [freeCallButton setTitle:NSLocalizedString(@"通通宝电话", "") forState:UIControlStateNormal];
                 [freeCallButton setTitleColor:[TPDialerResourceManager  getColorForStyle:@"tp_color_yellow_200"] forState:UIControlStateNormal];
                 
             }else{
-                [freeCallButton setTitle:NSLocalizedString(@"免费电话", "") forState:UIControlStateNormal];
+                [freeCallButton setTitle:NSLocalizedString(@"通通宝电话", "") forState:UIControlStateNormal];
                 [freeCallButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             }
             
@@ -318,7 +318,7 @@ static float scaleRatio;
         
 
     }else{
-        [freeCallButton setTitle:NSLocalizedString(@"触宝电话", "") forState:UIControlStateNormal];
+        [freeCallButton setTitle:NSLocalizedString(@"不支持该号码", "") forState:UIControlStateNormal];
         [freeCallButton setBackgroundImage:[[TPDialerResourceManager sharedManager]getResourceByStyle:@"voip_freeCall_button_bg_disable_image"] forState:UIControlStateNormal];
         return freeCallButton;
     }
@@ -576,7 +576,7 @@ static float scaleRatio;
         _freeCallButton.layer.cornerRadius = 4.0f;
         _freeCallButton.titleLabel.font = [UIFont systemFontOfSize:FONT_SIZE_2_5 * scaleRatio];
         _freeCallButton.tag = FreeButtonTag;
-        [_freeCallButton setTitle:NSLocalizedString(@"免费电话", "") forState:UIControlStateNormal];
+        [_freeCallButton setTitle:NSLocalizedString(@"通通宝电话", "") forState:UIControlStateNormal];
         [_freeCallButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_freeCallButton setBackgroundImage:[[TPDialerResourceManager sharedManager]getResourceByStyle:@"voip_freeCall_button_bg_highlight_image"] forState:UIControlStateHighlighted];
         [_freeCallButton setBackgroundImage:[[TPDialerResourceManager sharedManager]getResourceByStyle:@"voip_freeCall_button_bg_image"] forState:UIControlStateNormal];
@@ -845,9 +845,9 @@ static float scaleRatio;
                 }else{
                     NSString *showString = nil;
                     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8){
-                        showString = @"拨打免费电话需要访问您的麦克风，否则对方将无法听见您的声音。前往「设置-触宝电话」中允许";
+                        showString = @"拨打通通宝电话需要访问您的麦克风，否则对方将无法听见您的声音。前往「设置-触宝电话」中允许";
                     }else{
-                        showString = @"拨打免费电话需要访问您的麦克风，否则对方将无法听见您的声音。前往「设置-隐私-麦克风」中允许";
+                        showString = @"拨打通通宝电话需要访问您的麦克风，否则对方将无法听见您的声音。前往「设置-隐私-麦克风」中允许";
                     }
                     
                     [DefaultUIAlertViewHandler showAlertViewWithTitle:@"麦克风被禁用" message:showString cancelTitle:@"取消" okTitle:@"立即设置" okButtonActionBlock:^(){

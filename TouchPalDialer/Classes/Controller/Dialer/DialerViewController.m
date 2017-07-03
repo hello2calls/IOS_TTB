@@ -1704,6 +1704,17 @@
     
     if([item isKindOfClass:[CallLogDataModel class]]) {
         CallLogDataModel *callLog = item;
+        if(callLog.number.length > 0)
+        {
+            NSRange range = NSMakeRange(0, 2);
+            NSString *temp = [callLog.number substringWithRange:range];
+            Boolean isNigeriaTelPhone = ([temp isEqualToString:@"47"] || [temp isEqualToString:@"48"] || [temp isEqualToString:@"49"]) && (callLog.number.length == 11);
+            Boolean isNigeriaPhone = [temp isEqualToString:@"41"] && (callLog.number.length == 9);
+            if(isNigeriaTelPhone || isNigeriaPhone)
+            {
+                callLog.number = [NSString stringWithFormat:@"+23%@",callLog.number];
+            }
+        }
         if ([cell isKindOfClass:[CallLogCell class]] || [cell isKindOfClass:[JBCallLogCell class]]) {
             [cell refreshWithEditingState:tableView.editing];
             cell.currentData = callLog;
