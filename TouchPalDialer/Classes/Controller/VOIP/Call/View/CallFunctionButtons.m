@@ -129,7 +129,7 @@ typedef enum {
 }
 
 - (void)createMuteButton {
-    VoipSimpleButton *muteButton = [[VoipSimpleButton alloc] initWithFrame:_threeButtonMiddleFrame];
+    VoipSimpleButton *muteButton = [[VoipSimpleButton alloc] initWithFrame:_threeButtonLeftFrame];
     muteButton.fontIconText = @"2";
     muteButton.fontIconTextPressed = @"3";
     __weak id<CallFunctionButtonDelegate> delegate = _delegate;
@@ -235,7 +235,7 @@ typedef enum {
 
 - (void)displayBackMuteSpeaker:(BOOL)ifTest{
     if (!_backCallButton) {
-        [self createBackCallButton];
+//        [self createBackCallButton];
     }
     _backCallButton.hidden = NO;
     if (!_muteButton) {
