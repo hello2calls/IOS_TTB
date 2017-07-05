@@ -125,14 +125,14 @@
 + (void)getDailyTaskBonus{
     if ( ![UserDefaultsManager boolValueForKey:IS_VOIP_ON] )
         return;
-    TaskBonusManager *manager = [[TaskBonusManager alloc]init];
-    [manager getTaskBonus:DAILY_ACTIVE withSuccessBlock:^(int bonus, TaskBonusResultInfo *info) {
-        NSString *strBonus = [NSString stringWithFormat:@"今日启动 奖励%d分钟",(bonus / 60)];
-        if (bonus > 3000) {
-            strBonus = [NSString stringWithFormat:@"本月首次启动 奖励%d分钟",(bonus / 60)];
-        }
-        [self showBonusOnStatusbar:strBonus];
-    } withFailedBlock:nil localJudgeTodayFinish:YES];
+//    TaskBonusManager *manager = [[TaskBonusManager alloc]init];
+//    [manager getTaskBonus:DAILY_ACTIVE withSuccessBlock:^(int bonus, TaskBonusResultInfo *info) {
+//        NSString *strBonus = [NSString stringWithFormat:@"今日启动 奖励%d分钟",(bonus / 60)];
+//        if (bonus > 3000) {
+//            strBonus = [NSString stringWithFormat:@"本月首次启动 奖励%d分钟",(bonus / 60)];
+//        }
+//        [self showBonusOnStatusbar:strBonus];
+//    } withFailedBlock:nil localJudgeTodayFinish:YES];
 }
 
 + (void)saveEdgeListData {

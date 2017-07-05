@@ -476,7 +476,7 @@ static SeattleSetting *sSetting;
 {
     SendVerificationFeature *feature = new SendVerificationFeature();
     SendVerificationRequestMessage *msg = (SendVerificationRequestMessage *)(feature->get_request()->get_data());
-    NSString *account_name = [phoneNumber hasPrefix:@"+"] ? phoneNumber : [NSString stringWithFormat:@"+86%@", phoneNumber];
+    NSString *account_name = [phoneNumber hasPrefix:@"+"] ? phoneNumber : [NSString stringWithFormat:@"+234%@", phoneNumber];
     msg->account_name = [account_name cStringUsingEncoding:NSUTF8StringEncoding];
     msg->account_type = VOIP_ACCOUNT_TYPE;
     msg->type = isVoiceType ? "call" : "sms";

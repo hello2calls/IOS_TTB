@@ -185,13 +185,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TouchPalDialer/Classes/Controller/Dialer/DialerViewController.m"
-            timestampString = "520661121.229905"
+            filePath = "TouchPalDialer/Classes/Controller/Common/Login/CommonLoginViewController.m"
+            timestampString = "520831862.968362"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1669"
-            endingLineNumber = "1669"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            startingLineNumber = "385"
+            endingLineNumber = "385"
+            landmarkName = "-startSMSVerification"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -201,13 +201,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TouchPalDialer/Classes/View/Dialer/CallLogCell.m"
-            timestampString = "520661217.219537"
+            filePath = "Shared/Shared/Seattle/src/SeattleFeatureExecutor.mm"
+            timestampString = "520831966.048544"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "188"
-            endingLineNumber = "188"
-            landmarkName = "-setDataToCell"
+            startingLineNumber = "477"
+            endingLineNumber = "477"
+            landmarkName = "+askVerifyCode:isVoiceType:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -217,13 +217,77 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TouchPalDialer/Classes/Controller/Dialer/DialerViewController.m"
-            timestampString = "520662167.422905"
+            filePath = "Shared/Shared/Seattle/src/SeattleFeatureExecutor.mm"
+            timestampString = "520832000.143238"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1678"
-            endingLineNumber = "1678"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            startingLineNumber = "486"
+            endingLineNumber = "486"
+            landmarkName = "+askVerifyCode:isVoiceType:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TouchPalDialer/Classes/Controller/manager/TaskBonusManager.m"
+            timestampString = "520934343.97196"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "-doTaskFunction:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TouchPalDialer/Classes/Controller/VOIP/ScheduleInternetVisit.m"
+            timestampString = "520934348.138112"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "+getDailyTaskBonus"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TouchPalDialer/Classes/Tools/CheckboxAlertView.m"
+            timestampString = "520934371.25375"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "-initWithTitle:andKey:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TouchPalDialer/Classes/Controller/VOIP/ScheduleInternetVisit.m"
+            timestampString = "520934427.412914"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "+getDailyTaskBonus"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
