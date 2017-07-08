@@ -54,6 +54,7 @@
 @implementation ChargeViewController{
     int select;
     
+    
 }
 
 - (void)viewDidLoad {
