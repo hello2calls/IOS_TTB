@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HistoryViewController : UIViewController
+@interface HistoryViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

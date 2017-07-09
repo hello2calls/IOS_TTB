@@ -1212,6 +1212,7 @@
 		C7FB642A1AD645B1000A5E90 /* BaseRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FB64291AD645B1000A5E90 /* BaseRowView.m */; };
 		CF21AE251F12489300F3402C /* WFIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF21AE241F12489300F3402C /* WFIAPManager.m */; };
 		CF21AE281F124A1E00F3402C /* TPDInAppPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = CF21AE271F124A1E00F3402C /* TPDInAppPurchase.m */; };
+		CF242ACD1F127B7F00699723 /* HistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF242ACC1F127B7F00699723 /* HistoryCell.m */; };
 		CF2A3C9A1ED808FE00199D2F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A3C991ED808FE00199D2F /* JavaScriptCore.framework */; };
 		CF2A3C9D1ED98FA700199D2F /* IntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A3C9C1ED98FA700199D2F /* IntroduceViewController.m */; };
 		CF36FB2E1F0217E6001352B0 /* TPHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36FB2D1F0217E6001352B0 /* TPHttpRequest.m */; };
@@ -4097,6 +4098,8 @@
 		CF21AE241F12489300F3402C /* WFIAPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFIAPManager.m; sourceTree = "<group>"; };
 		CF21AE261F124A1E00F3402C /* TPDInAppPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPDInAppPurchase.h; sourceTree = "<group>"; };
 		CF21AE271F124A1E00F3402C /* TPDInAppPurchase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPDInAppPurchase.m; sourceTree = "<group>"; };
+		CF242ACB1F127B7F00699723 /* HistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryCell.h; sourceTree = "<group>"; };
+		CF242ACC1F127B7F00699723 /* HistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryCell.m; sourceTree = "<group>"; };
 		CF2A3C991ED808FE00199D2F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		CF2A3C9B1ED98FA700199D2F /* IntroduceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroduceViewController.h; sourceTree = "<group>"; };
 		CF2A3C9C1ED98FA700199D2F /* IntroduceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroduceViewController.m; sourceTree = "<group>"; };
@@ -9660,20 +9663,22 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		CF6A79DD1EFBC01300982AF1 /* PayButton */ = {
+		CF6A79DD1EFBC01300982AF1 /* view */ = {
 			isa = PBXGroup;
 			children = (
 				CF6A79DE1EFBC03600982AF1 /* PayButton.h */,
 				CF6A79DF1EFBC03600982AF1 /* PayButton.m */,
+				CF242ACB1F127B7F00699723 /* HistoryCell.h */,
+				CF242ACC1F127B7F00699723 /* HistoryCell.m */,
 			);
-			name = PayButton;
+			name = view;
 			sourceTree = "<group>";
 		};
 		CF72914C1ED7E03700E8B01E /* ttb */ = {
 			isa = PBXGroup;
 			children = (
 				CF36FB331F021863001352B0 /* util */,
-				CF6A79DD1EFBC01300982AF1 /* PayButton */,
+				CF6A79DD1EFBC01300982AF1 /* view */,
 				CF7291521ED7F6C300E8B01E /* CHWebView */,
 				CF7291431ED57A2100E8B01E /* PersonalCenterViewController.h */,
 				CF7291441ED57A2100E8B01E /* PersonalCenterViewController.m */,
@@ -11049,6 +11054,7 @@
 				AFF0ED2B1C8E76FA005E941A /* InviteShareView.m in Sources */,
 				26A9F7EA1A1F2B3400C8C8EE /* CallingAnimateTextView.m in Sources */,
 				C7C728061C18148A00011125 /* RegExCategories.m in Sources */,
+				CF242ACD1F127B7F00699723 /* HistoryCell.m in Sources */,
 				CF3B9F40174DDB3300342CDB /* BasicUtil.m in Sources */,
 				0F4DABA21CB6C484006F8228 /* MutableField.m in Sources */,
 				C78803B11D2F7DE6006C9057 /* SectionMyTaskBtn.m in Sources */,
