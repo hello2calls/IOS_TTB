@@ -26,6 +26,8 @@
 #import "TPHttpRequest.h"
 #import "TouchPalVersionInfo.h"
 #import "TPChargeUtil.h"
+#import <MJExtension.h>
+#import "TPDInAppPurchase.h"
 
 
 #define Minite100 100
@@ -33,7 +35,7 @@
 #define Minite500 500
 #define Minite1100 1100
 
-@interface ChargeViewController ()<SKProductsRequestDelegate,SKPaymentTransactionObserver>
+@interface ChargeViewController ()
 
 @property (strong, nonatomic) UIView *topView;
 
@@ -213,47 +215,17 @@
         return;
     }
     
-    [self getOrder:pruchId];
-    
-//    [[TPIAPManager shareSIAPManager] startPurchWithID:pruchId completeHandle:^(SIAPPurchType type, NSData *data) {
-//        
-//        switch (type) {
-//            case SIAPPurchSuccess:
-//                [self doCharge];
-//                [MBProgressHUD showText:@"支付成功"];
-//                break;
-//            case SIAPPurchCancle:
-//                [MBProgressHUD showText:@"支付取消"];
-//                break;
-//            case SIAPPurchFailed:
-//                [MBProgressHUD showText:@"支付失败"];
-//                break;
-//            case SIAPPurchNotArrow:
-//                [MBProgressHUD showText:@"不允许内购"];
-//                break;
-//            case SIAPPurchVerFailed:
-//                [MBProgressHUD showText:@"订单校验失败"];
-//                break;
-//            case SIAPPurchVerSuccess:
-//                [MBProgressHUD showText:@"订单校验成功"];
-//                break;
-//            default:
-//                break;
-//        }
-//
-//        
-//    }];
-    
+    [self getOrder:@"ttb_500" pruchId:pruchId];
 }
 
 
 #pragma mark 获取订单号
--(void)getOrder : (NSString *)pid
+-(void)getOrder : (NSString *)pid pruchId : (NSString *)pruchId
 {
     NSString *tradeStr = [NSString stringWithFormat:@"{\"paymentType\":\"iap\",\"authToken\":\"%@\"}",[SeattleFeatureExecutor getToken]];
     tradeStr = [[tradeStr dataUsingEncoding:NSUTF8StringEncoding] base64EncodedStringWithOptions:0];
     
-    NSString *customRequestStr = [NSString stringWithFormat:@"{\"trade_str\":\"%@\",\"plan\":\"%@\"}",tradeStr,@"ttb_100"];
+    NSString *customRequestStr = [NSString stringWithFormat:@"{\"trade_str\":\"%@\",\"plan\":\"%@\"}",tradeStr,pid];
 
     
     
@@ -271,8 +243,41 @@
     NSString *url = @"http://121.52.250.39:30007/voip/ttbpay_trade_request";
     [[TPHttpRequest sharedTPHttpRequest]post:url content:[TPChargeUtil transformJson:jsonDic] success:^(id respondObj) {
         NSData *data = respondObj;
-        NSString *result = [[NSString alloc] initWithData:data  encoding:NSUTF8StringEncoding];
-        NSLog(result);
+        NSDictionary *resultDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
+        NSDictionary *resDic  = [resultDic objectForKey:@"result"];
+        NSDictionary *res1Dic = [resDic objectForKey:@"result"];
+        
+        NSData *payData = [[NSData alloc] initWithBase64EncodedString:[res1Dic objectForKey:@"payStr"] options:NSDataBase64DecodingIgnoreUnknownCharacters];
+        NSString *payStr =[[NSString alloc] initWithData:payData encoding:NSUTF8StringEncoding];
+        NSDictionary *payStrJson = [payStr mj_JSONObject];
+        NSDictionary *paymentData = [payStrJson[@"paymentData"] mj_JSONObject];
+        NSString *orderId = paymentData[@"order_id"];
+        NSString *productId = paymentData[@"product_id"];
+        [[TPIAPManager shareSIAPManager] startPurchWithID:pruchId orderID:orderId tracompleteHandle:^(SIAPPurchType type, NSData *data) {
+            switch (type) {
+                case SIAPPurchSuccess:
+                    [self doCharge];
+                    [MBProgressHUD showText:@"支付成功"];
+                    break;
+                case SIAPPurchCancle:
+                    [MBProgressHUD showText:@"支付取消"];
+                    break;
+                case SIAPPurchFailed:
+                    [MBProgressHUD showText:@"支付失败"];
+                    break;
+                case SIAPPurchNotArrow:
+                    [MBProgressHUD showText:@"不允许内购"];
+                    break;
+                case SIAPPurchVerFailed:
+                    [MBProgressHUD showText:@"订单校验失败"];
+                    break;
+                case SIAPPurchVerSuccess:
+                    [MBProgressHUD showText:@"订单校验成功"];
+                    break;
+                default:
+                    break;
+            }
+        }];
     } fail:^(id respondObj, NSError *error) {
         
     }];

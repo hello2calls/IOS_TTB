@@ -1210,6 +1210,8 @@
 		C7FA0CF31BF41DEA00144B59 /* SectionService.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0CF21BF41DE900144B59 /* SectionService.m */; };
 		C7FA0CF61BF4378700144B59 /* SubBannerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0CF51BF4378700144B59 /* SubBannerItem.m */; };
 		C7FB642A1AD645B1000A5E90 /* BaseRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FB64291AD645B1000A5E90 /* BaseRowView.m */; };
+		CF21AE251F12489300F3402C /* WFIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF21AE241F12489300F3402C /* WFIAPManager.m */; };
+		CF21AE281F124A1E00F3402C /* TPDInAppPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = CF21AE271F124A1E00F3402C /* TPDInAppPurchase.m */; };
 		CF2A3C9A1ED808FE00199D2F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A3C991ED808FE00199D2F /* JavaScriptCore.framework */; };
 		CF2A3C9D1ED98FA700199D2F /* IntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A3C9C1ED98FA700199D2F /* IntroduceViewController.m */; };
 		CF36FB2E1F0217E6001352B0 /* TPHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36FB2D1F0217E6001352B0 /* TPHttpRequest.m */; };
@@ -1249,7 +1251,7 @@
 		CF3B9F5C174DDB3300342CDB /* UIImage+Mask.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3B9F38174DDB3300342CDB /* UIImage+Mask.m */; };
 		CF3B9F5D174DDB3300342CDB /* UIImageCutUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3B9F3A174DDB3300342CDB /* UIImageCutUtils.m */; };
 		CF3B9F5E174DDB3300342CDB /* UILayoutUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3B9F3C174DDB3300342CDB /* UILayoutUtility.m */; };
-		CF47657C1ED9B3A500A7FCA4 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF47657B1ED9B3A500A7FCA4 /* Test2ViewController.m */; };
+		CF47657C1ED9B3A500A7FCA4 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF47657B1ED9B3A500A7FCA4 /* HistoryViewController.m */; };
 		CF6A79E01EFBC03600982AF1 /* PayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6A79DF1EFBC03600982AF1 /* PayButton.m */; };
 		CF6A79E31EFD0FD400982AF1 /* TPChargeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6A79E21EFD0FD400982AF1 /* TPChargeUtil.m */; };
 		CF6A79E41F00B2CC00982AF1 /* TouchPalDialer-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107310486CEB800E47090 /* TouchPalDialer-Info.plist */; };
@@ -4091,6 +4093,10 @@
 		C7FA0CF51BF4378700144B59 /* SubBannerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubBannerItem.m; path = YellowPage/Index/Model/IndexNew/SubBannerItem.m; sourceTree = "<group>"; };
 		C7FB64291AD645B1000A5E90 /* BaseRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseRowView.m; path = YellowPage/Index/View/BaseRowView.m; sourceTree = "<group>"; };
 		C7FB642B1AD64630000A5E90 /* BaseRowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BaseRowView.h; path = YellowPage/Index/View/BaseRowView.h; sourceTree = "<group>"; };
+		CF21AE231F12489300F3402C /* WFIAPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFIAPManager.h; sourceTree = "<group>"; };
+		CF21AE241F12489300F3402C /* WFIAPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFIAPManager.m; sourceTree = "<group>"; };
+		CF21AE261F124A1E00F3402C /* TPDInAppPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPDInAppPurchase.h; sourceTree = "<group>"; };
+		CF21AE271F124A1E00F3402C /* TPDInAppPurchase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPDInAppPurchase.m; sourceTree = "<group>"; };
 		CF2A3C991ED808FE00199D2F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		CF2A3C9B1ED98FA700199D2F /* IntroduceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroduceViewController.h; sourceTree = "<group>"; };
 		CF2A3C9C1ED98FA700199D2F /* IntroduceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroduceViewController.m; sourceTree = "<group>"; };
@@ -4171,8 +4177,8 @@
 		CF3B9F3A174DDB3300342CDB /* UIImageCutUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageCutUtils.m; sourceTree = "<group>"; };
 		CF3B9F3B174DDB3300342CDB /* UILayoutUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILayoutUtility.h; sourceTree = "<group>"; };
 		CF3B9F3C174DDB3300342CDB /* UILayoutUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILayoutUtility.m; sourceTree = "<group>"; };
-		CF47657A1ED9B3A500A7FCA4 /* Test2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test2ViewController.h; sourceTree = "<group>"; };
-		CF47657B1ED9B3A500A7FCA4 /* Test2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test2ViewController.m; sourceTree = "<group>"; };
+		CF47657A1ED9B3A500A7FCA4 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		CF47657B1ED9B3A500A7FCA4 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
 		CF6A79DE1EFBC03600982AF1 /* PayButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayButton.h; sourceTree = "<group>"; };
 		CF6A79DF1EFBC03600982AF1 /* PayButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayButton.m; sourceTree = "<group>"; };
 		CF6A79E11EFD0FD400982AF1 /* TPChargeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChargeUtil.h; sourceTree = "<group>"; };
@@ -9518,6 +9524,10 @@
 		CF36FB331F021863001352B0 /* util */ = {
 			isa = PBXGroup;
 			children = (
+				CF21AE261F124A1E00F3402C /* TPDInAppPurchase.h */,
+				CF21AE271F124A1E00F3402C /* TPDInAppPurchase.m */,
+				CF21AE231F12489300F3402C /* WFIAPManager.h */,
+				CF21AE241F12489300F3402C /* WFIAPManager.m */,
 				CF36FB2F1F021860001352B0 /* TPSingleton.h */,
 				CF36FB2C1F0217E6001352B0 /* TPHttpRequest.h */,
 				CF36FB2D1F0217E6001352B0 /* TPHttpRequest.m */,
@@ -9671,8 +9681,8 @@
 				CF72914E1ED7E04F00E8B01E /* ChargeViewController.m */,
 				CF2A3C9B1ED98FA700199D2F /* IntroduceViewController.h */,
 				CF2A3C9C1ED98FA700199D2F /* IntroduceViewController.m */,
-				CF47657A1ED9B3A500A7FCA4 /* Test2ViewController.h */,
-				CF47657B1ED9B3A500A7FCA4 /* Test2ViewController.m */,
+				CF47657A1ED9B3A500A7FCA4 /* HistoryViewController.h */,
+				CF47657B1ED9B3A500A7FCA4 /* HistoryViewController.m */,
 			);
 			name = ttb;
 			sourceTree = "<group>";
@@ -10176,6 +10186,7 @@
 				C739367B1AE63B340063C2CE /* ZipDataDownloadJob.m in Sources */,
 				0621462A14E263D100A2576E /* ContactCacheDataModel.m in Sources */,
 				0621462C14E263D100A2576E /* ContactCacheDataManager.m in Sources */,
+				CF21AE281F124A1E00F3402C /* TPDInAppPurchase.m in Sources */,
 				770048791E0A81C90037058A /* VKPickerButton.m in Sources */,
 				FAF394841D6AAAAA00C374DE /* AntiHarassSwitchCell.m in Sources */,
 				C784396A1A8A18FA008EE7C7 /* DataVerifier.m in Sources */,
@@ -10274,6 +10285,7 @@
 				0CE1E1981581EE7600006615 /* CJSONDeserializer_BlocksExtensions.m in Sources */,
 				264846251B96CEBC00245999 /* AccountInfoModel.m in Sources */,
 				42CBAE371B32C414002D6957 /* CouponLoginController.m in Sources */,
+				CF21AE251F12489300F3402C /* WFIAPManager.m in Sources */,
 				C727B9EB1B44257900728948 /* NewCategoryItem.m in Sources */,
 				0CE1E1991581EE7600006615 /* CJSONSerialization.m in Sources */,
 				0CE1E19A1581EE7600006615 /* CJSONSerializedData.m in Sources */,
@@ -10974,7 +10986,7 @@
 				AF9B1DC01C45EDDE007AF0F2 /* PreShareVersion0View.m in Sources */,
 				51146DFE1B6F867A009FA3D1 /* XinGePushManager.m in Sources */,
 				C784396B1A8A18FA008EE7C7 /* MD5DataSigner.m in Sources */,
-				CF47657C1ED9B3A500A7FCA4 /* Test2ViewController.m in Sources */,
+				CF47657C1ED9B3A500A7FCA4 /* HistoryViewController.m in Sources */,
 				732AF4BC1DBDE2200054A29E /* AllCopyViewController.m in Sources */,
 				AD37433F1740E40500413EE4 /* SkinSettingViewController.m in Sources */,
 				AFF9F25F1C9122B20098D9D4 /* AskLikeCellView.m in Sources */,

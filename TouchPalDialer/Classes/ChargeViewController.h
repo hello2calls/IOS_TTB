@@ -11,11 +11,7 @@
 #import "CootekWebHandler.h"
 #import "WebViewControllerDelegate.h"
 
-@interface ChargeViewController : CootekWebViewController
-
-@property(nonatomic, strong) CootekWebHandler* webviewHandler;
-
-@property(nonatomic, weak)   id<WebViewControllerDelegate> controllerDelegate;
+@interface ChargeViewController : UIViewController
 
 
 @end

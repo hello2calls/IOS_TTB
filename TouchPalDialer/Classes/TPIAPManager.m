@@ -21,6 +21,8 @@ typedef void (^TPDBooleanResultBlock)(BOOL succeeded, NSError *error);
 @interface TPIAPManager()<SKPaymentTransactionObserver,SKProductsRequestDelegate>{
     NSString           *_purchID;
     IAPCompletionHandle _handle;
+    NSString           *_orderID;
+
 }
 @end
 @implementation TPIAPManager
@@ -51,12 +53,14 @@ typedef void (^TPDBooleanResultBlock)(BOOL succeeded, NSError *error);
 
 
 #pragma mark - 🚪public
-- (void)startPurchWithID:(NSString *)purchID completeHandle:(IAPCompletionHandle)handle{
+- (void)startPurchWithID:(NSString *)purchID orderID : (NSString *)orderId tracompleteHandle:(IAPCompletionHandle)handle{
     if (purchID) {
         if ([SKPaymentQueue canMakePayments]) {
             // 开始购买服务
             _purchID = purchID;
             _handle = handle;
+            _orderID = orderId;
+            
             NSSet *nsset = [NSSet setWithArray:@[purchID]];
             SKProductsRequest *request = [[SKProductsRequest alloc] initWithProductIdentifiers:nsset];
             request.delegate = self;
@@ -150,7 +154,7 @@ typedef void (^TPDBooleanResultBlock)(BOOL succeeded, NSError *error);
     
     NSString *receiptStr = [receipt base64EncodedStringWithOptions:0];
     TPDIAPData *data = [TPDIAPData new];
-    data.accountID = transaction.payment.applicationUsername;
+    data.accountID = _orderID;
     data.receipt = receiptStr;
     data.transactionID = transaction.transactionIdentifier;
     NSLog(@"IAP -- %@",data);

@@ -19,11 +19,11 @@
  21008 订单信息是产品环境中使用，但却被发送到测试环境中验证
  */
 
-#define TPD_IAP_USE_DEBUG NO
+#define TPD_IAP_USE_DEBUG YES
 
 
 #define TPD_IAP_REQUEST_URL_PRO @"http://open.cootekservice.com/pay/callback/iap"
-#define TPD_IAP_REQUEST_URL_DEBUG @"http://121.52.235.231:40027/pay/callback/iap"
+#define TPD_IAP_REQUEST_URL_DEBUG @"http://121.52.250.39:30007/pay/callback/iap"
 
 #define TPD_IAP_REQUEST_URL (TPD_IAP_USE_DEBUG ? TPD_IAP_REQUEST_URL_DEBUG : TPD_IAP_REQUEST_URL_PRO)
 
@@ -45,5 +45,5 @@ typedef void (^IAPCompletionHandle)(SIAPPurchType type,NSData *data);
 @interface TPIAPManager : NSObject
 + (instancetype)shareSIAPManager;
 //开始内购
-- (void)startPurchWithID:(NSString *)purchID completeHandle:(IAPCompletionHandle)handle;
+- (void)startPurchWithID:(NSString *)purchID orderID : (NSString *)orderId tracompleteHandle:(IAPCompletionHandle)handle;
 @end

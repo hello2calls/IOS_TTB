@@ -20,7 +20,7 @@
 #import "YellowPageWebViewController.h"
 #import "CTUrl.h"
 #import "SeattleFeatureExecutor.h"
-#import "Test2ViewController.h"
+#import "HistoryViewController.h"
 #import "HandlerWebViewController.h"
 #import "MBProgressHUD+MJ.h"
 
@@ -256,9 +256,7 @@
         [TouchPalDialerAppDelegate pushViewController:[[ChargeViewController alloc]init] animated:YES];
         
     }else if(button == _historyBtn){
-        
-        [MBProgressHUD showText:@"开发中..."];
-
+        [TouchPalDialerAppDelegate pushViewController:[[HistoryViewController alloc]init] animated:YES];
         
     }else if(button == _questionBtn){
         [TouchPalDialerAppDelegate pushViewController:[[IntroduceViewController alloc]init] animated:YES];
