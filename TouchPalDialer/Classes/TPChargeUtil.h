@@ -20,4 +20,6 @@ typedef void(^OnQueryCallback)(NSString *minute);
 
 +(NSString *)transformBase64 : (NSString *)signStr;
 
++(NSString *)transformJson : (NSMutableDictionary *)dict;
+
 @end

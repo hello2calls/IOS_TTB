@@ -23,6 +23,9 @@
 #import "SeattleFeatureExecutor.h"
 #import "TPIAPManager.h"
 #import "MBProgressHUD+MJ.h"
+#import "TPHttpRequest.h"
+#import "TouchPalVersionInfo.h"
+#import "TPChargeUtil.h"
 
 
 #define Minite100 100
@@ -209,35 +212,70 @@
         NSLog(@"充值失败，产品ID不存在");
         return;
     }
-    [[TPIAPManager shareSIAPManager] startPurchWithID:pruchId completeHandle:^(SIAPPurchType type, NSData *data) {
-        
-        switch (type) {
-            case SIAPPurchSuccess:
-                [self doCharge];
-                [MBProgressHUD showText:@"支付成功"];
-                break;
-            case SIAPPurchCancle:
-                [MBProgressHUD showText:@"支付取消"];
-                break;
-            case SIAPPurchFailed:
-                [MBProgressHUD showText:@"支付失败"];
-                break;
-            case SIAPPurchNotArrow:
-                [MBProgressHUD showText:@"不允许内购"];
-                break;
-            case SIAPPurchVerFailed:
-                [MBProgressHUD showText:@"订单校验失败"];
-                break;
-            case SIAPPurchVerSuccess:
-                [MBProgressHUD showText:@"订单校验成功"];
-                break;
-            default:
-                break;
-        }
+    
+    [self getOrder:pruchId];
+    
+//    [[TPIAPManager shareSIAPManager] startPurchWithID:pruchId completeHandle:^(SIAPPurchType type, NSData *data) {
+//        
+//        switch (type) {
+//            case SIAPPurchSuccess:
+//                [self doCharge];
+//                [MBProgressHUD showText:@"支付成功"];
+//                break;
+//            case SIAPPurchCancle:
+//                [MBProgressHUD showText:@"支付取消"];
+//                break;
+//            case SIAPPurchFailed:
+//                [MBProgressHUD showText:@"支付失败"];
+//                break;
+//            case SIAPPurchNotArrow:
+//                [MBProgressHUD showText:@"不允许内购"];
+//                break;
+//            case SIAPPurchVerFailed:
+//                [MBProgressHUD showText:@"订单校验失败"];
+//                break;
+//            case SIAPPurchVerSuccess:
+//                [MBProgressHUD showText:@"订单校验成功"];
+//                break;
+//            default:
+//                break;
+//        }
+//
+//        
+//    }];
+    
+}
 
+
+#pragma mark 获取订单号
+-(void)getOrder : (NSString *)pid
+{
+    NSString *tradeStr = [NSString stringWithFormat:@"{\"paymentType\":\"iap\",\"authToken\":\"%@\"}",[SeattleFeatureExecutor getToken]];
+    tradeStr = [[tradeStr dataUsingEncoding:NSUTF8StringEncoding] base64EncodedStringWithOptions:0];
+    
+    NSString *customRequestStr = [NSString stringWithFormat:@"{\"trade_str\":\"%@\",\"plan\":\"%@\"}",tradeStr,@"ttb_100"];
+
+    
+    
+    NSString *accountName = [UserDefaultsManager stringForKey:VOIP_REGISTER_ACCOUNT_NAME];
+    NSMutableDictionary *jsonDic = [[NSMutableDictionary alloc]init];
+    [jsonDic setObject:customRequestStr forKey:@"custom_request"];
+    [jsonDic setObject:accountName forKey:@"phone"];
+    [jsonDic setObject:@"iap" forKey:@"pay_type"];
+    [jsonDic setObject:@"v1.3" forKey:@"pay_version"];
+    [jsonDic setObject:@"13" forKey:@"module_id"];
+    [jsonDic setObject:tradeStr forKey:@"trade_str"];
+    [jsonDic setObject:IPHONE_CHANNEL_CODE forKey:@"channel_code"];
+
+
+    NSString *url = @"http://121.52.250.39:30007/voip/ttbpay_trade_request";
+    [[TPHttpRequest sharedTPHttpRequest]post:url content:[TPChargeUtil transformJson:jsonDic] success:^(id respondObj) {
+        NSData *data = respondObj;
+        NSString *result = [[NSString alloc] initWithData:data  encoding:NSUTF8StringEncoding];
+        NSLog(result);
+    } fail:^(id respondObj, NSError *error) {
         
     }];
-    
 }
 
 

@@ -250,11 +250,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TouchPalDialer/Classes/ChargeViewController.m"
-            timestampString = "521109269.415305"
+            timestampString = "521280771.668999"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
             landmarkName = "-charge"
             landmarkType = "7">
          </BreakpointContent>
@@ -266,12 +266,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TouchPalDialer/Classes/ChargeViewController.m"
-            timestampString = "521109269.415305"
+            timestampString = "521280949.400523"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
-            landmarkName = "-charge"
+            startingLineNumber = "273"
+            endingLineNumber = "273"
+            landmarkName = "-getOrder:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
