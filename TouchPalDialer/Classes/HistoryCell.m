@@ -81,7 +81,8 @@
     _minuteLabel.text = [NSString stringWithFormat:@"充值 %@分钟",model.minutes];
     _minuteLabel.frame = CGRectMake(60+_phoneLabel.contentSize.width, 20, _minuteLabel.contentSize.width, _minuteLabel.contentSize.height);
     
-    _priceLabel.text = [NSString stringWithFormat:@"¥ %@",model.fee];
+    float fee = [model.fee floatValue];
+    _priceLabel.text = [NSString stringWithFormat:@"¥ %.2f",fee];
     _priceLabel.frame = CGRectMake(TPScreenWidth() - _priceLabel.contentSize.width - 20, 20, _priceLabel.contentSize.width, _priceLabel.contentSize.height);
     
     int statu  =  [model.charged intValue];
