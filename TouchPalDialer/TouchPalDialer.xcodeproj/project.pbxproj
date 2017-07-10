@@ -1274,6 +1274,7 @@
 		CF7291621ED7F6C300E8B01E /* CHWebViewProress.m in Sources */ = {isa = PBXBuildFile; fileRef = CF72915C1ED7F6C300E8B01E /* CHWebViewProress.m */; };
 		CF7291631ED7F6C300E8B01E /* CHWebView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CF72915E1ED7F6C300E8B01E /* CHWebView.bundle */; };
 		CFB400C217C10FD600E81F15 /* GestureSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB400C117C10FD600E81F15 /* GestureSelectCell.m */; };
+		CFF520A91F133A22009276BA /* HistoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF520A81F133A22009276BA /* HistoryModel.m */; };
 		E23AE7581BDF712E007E8AFE /* DownloadOtherAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23AE7571BDF712E007E8AFE /* DownloadOtherAppController.m */; };
 		E2559DD71BEDA0B700E6041D /* AdMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2559DD61BEDA0B700E6041D /* AdMessageModel.m */; };
 		E26B1F921C04308700928F6A /* AdLandingPageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E26B1F911C04308700928F6A /* AdLandingPageManager.m */; };
@@ -4222,6 +4223,8 @@
 		CF72915E1ED7F6C300E8B01E /* CHWebView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CHWebView.bundle; sourceTree = "<group>"; };
 		CFB400C017C10FD600E81F15 /* GestureSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureSelectCell.h; sourceTree = "<group>"; };
 		CFB400C117C10FD600E81F15 /* GestureSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureSelectCell.m; sourceTree = "<group>"; };
+		CFF520A71F133A22009276BA /* HistoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryModel.h; sourceTree = "<group>"; };
+		CFF520A81F133A22009276BA /* HistoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryModel.m; sourceTree = "<group>"; };
 		E23AE7561BDF712E007E8AFE /* DownloadOtherAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownloadOtherAppController.h; path = YellowPage/Controller/DownloadOtherAppController.h; sourceTree = "<group>"; };
 		E23AE7571BDF712E007E8AFE /* DownloadOtherAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DownloadOtherAppController.m; path = YellowPage/Controller/DownloadOtherAppController.m; sourceTree = "<group>"; };
 		E2559DD51BEDA0B700E6041D /* AdMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMessageModel.h; sourceTree = "<group>"; };
@@ -9677,6 +9680,7 @@
 		CF72914C1ED7E03700E8B01E /* ttb */ = {
 			isa = PBXGroup;
 			children = (
+				CFF520A61F133A0C009276BA /* model */,
 				CF36FB331F021863001352B0 /* util */,
 				CF6A79DD1EFBC01300982AF1 /* view */,
 				CF7291521ED7F6C300E8B01E /* CHWebView */,
@@ -9730,6 +9734,15 @@
 				CF72915E1ED7F6C300E8B01E /* CHWebView.bundle */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		CFF520A61F133A0C009276BA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CFF520A71F133A22009276BA /* HistoryModel.h */,
+				CFF520A81F133A22009276BA /* HistoryModel.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 		EC9ECA5A164CAC8400236595 /* ContactDetail */ = {
@@ -11032,6 +11045,7 @@
 				CF6F8CCE174C9F2E00634E34 /* Reachability.m in Sources */,
 				CF6F8CCF174C9F2E00634E34 /* UIDevice+SystemVersion.m in Sources */,
 				AF55DA691BA92B8A005E63BB /* AntiharassStepView.m in Sources */,
+				CFF520A91F133A22009276BA /* HistoryModel.m in Sources */,
 				26077D171B85AC1200BB0B9D /* TouchLifeShareMgr.m in Sources */,
 				CF6F8CED174CC2E500634E34 /* CStringUtils.mm in Sources */,
 				732AF4B91DBDDF590054A29E /* HandlerWebViewControllerForV6.m in Sources */,

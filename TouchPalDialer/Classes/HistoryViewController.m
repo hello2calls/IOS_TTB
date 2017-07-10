@@ -13,10 +13,15 @@
 #import "TPDialerResourceManager.h"
 #import "TouchPalDialerAppDelegate.h"
 #import "HistoryCell.h"
+#import <MJExtension.h>
+#import "HistoryModel.h"
+
 
 @interface HistoryViewController ()
 
 @property (strong, nonatomic) NSMutableArray *datas;
+
+@property (strong, nonatomic) UITableView *tableView;
 
 @end
 
@@ -42,7 +47,19 @@
 {
     NSString *url = @"http://121.52.250.39:30007/voip/ttbpay_history";
     [[TPHttpRequest sharedTPHttpRequest] post:url content:nil success:^(id respondObj) {
-        
+        NSData *data = respondObj;
+        NSDictionary *resultDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
+        NSDictionary *resDic  = [resultDic objectForKey:@"result"];
+        NSArray *resArray = [resDic objectForKey:@"result"];
+        if(!IS_NS_COLLECTION_EMPTY(resArray))
+        {
+            for(id reslut in resArray)
+            {
+                HistoryModel *model  = [HistoryModel mj_objectWithKeyValues:reslut];
+                [_datas addObject:model];
+            }
+        }
+        [_tableView reloadData];
     } fail:^(id respondObj, NSError *error) {
         
     }];
@@ -71,11 +88,13 @@
 
 -(void)initBody
 {
-    UITableView *tableView = [[UITableView alloc]init];
-    tableView.frame = CGRectMake(0, TPHeaderBarHeightDiff() + 45, TPScreenWidth(), TPScreenHeight()-(TPHeaderBarHeightDiff() + 45));
-    tableView.delegate = self;
-    tableView.dataSource = self;
-    [self.view addSubview:tableView];
+    _tableView = [[UITableView alloc]init];
+    _tableView.frame = CGRectMake(0, TPHeaderBarHeightDiff() + 45, TPScreenWidth(), TPScreenHeight()-(TPHeaderBarHeightDiff() + 45));
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    _tableView.separatorColor = [UIColor clearColor];
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [self.view addSubview:_tableView];
 }
 
 
@@ -97,6 +116,9 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     HistoryCell *cell = [[HistoryCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[HistoryCell identify]];
+    if(!IS_NS_COLLECTION_EMPTY(_datas)){
+        [cell setData:[_datas objectAtIndex:indexPath.row]];
+    }
     return cell;
 }
 
