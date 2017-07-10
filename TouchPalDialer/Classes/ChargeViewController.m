@@ -215,7 +215,8 @@
         return;
     }
     
-    [self getOrder:@"ttb_500" pruchId:pruchId];
+    NSString *pid = [NSString stringWithFormat:@"ttb_%d",select];
+    [self getOrder:pid pruchId:pruchId];
 }
 
 
@@ -246,6 +247,12 @@
         NSDictionary *resultDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
         NSDictionary *resDic  = [resultDic objectForKey:@"result"];
         NSDictionary *res1Dic = [resDic objectForKey:@"result"];
+        if(resultDic == nil || resDic == nil || res1Dic == nil)
+        {
+            UIAlertView *alertView =[[UIAlertView alloc]initWithTitle:@"充值失败" message:@"服务器开了点小差" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
+            [alertView show];
+            return;
+        }
         
         NSData *payData = [[NSData alloc] initWithBase64EncodedString:[res1Dic objectForKey:@"payStr"] options:NSDataBase64DecodingIgnoreUnknownCharacters];
         NSString *payStr =[[NSString alloc] initWithData:payData encoding:NSUTF8StringEncoding];
