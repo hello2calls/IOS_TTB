@@ -59,6 +59,10 @@
                 [_datas addObject:model];
             }
         }
+        NSArray *temps= [[_datas reverseObjectEnumerator] allObjects];
+        [_datas removeAllObjects];
+        [_datas addObjectsFromArray:temps];
+        
         [_tableView reloadData];
     } fail:^(id respondObj, NSError *error) {
         
@@ -89,12 +93,21 @@
 -(void)initBody
 {
     _tableView = [[UITableView alloc]init];
-    _tableView.frame = CGRectMake(0, TPHeaderBarHeightDiff() + 45, TPScreenWidth(), TPScreenHeight()-(TPHeaderBarHeightDiff() + 45));
+    _tableView.frame = CGRectMake(0, TPHeaderBarHeightDiff() + 45, TPScreenWidth(), TPScreenHeight()-(TPHeaderBarHeightDiff() + 45) - 40);
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.separatorColor = [UIColor clearColor];
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:_tableView];
+    
+    UILabel *tipLabel = [[UILabel alloc]init];
+    tipLabel.textColor = [UIColor grayColor];
+    tipLabel.font = [UIFont systemFontOfSize:13.0f];
+    tipLabel.frame = CGRectMake(0,TPScreenHeight() - 40 , TPScreenWidth(), 40);
+    tipLabel.textAlignment = NSTextAlignmentCenter;
+    tipLabel.text = @"我们为您保留最近2个月的充值记录";
+    [self.view addSubview:tipLabel];
+
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

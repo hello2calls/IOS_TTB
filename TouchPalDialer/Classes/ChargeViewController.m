@@ -59,13 +59,11 @@
 @implementation ChargeViewController{
     int select;
     
-    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initView];
-    [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
 }
 
 -(void)initView
@@ -227,8 +225,6 @@
     tradeStr = [[tradeStr dataUsingEncoding:NSUTF8StringEncoding] base64EncodedStringWithOptions:0];
     
     NSString *customRequestStr = [NSString stringWithFormat:@"{\"trade_str\":\"%@\",\"plan\":\"%@\"}",tradeStr,pid];
-
-    
     
     NSString *accountName = [UserDefaultsManager stringForKey:VOIP_REGISTER_ACCOUNT_NAME];
     NSMutableDictionary *jsonDic = [[NSMutableDictionary alloc]init];
