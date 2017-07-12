@@ -15,6 +15,7 @@
 #import "HistoryCell.h"
 #import <MJExtension.h>
 #import "HistoryModel.h"
+#import "TouchPalVersionInfo.h"
 
 
 @interface HistoryViewController ()
@@ -45,7 +46,7 @@
 
 -(void)requestList
 {
-    NSString *url = @"http://121.52.250.39:30007/voip/ttbpay_history";
+    NSString *url = USE_DEBUG_SERVER ? @"http://121.52.250.39:30007/voip/ttbpay_history" : @"http://ws2.cootekservice.com/voip/ttbpay_history";
     [[TPHttpRequest sharedTPHttpRequest] post:url content:nil success:^(id respondObj) {
         NSData *data = respondObj;
         NSDictionary *resultDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
@@ -67,6 +68,7 @@
     } fail:^(id respondObj, NSError *error) {
         
     }];
+    
 }
 
 

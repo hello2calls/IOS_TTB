@@ -17,7 +17,7 @@
 
 // begin: ----- debug settings -----
 #ifndef USE_DEBUG_SERVER
-#define	USE_DEBUG_SERVER	YES
+#define	USE_DEBUG_SERVER	NO
 #endif
 
 #ifndef NOAH_LOCAL_DEBUG

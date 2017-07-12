@@ -1210,8 +1210,6 @@
 		C7FA0CF31BF41DEA00144B59 /* SectionService.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0CF21BF41DE900144B59 /* SectionService.m */; };
 		C7FA0CF61BF4378700144B59 /* SubBannerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0CF51BF4378700144B59 /* SubBannerItem.m */; };
 		C7FB642A1AD645B1000A5E90 /* BaseRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FB64291AD645B1000A5E90 /* BaseRowView.m */; };
-		CF21AE251F12489300F3402C /* WFIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF21AE241F12489300F3402C /* WFIAPManager.m */; };
-		CF21AE281F124A1E00F3402C /* TPDInAppPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = CF21AE271F124A1E00F3402C /* TPDInAppPurchase.m */; };
 		CF242ACD1F127B7F00699723 /* HistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF242ACC1F127B7F00699723 /* HistoryCell.m */; };
 		CF2A3C9A1ED808FE00199D2F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A3C991ED808FE00199D2F /* JavaScriptCore.framework */; };
 		CF2A3C9D1ED98FA700199D2F /* IntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A3C9C1ED98FA700199D2F /* IntroduceViewController.m */; };
@@ -1275,6 +1273,8 @@
 		CF7291631ED7F6C300E8B01E /* CHWebView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CF72915E1ED7F6C300E8B01E /* CHWebView.bundle */; };
 		CFB400C217C10FD600E81F15 /* GestureSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB400C117C10FD600E81F15 /* GestureSelectCell.m */; };
 		CFF520A91F133A22009276BA /* HistoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF520A81F133A22009276BA /* HistoryModel.m */; };
+		CFFE80001F16AE0100B5295F /* PrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFE7FFF1F16AE0100B5295F /* PrivacyViewController.m */; };
+		CFFE80021F16B0CA00B5295F /* privacy.txt in Resources */ = {isa = PBXBuildFile; fileRef = CFFE80011F16B0CA00B5295F /* privacy.txt */; };
 		E23AE7581BDF712E007E8AFE /* DownloadOtherAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23AE7571BDF712E007E8AFE /* DownloadOtherAppController.m */; };
 		E2559DD71BEDA0B700E6041D /* AdMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2559DD61BEDA0B700E6041D /* AdMessageModel.m */; };
 		E26B1F921C04308700928F6A /* AdLandingPageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E26B1F911C04308700928F6A /* AdLandingPageManager.m */; };
@@ -4095,10 +4095,6 @@
 		C7FA0CF51BF4378700144B59 /* SubBannerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubBannerItem.m; path = YellowPage/Index/Model/IndexNew/SubBannerItem.m; sourceTree = "<group>"; };
 		C7FB64291AD645B1000A5E90 /* BaseRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseRowView.m; path = YellowPage/Index/View/BaseRowView.m; sourceTree = "<group>"; };
 		C7FB642B1AD64630000A5E90 /* BaseRowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BaseRowView.h; path = YellowPage/Index/View/BaseRowView.h; sourceTree = "<group>"; };
-		CF21AE231F12489300F3402C /* WFIAPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFIAPManager.h; sourceTree = "<group>"; };
-		CF21AE241F12489300F3402C /* WFIAPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFIAPManager.m; sourceTree = "<group>"; };
-		CF21AE261F124A1E00F3402C /* TPDInAppPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPDInAppPurchase.h; sourceTree = "<group>"; };
-		CF21AE271F124A1E00F3402C /* TPDInAppPurchase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPDInAppPurchase.m; sourceTree = "<group>"; };
 		CF242ACB1F127B7F00699723 /* HistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryCell.h; sourceTree = "<group>"; };
 		CF242ACC1F127B7F00699723 /* HistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryCell.m; sourceTree = "<group>"; };
 		CF2A3C991ED808FE00199D2F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -4225,6 +4221,9 @@
 		CFB400C117C10FD600E81F15 /* GestureSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureSelectCell.m; sourceTree = "<group>"; };
 		CFF520A71F133A22009276BA /* HistoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryModel.h; sourceTree = "<group>"; };
 		CFF520A81F133A22009276BA /* HistoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryModel.m; sourceTree = "<group>"; };
+		CFFE7FFE1F16AE0100B5295F /* PrivacyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacyViewController.h; sourceTree = "<group>"; };
+		CFFE7FFF1F16AE0100B5295F /* PrivacyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivacyViewController.m; sourceTree = "<group>"; };
+		CFFE80011F16B0CA00B5295F /* privacy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = privacy.txt; sourceTree = "<group>"; };
 		E23AE7561BDF712E007E8AFE /* DownloadOtherAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownloadOtherAppController.h; path = YellowPage/Controller/DownloadOtherAppController.h; sourceTree = "<group>"; };
 		E23AE7571BDF712E007E8AFE /* DownloadOtherAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DownloadOtherAppController.m; path = YellowPage/Controller/DownloadOtherAppController.m; sourceTree = "<group>"; };
 		E2559DD51BEDA0B700E6041D /* AdMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMessageModel.h; sourceTree = "<group>"; };
@@ -6633,6 +6632,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CFFE80011F16B0CA00B5295F /* privacy.txt */,
 				5CD52BC11E0D3A8400981CFD /* iPhoneIcon6.ttf */,
 				5CD52BBB1E0D332A00981CFD /* iPhoneIcon4.ttf */,
 				5CD52BBC1E0D332B00981CFD /* iPhoneIcon5.ttf */,
@@ -7046,6 +7046,8 @@
 				FABBD8441D4F5756000467A8 /* AbostUsViewController.m */,
 				FA1C70121D51E4BC00090245 /* CommonSettingViewController.h */,
 				FA1C70131D51E4BC00090245 /* CommonSettingViewController.m */,
+				CFFE7FFE1F16AE0100B5295F /* PrivacyViewController.h */,
+				CFFE7FFF1F16AE0100B5295F /* PrivacyViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -9530,10 +9532,6 @@
 		CF36FB331F021863001352B0 /* util */ = {
 			isa = PBXGroup;
 			children = (
-				CF21AE261F124A1E00F3402C /* TPDInAppPurchase.h */,
-				CF21AE271F124A1E00F3402C /* TPDInAppPurchase.m */,
-				CF21AE231F12489300F3402C /* WFIAPManager.h */,
-				CF21AE241F12489300F3402C /* WFIAPManager.m */,
 				CF36FB2F1F021860001352B0 /* TPSingleton.h */,
 				CF36FB2C1F0217E6001352B0 /* TPHttpRequest.h */,
 				CF36FB2D1F0217E6001352B0 /* TPHttpRequest.m */,
@@ -9940,6 +9938,7 @@
 				5CD471391E1B93E90092222C /* 1_7.png in Resources */,
 				77A213D11C2BFBB100B34580 /* fb-jquery.2.1.4.min.js in Resources */,
 				C742F03C1D06A0760048FFEE /* libwebp.pc.in in Resources */,
+				CFFE80021F16B0CA00B5295F /* privacy.txt in Resources */,
 				26FFE9E41B253F4C00D9EBF2 /* c2c_ring.m4r in Resources */,
 				7700487F1E0A81C90037058A /* LICENSE in Resources */,
 				770048811E0A81C90037058A /* VKVideoPlayer_close.png in Resources */,
@@ -10204,7 +10203,6 @@
 				C739367B1AE63B340063C2CE /* ZipDataDownloadJob.m in Sources */,
 				0621462A14E263D100A2576E /* ContactCacheDataModel.m in Sources */,
 				0621462C14E263D100A2576E /* ContactCacheDataManager.m in Sources */,
-				CF21AE281F124A1E00F3402C /* TPDInAppPurchase.m in Sources */,
 				770048791E0A81C90037058A /* VKPickerButton.m in Sources */,
 				FAF394841D6AAAAA00C374DE /* AntiHarassSwitchCell.m in Sources */,
 				C784396A1A8A18FA008EE7C7 /* DataVerifier.m in Sources */,
@@ -10303,7 +10301,6 @@
 				0CE1E1981581EE7600006615 /* CJSONDeserializer_BlocksExtensions.m in Sources */,
 				264846251B96CEBC00245999 /* AccountInfoModel.m in Sources */,
 				42CBAE371B32C414002D6957 /* CouponLoginController.m in Sources */,
-				CF21AE251F12489300F3402C /* WFIAPManager.m in Sources */,
 				C727B9EB1B44257900728948 /* NewCategoryItem.m in Sources */,
 				0CE1E1991581EE7600006615 /* CJSONSerialization.m in Sources */,
 				0CE1E19A1581EE7600006615 /* CJSONSerializedData.m in Sources */,
@@ -10322,6 +10319,7 @@
 				C7E5D5E01D2E3E6D00AE38D2 /* MyPropertyCellView.m in Sources */,
 				C7B83D831BAC196400F43E45 /* YPUIWebView.m in Sources */,
 				775404721DCADFA300DD9F58 /* TPFilterRecorder.m in Sources */,
+				CFFE80001F16AE0100B5295F /* PrivacyViewController.m in Sources */,
 				73D607841D8FD36E0067B391 /* UIButton+Block.m in Sources */,
 				427E252C1B28091E006137AF /* NameDB.m in Sources */,
 				0CE1E19E1581EE7600006615 /* CJSONScanner.m in Sources */,
@@ -11532,7 +11530,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cootek.smartdialer.ttb;
 				PRODUCT_NAME = TouchPalDialer;
-				PROVISIONING_PROFILE = "7509ec43-f4fe-40d2-bd66-b132f9a05cb6";
+				PROVISIONING_PROFILE = "7e0964db-8d19-460b-a3f4-22238c38190c";
 				"PROVISIONING_PROFILE[sdk=*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = TTB_Dev;
 				SDKROOT = iphoneos;

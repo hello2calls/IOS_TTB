@@ -19,7 +19,7 @@
  21008 订单信息是产品环境中使用，但却被发送到测试环境中验证
  */
 
-#define TPD_IAP_USE_DEBUG YES
+#define TPD_IAP_USE_DEBUG NO
 
 
 #define TPD_IAP_REQUEST_URL_PRO @"http://open.cootekservice.com/pay/callback/iap"

@@ -27,7 +27,6 @@
 #import "TouchPalVersionInfo.h"
 #import "TPChargeUtil.h"
 #import <MJExtension.h>
-#import "TPDInAppPurchase.h"
 
 
 #define Minite100 100
@@ -191,6 +190,7 @@
 
 -(void)charge
 {
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     NSString *pruchId = nil;
     switch (select) {
         case Minite100:
@@ -210,6 +210,7 @@
     }
     if(pruchId == nil){
         NSLog(@"充值失败，产品ID不存在");
+        [MBProgressHUD hideHUDForView:self.view];
         return;
     }
     
@@ -237,70 +238,90 @@
     [jsonDic setObject:IPHONE_CHANNEL_CODE forKey:@"channel_code"];
 
 
-    NSString *url = @"http://121.52.250.39:30007/voip/ttbpay_trade_request";
+    
+    NSString *url = USE_DEBUG_SERVER ? @"http://121.52.250.39:30007/voip/ttbpay_trade_request" : @"http://ws2.cootekservice.com/voip/ttbpay_trade_request";
     [[TPHttpRequest sharedTPHttpRequest]post:url content:[TPChargeUtil transformJson:jsonDic] success:^(id respondObj) {
         NSData *data = respondObj;
-        NSDictionary *resultDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
-        NSDictionary *resDic  = [resultDic objectForKey:@"result"];
-        NSDictionary *res1Dic = [resDic objectForKey:@"result"];
-        if(resultDic == nil || resDic == nil || res1Dic == nil)
+        if(data == nil)
         {
-            UIAlertView *alertView =[[UIAlertView alloc]initWithTitle:@"充值失败" message:@"服务器开了点小差" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
-            [alertView show];
-            return;
+            [self showErrorDialog];
+            return ;
         }
-        
-        NSData *payData = [[NSData alloc] initWithBase64EncodedString:[res1Dic objectForKey:@"payStr"] options:NSDataBase64DecodingIgnoreUnknownCharacters];
-        NSString *payStr =[[NSString alloc] initWithData:payData encoding:NSUTF8StringEncoding];
-        NSDictionary *payStrJson = [payStr mj_JSONObject];
-        NSDictionary *paymentData = [payStrJson[@"paymentData"] mj_JSONObject];
-        NSString *orderId = paymentData[@"order_id"];
-        NSString *productId = paymentData[@"product_id"];
-        [[TPIAPManager shareSIAPManager] startPurchWithID:pruchId orderID:orderId tracompleteHandle:^(SIAPPurchType type, NSData *data) {
-            switch (type) {
-                case SIAPPurchSuccess:
-                    [self doCharge];
-                    [MBProgressHUD showText:@"支付成功"];
-                    break;
-                case SIAPPurchCancle:
-                    [MBProgressHUD showText:@"支付取消"];
-                    break;
-                case SIAPPurchFailed:
-                    [MBProgressHUD showText:@"支付失败"];
-                    break;
-                case SIAPPurchNotArrow:
-                    [MBProgressHUD showText:@"不允许内购"];
-                    break;
-                case SIAPPurchVerFailed:
-                    [MBProgressHUD showText:@"订单校验失败"];
-                    break;
-                case SIAPPurchVerSuccess:
-                    [MBProgressHUD showText:@"订单校验成功"];
-                    break;
-                default:
-                    break;
-            }
-        }];
+        NSDictionary *resultDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
+        if(resultDic == nil)
+        {
+            [self showErrorDialog];
+            return ;
+        }
+        long resultCode = [[resultDic objectForKey:@"result_code"] intValue];
+        if(resultCode == 2000)
+        {
+            NSDictionary *resDic  = [resultDic objectForKey:@"result"];
+            NSDictionary *res1Dic = [resDic objectForKey:@"result"];
+            
+            NSData *payData = [[NSData alloc] initWithBase64EncodedString:[res1Dic objectForKey:@"payStr"] options:NSDataBase64DecodingIgnoreUnknownCharacters];
+            NSString *payStr =[[NSString alloc] initWithData:payData encoding:NSUTF8StringEncoding];
+            NSDictionary *payStrJson = [payStr mj_JSONObject];
+            NSDictionary *paymentData = [payStrJson[@"paymentData"] mj_JSONObject];
+            NSString *orderId = paymentData[@"order_id"];
+            //        NSString *productId = paymentData[@"product_id"];
+            [[TPIAPManager shareSIAPManager] startPurchWithID:pruchId orderID:orderId tracompleteHandle:^(SIAPPurchType type, NSData *data) {
+                switch (type) {
+                    case SIAPPurchSuccess:
+                        [MBProgressHUD showText:@"支付成功"];
+                        break;
+                    case SIAPPurchCancle:
+                        [MBProgressHUD showText:@"支付取消"];
+                        break;
+                    case SIAPPurchFailed:
+                        [MBProgressHUD showText:@"支付失败"];
+                        break;
+                    case SIAPPurchNotArrow:
+                        [MBProgressHUD showText:@"不允许内购"];
+                        break;
+                    case SIAPPurchVerFailed:
+                        [MBProgressHUD showText:@"订单校验失败"];
+                        break;
+                    case SIAPPurchVerSuccess:
+                        [MBProgressHUD showText:@"订单校验成功"];
+                        break;
+                    default:
+                        break;
+                }
+                [MBProgressHUD hideHUDForView:self.view];
+            }];
+        }else{
+            [self showErrorDialog];
+        }
+
     } fail:^(id respondObj, NSError *error) {
-        
+        [MBProgressHUD hideHUDForView:self.view];
+
     }];
 }
 
 
--(void)doCharge
-{
-    NSString *accountName = [UserDefaultsManager stringForKey:VOIP_REGISTER_ACCOUNT_NAME defaultValue:nil];
-    [TPChargeUtil charge:accountName reward:select*60 callback:^(Boolean statu, NSString *errorMsg) {
-        NSLog([NSString stringWithFormat:@"充值%d分钟成功！",select]);
-        [SeattleFeatureExecutor queryVOIPAccountInfo];
-        [MBProgressHUD showText:[NSString stringWithFormat:@"充值%d分钟成功！",select]];
-    }];
-}
+//-(void)doCharge
+//{
+//    NSString *accountName = [UserDefaultsManager stringForKey:VOIP_REGISTER_ACCOUNT_NAME defaultValue:nil];
+//    [TPChargeUtil charge:accountName reward:select*60 callback:^(Boolean statu, NSString *errorMsg) {
+//        NSLog([NSString stringWithFormat:@"充值%d分钟成功！",select]);
+//        [SeattleFeatureExecutor queryVOIPAccountInfo];
+//        [MBProgressHUD showText:[NSString stringWithFormat:@"充值%d分钟成功！",select]];
+//    }];
+//}
 
 
 -(void)gobackBtnPressed
 {
     [TouchPalDialerAppDelegate popViewControllerWithAnimated:YES];
+}
+
+-(void)showErrorDialog
+{
+    UIAlertView *alertView =[[UIAlertView alloc]initWithTitle:@"充值失败" message:@"服务器开了点小差" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
+    [alertView show];
+    [MBProgressHUD hideHUDForView:self.view];
 }
 
 

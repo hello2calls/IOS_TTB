@@ -57,6 +57,7 @@
 
 -(void)initBody
 {
+    
     UITextView *textView = [[UITextView alloc]init];
     textView.text = @"尼日利亚通话时间为五倍计费，打1分钟电话扣5分钟剩余时长；\n中国通话时间为1倍计费，打一分钟扣一分钟。";
     textView.font = [UIFont systemFontOfSize:18.0f];

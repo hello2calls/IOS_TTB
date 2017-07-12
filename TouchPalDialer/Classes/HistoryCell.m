@@ -73,17 +73,13 @@
 -(void)setData : (HistoryModel*)model
 {
     _phoneLabel.text = model.phone;
-    _phoneLabel.frame = CGRectMake(20, 20, _phoneLabel.contentSize.width, _phoneLabel.contentSize.height);
     
     _timeLabel.text = model.paid_at;
-    _timeLabel.frame = CGRectMake(20, 40, _timeLabel.contentSize.width, _timeLabel.contentSize.height);
 
     _minuteLabel.text = [NSString stringWithFormat:@"充值 %@分钟",model.minutes];
-    _minuteLabel.frame = CGRectMake(60+_phoneLabel.contentSize.width, 20, _minuteLabel.contentSize.width, _minuteLabel.contentSize.height);
     
     float fee = [model.fee floatValue];
     _priceLabel.text = [NSString stringWithFormat:@"¥ %.2f",fee];
-    _priceLabel.frame = CGRectMake(TPScreenWidth() - _priceLabel.contentSize.width - 20, 20, _priceLabel.contentSize.width, _priceLabel.contentSize.height);
     
     int statu  =  [model.charged intValue];
     if(statu == 1){
@@ -91,7 +87,31 @@
     }else{
         _statuLabel.text =@"充值失败";
     }
-    _statuLabel.frame = CGRectMake(TPScreenWidth() - _statuLabel.contentSize.width - 20, 40, _statuLabel.contentSize.width, _statuLabel.contentSize.height);
+    
+    if(TPScreenHeight()< 667)
+    {
+        _phoneLabel.frame = CGRectMake(10, 20, _phoneLabel.contentSize.width, _phoneLabel.contentSize.height);
+        
+        _timeLabel.frame = CGRectMake(10, 40, _timeLabel.contentSize.width, _timeLabel.contentSize.height);
+        
+        _minuteLabel.frame = CGRectMake(30+_phoneLabel.contentSize.width, 20, _minuteLabel.contentSize.width, _minuteLabel.contentSize.height);
+        
+        _priceLabel.frame = CGRectMake(TPScreenWidth() - _priceLabel.contentSize.width - 10, 20, _priceLabel.contentSize.width, _priceLabel.contentSize.height);
+        
+        _statuLabel.frame = CGRectMake(TPScreenWidth() - _statuLabel.contentSize.width - 10, 40, _statuLabel.contentSize.width, _statuLabel.contentSize.height);
+        
+    }else
+    {
+        _phoneLabel.frame = CGRectMake(20, 20, _phoneLabel.contentSize.width, _phoneLabel.contentSize.height);
+        
+        _timeLabel.frame = CGRectMake(20, 40, _timeLabel.contentSize.width, _timeLabel.contentSize.height);
+        
+        _minuteLabel.frame = CGRectMake(60+_phoneLabel.contentSize.width, 20, _minuteLabel.contentSize.width, _minuteLabel.contentSize.height);
+        
+        _priceLabel.frame = CGRectMake(TPScreenWidth() - _priceLabel.contentSize.width - 20, 20, _priceLabel.contentSize.width, _priceLabel.contentSize.height);
+        
+        _statuLabel.frame = CGRectMake(TPScreenWidth() - _statuLabel.contentSize.width - 20, 40, _statuLabel.contentSize.width, _statuLabel.contentSize.height);
+    }
 
 }
 

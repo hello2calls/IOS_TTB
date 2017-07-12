@@ -109,10 +109,8 @@ typedef void (^TPDBooleanResultBlock)(BOOL succeeded, NSError *error);
     if ([productIdentifier length] > 0) {
         // 向自己的服务器验证购买凭证
         
-
+        [self verifyPurchaseWithPaymentTransaction:transaction isTestServer:NO];
     }
-    
-    [self verifyPurchaseWithPaymentTransaction:transaction isTestServer:NO];
 }
 
 // 交易失败

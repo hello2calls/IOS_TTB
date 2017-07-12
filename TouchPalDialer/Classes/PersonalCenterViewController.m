@@ -46,6 +46,8 @@
 
 @property(strong, nonatomic) UILabel *numberLabel;
 
+
+@property (strong, nonatomic)UIScrollView *scrollView;
 @end
 
 @implementation PersonalCenterViewController
@@ -106,25 +108,31 @@
 
 -(void)initBody
 {
-    [self initTopView];
+    
+    _scrollView = [[UIScrollView alloc]init];
+    _scrollView.frame = CGRectMake(0, 45 + TPHeaderBarHeightDiff(), TPScreenWidth(), TPScreenHeight() - (45 + TPHeaderBarHeightDiff()));
+    _scrollView.contentSize = CGSizeMake(TPScreenWidth(), TPScreenHeight());
+    [self.view addSubview:_scrollView];
+    [self initTopView :_scrollView];
+    
     
     _chargeBtn = [[UIButton alloc]init];
     _chargeBtn.frame = CGRectMake(0,_topView.tp_y + _topView.tp_height + 10, TPScreenWidth(), 60);
     _chargeBtn.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:_chargeBtn];
+    [_scrollView addSubview:_chargeBtn];
     [self createItemButton:@"立即充值" image:[UIImage imageNamed:@"ic_charge"] root:_chargeBtn];
     
     _historyBtn = [[UIButton alloc]init];
     _historyBtn.frame = CGRectMake(0,_chargeBtn.tp_y + _chargeBtn.tp_height + 10, TPScreenWidth(), 60);
     _historyBtn.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:_historyBtn];
+    [_scrollView addSubview:_historyBtn];
     [self createItemButton:@"充值记录查询" image:[UIImage imageNamed:@"ic_history"] root:_historyBtn];
     
     
     _questionBtn = [[UIButton alloc]init];
     _questionBtn.frame = CGRectMake(0,_historyBtn.tp_y + _historyBtn.tp_height + 10, TPScreenWidth(), 60);
     _questionBtn.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:_questionBtn];
+    [_scrollView addSubview:_questionBtn];
     [self createItemButton:@"费率说明" image:[UIImage imageNamed:@"ic_question"] root:_questionBtn];
     
     _loginBtn = [[UIButton alloc]init];
@@ -143,7 +151,7 @@
         _noLoginLabel.hidden = NO;
     }
     [_loginBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.view addSubview:_loginBtn];
+    [_scrollView addSubview:_loginBtn];
     
     
     [_chargeBtn addTarget:self action:@selector(OnClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -153,12 +161,12 @@
     
 }
 
--(void)initTopView
+-(void)initTopView : (UIScrollView *)scrollView
 {
     _topView = [[UIView alloc]init];
-    _topView.frame = CGRectMake(0, 45 + TPHeaderBarHeightDiff(), TPScreenWidth(), 200);
+    _topView.frame = CGRectMake(0, 0, TPScreenWidth(), 200);
     _topView.backgroundColor = [ColorUtil colorWithHexString:@"#3695ED"];
-    [self.view addSubview:_topView];
+    [scrollView addSubview:_topView];
     
     [self createCircleView:140 backgroudColor: [ColorUtil colorWithHexString:@"#58aeff" alpha:103.0f/255.0f] view:_topView];
     [self createCircleView:120 backgroudColor: [ColorUtil colorWithHexString:@"#88c6ff" alpha:1.0f] view:_topView];
