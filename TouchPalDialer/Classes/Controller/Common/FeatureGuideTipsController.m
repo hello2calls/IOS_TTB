@@ -34,7 +34,7 @@
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "UINavigationController+FDFullscreenPopGesture.h"
-
+#import "PrivacyViewController.h"
 
 
 #define UILABEL_DRAW_TAG 200
@@ -332,11 +332,13 @@
 }
 
 - (void) visitPirvacy {
-    CommonWebViewController* webVC = [[CommonWebViewController alloc] init];
-    webVC.url_string = NSLocalizedString(@"http://www.touchpal.com/privacypolicy_contacts.html", @"");
-    webVC.header_title = @"";
-    [[TouchPalDialerAppDelegate naviController] pushViewController:webVC animated:YES];
-    [TPFilterRecorder recordpath:PATH_LOGIN kvs:Pair(LOGIN_VISIT_PRIVACY, @(1)), nil];
+//    CommonWebViewController* webVC = [[CommonWebViewController alloc] init];
+//    webVC.url_string = NSLocalizedString(@"http://www.touchpal.com/privacypolicy_contacts.html", @"");
+//    webVC.header_title = @"";
+//    [[TouchPalDialerAppDelegate naviController] pushViewController:webVC animated:YES];
+//    [TPFilterRecorder recordpath:PATH_LOGIN kvs:Pair(LOGIN_VISIT_PRIVACY, @(1)), nil];
+    PrivacyViewController *controller = [[PrivacyViewController alloc]init];
+    [TouchPalDialerAppDelegate pushViewController:controller animated:YES];
 }
 
 - (void) checkBtnClick {

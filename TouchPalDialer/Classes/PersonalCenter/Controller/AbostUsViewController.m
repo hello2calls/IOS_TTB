@@ -15,6 +15,7 @@
 #import "AboatUsLogoItem.h"
 #import "DefaultUIAlertViewHandler.h"
 #import "TouchPalDialerAppDelegate.h"
+#import "PrivacyViewController.h"
 
 @interface AbostUsViewController ()<SettingTableViewDelegate>
 
@@ -162,10 +163,12 @@
 
 
 - (void)pushServiceAgreement{
-    CommonWebViewController* webVC = [[CommonWebViewController alloc] init];
-    webVC.url_string = NSLocalizedString(@"http://www.touchpal.com/privacypolicy_contacts.html", @"");
-    webVC.header_title = @"";
-    [self.navigationController pushViewController:webVC animated:YES];
+//    CommonWebViewController* webVC = [[CommonWebViewController alloc] init];
+//    webVC.url_string = NSLocalizedString(@"http://www.touchpal.com/privacypolicy_contacts.html", @"");
+//    webVC.header_title = @"";
+//    [self.navigationController pushViewController:webVC animated:YES];
+    PrivacyViewController *controller = [[PrivacyViewController alloc]init];
+    [TouchPalDialerAppDelegate pushViewController:controller animated:YES];
 }
 
 #pragma mark - PersonalCenterTableViewDelegate
