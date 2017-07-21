@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import "TouchPalVersionInfo.h"
 /*注意事项：
  1.沙盒环境测试appStore内购流程的时候，请使用没越狱的设备。
  2.请务必使用真机来测试，一切以真机为准。
@@ -19,13 +20,11 @@
  21008 订单信息是产品环境中使用，但却被发送到测试环境中验证
  */
 
-#define TPD_IAP_USE_DEBUG NO
-
 
 #define TPD_IAP_REQUEST_URL_PRO @"http://open.cootekservice.com/pay/callback/iap"
 #define TPD_IAP_REQUEST_URL_DEBUG @"http://121.52.250.39:30007/pay/callback/iap"
 
-#define TPD_IAP_REQUEST_URL (TPD_IAP_USE_DEBUG ? TPD_IAP_REQUEST_URL_DEBUG : TPD_IAP_REQUEST_URL_PRO)
+#define TPD_IAP_REQUEST_URL (USE_DEBUG_SERVER ? TPD_IAP_REQUEST_URL_DEBUG : TPD_IAP_REQUEST_URL_PRO)
 
 
 typedef enum {

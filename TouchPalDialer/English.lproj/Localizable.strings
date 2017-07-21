@@ -1467,3 +1467,10 @@
 "bibi_guide_go" = "认领";
 "bibi_guide_desc" = "经常唠嗑";
 "bibi_start_talk" = "发起对讲";
+
+
+//
+"feed_back" = "意见反馈";
+"feed_back_email" = "邮箱：";
+"feed_back_email_hint" = "(可不填)";
+"feed_back_content_hint" = "写下您遇到的问题或建议";

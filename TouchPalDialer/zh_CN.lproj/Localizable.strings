@@ -1469,3 +1469,15 @@
 "bibi_guide_go" = "认领";
 "bibi_guide_desc" = "经常唠嗑";
 "bibi_start_talk" = "发起对讲";
+
+
+//
+"feed_back" = "意见反馈";
+"feed_back_email" = "邮箱：";
+"feed_back_email_hint" = "(可不填)";
+"feed_back_commit" = "提交";
+"feed_back_content_nil" = "请输入意见或建议";
+"feed_back_commit_success_title" = "提交成功";
+"feed_back_commit_success_content" = "感谢您的支持";
+"feed_back_commit_fail_title" = "提交失败";
+"feed_back_commit_fail_content" = "服务器开了点小差";

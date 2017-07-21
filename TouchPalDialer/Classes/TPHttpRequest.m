@@ -11,6 +11,7 @@
 #import "UserDefaultsManager.h"
 #import "NSString+MD5.h"
 #import "SeattleFeatureExecutor.h"
+#import "TouchPalVersionInfo.h"
 
 @implementation TPHttpRequest
 
@@ -89,7 +90,8 @@ SINGLETON_IMPLEMENTION(TPHttpRequest)
     NSString *ts =[NSString stringWithFormat:@"%ld", (long)[date timeIntervalSince1970]];
     NSString *v = @"1";
     NSString *sign = [self getSignStr:YES url:prefixUrl];
-    NSString *temp =[NSString stringWithFormat:@"?_token=%@&_ts=%@&_v=%@&_sign=%@&_appid=%d",token,ts,v,sign,20];
+    NSString *appkey = TOUCHPAL_APPKEY;
+    NSString *temp =[NSString stringWithFormat:@"?_token=%@&_ts=%@&_v=%@&_sign=%@&_appid=%d&_appkey=%@",token,ts,v,sign,20,appkey];
     return [prefixUrl stringByAppendingString:temp];
 }
 

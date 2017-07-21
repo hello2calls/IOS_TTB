@@ -1271,6 +1271,8 @@
 		CF7291611ED7F6C300E8B01E /* CHWebProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF72915A1ED7F6C300E8B01E /* CHWebProgressView.m */; };
 		CF7291621ED7F6C300E8B01E /* CHWebViewProress.m in Sources */ = {isa = PBXBuildFile; fileRef = CF72915C1ED7F6C300E8B01E /* CHWebViewProress.m */; };
 		CF7291631ED7F6C300E8B01E /* CHWebView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CF72915E1ED7F6C300E8B01E /* CHWebView.bundle */; };
+		CF79E0101F21DD0B00A8EE41 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF79E00F1F21DD0B00A8EE41 /* FeedbackViewController.m */; };
+		CF79E0131F21EF8100A8EE41 /* ByTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = CF79E0121F21EF8100A8EE41 /* ByTextField.m */; };
 		CFB400C217C10FD600E81F15 /* GestureSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB400C117C10FD600E81F15 /* GestureSelectCell.m */; };
 		CFF520A91F133A22009276BA /* HistoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF520A81F133A22009276BA /* HistoryModel.m */; };
 		CFFE80001F16AE0100B5295F /* PrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFE7FFF1F16AE0100B5295F /* PrivacyViewController.m */; };
@@ -4217,6 +4219,10 @@
 		CF72915B1ED7F6C300E8B01E /* CHWebViewProress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHWebViewProress.h; sourceTree = "<group>"; };
 		CF72915C1ED7F6C300E8B01E /* CHWebViewProress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHWebViewProress.m; sourceTree = "<group>"; };
 		CF72915E1ED7F6C300E8B01E /* CHWebView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CHWebView.bundle; sourceTree = "<group>"; };
+		CF79E00E1F21DD0B00A8EE41 /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
+		CF79E00F1F21DD0B00A8EE41 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
+		CF79E0111F21EF8100A8EE41 /* ByTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByTextField.h; sourceTree = "<group>"; };
+		CF79E0121F21EF8100A8EE41 /* ByTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ByTextField.m; sourceTree = "<group>"; };
 		CFB400C017C10FD600E81F15 /* GestureSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureSelectCell.h; sourceTree = "<group>"; };
 		CFB400C117C10FD600E81F15 /* GestureSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureSelectCell.m; sourceTree = "<group>"; };
 		CFF520A71F133A22009276BA /* HistoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryModel.h; sourceTree = "<group>"; };
@@ -9671,6 +9677,8 @@
 				CF6A79DF1EFBC03600982AF1 /* PayButton.m */,
 				CF242ACB1F127B7F00699723 /* HistoryCell.h */,
 				CF242ACC1F127B7F00699723 /* HistoryCell.m */,
+				CF79E0111F21EF8100A8EE41 /* ByTextField.h */,
+				CF79E0121F21EF8100A8EE41 /* ByTextField.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -9690,6 +9698,8 @@
 				CF2A3C9C1ED98FA700199D2F /* IntroduceViewController.m */,
 				CF47657A1ED9B3A500A7FCA4 /* HistoryViewController.h */,
 				CF47657B1ED9B3A500A7FCA4 /* HistoryViewController.m */,
+				CF79E00E1F21DD0B00A8EE41 /* FeedbackViewController.h */,
+				CF79E00F1F21DD0B00A8EE41 /* FeedbackViewController.m */,
 			);
 			name = ttb;
 			sourceTree = "<group>";
@@ -10628,6 +10638,7 @@
 				0CED2F0615E60EB100413CC3 /* FavoPersonView.m in Sources */,
 				0CED2F0715E60EB100413CC3 /* FavoriteView.m in Sources */,
 				E23AE7581BDF712E007E8AFE /* DownloadOtherAppController.m in Sources */,
+				CF79E0131F21EF8100A8EE41 /* ByTextField.m in Sources */,
 				0CED2F0815E60EB100413CC3 /* FavScrollView.m in Sources */,
 				C7A6FF441C4F2AA30054D251 /* MiniBannerItem.m in Sources */,
 				C7EBC7741AD3C813000BB258 /* RecommendCellView.m in Sources */,
@@ -10640,6 +10651,7 @@
 				C7EBC7971AD3C872000BB258 /* SectionCategory.m in Sources */,
 				36074B801DDAB79E00F39B40 /* SignBtnManager.m in Sources */,
 				732AF4B01DBDDC450054A29E /* TPDDiscoverViewController.m in Sources */,
+				CF79E0101F21DD0B00A8EE41 /* FeedbackViewController.m in Sources */,
 				AF4D27B51AA558CF00EE5236 /* FlowInputResultView.m in Sources */,
 				0CED2F0B15E60EB100413CC3 /* PersonOperationView.m in Sources */,
 				AF63B7991B9EBAD900AAB2C2 /* TodayWidgetAnimationSecondView.m in Sources */,

@@ -234,7 +234,7 @@ withFilterContext:(id)filterContext {
     if (self.loaction != nil) {
         env = [NSString stringWithFormat:@"%@%@",env,self.loaction];
     }
-    NSString *userAgent = [NSString stringWithFormat:@"%@/%@/%@/%@", @"com.cootek.smartdialer",
+    NSString *userAgent = [NSString stringWithFormat:@"%@/%@/%@/%@", COOTEK_APP_NAME,
                            CURRENT_TOUCHPAL_VERSION, @"iOS",IPHONE_CHANNEL_CODE];
     
 

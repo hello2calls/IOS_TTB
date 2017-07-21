@@ -23,6 +23,7 @@
 #import "HistoryViewController.h"
 #import "HandlerWebViewController.h"
 #import "MBProgressHUD+MJ.h"
+#import "FeedbackViewController.h"
 
 @interface PersonalCenterViewController ()
 
@@ -35,6 +36,8 @@
 @property(strong, nonatomic) UIButton *historyBtn;
 
 @property(strong, nonatomic) UIButton *questionBtn;
+
+@property(strong, nonatomic) UIButton *feedbackBtn;
 
 @property(strong, nonatomic) UIButton *loginBtn;
 
@@ -135,8 +138,15 @@
     [_scrollView addSubview:_questionBtn];
     [self createItemButton:@"费率说明" image:[UIImage imageNamed:@"ic_question"] root:_questionBtn];
     
+    
+    _feedbackBtn = [[UIButton alloc]init];
+    _feedbackBtn.frame = CGRectMake(0,_questionBtn.tp_y + _questionBtn.tp_height + 10, TPScreenWidth(), 60);
+    _feedbackBtn.backgroundColor = [UIColor whiteColor];
+    [_scrollView addSubview:_feedbackBtn];
+    [self createItemButton:@"意见反馈" image:[UIImage imageNamed:@"ic_feedback"] root:_feedbackBtn];
+    
     _loginBtn = [[UIButton alloc]init];
-    _loginBtn.frame = CGRectMake(0,_questionBtn.tp_y + _questionBtn.tp_height + 10, TPScreenWidth(), 60);
+    _loginBtn.frame = CGRectMake(0,_feedbackBtn.tp_y + _feedbackBtn.tp_height + 10, TPScreenWidth(), 60);
     _loginBtn.backgroundColor = [UIColor whiteColor];
     
     if([UserDefaultsManager boolValueForKey:TOUCHPAL_USER_HAS_LOGIN]){
@@ -157,6 +167,7 @@
     [_chargeBtn addTarget:self action:@selector(OnClick:) forControlEvents:UIControlEventTouchUpInside];
     [_historyBtn addTarget:self action:@selector(OnClick:) forControlEvents:UIControlEventTouchUpInside];
     [_questionBtn addTarget:self action:@selector(OnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [_feedbackBtn addTarget:self action:@selector(OnClick:) forControlEvents:UIControlEventTouchUpInside];
     [_loginBtn addTarget:self action:@selector(OnClick:) forControlEvents:UIControlEventTouchUpInside];
     
 }
@@ -271,6 +282,9 @@
         
     }else if(button == _loginBtn){
         [self doLogin];
+    }
+    else if(button == _feedbackBtn){
+      [TouchPalDialerAppDelegate pushViewController:[[FeedbackViewController alloc]init] animated:YES];
     }
 }
 
