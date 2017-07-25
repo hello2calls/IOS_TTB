@@ -83,10 +83,10 @@
     [gobackBtn addTarget:self action:@selector(gobackBtnPressed) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:gobackBtn];
     
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake((TPScreenWidth()-120)/2, TPHeaderBarHeightDiff(), 120, 45)];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake((TPScreenWidth()-180)/2, TPHeaderBarHeightDiff(), 180, 45)];
     [titleLabel setSkinStyleWithHost:self forStyle:@"defaultUILabel_style"];
     titleLabel.font = [UIFont systemFontOfSize:FONT_SIZE_2_5];
-    titleLabel.text = @"充值历史记录";
+    titleLabel.text =  NSLocalizedString(@"personal_center_item_charge_history", @"");
     titleLabel.textAlignment = NSTextAlignmentCenter;
     [headerBar addSubview:titleLabel];
 }
@@ -107,7 +107,7 @@
     tipLabel.font = [UIFont systemFontOfSize:13.0f];
     tipLabel.frame = CGRectMake(0,TPScreenHeight() - 40 , TPScreenWidth(), 40);
     tipLabel.textAlignment = NSTextAlignmentCenter;
-    tipLabel.text = @"我们为您保留最近2个月的充值记录";
+    tipLabel.text = NSLocalizedString(@"history_tips",@"");
     [self.view addSubview:tipLabel];
 
 }

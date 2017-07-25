@@ -90,8 +90,14 @@ SINGLETON_IMPLEMENTION(TPHttpRequest)
     NSString *ts =[NSString stringWithFormat:@"%ld", (long)[date timeIntervalSince1970]];
     NSString *v = @"1";
     NSString *sign = [self getSignStr:YES url:prefixUrl];
-    NSString *appkey = TOUCHPAL_APPKEY;
-    NSString *temp =[NSString stringWithFormat:@"?_token=%@&_ts=%@&_v=%@&_sign=%@&_appid=%d&_appkey=%@",token,ts,v,sign,20,appkey];
+    NSString *temp = nil;
+    if([prefixUrl isEqualToString:@"http://search.oem.cootekservice.com/yellowpage_v3/collector_push"]){
+        temp =[NSString stringWithFormat:@"?_token=%@&_ts=%@&_v=%@&_sign=%@&_appid=%d&_appkey=%@",token,ts,v,sign,20,OEM_APPKEY];
+    }
+    else{
+        temp =[NSString stringWithFormat:@"?_token=%@&_ts=%@&_v=%@&_sign=%@&_appid=%d",token,ts,v,sign,20];
+    }
+    
     return [prefixUrl stringByAppendingString:temp];
 }
 

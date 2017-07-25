@@ -81,7 +81,7 @@
     [self getBackGroundView].backgroundColor = [UIColor whiteColor];
     
     CGRect headerFrame = CGRectMake(0, 0, TPScreenWidth(), TPHeaderBarHeight());
-    CommonHeaderBar *headerBar = [[CommonHeaderBar alloc] initWithFrame:headerFrame andHeaderTitle:@"绑定手机号"];
+    CommonHeaderBar *headerBar = [[CommonHeaderBar alloc] initWithFrame:headerFrame andHeaderTitle:NSLocalizedString(@"personal_center_login_hint", @"")];
     headerBar.delegate = self;
     [self.view addSubview:headerBar];
     
@@ -111,7 +111,7 @@
     _areaFiled.enabled = NO;
     [self.view addSubview:_areaFiled];
     
-    _numberFiled = [[CustomInputTextFiled alloc] initWithFrame:CGRectMake(x+90, y, w-90, h) andPlaceHolder:@"请填写手机号" andID:nil];
+    _numberFiled = [[CustomInputTextFiled alloc] initWithFrame:CGRectMake(x+90, y, w-90, h) andPlaceHolder:NSLocalizedString(@"blank_phonenum", @"") andID:nil];
     _numberFiled.layer.cornerRadius = 4;
     _numberFiled.layer.masksToBounds = YES;
     _numberFiled.keyboardType = UIKeyboardTypeNumberPad;
@@ -140,7 +140,7 @@
     y += 15;
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    NSString *buttonText = @"获取验证码";
+    NSString *buttonText = NSLocalizedString(@"voip_get_verification_code", @"");
     button.layer.masksToBounds = YES;
     button.layer.cornerRadius = 4.0f;
     button.titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -181,7 +181,7 @@
     submit.layer.cornerRadius = 4;
     submit.layer.masksToBounds = YES;
     submit.frame = CGRectMake(x, y, w, h);
-    [submit setTitle:@"提交" forState:UIControlStateNormal];
+    [submit setTitle:NSLocalizedString(@"personal_center_need_login", @"") forState:UIControlStateNormal];
     [submit setTitleColor:[TPDialerResourceManager getColorForStyle:@"login_submit_button_title_normal_color"] forState:UIControlStateNormal];
     [submit setTitleColor:[TPDialerResourceManager getColorForStyle:@"login_submit_button_title_disable_color"] forState:UIControlStateDisabled];
     [submit setBackgroundImage:[FunctionUtility imageWithColor:[[TPDialerResourceManager sharedManager] getUIColorInDefaultPackageByNumberString:@"login_submit_button_color"]] forState:UIControlStateNormal];
@@ -192,7 +192,7 @@
     [self.view addSubview:submit];
     _submitButton = submit;
     y = y + h + 35;
-    NSMutableAttributedString *smsText = [[NSMutableAttributedString alloc] initWithString:@"尝试语音验证"];
+    NSMutableAttributedString *smsText = [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"login_tips4", @"")];
     [smsText addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:NSMakeRange(0, smsText.length)];
     CustomUILabel *label = [[CustomUILabel alloc] initWithFrame:CGRectMake(x, y, w, 30)];
     label.attributedText = smsText;
@@ -260,9 +260,9 @@
     if (resultCode == 0) {
         [self changeIndicatorText:NSLocalizedString(@"voip_network_verify_error_and_retry", "") isError:YES];
     } else if (resultCode == 2000) {
-        NSString *text = @"您将收到一通语音验证的电话";
+        NSString *text = NSLocalizedString(@"login_tips3", @"");
         if ([type isEqualToString:@"sms"]) {
-            text = @"您将收到一条带有验证码的短信";
+            text = NSLocalizedString(@"login_tips2", @"");
         }
         [self changeIndicatorText:text isError:NO];
         cootek_log(@"verify success by action:%@", type);
@@ -295,14 +295,14 @@
         _verifyButton.enabled = YES;
         _smsButton.userInteractionEnabled = YES;
     }
-    [_verifyButton setTitle:@"重新获取" forState:UIControlStateNormal];
+    [_verifyButton setTitle:NSLocalizedString(@"Resend code", @"") forState:UIControlStateNormal];
     _verifyButton.hidden = NO;
     _smsButton.hidden = NO;
     _secondCountLabel.hidden = YES;
 }
 
 -(void) onTimerTicker:(NSInteger) ticker{
-    NSString *string = [NSString stringWithFormat:@"%d秒",ticker];
+    NSString *string = [NSString stringWithFormat:@"%d%@",ticker,NSLocalizedString(@"seconds", <#comment#>)];
     _secondCountLabel.text = string;
     _verifyButton.enabled = NO;
     _verifyButton.hidden = YES;
@@ -346,7 +346,7 @@
         return;
     }
     if ([self uiChangesOnAskCode]) {
-        _verifiFiled.placeholder = @"请填写验证码";
+        _verifiFiled.placeholder = NSLocalizedString(@"login_tips5", @"");
         [self startSMSVerification];
     }
 }
@@ -545,7 +545,7 @@
 
 - (void) checkIndicatorText {
     if (!_successInput) {
-        [self changeIndicatorText:@"为保证去电显示本机号码，需验证手机号" isError:NO];
+        [self changeIndicatorText:NSLocalizedString(@"login_tips", @"") isError:NO];
     }
 }
 

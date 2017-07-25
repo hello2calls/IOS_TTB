@@ -987,7 +987,7 @@
 "voip_open_free_phone" = "开启免费电话";
 "voip_input_phone_numer" = "输入您的手机号";
 "voip_input_verification_code" = "输入收到的验证码";
-"voip_get_verification_code" = "获取验证码";
+"voip_get_verification_code" = "Send";
 "voip_get_verification_code_again" = "重获验证码";
 "voip_time_cut_down" = "倒计时中";
 "voip_verify_by_SMS" = "短信验证";
@@ -1387,7 +1387,7 @@
 "calllog_empty_btn_learn_voip" = "学习如何拨打免费电话";
 "calllog_empty_btn_use_skin" = "挑选一套喜欢的主题";
 
-"click_to_show_keypad" = "点击展开拨号盘";
+"click_to_show_keypad" = "expand dial";
 "invite_friends" = "邀请有奖";
 "Confirm" = "确定";
 
@@ -1470,7 +1470,56 @@
 
 
 //
-"feed_back" = "意见反馈";
-"feed_back_email" = "邮箱：";
-"feed_back_email_hint" = "(可不填)";
-"feed_back_content_hint" = "写下您遇到的问题或建议";
+"feed_back" = "Feedback";
+"feed_back_email" = "Email：";
+"feed_back_email_hint" = "(Can be empty)";
+"feed_back_commit" = "Commit";
+"feed_back_content_hint" = "Describe any problems or suggestions you have encountered";
+"feed_back_commit_success_title" = "Submit successfully";
+"feed_back_commit_success_content" = "Thank you for your support";
+"feed_back_commit_fail_title" = "Submission failure";
+"feed_back_commit_fail_content" = "The server has made a mistake";
+
+
+"personal_center_title" = "Personal Center";
+"personal_center_munites_left_lable" = "Munites Left";
+"personal_center_need_login" = "Login";
+"personal_center_item_charge" = "Charge";
+"personal_center_item_charge_history" = "Charge History";
+"personal_center_item_charge_rate" = "Rate";
+"personal_center_login_text" = "Login";
+"personal_center_logout_text" = "Logout";
+"contact_title_text" = "Contacts";
+"voip_outgoing_dialog_title" = "Notification";
+"voip_outgoing_dialog_munites_needcharge" = "Your have only %1$d munites. Do you want to recharge? ";
+"voip_outgoing_dialog_munites_positive" = "Recharge";
+"voip_outgoing_dialog_munites_negative" = "Dial";
+"voip_login_number_input_hint" = "+234";
+"personal_center_rate_introduce" = "The rate in Nigeria is 5 times,so make a 1 minute call will cost 5 remaining minutes.";
+"personal_center_rate_introduce2" = "The rate in China is 1 times,so make a 1 minute call will cost 1 remaining minutes.";
+
+
+"pay_success" = "Successful payment";
+"pay_cancel" = "Cancel payment";
+"pay_fail" = "Payment failure";
+"pay_reject" = "No purchase allowed";
+"pay_order_fail" = "Order verification failed";
+"pay_order_success" = "Order verification successful";
+"charge_fail" = "Recharge failed";
+"charge_success" = "Recharge successfully";
+"charge" = "charge";
+"minutes" = "minutes";
+
+"history_tips" = "We will keep the prepaid records for the last 2 months";
+"blank_phonenum"="Please fill in your phone number";
+
+"seconds" = "s";
+"login_tips" = "To ensure display the number, you need to verify the phone number";
+"login_tips2" = "You will receive a text message with verification code";
+"login_tips3" = "You will receive a voice verification call";
+"login_tips4" = "Try voice verification";
+"login_tips5" = "Please fill in the code";
+
+"privacy_title" = "User agreement and privacy policy";
+"full_keyboard" = "Full keyboard";
+"paste" = "Paste";

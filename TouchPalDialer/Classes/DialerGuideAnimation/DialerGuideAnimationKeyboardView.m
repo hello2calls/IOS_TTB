@@ -35,7 +35,7 @@
         [self addSubview:imageView];
         
         NSArray *numberArray = [NSArray arrayWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"*",@"0",@"#",nil];
-        NSArray *subArray = [NSArray arrayWithObjects:@"",@"ABC",@"DEF",@"GHI",@"JKL",@"MNO",@"PQRS",@"TUV",@"WXYZ",@"全键盘",@"+",@"粘贴",nil];
+        NSArray *subArray = [NSArray arrayWithObjects:@"",@"ABC",@"DEF",@"GHI",@"JKL",@"MNO",@"PQRS",@"TUV",@"WXYZ",NSLocalizedString(@"full_keyboard", @""),@"+",NSLocalizedString(@"paste", @""),nil];
         
         _aniArray = [[NSMutableArray alloc]initWithCapacity:12];
         for ( int i = 0 ; i < 12 ; i ++ ){

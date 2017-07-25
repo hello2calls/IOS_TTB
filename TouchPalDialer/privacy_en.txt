@@ -1,0 +1,112 @@
+TCALL telephony user agreement and privacy policy
+You are welcome to use TCALL phone software and services!
+In order to use TCALL telephony software (hereinafter referred to as this software) and services, you should read and comply with the TCALL telephone user agreement and privacy policy (hereinafter referred to as this agreement). Be sure to read carefully and fully understand the terms of each item, especially the terms of exemption or limitation of liability, and separate agreements for the opening or use of a service, and choose to accept or not to accept it. Restrictions and disclaimers may prompt you in bold form.
+You are not entitled to use the software and its related services unless you have read and accepted all the terms and conditions of this agreement. Your download, installation, use, registration and login will be deemed to be your acceptance of this Agreement and agree to be bound by the terms and conditions of this agreement.
+If you are under 18 years of age, please read this Agreement and other relevant agreements with the legal guardian, and pay special attention to the terms of use of minors.
+Agreement scope
+This agreement is an agreement between you and the developer on your download, installation, use of the software, and services related to the use of this software.
+The contents of this agreement also include the relevant agreements and business rules of the TCALL telephone related services (hereinafter referred to as the "service") which may be issued by the developer from time to time. As soon as the above content has been officially released, it shall be an integral part of this agreement, and you shall abide by it as well.
+About this service
+The service content refers to developers to provide users with installation in including but not limited to mobile phones and other wireless handheld terminal with contact information management, and other user network calls and other functions of the software and services (hereinafter referred to as the "services").
+The software of TCALL phone client services including IOS, Android version of the application, the user must select and match the installation of mobile phone software version, service function, application of different versions of the offering may vary.
+The developer gives you an individual, non transferable and non exclusive permission to use the software and this service. You can install, use, display, run the software and use this service on a single station device for non-commercial purposes.
+Any other rights not expressly authorized by this section and other terms of this Agreement are still reserved by the developer. You may obtain additional written permission from the developer when exercising these rights. If the developer does not exercise any of the foregoing rights, it does not constitute a waiver of the right.
+Software acquisition and updating
+You can get the software directly from the developer's Web site, or you can get it from the third party authorized by the developer.
+If you have never been authorized third party developers access to the software or the software installation program of the same name, developers can not guarantee that the software can be used normally, and therefore your losses caused shall not be responsible for.
+In order to improve the user experience, improve services, developers will continue to develop new services, and provide for you from time to time the software update (these updates may take to replace, modify, software functions and version upgrade form).
+In order to ensure the security and functional consistency of the software and services, the developer has the right to update the software without giving you a special notice, or to change or limit some of the functionality of the software.
+After the new version of the software is released, the old version of the software may not continue to be used. Developers do not guarantee that the old version of the software continues to be available and the corresponding customer service, please check and download at any time to install the latest version.
+User personal information protection
+Protecting users' personal information is a basic principle of developers, and developers will take reasonable measures to protect users' personal information. Except as required by laws and regulations, the developer will not disclose and disclose the user's personal information to the third party without the permission of the user. Developers use professional encryption, storage and transmission of relevant information to protect the security of the user's personal information.
+In order to realize the software and the service function of multiple basic contact information management, answering phone calls, and other functions to achieve the account service binding, network calls, user identification and the software of the service, you in the process of using the software and the service, need to provide some information needed to achieve the function to developers or developers to access authorization, collection of mobile phone communication to your book, APP the use of information, SMS and MMS, mobile phone etc.. If the national laws, regulations or policies have special requirements, you need to provide true identity information. If the information you provide is incomplete or the scope of authorization is incomplete, you may not be able to use this service or be restricted during use.
+You agree that developers use your personal information resources for the following reasons:
+Perform the software verification service and upgrade service;
+Improve user's usage security and provide customer support;
+To improve the technology of software and services, for example, to help developers understand the software and services meet the problem of users, to help developers improve the quality of software and services, performance and security;
+Information on non relevant user identification based on user information, statistics, behavior analysis, etc., is used to recommend services to third parties;
+Send notifications to users and service information provided by TCALL;
+Other uses that benefit the user's interests and realize the functionality of the software.
+In order to implement or use the corresponding functions of this software, you agree to grant the developer the following permissions:
+For access to the phone using this software, call is allowed;
+For access to the system address book contacts, and in the software contacts and search show, allowing access to address book;
+To create, edit, modify, or delete contacts in this software, new contacts are allowed to be created, modified, or deleted;
+You can modify the avatar for new and edit contact information, allowing the camera to be called;
+To verify your identity, allow developers to upload your mobile phone's MAC address;
+For you to use the software and the corresponding function of the software, developers need other reasonable permissions.
+Developers will use a variety of security technologies and procedures to build a sound management system to protect your personal information from unauthorized access, use, or disclosure.
+Without your permission, the developer will not disclose your personal information to any company, organization or individual other than the developer, except as otherwise provided for by laws and regulations.
+Developers attach great importance to the protection of personal information for minors. If you are under 18 years of age, prior to the use of this software and this service, your parents or legal guardian should obtain your prior consent.
+User notes
+You understand and agree that in order to provide you with effective services, this software will utilize the resources of your mobile communications terminals, such as processor and bandwidth. The software and the use of this service may generate data traffic costs, users need to understand the relevant charges information to operators, and to bear the relevant costs.
+You use this software in a specific service, the service may have a separate agreement, the relevant business rules (hereinafter referred to as the "separate agreement"), when you use the service before you read and agree to a separate agreement.
+You understand and agree that the developer will do its commercially reasonable efforts to protect you in the software and services in the data storage security, however, is not the developers provide a full warranty, including but not limited to the following circumstances:
+The developer is not responsible for the deletion or storage of the relevant data in this software and this service;
+According to the actual situation, the developer has the right to determine the maximum storage period of the data in the software and the service by a single user, and assign the data to the server, the maximum storage space and so on. You can backup the software and the relevant data in this service according to your own needs;
+If you stop using this software and this service or this service is terminated or cancelled, developers can permanently delete your data from the server. The developer has no obligation to return any data to you after the service is stopped, terminated or cancelled.
+When using this software and services, users must undertake the following risks, which include, but are not limited to, the risks that are beyond the control of the developer:
+Personal information loss, leakage and other risks caused by force majeure factors;
+The user must select the software version that matches the installed cell phone, otherwise, any problem or damage caused by the mismatch between the software and the cell phone model is assumed by the user himself;
+When users use the software to visit third party websites, the risks caused by the third party websites and related contents may be borne by the users themselves;
+Because of the instability of the wireless network, the small bandwidth of the wireless network and the failure of the line, the risk of software opening or service failure, slow page opening and network communication function can not be used normally.
+Third party products and services
+In the use of the products or services provided by the third party of the software, the user agreement of the third parties shall be observed in addition to the provisions of this agreement. Developers and third parties are liable for disputes that may arise within the scope of the law and the scope of the agreement.
+For users to use this software or require developers to provide specific services, the software can support the user will call the third party system or by the third party to use or access, use or access the results by the third party, the developer does not guarantee the provision of services and content of safety, accuracy, effectiveness and other uncertain the risk by third parties, and thus cause damage if any dispute, has nothing to do with developers, developers do not assume any responsibility.
+Information content specification
+The information content referred to in this article refers to any content produced, copied, published or transmitted by the user during the use of the software and services, as well as the contents arising from the use of the software and services.
+You understand and agree that the developer has been committed to providing a healthy and orderly network environment, you may not use the software and service production and dissemination, replication and transmission are interfering with the normal operation and Software Infringement of other users or third parties legitimate rights and interests of the content, including but not limited to:
+Issue, transmit, distribute or store contents prohibited by laws and regulations of the state:
+Violating the basic principles established by the constitution;
+Endangering State security, divulging state secrets, subverting state power and undermining the unity of the state;
+Damage to the honour and interest of the state;
+Inciting ethnic hatred, ethnic discrimination and undermining national unity;
+Undermining state religious policies and promoting cults and feudal superstition;
+Spreading rumors, disturbing social order and undermining social stability;
+Spreading obscenity, pornography, gambling, violence, terror, or abetting crime;
+Insulting or slander others and infringing upon the lawful rights and interests of others;
+Incitement to unlawful assembly, association, procession, demonstration, gathering, disrupting social order;
+Acting in the name of an illegal civil organization;
+It does not meet the requirements of the "seven bottom lines", such as laws, regulations, socialist systems, national interests, citizens' legitimate interests, public order, social morality, and information authenticity;
+Containing any other content prohibited by laws or administrative regulations.
+Publishing, transmitting, transmitting and storing the legal rights such as infringing on the reputation rights of others, portrait rights, intellectual property rights, trade secrets, etc.;
+Involving other people's privacy or personal information or information;
+Publish, transmit, disseminate harassment, advertising information, or garbage information or contain any sexual or sexual cues;
+Other information that violates the laws, regulations, policies and public order, good morals, social morality or interference with the normal operation of the software and services and infringes on the legitimate rights and interests of other users or third parties.
+Software usage specification
+You may not engage in any of the following actions, unless permitted by law or in writing by the developer:
+Delete information about copyright in this software and its copy;
+The software for reverse engineering, reverse assembly, reverse compilation, or try to find the source code of the software in other ways;
+Use, lease, lend, copy, modify, link, reprint, assemble, publish, publish, publish, etc. on the contents of the intellectual property rights of the developer;
+Forgery of instructions and data in the operation of software by modifying or adding, deleting, changing, software function or operation effect, or the use of the software will be used, method of operation or communication to the public, regardless of whether they are for commercial purposes;
+To interfere with the software and its components, modules, and data by itself or by authorizing others and third party software;
+Other acts not expressly authorized by the developer.
+Service operation rule
+You may not engage in any of the following actions in the use of this service unless permitted by law or by developer in writing:
+Submitting or releasing false information or posing or using another person's name;
+Induce other users to click on links, pages, or share information;
+Misleading or deceiving others by making false facts or concealing the truth;
+Infringing upon other people's reputation, portrait rights, intellectual property rights, trade secrets and other legal rights;
+Other acts that violate the provisions of laws and regulations, infringe upon the legitimate rights and interests of other users, interfere with the normal operation of the products or have not been authorized by the developer.
+Take responsibility for your actions
+You fully understand and agree that you must be responsible for all the actions under your client's software, including any content you publish and all the consequences thereof. You judge the content of this service and assume all risks arising from the use of the content, including risks arising from reliance on the correctness, integrity, or usefulness of the content. The developer cannot and will not be held responsible for any loss or damage caused by the foregoing risks.
+Default handling
+If developers find or receive reports or complaints of others in violation of the user agreement, developers have the right at any time without notice to delete the relevant content, and as the shield, the plot of the illegal user behavior by including but not limited to warnings, restrict or prohibit the use of all or part of the function.
+You understand and agree that the developers have the right to reasonable judgment on the violation of relevant laws and regulations and the provisions of this Agreement for punishment, take legal action against any illegal users, according to the laws and regulations and report the relevant information to the relevant departments to save, the user should independently assume all liabilities arising therefrom.
+You understand and agree that your requirements for the breach of this agreement or related terms, or cause any claim, demand or loss of third party claims, you shall bear the responsibility of independent developers; therefore suffered losses, you should also be compensation.
+Intellectual property declaration
+The developer is the intellectual property owner of the software. All the work of the software right, trademark right, patent right, trade secrets and other intellectual property rights, and the related software of all information content (including but not limited to text, images, icons, graphics, color, pattern, interface design, layout framework, relevant data, printing materials, or electronic documents) are subject to the protection of the laws and regulations of People's Republic of China and relevant international treaties, developers enjoy the intellectual property rights, but excluding related rights in accordance with the law should enjoy the rights of.
+Without the written consent of the developer or the relevant owner, you may not, for any commercial or non-commercial purpose, permit or permit any third party to utilize, transfer, or transfer the aforesaid intellectual property rights.
+Terminal security responsibility
+You understand and agree that the software with most Internet software, may be affected by various factors, including but not limited to the user, the network service quality and social environment; also may be affected by a variety of security intrusion, including but not limited to the illegal use of user information, harassment may contain viruses, in reality; Trojan malware or other users of other site to download and install other software or access, threatening the security of terminal equipment and data information to you, and then affect the normal use of the software. Therefore, you should strengthen the awareness of information security and personal information protection in order to avoid loss.
+Maintenance of software safety and normal use of the developer and your common responsibility, developers will be in accordance with the industry standard of reasonable care to take the necessary technical measures to protect the safety of the terminal equipment and data information to you, but you acknowledge and agree not to provide developers and fully guarantee.
+Third party software or technology
+This software may use third party software or technology, and this use has been legally authorized.
+If the software using third party software or technology, developers will be in accordance with the relevant regulations or agreed on related agreements or other documents, may display through the annex to this agreement, in the software installation package in a specific folder packaged form, they may use the software license agreement "," License Agreement "" user agreement "or other forms of expression. The relevant agreements, other documents or web pages displayed in various forms are integral parts of this Agreement and have the same legal effect as this agreement. You should comply with these requirements. If you fail to comply with these requirements, the third party or state organs may have you filed a lawsuit, fines or other measures, and requires developers to help, you should bear the legal responsibility.
+If any dispute arising from the third party software or technology used by this software shall be handled by the third party, and the developer shall not be held responsible for any dispute. Developers do not provide customer support for third party software or technology.
+Other
+You use this software and this service as if you have read and agree to be bound by this agreement. The developer has the right to amend the terms of the agreement when necessary. You can refer to the terms of the agreement in the latest version of this software. After the terms and conditions of this Agreement have been changed, if you continue to use the software and this service, it is deemed that you have accepted the amended agreement. If you do not accept the amended agreement, you should discontinue the use of this software and this service.
+This agreement is signed in People's Republic of China, Shanghai, Xuhui District.
+The establishment, entry into force, performance, interpretation and settlement of this Agreement shall be governed by the laws of the mainland of the People's Republic of China (excluding the conflict of laws).
+If any disputes or disputes arise between you and the developer, you should first settle the matter through friendly negotiation; if the negotiation fails, you agree to submit the dispute or dispute to the jurisdiction of the court under the jurisdiction of the agreement signed.
+All headings of this Agreement are for convenience of reading only and have no actual meaning of their own and shall not be used as the basis for interpretation of this agreement.
+The terms and conditions of this Agreement shall remain valid and binding on both parties, whether or not they are invalid or enforceable for any reason.

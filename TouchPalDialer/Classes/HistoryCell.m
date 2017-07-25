@@ -76,16 +76,16 @@
     
     _timeLabel.text = model.paid_at;
 
-    _minuteLabel.text = [NSString stringWithFormat:@"充值 %@分钟",model.minutes];
+    _minuteLabel.text = [NSString stringWithFormat:@"%@ %@%@",NSLocalizedString(@"charge",@""),model.minutes,NSLocalizedString(@"minutes",@"")];
     
     float fee = [model.fee floatValue];
     _priceLabel.text = [NSString stringWithFormat:@"¥ %.2f",fee];
     
     int statu  =  [model.charged intValue];
     if(statu == 1){
-        _statuLabel.text =@"充值成功";
+        _statuLabel.text =NSLocalizedString(@"charge_success",@"");
     }else{
-        _statuLabel.text =@"充值失败";
+        _statuLabel.text =NSLocalizedString(@"charge_fail",@"");;
     }
     
     if(TPScreenHeight()< 667)

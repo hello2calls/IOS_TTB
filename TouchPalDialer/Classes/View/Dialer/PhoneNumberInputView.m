@@ -129,7 +129,7 @@
             numberAttrString = attrString;
         }
         if(![numberAttrString isEqualToString:attrView_.text]){
-           attrView_.text = @"00+国际区号+电话号码";
+           attrView_.text = [NSString stringWithFormat:@"00+%@+%@",NSLocalizedString(@"Area", @""),NSLocalizedString(@"number", @"")];
         }
     }
 }

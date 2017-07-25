@@ -672,13 +672,13 @@
     // batch delete, 批量删除
     CGRect deleteFrame =  CGRectMake(0, 0, btnSize.width, btnSize.height);
     UIEdgeInsets deleteInsets = UIEdgeInsetsMake(0, 15, 0, 15);
-    _deleteButton = [self getButtonWithFrame:deleteFrame contentEdgeInsets:deleteInsets title:@"删除"];
+    _deleteButton = [self getButtonWithFrame:deleteFrame contentEdgeInsets:deleteInsets title:NSLocalizedString(@"Delete", @"")];
     _deleteButton.hidden = YES;
     
     // send SMS, 发短信
     CGRect smsFrame = CGRectMake(TPScreenWidth() - btnSize.width, 0, btnSize.width, btnSize.height);
     UIEdgeInsets smsInsets = UIEdgeInsetsMake(0, 15, 0, 15);
-    _smsButton = [self getButtonWithFrame:smsFrame contentEdgeInsets:smsInsets title:@"发短信"];
+    _smsButton = [self getButtonWithFrame:smsFrame contentEdgeInsets:smsInsets title:NSLocalizedString(@"Send message", @"")];
     _smsButton.hidden = YES;
     
     // selected count, 选中的个数

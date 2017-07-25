@@ -50,7 +50,7 @@
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake((TPScreenWidth()-120)/2, TPHeaderBarHeightDiff(), 120, 45)];
     [titleLabel setSkinStyleWithHost:self forStyle:@"defaultUILabel_style"];
     titleLabel.font = [UIFont systemFontOfSize:FONT_SIZE_2_5];
-    titleLabel.text = @"费率说明";
+    titleLabel.text = NSLocalizedString(@"personal_center_item_charge_rate", @"");
     titleLabel.textAlignment = NSTextAlignmentCenter;
     [headerBar addSubview:titleLabel];
 }
@@ -59,7 +59,7 @@
 {
     
     UITextView *textView = [[UITextView alloc]init];
-    textView.text = @"尼日利亚通话时间为五倍计费，打1分钟电话扣5分钟剩余时长；\n中国通话时间为1倍计费，打一分钟扣一分钟。";
+    textView.text =[NSString stringWithFormat:@"%@\n%@",NSLocalizedString(@"personal_center_rate_introduce", @""),NSLocalizedString(@"personal_center_rate_introduce2", @"")];
     textView.font = [UIFont systemFontOfSize:18.0f];
     textView.editable = NO;
     textView.backgroundColor = [UIColor clearColor];

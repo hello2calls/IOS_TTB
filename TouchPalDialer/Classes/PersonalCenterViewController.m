@@ -86,7 +86,7 @@
 //登录更新通知
 -(void)updateLoginInfo
 {
-    [_loginBtn setTitle:@"退出登录" forState:UIControlStateNormal];
+    [_loginBtn setTitle:NSLocalizedString(@"personal_center_logout_text",@"") forState:UIControlStateNormal];
     _minutesTitleLabel.hidden = NO;
     _minutesLabel.hidden = NO;
     _noLoginLabel.hidden = YES;
@@ -100,10 +100,10 @@
     [headerBar setSkinStyleWithHost:self forStyle:@"defaultHeaderView_style"];
     [self.view addSubview:headerBar];
     self.headerView = headerBar;
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake((TPScreenWidth()-120)/2, TPHeaderBarHeightDiff(), 120, 45)];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake((TPScreenWidth()-180)/2, TPHeaderBarHeightDiff(), 180, 45)];
     [titleLabel setSkinStyleWithHost:self forStyle:@"defaultUILabel_style"];
     titleLabel.font = [UIFont systemFontOfSize:FONT_SIZE_2_5];
-    titleLabel.text = @"个人中心";
+    titleLabel.text = NSLocalizedString(@"personal_center_title",@"");
     titleLabel.textAlignment = NSTextAlignmentCenter;
     [self.headerView addSubview:titleLabel];
 }
@@ -123,39 +123,39 @@
     _chargeBtn.frame = CGRectMake(0,_topView.tp_y + _topView.tp_height + 10, TPScreenWidth(), 60);
     _chargeBtn.backgroundColor = [UIColor whiteColor];
     [_scrollView addSubview:_chargeBtn];
-    [self createItemButton:@"立即充值" image:[UIImage imageNamed:@"ic_charge"] root:_chargeBtn];
+    [self createItemButton:NSLocalizedString(@"personal_center_item_charge",@"") image:[UIImage imageNamed:@"ic_charge"] root:_chargeBtn];
     
     _historyBtn = [[UIButton alloc]init];
     _historyBtn.frame = CGRectMake(0,_chargeBtn.tp_y + _chargeBtn.tp_height + 10, TPScreenWidth(), 60);
     _historyBtn.backgroundColor = [UIColor whiteColor];
     [_scrollView addSubview:_historyBtn];
-    [self createItemButton:@"充值记录查询" image:[UIImage imageNamed:@"ic_history"] root:_historyBtn];
+    [self createItemButton:NSLocalizedString(@"personal_center_item_charge_history",@"") image:[UIImage imageNamed:@"ic_history"] root:_historyBtn];
     
     
     _questionBtn = [[UIButton alloc]init];
     _questionBtn.frame = CGRectMake(0,_historyBtn.tp_y + _historyBtn.tp_height + 10, TPScreenWidth(), 60);
     _questionBtn.backgroundColor = [UIColor whiteColor];
     [_scrollView addSubview:_questionBtn];
-    [self createItemButton:@"费率说明" image:[UIImage imageNamed:@"ic_question"] root:_questionBtn];
+    [self createItemButton:NSLocalizedString(@"personal_center_item_charge_rate",@"")  image:[UIImage imageNamed:@"ic_question"] root:_questionBtn];
     
     
     _feedbackBtn = [[UIButton alloc]init];
     _feedbackBtn.frame = CGRectMake(0,_questionBtn.tp_y + _questionBtn.tp_height + 10, TPScreenWidth(), 60);
     _feedbackBtn.backgroundColor = [UIColor whiteColor];
     [_scrollView addSubview:_feedbackBtn];
-    [self createItemButton:@"意见反馈" image:[UIImage imageNamed:@"ic_feedback"] root:_feedbackBtn];
+    [self createItemButton:NSLocalizedString(@"feed_back",@"")   image:[UIImage imageNamed:@"ic_feedback"] root:_feedbackBtn];
     
     _loginBtn = [[UIButton alloc]init];
     _loginBtn.frame = CGRectMake(0,_feedbackBtn.tp_y + _feedbackBtn.tp_height + 10, TPScreenWidth(), 60);
     _loginBtn.backgroundColor = [UIColor whiteColor];
     
     if([UserDefaultsManager boolValueForKey:TOUCHPAL_USER_HAS_LOGIN]){
-        [_loginBtn setTitle:@"退出登录" forState:UIControlStateNormal];
+        [_loginBtn setTitle:NSLocalizedString(@"personal_center_logout_text",@"") forState:UIControlStateNormal];
         _minutesTitleLabel.hidden = NO;
         _minutesLabel.hidden = NO;
         _noLoginLabel.hidden = YES;
     }else{
-        [_loginBtn setTitle:@"绑定账号" forState:UIControlStateNormal];
+        [_loginBtn setTitle:NSLocalizedString(@"personal_center_login_text",@"") forState:UIControlStateNormal];
         _minutesTitleLabel.hidden = YES;
         _minutesLabel.hidden = YES;
         _noLoginLabel.hidden = NO;
@@ -183,7 +183,7 @@
     [self createCircleView:120 backgroudColor: [ColorUtil colorWithHexString:@"#88c6ff" alpha:1.0f] view:_topView];
     
     _minutesTitleLabel = [[UILabel alloc]init];
-    _minutesTitleLabel.text = @"剩余分钟数";
+    _minutesTitleLabel.text = NSLocalizedString(@"personal_center_munites_left_lable",@"");
     _minutesTitleLabel.font = [UIFont systemFontOfSize:13.0f];
     _minutesTitleLabel.textColor = [UIColor whiteColor];
     _minutesTitleLabel.frame = CGRectMake((TPScreenWidth() - _minutesTitleLabel.contentSize.width ) /2, 80 - _minutesTitleLabel.contentSize.height  - 10, _minutesTitleLabel.contentSize.width, _minutesTitleLabel.contentSize.height);
@@ -203,7 +203,7 @@
     _noLoginLabel.font = [UIFont systemFontOfSize:20.0f];
     _noLoginLabel.textColor = [UIColor whiteColor];
     _noLoginLabel.textAlignment = NSTextAlignmentCenter;
-    _noLoginLabel.text = @"未登录";
+    _noLoginLabel.text = NSLocalizedString(@"personal_center_need_login",@"");
     _noLoginLabel.hidden = YES;
     _noLoginLabel.frame = CGRectMake(0, (160 - _noLoginLabel.contentSize.height)/2 , TPScreenWidth(), _noLoginLabel.contentSize.height);
     [_topView addSubview:_noLoginLabel];
@@ -291,7 +291,7 @@
 -(void)doLogin{
     [DefaultUIAlertViewHandler showAlertViewWithTitle:NSLocalizedString(@"personal_center_logout_hint", @"") message:nil cancelTitle:NSLocalizedString(@"personal_center_logout_cancel", @"") okTitle:NSLocalizedString(@"personal_center_logout_confirm", @"") okButtonActionBlock:^ {
         [LoginController removeLoginDefaultKeys];
-        [_loginBtn setTitle:@"绑定账号" forState:UIControlStateNormal];
+        [_loginBtn setTitle:NSLocalizedString(@"personal_center_login_text",@"") forState:UIControlStateNormal];
         _numberLabel.text = @"";
         _noLoginLabel.hidden = NO;
         _minutesLabel.hidden = YES;

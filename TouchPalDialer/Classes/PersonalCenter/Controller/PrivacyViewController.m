@@ -40,14 +40,27 @@
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake((TPScreenWidth()-200)/2, TPHeaderBarHeightDiff(), 200, 45)];
     [titleLabel setSkinStyleWithHost:self forStyle:@"defaultUILabel_style"];
     titleLabel.font = [UIFont systemFontOfSize:FONT_SIZE_2_5];
-    titleLabel.text = @"用户协议及隐私政策";
+    titleLabel.text = NSLocalizedString(@"privacy_title", @"");
     titleLabel.textAlignment = NSTextAlignmentCenter;
     [headerBar addSubview:titleLabel];
 }
 
+- (NSString *)getCurrentLanguage
+{
+    NSArray *languages = [NSLocale preferredLanguages];
+    NSString *currentLanguage = [languages objectAtIndex:0];
+    return currentLanguage;
+}
+
 -(void)initBody{
 
-    NSString *filePath=[[NSBundle mainBundle] pathForResource:@"privacy"ofType:@"txt"];
+    NSString *languageStr = [self getCurrentLanguage];
+    NSString *filePath;
+    if([languageStr localizedStandardContainsString:@"en"]){
+        filePath=[[NSBundle mainBundle] pathForResource:@"privacy_en"ofType:@"txt"];
+    }else{
+        filePath=[[NSBundle mainBundle] pathForResource:@"privacy"ofType:@"txt"];
+    }
     NSError *error;
     NSString *content = [[NSString alloc]initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&error];
     UIScrollView *scrollView = [[UIScrollView alloc]init];

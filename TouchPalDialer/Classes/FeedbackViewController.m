@@ -18,7 +18,7 @@
 #import "TouchPalVersionInfo.h"
 #import "UserDefaultsManager.h"
 #import "TPChargeUtil.h"
-
+#import <MBProgressHUD.h>
 @interface FeedbackViewController ()
 
 @property (strong, nonatomic) ByTextField *emailTextField;
@@ -105,7 +105,7 @@
     _commitBtn.layer.masksToBounds = YES;
     _commitBtn.layer.cornerRadius = 8;
     [_commitBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [_commitBtn setTitle:@"提交" forState:UIControlStateNormal];
+    [_commitBtn setTitle:NSLocalizedString(@"feed_back_commit", @"") forState:UIControlStateNormal];
     _commitBtn.titleLabel.font = [UIFont systemFontOfSize:16.0f];
     _commitBtn.frame = CGRectMake(20,  20 +TPStatusBarHeight() + 45 + 40 + 10 + 220, TPScreenWidth()-40, 50);
     [_commitBtn addTarget:self action:@selector(doFeedback) forControlEvents:UIControlEventTouchUpInside];
@@ -129,6 +129,9 @@
         [alertView show];
         return;
     }
+    
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
     
     NSString *url = @"http://search.oem.cootekservice.com/yellowpage_v3/collector_push";
     
@@ -158,8 +161,10 @@
             [self showErrorDialog];
         }
        
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
     } fail:^(id respondObj, NSError *error) {
         [self showErrorDialog];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
         
     }];
 }

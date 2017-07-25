@@ -86,7 +86,7 @@
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake((TPScreenWidth()-120)/2, TPHeaderBarHeightDiff(), 120, 45)];
     [titleLabel setSkinStyleWithHost:self forStyle:@"defaultUILabel_style"];
     titleLabel.font = [UIFont systemFontOfSize:FONT_SIZE_2_5];
-    titleLabel.text = @"通话时长充值";
+    titleLabel.text = NSLocalizedString(@"personal_center_item_charge",@"");
     titleLabel.textAlignment = NSTextAlignmentCenter;
     [headerBar addSubview:titleLabel];
 }
@@ -114,7 +114,7 @@
         NSString *accountName = [UserDefaultsManager stringForKey:VOIP_REGISTER_ACCOUNT_NAME defaultValue:nil];
         _phoneNumLabel.text = accountName;
     }else{
-        _phoneNumLabel.text = @"未登录";
+        _phoneNumLabel.text = NSLocalizedString(@"personal_center_need_login",@"");
     }
     _phoneNumLabel.textAlignment = NSTextAlignmentCenter;
     _phoneNumLabel.frame = phoneView.frame;
@@ -157,7 +157,7 @@
     _chargeBtn.layer.masksToBounds = YES;
     _chargeBtn.layer.cornerRadius = 8;
     [_chargeBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [_chargeBtn setTitle:@"立即充值" forState:UIControlStateNormal];
+    [_chargeBtn setTitle:NSLocalizedString(@"personal_center_item_charge",@"") forState:UIControlStateNormal];
     _chargeBtn.titleLabel.font = [UIFont systemFontOfSize:16.0f];
     _chargeBtn.frame = CGRectMake(TPScreenWidth()/4,  45 + TPHeaderBarHeightDiff()+120 + 170, chargeBtnWidth, 40);
     [_chargeBtn addTarget:self action:@selector(charge) forControlEvents:UIControlEventTouchUpInside];
@@ -268,22 +268,22 @@
             [[TPIAPManager shareSIAPManager] startPurchWithID:pruchId orderID:orderId tracompleteHandle:^(SIAPPurchType type, NSData *data) {
                 switch (type) {
                     case SIAPPurchSuccess:
-                        [MBProgressHUD showText:@"支付成功"];
+                        [MBProgressHUD showText:NSLocalizedString(@"pay_success",@"")];
                         break;
                     case SIAPPurchCancle:
-                        [MBProgressHUD showText:@"支付取消"];
+                        [MBProgressHUD showText:NSLocalizedString(@"pay_cancel",@"")];
                         break;
                     case SIAPPurchFailed:
-                        [MBProgressHUD showText:@"支付失败"];
+                        [MBProgressHUD showText:NSLocalizedString(@"pay_fail",@"")];
                         break;
                     case SIAPPurchNotArrow:
-                        [MBProgressHUD showText:@"不允许内购"];
+                        [MBProgressHUD showText:NSLocalizedString(@"pay_reject",@"")];
                         break;
                     case SIAPPurchVerFailed:
-                        [MBProgressHUD showText:@"订单校验失败"];
+                        [MBProgressHUD showText:NSLocalizedString(@"pay_order_fail",@"")];
                         break;
                     case SIAPPurchVerSuccess:
-                        [MBProgressHUD showText:@"订单校验成功"];
+                        [MBProgressHUD showText:NSLocalizedString(@"pay_order_success",@"")];
                         break;
                     default:
                         break;
@@ -319,7 +319,7 @@
 
 -(void)showErrorDialog
 {
-    UIAlertView *alertView =[[UIAlertView alloc]initWithTitle:@"充值失败" message:@"服务器开了点小差" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
+    UIAlertView *alertView =[[UIAlertView alloc]initWithTitle:NSLocalizedString(@"charge_fail",@"") message:NSLocalizedString(@"feed_back_commit_fail_content",@"") delegate:self cancelButtonTitle:NSLocalizedString(@"Unselect_all",@"") otherButtonTitles:nil, nil];
     [alertView show];
     [MBProgressHUD hideHUDForView:self.view];
 }

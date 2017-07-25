@@ -372,11 +372,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TouchPalDialer/Classes/PersonalCenter/Controller/PrivacyViewController.m"
-            timestampString = "521581917.778984"
+            timestampString = "522662220.377544"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "-initBody"
             landmarkType = "7">
          </BreakpointContent>
@@ -388,11 +388,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TouchPalDialer/Classes/PersonalCenter/Controller/PrivacyViewController.m"
-            timestampString = "521582062.142541"
+            timestampString = "522662220.377544"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "-initBody"
             landmarkType = "7">
          </BreakpointContent>
