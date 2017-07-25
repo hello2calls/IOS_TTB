@@ -1025,7 +1025,7 @@
 "voip_open_voip_hint" = "用触宝打电话，省钱省心";
 "voip_backcall_on" = "允许自动回拨";
 "voip_backcall_on2gor3gMobile" = "2G网络下直接使用回拨模式";
-"voip_cancel" = "取消";
+"voip_cancel" = "Cancel";
 "voip_close" = "关闭";
 "voip_use_invitation_code" = "奖励兑换";
 "voip_international_call_Join_immediately" = "免费国际长途(未获得邀请码)";
@@ -1213,7 +1213,7 @@
 "voip_register_now" = "立即体验";
 
 "voip_international_call_wizard_hint1" = "国际免费专线不会扣除您的话费，";
-"voip_international_call_wizard_hint2" = "只扣除触宝免费分钟数";
+"voip_international_call_wizard_hint2" = "";
 "voip_international_call_wizard_hint3" = "由于资费系统不同，国际免费专线";
 "voip_international_call_wizard_hint4" = "会多倍扣除您的免费分钟数";
 "voip_international_call_wizard_hint5" = "数据网络下，流量消耗与普通免费";
@@ -1523,3 +1523,5 @@
 "privacy_title" = "User agreement and privacy policy";
 "full_keyboard" = "Full keyboard";
 "paste" = "Paste";
+"number_not_support" ="number not support";
+"TCALL" ="TCALL";

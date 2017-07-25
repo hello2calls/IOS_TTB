@@ -68,13 +68,13 @@ TPShareController *instance_ = nil;
 - (UIActionSheet *)buildActionSheet
 {
     NSString *msg = NSLocalizedString(@"send_message", @"");
-    NSString *weixin = NSLocalizedString(@"Send to WeChat", @"");
+   // NSString *weixin = NSLocalizedString(@"Send to WeChat", @"");
     
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil
                                                               delegate:self
                                                      cancelButtonTitle:NSLocalizedString(@"Cancel", @"")
                                                 destructiveButtonTitle:nil
-                                                     otherButtonTitles:msg, weixin, nil];
+                                                     otherButtonTitles:msg,  nil];
     
     return actionSheet;
 }
@@ -258,14 +258,15 @@ TPShareController *instance_ = nil;
                                                           withMessage:[NSString stringWithFormat:@"%@\n%@",self.titleName,self.message]
                                                           presentedBy:self.navController];
 
-    }else if(buttonIndex == 1){
+    }
+    /*else if(buttonIndex == 1){
         if ([self.titleName length] > TITLE_MAX_LENGTH) {
             [DefaultUIAlertViewHandler showAlertViewWithTitle:NSLocalizedString(@"The contact name is too long to share to WeChat", @"")
                                                       message:nil];
         } else {
             [self sendAppContent];
         }
-    }
+    }*/
     if (self.action) {
         self.action();
     }

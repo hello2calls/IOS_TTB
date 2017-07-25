@@ -1218,7 +1218,7 @@
 "voip_register_now" = "立即体验";
 
 "voip_international_call_wizard_hint1" = "国际免费专线不会扣除您的话费，";
-"voip_international_call_wizard_hint2" = "只扣除触宝免费分钟数";
+"voip_international_call_wizard_hint2" = "";
 "voip_international_call_wizard_hint3" = "由于资费系统不同，国际免费专线";
 "voip_international_call_wizard_hint4" = "会多倍扣除您的免费分钟数";
 "voip_international_call_wizard_hint5" = "数据网络下，流量消耗与普通免费";
@@ -1531,3 +1531,5 @@
 "paste" = "粘贴";
 "Area" = "国际区号";
 "number" = "号码";
+"number_not_support" ="该号码不支持通通宝电话";
+"TCALL" ="通通宝电话";

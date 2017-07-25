@@ -133,7 +133,7 @@
             }leftBlock:nil];
             [UserDefaultsManager setIntValue:2 forKey:unregister_fristCall10Min_tip];
         }
-        else if([UserDefaultsManager intValueForKey:unregister_fristCall_tip]==1){
+       /* else if([UserDefaultsManager intValueForKey:unregister_fristCall_tip]==1){
             [DialerUsageRecord recordpath:PATH_INAPP_TESTFREECALL_GUDIE kvs:Pair(KEY_ACTION , AFTERCALL_SHOW), nil];
                 view =[[CommonTipsWithBolckView alloc] initWithtitleString:nil lable1String:@"现在有空了嘛？试试免费电话功能吧！" lable1textAlignment:0 lable2String:nil lable2textAlignment:0 leftString:@"不需要" rightString:@"立即开启" rightBlock:^{
                     if ([UserDefaultsManager boolValueForKey:TOUCHPAL_USER_HAS_LOGIN]) {
@@ -143,7 +143,7 @@
                     }
                 } leftBlock:nil];
                 [UserDefaultsManager setIntValue:2 forKey:unregister_fristCall_tip];
-            }
+            }*/
             
             if([[TouchPalDialerAppDelegate naviController].topViewController isKindOfClass:[RootScrollViewController class]] && [(RootScrollViewController*)[((UINavigationController*)[[[UIApplication sharedApplication]delegate]window].rootViewController).viewControllers objectAtIndex:0] getSelectedControllerIndex] == 1){
                 [DialogUtil showDialogWithContentView:view inRootView:nil];

@@ -181,7 +181,7 @@
     submit.layer.cornerRadius = 4;
     submit.layer.masksToBounds = YES;
     submit.frame = CGRectMake(x, y, w, h);
-    [submit setTitle:NSLocalizedString(@"personal_center_need_login", @"") forState:UIControlStateNormal];
+    [submit setTitle:NSLocalizedString(@"YellowPage Login", @"") forState:UIControlStateNormal];
     [submit setTitleColor:[TPDialerResourceManager getColorForStyle:@"login_submit_button_title_normal_color"] forState:UIControlStateNormal];
     [submit setTitleColor:[TPDialerResourceManager getColorForStyle:@"login_submit_button_title_disable_color"] forState:UIControlStateDisabled];
     [submit setBackgroundImage:[FunctionUtility imageWithColor:[[TPDialerResourceManager sharedManager] getUIColorInDefaultPackageByNumberString:@"login_submit_button_color"]] forState:UIControlStateNormal];

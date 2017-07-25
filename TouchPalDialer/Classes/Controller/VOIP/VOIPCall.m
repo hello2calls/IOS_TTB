@@ -77,13 +77,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             if ([[TPCallActionController alloc] getCallNumberTypeCustion:number]==VOIP_OVERSEA) {
                 [UserDefaultsManager setBoolValue:YES forKey:VOIP_FIRST_INTERNATIONAL_CALL];
-                 if (![UserDefaultsManager boolValueForKey:VOIP_CALLINTERNATIONAL_WIZARD_SHOWN defaultValue:NO]) {
-                      [[TouchPalDialerAppDelegate naviController] pushViewController:[CallInternationalWizardViewController instanceWithNumber:number] animated:YES];
-                     [UserDefaultsManager setBoolValue:YES forKey:VOIP_CALLINTERNATIONAL_WIZARD_SHOWN];
-                     
-                 }else{
-                     [[TouchPalDialerAppDelegate naviController] pushViewController:[CallViewController instanceWithNumber:number andCallMode:CallModeOutgoingCall] animated:YES];
-                 }
+              [[TouchPalDialerAppDelegate naviController] pushViewController:[CallViewController instanceWithNumber:number andCallMode:CallModeOutgoingCall] animated:YES];
             }else{
             [[TouchPalDialerAppDelegate naviController] pushViewController:[CallViewController instanceWithNumber:number andCallMode:CallModeOutgoingCall] animated:YES];
             }
@@ -92,24 +86,14 @@
             if ([UserDefaultsManager boolValueForKey:@"show_vip_null" defaultValue:NO]) {
                 [UserDefaultsManager setBoolValue:NO forKey:@"show_vip_null"];
                 if ([[TPCallActionController alloc] getCallNumberTypeCustion:number]==VOIP_OVERSEA) {
-                    if (![UserDefaultsManager boolValueForKey:VOIP_CALLINTERNATIONAL_WIZARD_SHOWN defaultValue:NO]) {
-                        [[TouchPalDialerAppDelegate naviController] pushViewController:[CallInternationalWizardViewController instanceWithNumber:number] animated:YES];
-                        [UserDefaultsManager setBoolValue:YES forKey:VOIP_CALLINTERNATIONAL_WIZARD_SHOWN];
-                    }else{
                         [[TouchPalDialerAppDelegate naviController] pushViewController:[CallViewController instanceWithNumber:number andCallMode:CallModeOutgoingCall] animated:YES];
-                    }
                 }else{
                     [[TouchPalDialerAppDelegate naviController] pushViewController:[CallViewController instanceWithNumber:number andCallMode:CallModeOutgoingCall] animated:YES];
                 }
             }else{
                 [DefaultUIAlertViewHandler showAlertViewWithTitle:@"使用免费电话会消耗流量，建议连接WiFi后使用" message:nil cancelTitle:@"取消" okTitle:@"继续拨打" okButtonActionBlock:^{
                     if ([[TPCallActionController alloc] getCallNumberTypeCustion:number]==VOIP_OVERSEA) {
-                        if (![UserDefaultsManager boolValueForKey:VOIP_CALLINTERNATIONAL_WIZARD_SHOWN defaultValue:NO]) {
-                            [[TouchPalDialerAppDelegate naviController] pushViewController:[CallInternationalWizardViewController instanceWithNumber:number] animated:YES];
-                            [UserDefaultsManager setBoolValue:YES forKey:VOIP_CALLINTERNATIONAL_WIZARD_SHOWN];
-                        }else{
                             [[TouchPalDialerAppDelegate naviController] pushViewController:[CallViewController instanceWithNumber:number andCallMode:CallModeOutgoingCall] animated:YES];
-                        }
                     }else{
                         [[TouchPalDialerAppDelegate naviController] pushViewController:[CallViewController instanceWithNumber:number andCallMode:CallModeOutgoingCall] animated:YES];
                     }

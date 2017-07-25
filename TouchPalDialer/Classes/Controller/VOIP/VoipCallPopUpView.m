@@ -233,7 +233,7 @@ static float scaleRatio;
     UIButton *freeCallButton = [UIButton tpd_buttonStyleCommon] ;
     freeCallButton.titleLabel.font = [UIFont systemFontOfSize:FONT_SIZE_2_5 * scaleRatio];
     if (type == VOIP_SERVICE || type == VOIP_PASS || type==VOIP_XINJIANG){
-        [freeCallButton setTitle:NSLocalizedString(@"该号码不支持触宝电话", "") forState:UIControlStateNormal];
+        [freeCallButton setTitle:NSLocalizedString(@"number_not_support", "") forState:UIControlStateNormal];
         [freeCallButton setBackgroundImage:[[TPDialerResourceManager sharedManager]getResourceByStyle:@"voip_freeCall_button_bg_disable_image"] forState:UIControlStateNormal];
         return freeCallButton;
     }
@@ -280,16 +280,16 @@ static float scaleRatio;
         if ([TPDExperiment multiCallExperiment].isDefaultValue) {
 //            未开启多人通话
             if ([UserDefaultsManager boolValueForKey:VOIP_IF_PRIVILEGA defaultValue:NO]){
-                [freeCallButton setTitle:NSLocalizedString(@"通通宝电话", "") forState:UIControlStateNormal];
+                [freeCallButton setTitle:NSLocalizedString(@"TCALL", @"") forState:UIControlStateNormal];
                 [freeCallButton setTitleColor:[TPDialerResourceManager  getColorForStyle:@"tp_color_yellow_200"] forState:UIControlStateNormal];
                 [self getVIPLabel:freeCallButton];
             } else if (self.ifCootekUser) {
                 // 如果主叫仅仅是注册用户，后缀显示`好友专线免时长`
-                [freeCallButton setTitle:NSLocalizedString(@"通通宝电话", "") forState:UIControlStateNormal];
+                [freeCallButton setTitle:NSLocalizedString(@"TCALL", @"") forState:UIControlStateNormal];
                 [freeCallButton setTitleColor:[TPDialerResourceManager  getColorForStyle:@"tp_color_yellow_200"] forState:UIControlStateNormal];
                 
             }else{
-                [freeCallButton setTitle:NSLocalizedString(@"通通宝电话", "") forState:UIControlStateNormal];
+                [freeCallButton setTitle:NSLocalizedString(@"TCALL", @"") forState:UIControlStateNormal];
                 [freeCallButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             }
             
@@ -318,7 +318,7 @@ static float scaleRatio;
         
 
     }else{
-        [freeCallButton setTitle:NSLocalizedString(@"不支持该号码", "") forState:UIControlStateNormal];
+        [freeCallButton setTitle:NSLocalizedString(@"number_not_support", "") forState:UIControlStateNormal];
         [freeCallButton setBackgroundImage:[[TPDialerResourceManager sharedManager]getResourceByStyle:@"voip_freeCall_button_bg_disable_image"] forState:UIControlStateNormal];
         return freeCallButton;
     }
@@ -576,7 +576,7 @@ static float scaleRatio;
         _freeCallButton.layer.cornerRadius = 4.0f;
         _freeCallButton.titleLabel.font = [UIFont systemFontOfSize:FONT_SIZE_2_5 * scaleRatio];
         _freeCallButton.tag = FreeButtonTag;
-        [_freeCallButton setTitle:NSLocalizedString(@"通通宝电话", "") forState:UIControlStateNormal];
+        [_freeCallButton setTitle:NSLocalizedString(@"TCALL", @"") forState:UIControlStateNormal];
         [_freeCallButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_freeCallButton setBackgroundImage:[[TPDialerResourceManager sharedManager]getResourceByStyle:@"voip_freeCall_button_bg_highlight_image"] forState:UIControlStateHighlighted];
         [_freeCallButton setBackgroundImage:[[TPDialerResourceManager sharedManager]getResourceByStyle:@"voip_freeCall_button_bg_image"] forState:UIControlStateNormal];

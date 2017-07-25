@@ -268,23 +268,28 @@ static NSString *sSource;
             range = NSMakeRange(2, number.length - 2);
             number = [number substringWithRange:range];
         }
-        range = NSMakeRange(0, 4);
-        temp = [number substringWithRange:range];
-        if([temp isEqualToString:@"2347"] || [temp isEqualToString:@"2348"] || [temp isEqualToString:@"2349"])
+        if(number.length <= 4)
         {
-            if(number.length == 13)
-            {
-               type = VOIP_ENABLE;
-            }
-        }
-        else if([temp isEqualToString:@"2341"] && number.length == 11)
-        {
-            type = VOIP_ENABLE;
-        }
-        else{
             type = [self getCallNumberTypeCustion:callLog_.number];
-            if(type == VOIP_OVERSEA){
-                type = VOIP_PASS;
+        }else{
+            range = NSMakeRange(0, 4);
+            temp = [number substringWithRange:range];
+            if([temp isEqualToString:@"2347"] || [temp isEqualToString:@"2348"] || [temp isEqualToString:@"2349"])
+            {
+                if(number.length == 13)
+                {
+                    type = VOIP_ENABLE;
+                }
+            }
+            else if([temp isEqualToString:@"2341"] && number.length == 11)
+            {
+                type = VOIP_ENABLE;
+            }
+            else{
+                type = [self getCallNumberTypeCustion:callLog_.number];
+                if(type == VOIP_OVERSEA){
+                    type = VOIP_PASS;
+                }
             }
         }
         
