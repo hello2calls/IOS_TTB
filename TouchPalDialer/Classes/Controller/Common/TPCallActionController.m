@@ -292,6 +292,7 @@ static NSString *sSource;
                 }
             }
         }
+      
         
     }
     
@@ -598,7 +599,7 @@ static NSString *sSource;
 }
 
 - (NSInteger)getCallNumberTypeWith86:(NSString*) phoneNumber{
-    if (phoneNumber.length < 9 || phoneNumber.length > 11){
+    if (phoneNumber.length != 11){
         return VOIP_PASS;
     }
     if ( [phoneNumber hasPrefix:@"17"] ){

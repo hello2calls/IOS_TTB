@@ -40,7 +40,7 @@
             command = [[GroupAddToFavoriteCommand alloc] init];
             break;
         case CommandTypeInviting: {
-            command = [[InvitingCommand alloc] init];
+            //command = [[InvitingCommand alloc] init];
             break;
         }
         default:
