@@ -22,6 +22,7 @@ typedef void (^TPDBooleanResultBlock)(BOOL succeeded, NSError *error);
     NSString           *_purchID;
     IAPCompletionHandle _handle;
     NSString           *_orderID;
+    NSString           *_minutes;
 
 }
 @end
@@ -53,13 +54,14 @@ typedef void (^TPDBooleanResultBlock)(BOOL succeeded, NSError *error);
 
 
 #pragma mark - 🚪public
-- (void)startPurchWithID:(NSString *)purchID orderID : (NSString *)orderId tracompleteHandle:(IAPCompletionHandle)handle{
-    if (purchID) {
+- (void)startPurchWithID:(NSString *)purchID orderID : (NSString *)orderId tracompleteHandle:(IAPCompletionHandle)handle minute: (NSString *)minutes{
+       if (purchID) {
         if ([SKPaymentQueue canMakePayments]) {
             // 开始购买服务
             _purchID = purchID;
             _handle = handle;
             _orderID = orderId;
+            _minutes = minutes;
             
             NSSet *nsset = [NSSet setWithArray:@[purchID]];
             SKProductsRequest *request = [[SKProductsRequest alloc] initWithProductIdentifiers:nsset];
@@ -159,7 +161,10 @@ typedef void (^TPDBooleanResultBlock)(BOOL succeeded, NSError *error);
     
     [self validateReceiptWithData:data complete:^(BOOL finished, NSError *error) {
         if (finished) {
+            NSString *content = [NSString stringWithFormat:@"%@ %@",_minutes,NSLocalizedString(@"charge_tips", @"")];
             [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+            UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:NSLocalizedString(@"charge_success", @"") message:content delegate:self cancelButtonTitle:NSLocalizedString(@"personal_center_logout_confirm", @"") otherButtonTitles:nil, nil];
+            [alertView show];
             NSLog(@"验证成功");
         }else {
             NSLog(@"验证失败");

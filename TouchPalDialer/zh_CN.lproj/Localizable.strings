@@ -1533,3 +1533,4 @@
 "number" = "号码";
 "number_not_support" ="该号码不支持通通宝电话";
 "TCALL" ="通通宝电话";
+"charge_tips" = "分钟充值成功，预计5分钟内到账，请注意查看";

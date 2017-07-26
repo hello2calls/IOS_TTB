@@ -23,7 +23,10 @@
 #import "HistoryViewController.h"
 #import "HandlerWebViewController.h"
 #import "MBProgressHUD+MJ.h"
+#import "UIScrollView+MJRefresh.h"
 #import "FeedbackViewController.h"
+#import "MJRefreshNormalHeader.h"
+
 
 @interface PersonalCenterViewController ()
 
@@ -49,6 +52,7 @@
 
 @property(strong, nonatomic) UILabel *numberLabel;
 
+@property(strong, nonatomic) MJRefreshHeader *header;
 
 @property (strong, nonatomic)UIScrollView *scrollView;
 @end
@@ -116,10 +120,12 @@
 
 -(void)initBody
 {
-    
+
+    _header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(doRefresh)];
     _scrollView = [[UIScrollView alloc]init];
     _scrollView.frame = CGRectMake(0, 45 + TPHeaderBarHeightDiff(), TPScreenWidth(), TPScreenHeight() - (45 + TPHeaderBarHeightDiff()));
     _scrollView.contentSize = CGSizeMake(TPScreenWidth(), TPScreenHeight());
+    [_scrollView setMj_header:_header];
     [self.view addSubview:_scrollView];
     [self initTopView :_scrollView];
     
@@ -306,6 +312,11 @@
     }];
 }
 
+
+-(void)doRefresh{
+    [SeattleFeatureExecutor queryVOIPAccountInfo];
+    [_header endRefreshing];
+}
 
 
 @end

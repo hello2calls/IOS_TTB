@@ -289,7 +289,7 @@
                         break;
                 }
                 [MBProgressHUD hideHUDForView:self.view];
-            }];
+            } minute:[NSString stringWithFormat:@"%d",select]];
         }else{
             [self showErrorDialog];
         }

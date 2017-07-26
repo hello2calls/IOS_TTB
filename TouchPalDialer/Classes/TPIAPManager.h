@@ -44,5 +44,5 @@ typedef void (^IAPCompletionHandle)(SIAPPurchType type,NSData *data);
 @interface TPIAPManager : NSObject
 + (instancetype)shareSIAPManager;
 //开始内购
-- (void)startPurchWithID:(NSString *)purchID orderID : (NSString *)orderId tracompleteHandle:(IAPCompletionHandle)handle;
+- (void)startPurchWithID:(NSString *)purchID orderID : (NSString *)orderId tracompleteHandle:(IAPCompletionHandle)handle minute: (NSString *)minutes;
 @end

@@ -1525,3 +1525,5 @@
 "paste" = "Paste";
 "number_not_support" ="number not support";
 "TCALL" ="TCALL";
+
+"charge_tips" = "minutes recharge success, expected within 5 minutes to pay, please pay attention to see";
