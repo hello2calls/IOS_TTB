@@ -272,15 +272,19 @@
                         break;
                     case SIAPPurchCancle:
                         [MBProgressHUD showText:NSLocalizedString(@"pay_cancel",@"")];
+                        [MBProgressHUD hideHUDForView:self.view];
                         break;
                     case SIAPPurchFailed:
                         [MBProgressHUD showText:NSLocalizedString(@"pay_fail",@"")];
+                        [MBProgressHUD hideHUDForView:self.view];
                         break;
                     case SIAPPurchNotArrow:
                         [MBProgressHUD showText:NSLocalizedString(@"pay_reject",@"")];
+                        [MBProgressHUD hideHUDForView:self.view];
                         break;
                     case SIAPPurchVerFailed:
                         [MBProgressHUD showText:NSLocalizedString(@"pay_order_fail",@"")];
+                        [MBProgressHUD hideHUDForView:self.view];
                         break;
                     case SIAPPurchVerSuccess:
                         [MBProgressHUD showText:NSLocalizedString(@"pay_order_success",@"")];
@@ -288,8 +292,7 @@
                     default:
                         break;
                 }
-                [MBProgressHUD hideHUDForView:self.view];
-            } minute:[NSString stringWithFormat:@"%d",select]];
+            } minute:[NSString stringWithFormat:@"%d",select] view:self.view];
         }else{
             [self showErrorDialog];
         }

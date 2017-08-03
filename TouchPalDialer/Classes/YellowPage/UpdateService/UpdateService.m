@@ -34,7 +34,6 @@
 #import "SectionMiniBanner.h"
 #import "SectionFullScreenAd.h"
 #import "FullScreenAdItem.h"
-#import "AdRequestManager.h"
 #import "FindNewsItem.h"
 #import "SectionFindNews.h"
 #import "NetworkUtil.h"

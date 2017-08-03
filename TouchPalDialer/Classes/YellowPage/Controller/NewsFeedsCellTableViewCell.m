@@ -10,7 +10,6 @@
 #import "FindNewsItem.h"
 #import "FindNewsListViewController.h"
 #import "UITableViewCell+TPDExtension.h"
-#import "BaiduMobAdNativeAdView.h"
 #import "UIImageView+WebCache.h"
 #import "IndexConstant.h"
 #import "VerticallyAlignedLabel.h"
@@ -18,7 +17,6 @@
 #import "CTUrl.h"
 #import "DialerUsageRecord.h"
 #import "TPAnalyticConstants.h"
-#import "AdRequestManager.h"
 #import "AdInfoModelManager.h"
 #import "SSPStat.h"
 #import "EdurlManager.h"
@@ -30,7 +28,6 @@
 @interface NewsFeedsCellTableViewCell()
 @property(nonatomic, assign) FeedsLayoutType typeLayout;
 @property(copy)void (^block)(id);
-@property(nonatomic, strong)BaiduMobAdNativeAdView* nativeAdView;
 @property(nonatomic, assign)BOOL pressed;
 @property(nonatomic, assign)CGPoint startPoint;
 
@@ -42,7 +39,7 @@
 @synthesize typeLayout;
 @synthesize borderView;
 @synthesize highlightView;
-@synthesize nativeAdView;
+//@synthesize nativeAdView;
 @synthesize pressed;
 @synthesize startPoint;
 
@@ -70,13 +67,13 @@
     } else if (self.item.category == CategoryADBaidu) {
         NewsFeedsCellTableViewCell* cellView = [self viewWithTag:FIND_NEWS_BAIDU_TAG];
         cellView.item = self.item;
-        [nativeAdView loadAndDisplayNativeAdWithObject:item.baiduAdNativeObject completion:^(NSArray *errors) {
-            if (!errors) {
-                if (nativeAdView) {
-                    [nativeAdView trackImpression];
-                }
-            }
-        }];
+//        [nativeAdView loadAndDisplayNativeAdWithObject:item.baiduAdNativeObject completion:^(NSArray *errors) {
+//            if (!errors) {
+//                if (nativeAdView) {
+//                    [nativeAdView trackImpression];
+//                }
+//            }
+//        }];
     }
     
     if (self.item.topIndex && self.item.topIndex.longValue >= 0) {
@@ -329,25 +326,25 @@
                 default:
                     break;
             }
-            nativeAdView = [[BaiduMobAdNativeAdView alloc] init];
-            [self addSubview:nativeAdView];
-            [nativeAdView makeConstraints:^(MASConstraintMaker *make) {
-                make.edges.equalTo(self);
-            }];
-            
-            if (cellView) {
-                [cellView setTag:FIND_NEWS_BAIDU_TAG];
-                self.tpd_container = cellView.tpd_container;
-                self.tpd_label1 = cellView.tpd_label1;
-                self.tpd_label2 = cellView.tpd_label2;
-                self.tpd_img1 = cellView.tpd_img1;
-                self.tpd_img2 = cellView.tpd_img2;
-                self.tpd_img3 = cellView.tpd_img3;
-                [nativeAdView addSubview:cellView];
-                [cellView makeConstraints:^(MASConstraintMaker *make) {
-                    make.edges.equalTo(nativeAdView);
-                }];
-            }
+//            nativeAdView = [[BaiduMobAdNativeAdView alloc] init];
+//            [self addSubview:nativeAdView];
+//            [nativeAdView makeConstraints:^(MASConstraintMaker *make) {
+//                make.edges.equalTo(self);
+//            }];
+//            
+//            if (cellView) {
+//                [cellView setTag:FIND_NEWS_BAIDU_TAG];
+//                self.tpd_container = cellView.tpd_container;
+//                self.tpd_label1 = cellView.tpd_label1;
+//                self.tpd_label2 = cellView.tpd_label2;
+//                self.tpd_img1 = cellView.tpd_img1;
+//                self.tpd_img2 = cellView.tpd_img2;
+//                self.tpd_img3 = cellView.tpd_img3;
+//                [nativeAdView addSubview:cellView];
+//                [cellView makeConstraints:^(MASConstraintMaker *make) {
+//                    make.edges.equalTo(nativeAdView);
+//                }];
+//            }
             
             break;
         }

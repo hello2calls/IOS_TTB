@@ -28,7 +28,6 @@
 #import "PJSIPManager.h"
 #import "ScheduleInternetVisit.h"
 #import "ScheduleTaskManager.h"
-#import "TaeClient.h"
 #import "TouchpalMembersManager.h"
 #import "QQShareController.h"
 #import "TPUncaughtExceptionHandler.h"
@@ -154,7 +153,7 @@
     }
 }
 
-static void displayStatusChanged(CFNotificationCenterRef center,
+/*static void displayStatusChanged(CFNotificationCenterRef center,
                                  void *observer,
                                  CFStringRef name,
                                  const void *object,
@@ -162,8 +161,8 @@ static void displayStatusChanged(CFNotificationCenterRef center,
     if (name == CFSTR("com.apple.springboard.lockcomplete")) {
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"kDisplayStatusLocked"];
         [[NSUserDefaults standardUserDefaults] synchronize];
-    }
-}
+    }}
+ */
 
 - (void)normalLaunchWithOptions:(NSDictionary*) launchOptions{
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
@@ -178,12 +177,6 @@ static void displayStatusChanged(CFNotificationCenterRef center,
     //
     //    }
    
-    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(),
-                                    NULL,
-                                    displayStatusChanged,
-                                    CFSTR("com.apple.springboard.lockcomplete"),
-                                    NULL,
-                                    CFNotificationSuspensionBehaviorDeliverImmediately);
     
     [UserDefaultsManager setBoolValue:YES forKey:active_in_background];
     
@@ -536,9 +529,7 @@ static void displayStatusChanged(CFNotificationCenterRef center,
             [[ScheduleTaskManager scheduleManager] addScheduleTask:[UploadCalllogScheduleTask task]];
             [[ScheduleTaskManager scheduleManager] addScheduleTask:[UploadContactScheduleTask task]];
         }
-        [TaeClient setInfoBeforeInit];
-        [[TaeClient instance] initTae];
-        [[QQShareController instance]registerQQApi];
+//        [[QQShareController instance]registerQQApi];
         
         [TPUncaughtExceptionHandler attachHandler];
         [[NoahManager sharedPSInstance] startNotificationRegistration];

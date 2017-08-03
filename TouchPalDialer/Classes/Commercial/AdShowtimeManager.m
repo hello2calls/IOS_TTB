@@ -13,7 +13,6 @@
 #import "FunctionUtility.h"
 #import "SeattleFeatureExecutor.h"
 
-#define kNotificationNameDidChangeLockState @"com.apple.springboard.lockstate"
 
 @interface AdShowtimeManager () {
     int     _notifyTokenForDidChangeScreenLockStatus;
@@ -140,25 +139,6 @@
 {
     __weak AdShowtimeManager *weakSelf = self;
 
-    uint32_t result = notify_register_dispatch(kNotificationNameDidChangeLockState.UTF8String, &_notifyTokenForDidChangeScreenLockStatus, dispatch_get_main_queue(), ^(int info) {
-        __strong AdShowtimeManager *strongSelf = weakSelf;
-
-        if (strongSelf) {
-            uint64_t state;
-            notify_get_state(strongSelf->_notifyTokenForDidChangeScreenLockStatus, &state);
-
-            cootek_log(@"AdShowtimeManager ScreenLockStatus state %d", state);
-            strongSelf.isScreenLocked = (BOOL)state;
-
-            if (state) {
-                [strongSelf iphoneDidLockScreen];
-            } else {
-                [strongSelf iphoneDidUnlockScreen];
-            }
-        }
-    });
-
-    self.registeredForDarwinNotifications = (result == NOTIFY_STATUS_OK);
     return;
 }
 

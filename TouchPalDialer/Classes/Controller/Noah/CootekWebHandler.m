@@ -20,7 +20,6 @@
 #import "FunctionUtility.h"
 #import "TPShareController.h"
 #import "TPDialerResourceManager.h"
-#import "TaeClient.h"
 #import <TAESDK/TaeWebViewUISettings.h>
 #import "DefaultUIAlertViewHandler.h"
 #import "LoginController.h"
@@ -627,92 +626,92 @@
         responseCallback(@"makeCall over");
     }];
 
-    [bridge registerHandler:@"TaobaoFlow" handler:^(id data, WVJBResponseCallback responseCallback) {
-        cootek_log(@"TaobaoFlow called: %@", data);
-        NSInteger flowNumber = [[data objectForKey:@"number"]integerValue];
-        [DialerUsageRecord recordpath:EV_FLOW_EXCHANGE_BY_TAOBAO kvs:Pair(@"count", @(1)), nil];
-        if ( [[TaeClient instance] isLogin] ){
-            TaeUser *user = [[TaeClient instance] getUser];
-            
-            TaeWebViewUISettings *set = [[TaeWebViewUISettings alloc]init];
-            [[TaeClient instance] showpage:sourceCon isNeedPush:YES pageUrl:@"http://h5.m.taobao.com/aliqin/flowwallet/index.html?spm=0.0.0.0" webViewUISettings:set tradeProcessSuccessCallback:^(TaeTradeProcessResult *tradeProcessResult){
-
-            }tradeProcessFailedCallback:^(NSError *error){
-                cootek_log(@"taobao flow error %@",[error localizedDescription]);
-            }];
-            double delayInSeconds = 1.0;
-            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-            dispatch_after(popTime, dispatch_get_main_queue(), ^{
-                ClientNetworkType status = [Reachability network];
-                if ( status < network_2g){
-                    return;
-                }
-                FlowInputNameView *inputView = [[FlowInputNameView alloc]initWithFrame:CGRectMake(0, 0, TPScreenWidth(), TPScreenHeight()) andName:user.nick andFlowNumber:flowNumber andSourceCon:sourceCon];
-                UIWindow *uiWindow = [[UIApplication sharedApplication].windows objectAtIndex:0];
-                [uiWindow addSubview:inputView];
-                [uiWindow bringSubviewToFront:inputView];
-                [DialerUsageRecord recordpath:EV_FLOW_SHOW_INPUTNAME_VIEW kvs:Pair(@"count", @(1)), nil];
-            });
-        }else{
-            [[TaeClient instance] showLogin:sourceCon successCallback:^(TaeSession *session){
-                cootek_log(@"TaobaoFlow showloginpage success");
-                TaeUser *user = [session getUser];
-                TaeWebViewUISettings *set = [[TaeWebViewUISettings alloc]init];
-                [[TaeClient instance] showpage:sourceCon isNeedPush:YES pageUrl:@"http://h5.m.taobao.com/aliqin/flowwallet/index.html?spm=0.0.0.0" webViewUISettings:set tradeProcessSuccessCallback:^(TaeTradeProcessResult *tradeProcessResult){
-                }tradeProcessFailedCallback:^(NSError *error){
-                    cootek_log(@"taobao flow error %@",[error localizedDescription]);
-                }];
-                cootek_log(@"TaobaoFlow showloginpage success after showpage");
-                double delayInSeconds = 1.0;
-                dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-                dispatch_after(popTime, dispatch_get_main_queue(), ^{
-                    ClientNetworkType status = [Reachability network];
-                    if ( status < network_2g){
-                        return;
-                    }
-                    FlowInputNameView *inputView = [[FlowInputNameView alloc]initWithFrame:CGRectMake(0, 0, TPScreenWidth(), TPScreenHeight()) andName:user.nick andFlowNumber:flowNumber andSourceCon:sourceCon];
-                    UIWindow *uiWindow = [[UIApplication sharedApplication].windows objectAtIndex:0];
-                    [uiWindow addSubview:inputView];
-                    [uiWindow bringSubviewToFront:inputView];
-                    [DialerUsageRecord recordpath:EV_FLOW_SHOW_INPUTNAME_VIEW kvs:Pair(@"count", @(1)), nil];
-                });
-                
-            }failedCallback:^(NSError *error){
-                cootek_log(@"taobao flow error %@",[error localizedDescription]);
-                [DefaultUIAlertViewHandler showAlertViewWithTitle:[error localizedDescription] message:nil onlyOkButtonActionBlock:nil];
-            }];
-        }
-        
-        responseCallback(@"TaobaoFlow over");
-    }];
-    
-    [bridge registerHandler:@"TaobaoOpen" handler:^(id data, WVJBResponseCallback responseCallback) {
-        cootek_log(@"TaobaoOpen called: %@", data);
-        [DialerUsageRecord recordpath:EV_FLOW_OPEN_BY_TAOBAO kvs:Pair(@"count", @(1)), nil];
-        if ( [[TaeClient instance] isLogin] ){
-            TaeWebViewUISettings *set = [[TaeWebViewUISettings alloc]init];
-            [[TaeClient instance] showpage:sourceCon isNeedPush:YES pageUrl:@"http://h5.m.taobao.com/aliqin/flowwallet/index.html?spm=0.0.0.0" webViewUISettings:set tradeProcessSuccessCallback:^(TaeTradeProcessResult *tradeProcessResult){
-            }tradeProcessFailedCallback:^(NSError *error){
-                cootek_log(@"taobao open error %@",[error localizedDescription]);
-            }];
-        }else{
-            [[TaeClient instance] showLogin:sourceCon successCallback:^(TaeSession *session){
-                cootek_log(@"TaobaoOpen showloginpage success");
-                TaeWebViewUISettings *set = [[TaeWebViewUISettings alloc]init];
-                [[TaeClient instance] showpage:sourceCon isNeedPush:YES pageUrl:@"http://h5.m.taobao.com/aliqin/flowwallet/index.html?spm=0.0.0.0" webViewUISettings:set tradeProcessSuccessCallback:^(TaeTradeProcessResult *tradeProcessResult){
-                }tradeProcessFailedCallback:^(NSError *error){
-                    cootek_log(@"3333");
-                }];
-                cootek_log(@"TaobaoOpen showloginpage success after showpage");
-            }failedCallback:^(NSError *error){
-                cootek_log(@"taobao open error %@",[error localizedDescription]);
-                [DefaultUIAlertViewHandler showAlertViewWithTitle:[error localizedDescription] message:nil onlyOkButtonActionBlock:nil];
-            }];
-        }
-        
-        responseCallback(@"TaobaoOpen over");
-    }];
-    
+//    [bridge registerHandler:@"TaobaoFlow" handler:^(id data, WVJBResponseCallback responseCallback) {
+//        cootek_log(@"TaobaoFlow called: %@", data);
+//        NSInteger flowNumber = [[data objectForKey:@"number"]integerValue];
+//        [DialerUsageRecord recordpath:EV_FLOW_EXCHANGE_BY_TAOBAO kvs:Pair(@"count", @(1)), nil];
+//        if ( [[TaeClient instance] isLogin] ){
+//            TaeUser *user = [[TaeClient instance] getUser];
+//            
+//            TaeWebViewUISettings *set = [[TaeWebViewUISettings alloc]init];
+//            [[TaeClient instance] showpage:sourceCon isNeedPush:YES pageUrl:@"http://h5.m.taobao.com/aliqin/flowwallet/index.html?spm=0.0.0.0" webViewUISettings:set tradeProcessSuccessCallback:^(TaeTradeProcessResult *tradeProcessResult){
+//
+//            }tradeProcessFailedCallback:^(NSError *error){
+//                cootek_log(@"taobao flow error %@",[error localizedDescription]);
+//            }];
+//            double delayInSeconds = 1.0;
+//            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+//            dispatch_after(popTime, dispatch_get_main_queue(), ^{
+//                ClientNetworkType status = [Reachability network];
+//                if ( status < network_2g){
+//                    return;
+//                }
+//                FlowInputNameView *inputView = [[FlowInputNameView alloc]initWithFrame:CGRectMake(0, 0, TPScreenWidth(), TPScreenHeight()) andName:user.nick andFlowNumber:flowNumber andSourceCon:sourceCon];
+//                UIWindow *uiWindow = [[UIApplication sharedApplication].windows objectAtIndex:0];
+//                [uiWindow addSubview:inputView];
+//                [uiWindow bringSubviewToFront:inputView];
+//                [DialerUsageRecord recordpath:EV_FLOW_SHOW_INPUTNAME_VIEW kvs:Pair(@"count", @(1)), nil];
+//            });
+//        }else{
+//            [[TaeClient instance] showLogin:sourceCon successCallback:^(TaeSession *session){
+//                cootek_log(@"TaobaoFlow showloginpage success");
+//                TaeUser *user = [session getUser];
+//                TaeWebViewUISettings *set = [[TaeWebViewUISettings alloc]init];
+//                [[TaeClient instance] showpage:sourceCon isNeedPush:YES pageUrl:@"http://h5.m.taobao.com/aliqin/flowwallet/index.html?spm=0.0.0.0" webViewUISettings:set tradeProcessSuccessCallback:^(TaeTradeProcessResult *tradeProcessResult){
+//                }tradeProcessFailedCallback:^(NSError *error){
+//                    cootek_log(@"taobao flow error %@",[error localizedDescription]);
+//                }];
+//                cootek_log(@"TaobaoFlow showloginpage success after showpage");
+//                double delayInSeconds = 1.0;
+//                dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+//                dispatch_after(popTime, dispatch_get_main_queue(), ^{
+//                    ClientNetworkType status = [Reachability network];
+//                    if ( status < network_2g){
+//                        return;
+//                    }
+//                    FlowInputNameView *inputView = [[FlowInputNameView alloc]initWithFrame:CGRectMake(0, 0, TPScreenWidth(), TPScreenHeight()) andName:user.nick andFlowNumber:flowNumber andSourceCon:sourceCon];
+//                    UIWindow *uiWindow = [[UIApplication sharedApplication].windows objectAtIndex:0];
+//                    [uiWindow addSubview:inputView];
+//                    [uiWindow bringSubviewToFront:inputView];
+//                    [DialerUsageRecord recordpath:EV_FLOW_SHOW_INPUTNAME_VIEW kvs:Pair(@"count", @(1)), nil];
+//                });
+//                
+//            }failedCallback:^(NSError *error){
+//                cootek_log(@"taobao flow error %@",[error localizedDescription]);
+//                [DefaultUIAlertViewHandler showAlertViewWithTitle:[error localizedDescription] message:nil onlyOkButtonActionBlock:nil];
+//            }];
+//        }
+//        
+//        responseCallback(@"TaobaoFlow over");
+//    }];
+//    
+//    [bridge registerHandler:@"TaobaoOpen" handler:^(id data, WVJBResponseCallback responseCallback) {
+//        cootek_log(@"TaobaoOpen called: %@", data);
+//        [DialerUsageRecord recordpath:EV_FLOW_OPEN_BY_TAOBAO kvs:Pair(@"count", @(1)), nil];
+//        if ( [[TaeClient instance] isLogin] ){
+//            TaeWebViewUISettings *set = [[TaeWebViewUISettings alloc]init];
+//            [[TaeClient instance] showpage:sourceCon isNeedPush:YES pageUrl:@"http://h5.m.taobao.com/aliqin/flowwallet/index.html?spm=0.0.0.0" webViewUISettings:set tradeProcessSuccessCallback:^(TaeTradeProcessResult *tradeProcessResult){
+//            }tradeProcessFailedCallback:^(NSError *error){
+//                cootek_log(@"taobao open error %@",[error localizedDescription]);
+//            }];
+//        }else{
+//            [[TaeClient instance] showLogin:sourceCon successCallback:^(TaeSession *session){
+//                cootek_log(@"TaobaoOpen showloginpage success");
+//                TaeWebViewUISettings *set = [[TaeWebViewUISettings alloc]init];
+//                [[TaeClient instance] showpage:sourceCon isNeedPush:YES pageUrl:@"http://h5.m.taobao.com/aliqin/flowwallet/index.html?spm=0.0.0.0" webViewUISettings:set tradeProcessSuccessCallback:^(TaeTradeProcessResult *tradeProcessResult){
+//                }tradeProcessFailedCallback:^(NSError *error){
+//                    cootek_log(@"3333");
+//                }];
+//                cootek_log(@"TaobaoOpen showloginpage success after showpage");
+//            }failedCallback:^(NSError *error){
+//                cootek_log(@"taobao open error %@",[error localizedDescription]);
+//                [DefaultUIAlertViewHandler showAlertViewWithTitle:[error localizedDescription] message:nil onlyOkButtonActionBlock:nil];
+//            }];
+//        }
+//        
+//        responseCallback(@"TaobaoOpen over");
+//    }];
+//    
     [bridge registerHandler:@"tryShareWithParams" handler:^(id data, WVJBResponseCallback responseCallback) {
         cootek_log(@"tryShare called with data %@", data);
         NSString *params = [data objectForKey:@"params"];

@@ -1,6 +1,7 @@
 #import "TPIAPManager.h"
 #import <StoreKit/StoreKit.h>
 #import "TPHttpRequest.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @interface TPDIAPData : NSObject
 @property (nonatomic, copy) NSString *accountID;
@@ -23,6 +24,8 @@ typedef void (^TPDBooleanResultBlock)(BOOL succeeded, NSError *error);
     IAPCompletionHandle _handle;
     NSString           *_orderID;
     NSString           *_minutes;
+    UIView             *_view;
+
 
 }
 @end
@@ -54,7 +57,7 @@ typedef void (^TPDBooleanResultBlock)(BOOL succeeded, NSError *error);
 
 
 #pragma mark - 🚪public
-- (void)startPurchWithID:(NSString *)purchID orderID : (NSString *)orderId tracompleteHandle:(IAPCompletionHandle)handle minute: (NSString *)minutes{
+- (void)startPurchWithID:(NSString *)purchID orderID : (NSString *)orderId tracompleteHandle:(IAPCompletionHandle)handle minute: (NSString *)minutes view : (UIView *)view{
        if (purchID) {
         if ([SKPaymentQueue canMakePayments]) {
             // 开始购买服务
@@ -62,6 +65,7 @@ typedef void (^TPDBooleanResultBlock)(BOOL succeeded, NSError *error);
             _handle = handle;
             _orderID = orderId;
             _minutes = minutes;
+            _view  = view;
             
             NSSet *nsset = [NSSet setWithArray:@[purchID]];
             SKProductsRequest *request = [[SKProductsRequest alloc] initWithProductIdentifiers:nsset];
@@ -169,6 +173,7 @@ typedef void (^TPDBooleanResultBlock)(BOOL succeeded, NSError *error);
         }else {
             NSLog(@"验证失败");
         }
+        [MBProgressHUD hideHUDForView:_view animated:YES];
     }];
 
 

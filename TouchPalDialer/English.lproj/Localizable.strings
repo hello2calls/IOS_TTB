@@ -1527,3 +1527,6 @@
 "TCALL" ="TCALL";
 
 "charge_tips" = "minutes recharge success, expected within 5 minutes to pay, please pay attention to see";
+"refresh_normal" = "Drop down can be refreshed";
+"refresh_pulling" = "Refreshing";
+"refresh_pull" = "Release can refresh";

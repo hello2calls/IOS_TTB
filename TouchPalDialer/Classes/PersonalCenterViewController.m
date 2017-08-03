@@ -26,6 +26,7 @@
 #import "UIScrollView+MJRefresh.h"
 #import "FeedbackViewController.h"
 #import "MJRefreshNormalHeader.h"
+#import "NoahManager.h"
 
 
 @interface PersonalCenterViewController ()
@@ -52,7 +53,7 @@
 
 @property(strong, nonatomic) UILabel *numberLabel;
 
-@property(strong, nonatomic) MJRefreshHeader *header;
+@property(strong, nonatomic) MJRefreshStateHeader *header;
 
 @property (strong, nonatomic)UIScrollView *scrollView;
 @end
@@ -70,6 +71,8 @@
     [self initBody];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateLoginInfo) name:@"loginAction" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateUserInfo:) name:@"getAccount" object:nil];
+    [[NoahManager sharedPSInstance] registerDevice:[UserDefaultsManager stringForKey:APPLE_PUSH_TOKEN]];
+
 }
 
 
@@ -121,7 +124,11 @@
 -(void)initBody
 {
 
-    _header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(doRefresh)];
+    _header = [MJRefreshStateHeader headerWithRefreshingTarget:self refreshingAction:@selector(doRefresh)];
+    [_header setTitle:NSLocalizedString(@"refresh_normal", @"") forState:MJRefreshStateIdle];
+    [_header setTitle:NSLocalizedString(@"refresh_pull", @"") forState:MJRefreshStatePulling];
+    [_header setTitle:NSLocalizedString(@"refresh_pulling", @"") forState:MJRefreshStateRefreshing];
+    _header.lastUpdatedTimeLabel.hidden = YES;
     _scrollView = [[UIScrollView alloc]init];
     _scrollView.frame = CGRectMake(0, 45 + TPHeaderBarHeightDiff(), TPScreenWidth(), TPScreenHeight() - (45 + TPHeaderBarHeightDiff()));
     _scrollView.contentSize = CGSizeMake(TPScreenWidth(), TPScreenHeight());
@@ -314,7 +321,9 @@
 
 
 -(void)doRefresh{
-    [SeattleFeatureExecutor queryVOIPAccountInfo];
+    if([UserDefaultsManager boolValueForKey:TOUCHPAL_USER_HAS_LOGIN]){
+        [SeattleFeatureExecutor queryVOIPAccountInfo];
+    }
     [_header endRefreshing];
 }
 

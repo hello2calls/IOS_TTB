@@ -47,7 +47,6 @@
 #import "YPFullScreenAdView.h"
 #import "NSTimer+Addition.h"
 #import "FindNewsRowView.h"
-#import "AdRequestManager.h"
 #import "TouchLifeTabBarAdManager.h"
 #import "TPAdControlRequestParams.h"
 #import "SeattleFeatureExecutor.h"
@@ -72,7 +71,6 @@
     BOOL isDragging;
     BOOL isLoading;
     NSTimer* repeatingTimer;
-    AdRequestManager* adRequestManager;
     BOOL isCurrentTab;
     BOOL requestMsg;
 }
@@ -641,17 +639,17 @@
 - (void)initCouponFromNetwork:(BOOL)isRefresh
 {
     
-    if (!adRequestManager) {
-        adRequestManager = [AdRequestManager new];
-    }
-    
-    [adRequestManager generateTasksWithTu:DSP_FEEDS_YP withBlock:^(NSMutableArray * result) {
-        if (isRefresh) {
-            [[EdurlManager instance] removeAllNewsRecordWithCloseType:UNKNOW];
-            [[EdurlManager instance] clear];
-        }
-        [self loadCouponData:result isRefresh:isRefresh];
-    } isRefresh:isRefresh];
+//    if (!adRequestManager) {
+//        adRequestManager = [AdRequestManager new];
+//    }
+//    
+//    [adRequestManager generateTasksWithTu:DSP_FEEDS_YP withBlock:^(NSMutableArray * result) {
+//        if (isRefresh) {
+//            [[EdurlManager instance] removeAllNewsRecordWithCloseType:UNKNOW];
+//            [[EdurlManager instance] clear];
+//        }
+//        [self loadCouponData:result isRefresh:isRefresh];
+//    } isRefresh:isRefresh];
 }
 
 - (void)initMiniBannerFromNetwork

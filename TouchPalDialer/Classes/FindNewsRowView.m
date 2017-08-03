@@ -21,14 +21,13 @@
 #import "AdInfoModelManager.h"
 #import "UIImageView+WebCache.h"
 #import "FindNewsListViewController.h"
-#import "BaiduMobAdNativeAdView.h"
 #import "SSPStat.h"
 #import "TPDialerResourceManager.h"
 #import <DateTools.h>
 
 @interface FindNewsRowView()
 {
-    BaiduMobAdNativeAdView* baiduView;
+//    BaiduMobAdNativeAdView* baiduView;
 }
 
 @end

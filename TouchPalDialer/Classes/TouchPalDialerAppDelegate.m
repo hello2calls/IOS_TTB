@@ -55,7 +55,6 @@
 #import "DialerUsageRecord.h"
 #import <mach/mach.h>
 #import "ACTReporter.h"
-#import "TaeClient.h"
 #import "TouchpalMembersManager.h"
 #import "QQShareController.h"
 #import "VoipUtils.h"
@@ -502,6 +501,7 @@ extern CFAbsoluteTime mainStartTime;
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
+    return;
     // statistics for app performance
     CFAbsoluteTime didEnterForegroundTime = CFAbsoluteTimeGetCurrent();
     
@@ -629,7 +629,6 @@ continueUserActivity:(NSUserActivity *)userActivity
         [DialogUtil showDialogWithContentView:tips inRootView:nil];
     }
     
-    BOOL wasHandled = [[TaeSDK sharedInstance]handleOpenURL:url];
     if ([url.host isEqualToString:@"safepay"]) {
         
         [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback: ^(NSDictionary *resultDic) {
@@ -654,7 +653,7 @@ continueUserActivity:(NSUserActivity *)userActivity
             }
         }
     }
-  return wasHandled;
+  return YES;
 }
 
 - (BOOL)application:(UIApplication *)application
@@ -664,7 +663,7 @@ continueUserActivity:(NSUserActivity *)userActivity
 {
     return ([self handleYellowPage:url] || [VoipUrlUtil handleOpenURL:url] || [self handleTPSchema:url] ||
             [[TPShareController controller] handleOpenURL:url] ||
-            [[QQShareController instance]handleOpenURL:url] || [[[TaeClient alloc ]init]handleOpenURL:url]);
+            [[QQShareController instance]handleOpenURL:url] );
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

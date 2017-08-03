@@ -25,8 +25,6 @@
 #import "FindRowView.h"
 #import "EdurlManager.h"
 #import "Reachability.h"
-#import "AdRequestManager.h"
-#import "BaiduMobAdNativeAdView.h"
 #import "NSTimer+Addition.h"
 #import "DialerUsageRecord.h"
 #import "TPAnalyticConstants.h"
@@ -77,7 +75,6 @@
     BOOL _loadMore;
     BOOL isDragging;
     BOOL isLoading;
-    AdRequestManager* adRequestManager;
     NSTimer* repeatingTimer;
     YPUIView* redpacketView;
     int feedsUpdatCount;
@@ -475,7 +472,7 @@
     if  (!isRefreshHeader && _findNewsData.count > 0) {
         _findNewsData = [NSMutableArray new];
         [self.contentTableView reloadData];
-        [adRequestManager setQueryId:@""];
+//        [adRequestManager setQueryId:@""];
     }
     
     if ([self numberOfSectionsInTableView:self.contentTableView ]> 0 &&  [self.contentTableView numberOfRowsInSection:0] > 0) {
@@ -798,16 +795,16 @@
 
 - (void)initCouponFromNetwork:(BOOL)refresh
 {
-    @synchronized(self) {
-        if (!adRequestManager) {
-            adRequestManager = [AdRequestManager new];
-        }
-        [adRequestManager registerController:self];
-        [adRequestManager generateTasksWithTu:self.tu.integerValue withBlock:^(NSMutableArray * result) {
-            cootek_log(@" ------ task finish -------");
-            [self loadCouponData:result isRefresh:refresh];
-        } isRefresh:refresh];
-    }
+//    @synchronized(self) {
+//        if (!adRequestManager) {
+//            adRequestManager = [AdRequestManager new];
+//        }
+//        [adRequestManager registerController:self];
+//        [adRequestManager generateTasksWithTu:self.tu.integerValue withBlock:^(NSMutableArray * result) {
+//            cootek_log(@" ------ task finish -------");
+//            [self loadCouponData:result isRefresh:refresh];
+//        } isRefresh:refresh];
+//    }
 }
 
 - (NewsFeedsCellTableViewCell* ) createViewWithIndexPath:(NSIndexPath *)path andIdentifier:(NSString *)identifier
@@ -840,17 +837,17 @@
         FindNewsRowView *findNewsView = [[FindNewsRowView alloc]initWithFrame:CGRectMake(startX, 0, screenWidth, rowHeight) andData:item andIndexPath:path isV6:[UserDefaultsManager boolValueForKey:ENABLE_V6_TEST_ME defaultValue:NO]];
         
         if (item.category == CategoryADBaidu) {
-            BaiduMobAdNativeAdView* nativeAdView = [[BaiduMobAdNativeAdView alloc]initWithFrame:CGRectMake(startX, 0, screenWidth, rowHeight) brandName:nil title:nil text:nil icon:nil mainImage:nil];
-            
-            [nativeAdView addSubview:findNewsView];
-            [nativeAdView loadAndDisplayNativeAdWithObject:item.baiduAdNativeObject completion:^(NSArray *errors) {
-                if (!errors) {
-                    if (nativeAdView) {
-                        [nativeAdView trackImpression];
-                    }
-                }
-            }];
-            [fCell addSubview:nativeAdView];
+//            BaiduMobAdNativeAdView* nativeAdView = [[BaiduMobAdNativeAdView alloc]initWithFrame:CGRectMake(startX, 0, screenWidth, rowHeight) brandName:nil title:nil text:nil icon:nil mainImage:nil];
+//            
+//            [nativeAdView addSubview:findNewsView];
+//            [nativeAdView loadAndDisplayNativeAdWithObject:item.baiduAdNativeObject completion:^(NSArray *errors) {
+//                if (!errors) {
+//                    if (nativeAdView) {
+//                        [nativeAdView trackImpression];
+//                    }
+//                }
+//            }];
+//            [fCell addSubview:nativeAdView];
         } else {
             [fCell addSubview:findNewsView];
         }

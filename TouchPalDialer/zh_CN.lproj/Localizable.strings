@@ -1534,3 +1534,6 @@
 "number_not_support" ="该号码不支持通通宝电话";
 "TCALL" ="通通宝电话";
 "charge_tips" = "分钟充值成功，预计5分钟内到账，请注意查看";
+"refresh_normal" = "下拉可以刷新";
+"refresh_pulling" = "正在刷新";
+"refresh_pull" = "松开立即刷新";

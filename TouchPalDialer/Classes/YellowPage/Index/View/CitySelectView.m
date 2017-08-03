@@ -23,7 +23,6 @@
 #import "DialerUsageRecord.h"
 #import "CitySelectViewController.h"
 #import "TouchPalDialerAppDelegate.h"
-#import "AdRequestManager.h"
 #import "FindNewsItem.h"
 
 @interface CitySelectView()

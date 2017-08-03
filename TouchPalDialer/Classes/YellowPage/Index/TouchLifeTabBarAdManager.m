@@ -39,6 +39,7 @@ TouchLifeTabBarAdManager *_instance_ = nil;
 
 - (void) remoteReqAd
 {
+    return;
     long current = [[NSDate date] timeIntervalSince1970];
     long last = [UserDefaultsManager doubleValueForKey:TAB_AD_REQ_TIMESTAMP defaultValue:0];
     if ((current - last) < [UserDefaultsManager doubleValueForKey:TAB_AD_REQ_INTERVAL defaultValue:6 * 60 * 60]) {

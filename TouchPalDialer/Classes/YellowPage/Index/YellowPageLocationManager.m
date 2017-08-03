@@ -30,7 +30,6 @@
 #import "FunctionUtility.h"
 #import "TPShareController.h"
 #import "TPDialerResourceManager.h"
-#import "TaeClient.h"
 #import <TAESDK/TaeWebViewUISettings.h>
 #import "DefaultUIAlertViewHandler.h"
 #import "LoginController.h"

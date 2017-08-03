@@ -15,7 +15,6 @@
 #import "DialerUsageRecord.h"
 #import "UserDefaultsManager.h"
 #import "LocalStorage.h"
-#import "AdRequestManager.h"
 #import "NSString+TPHandleNil.h"
 #import "TPDVideoPlayController.h"
 

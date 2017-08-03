@@ -44,7 +44,6 @@
 #import "FindNewTitleView.h"
 #import "SectionMiniBanner.h"
 #import "MiniBannerRowView.h"
-#import "BaiduMobAdNativeAdView.h"
 #import "MyRowView.h"
 #import "SectionMyPhone.h"
 #import "MyPropertyRowView.h"
@@ -529,21 +528,21 @@ UIDataManager *ui_instance_ = nil;
         
         FindNewsRowView *findNewsView = [[FindNewsRowView alloc]initWithFrame:CGRectMake(startX, 0, screenWidth, rowHeight) andData:itemFindnews andIndexPath:indexPath isV6:[UserDefaultsManager boolValueForKey:ENABLE_V6_TEST_ME defaultValue:NO]];
         if (itemFindnews.category == CategoryADBaidu) {
-            BaiduMobAdNativeAdView* nativeAdView = [[BaiduMobAdNativeAdView alloc]initWithFrame:CGRectMake(startX, 0, screenWidth, rowHeight)
-                                                                                          title:nil
-                                                                                           text:nil
-                                                                                           icon:nil
-                                                                                      mainImage:nil];
-            
-            [nativeAdView addSubview:findNewsView];
-            [nativeAdView loadAndDisplayNativeAdWithObject:itemFindnews.baiduAdNativeObject completion:^(NSArray *errors) {
-                if (!errors) {
-                    if (nativeAdView) {
-                        [nativeAdView trackImpression];
-                    }
-                }
-            }];
-            [fCell addSubview:nativeAdView];
+//            BaiduMobAdNativeAdView* nativeAdView = [[BaiduMobAdNativeAdView alloc]initWithFrame:CGRectMake(startX, 0, screenWidth, rowHeight)
+//                                                                                          title:nil
+//                                                                                           text:nil
+//                                                                                           icon:nil
+//                                                                                      mainImage:nil];
+//            
+//            [nativeAdView addSubview:findNewsView];
+//            [nativeAdView loadAndDisplayNativeAdWithObject:itemFindnews.baiduAdNativeObject completion:^(NSArray *errors) {
+//                if (!errors) {
+//                    if (nativeAdView) {
+//                        [nativeAdView trackImpression];
+//                    }
+//                }
+//            }];
+//            [fCell addSubview:nativeAdView];
         } else {
             [fCell addSubview:findNewsView];
         }
@@ -883,9 +882,9 @@ UIDataManager *ui_instance_ = nil;
         SectionFindNews* finds = [group.sectionArray objectAtIndex:group.current];
         FindNewsItem* item = [finds.items objectAtIndex:indexPath.row];
         
-        if (item.category == CategoryADBaidu && [item.baiduAdNativeObject isExpired]) {
-            return 0;
-        }
+//        if (item.category == CategoryADBaidu && [item.baiduAdNativeObject isExpired]) {
+//            return 0;
+//        }
         
         CGFloat height = -1.0f;
         switch (item.type.intValue) {

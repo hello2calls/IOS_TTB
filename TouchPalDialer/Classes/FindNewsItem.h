@@ -7,7 +7,6 @@
 //
 
 #import "BaseItem.h"
-#import "BaiduMobAdNativeAdObject.h"
 #import "GDTNativeAd.h"
 
 #define FIND_NEWS_TYPE_ONE_IMAGE 1
@@ -39,7 +38,6 @@ typedef NS_ENUM(NSInteger, FindCategory) {
 @property(nonatomic, strong) NSDictionary* appLaunch;
 @property(nonatomic, strong) NSString* timestamp;
 @property(nonatomic, assign) BOOL isAd;
-@property(nonatomic, strong) BaiduMobAdNativeAdObject* baiduAdNativeObject;
 @property(nonatomic, strong) GDTNativeAd* gdtAdNativeObject;
 @property(nonatomic, strong) GDTNativeAdData* gdtAdNativeData;
 @property(nonatomic, assign) FindCategory category;
